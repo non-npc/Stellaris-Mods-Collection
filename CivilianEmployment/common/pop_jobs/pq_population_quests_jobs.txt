@@ -1,0 +1,122 @@
+pq_job_adventurer = {
+    category = worker
+    is_capped_by_modifier = yes
+
+    swappable_data = {
+        default = {
+            icon = beastfighter
+        }
+    }
+
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+
+    possible = {
+        planet = {
+            has_modifier = pq_modifier_adventure_guild
+        }
+    }
+
+    resources = {
+        category = planet_jobs_productive
+        produces = {
+            food = 1
+            minerals = 1
+            energy = 1
+        }
+        upkeep = {
+            consumer_goods = 1
+        }
+    }
+
+    planet_modifier = {
+        planet_amenities_add = 5
+    }
+
+    weight = {
+        weight = 100
+    }
+}
+
+pq_job_virtual_soldier = {
+    category = worker
+    is_capped_by_modifier = yes
+
+    swappable_data = {
+        default = {
+            icon = battle_thrall
+        }
+    }
+
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+
+    possible = {
+        planet = {
+            has_modifier = pq_modifier_virtual_forces
+        }
+    }
+
+    resources = {
+        category = planet_jobs
+        produces = {
+            unity = 2
+        }
+    }
+
+    planet_modifier = {
+        planet_defense_armies_add = 0.25
+    }
+
+    weight = {
+        weight = 100
+    }
+}
+
+pq_job_free_thinker = {
+    category = worker
+    is_capped_by_modifier = yes
+
+    swappable_data = {
+        default = {
+            icon = assimilation
+        }
+    }
+
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+
+    possible = {
+        planet = {
+            has_modifier = pq_modifier_free_thinkers
+        }
+    }
+
+    resources = {
+        category = planet_jobs
+        produces = {
+            society_research = 1
+            engineering_research = 1
+            physics_research = 1
+        }
+        upkeep = {
+            consumer_goods = 1
+        }
+    }
+
+    weight = {
+        weight = 100
+    }
+}

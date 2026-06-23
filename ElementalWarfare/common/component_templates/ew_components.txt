@@ -1,0 +1,1257 @@
+# Elemental Warfare ship weapons and defenses. Full slot coverage for S/M/L/X/G/P/H/T plus auxiliary wards.
+
+weapon_component_template = {
+	key = "EW_FIRE_S"
+	size = small
+	type = instant
+	icon = "GFX_ew_fire_s"
+	icon_frame = 1
+	prerequisites = { "tech_ew_fire_1" }
+	component_set = "EW_FIRE_WEAPONS"
+	projectile_gfx = "ew_fire_laser_s"
+	power = -2.00
+	damage = { min = 16.00 max = 42.00 }
+	windup = { min = 5.00 max = 20.00 }
+	total_fire_time = 30.00
+	range = 40.00
+	accuracy = 0.82
+	tracking = 0.45
+	hull_damage = 1.25
+	shield_damage = 1.05
+	armor_damage = 0.80
+	tags = { weapon_type_energy s_slot }
+	resources = { category = ship_components cost = { alloys = 20 } }
+	ai_tags = { weapon_role_anti_hull weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_FIRE_M"
+	size = medium
+	type = instant
+	icon = "GFX_ew_fire_m"
+	icon_frame = 1
+	prerequisites = { "tech_ew_fire_1" }
+	component_set = "EW_FIRE_WEAPONS"
+	projectile_gfx = "ew_fire_laser_m"
+	power = -5.00
+	damage = { min = 40.00 max = 106.00 }
+	windup = { min = 6.00 max = 24.00 }
+	total_fire_time = 35.00
+	range = 60.00
+	accuracy = 0.82
+	tracking = 0.25
+	hull_damage = 1.25
+	shield_damage = 1.05
+	armor_damage = 0.80
+	tags = { weapon_type_energy m_slot }
+	resources = { category = ship_components cost = { alloys = 45 } }
+	ai_tags = { weapon_role_anti_hull weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_FIRE_L"
+	size = large
+	type = instant
+	icon = "GFX_ew_fire_l"
+	icon_frame = 1
+	prerequisites = { "tech_ew_fire_1" }
+	component_set = "EW_FIRE_WEAPONS"
+	projectile_gfx = "ew_fire_laser_l"
+	power = -10.00
+	damage = { min = 96.00 max = 252.00 }
+	windup = { min = 7.00 max = 27.00 }
+	total_fire_time = 40.00
+	range = 80.00
+	accuracy = 0.82
+	tracking = 0.10
+	hull_damage = 1.25
+	shield_damage = 1.05
+	armor_damage = 0.80
+	tags = { weapon_type_energy l_slot }
+	resources = { category = ship_components cost = { alloys = 90 } }
+	ai_tags = { weapon_role_anti_hull weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_FIRE_X"
+	size = extra_large
+	type = instant
+	icon = "GFX_ew_fire_x"
+	icon_frame = 1
+	prerequisites = { "tech_ew_fire_3" }
+	component_set = "EW_FIRE_X"
+	projectile_gfx = "ew_fire_lance"
+	power = -35.00
+	damage = { min = 1200.00 max = 3000.00 }
+	windup = { min = 12.00 max = 47.00 }
+	total_fire_time = 70.00
+	range = 150.00
+	accuracy = 0.85
+	tracking = 0.00
+	hull_damage = 1.25
+	shield_damage = 1.05
+	armor_damage = 0.80
+	tags = { weapon_type_energy x_slot }
+	resources = { category = ship_components cost = { alloys = 250 } }
+	ai_tags = { weapon_role_anti_hull weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_FIRE_G"
+	size = torpedo
+	type = instant
+	firing_arc = 25.0
+	min_range = 45.0
+	icon = "GFX_ew_fire_g"
+	icon_frame = 1
+	prerequisites = { "tech_ew_fire_2" }
+	component_set = "EW_FIRE_G"
+	projectile_gfx = "ew_fire_torpedo"
+	power = -8.00
+	damage = { min = 200.00 max = 300.00 }
+	windup = { min = 25.00 max = 100.00 }
+	total_fire_time = 150.00
+	range = 120.00
+	accuracy = 0.90
+	tracking = 0.15
+	hull_damage = 1.25
+	shield_damage = 1.05
+	armor_damage = 0.80
+	tags = { weapon_type_energy g_slot }
+	resources = { category = ship_components cost = { alloys = 70 } }
+	ai_tags = { weapon_role_anti_hull weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_FIRE_P"
+	size = point_defence
+	type = point_defence
+	icon = "GFX_ew_fire_p"
+	icon_frame = 1
+	prerequisites = { "tech_ew_fire_1" }
+	component_set = "EW_FIRE_P"
+	projectile_gfx = "ew_fire_pd"
+	power = -3.00
+	damage = { min = 8.00 max = 16.00 }
+	windup = { min = 0.00 max = 0.00 }
+	total_fire_time = 5.00
+	range = 30.00
+	accuracy = 0.75
+	tracking = 0.65
+	hull_damage = 1.25
+	shield_damage = 1.05
+	armor_damage = 0.80
+	tags = { weapon_type_point_defense weapon_type_energy }
+	resources = { category = ship_components cost = { alloys = 30 } }
+	point_defence_targets = { "missile" "strike_craft" }
+	ai_tags = { weapon_role_point_defense screen }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+strike_craft_component_template = {
+	key = "EW_FIRE_H"
+	size = LARGE
+	entity = "bomber_entity"
+	weapon_type = point_defence
+	projectile_gfx = "ew_fire_strike_craft"
+	icon = "GFX_ew_fire_h"
+	icon_frame = 1
+	prerequisites = { "tech_ew_fire_2" }
+	component_set = "EW_FIRE_H"
+	power = -10
+	resources = { category = ship_components cost = { alloys = 100 } }
+	count = 8
+	regeneration_per_day = 0.25
+	launch_time = 2.0
+	damage = { min = 20 max = 44 }
+	cooldown = 2.5
+	range = 10
+	engagement_range = 100
+	accuracy = 0.8
+	tracking = 0.5
+	health = 10
+	armor = 10
+	shield = 10
+	evasion = 0.55
+	speed = 500
+	rotation_speed = 0.8
+	acceleration = 1
+	shield_damage = 1.05
+	armor_damage = 0.8
+	hull_damage = 1.25
+	ship_behavior = "fighters_behavior"
+	tags = { weapon_type_strike_craft }
+	ai_tags = { weapon_role_anti_hull weapon_role_artillery carrier }
+}
+
+weapon_component_template = {
+	key = "EW_FIRE_T"
+	size = titanic
+	type = instant
+	icon = "GFX_ew_fire_t"
+	icon_frame = 1
+	prerequisites = { "tech_ew_fire_3" }
+	component_set = "EW_FIRE_T"
+	projectile_gfx = "ew_fire_titan"
+	power = -75.00
+	damage = { min = 5000.00 max = 10000.00 }
+	windup = { min = 30.00 max = 120.00 }
+	total_fire_time = 180.00
+	range = 250.00
+	accuracy = 0.90
+	tracking = 0.00
+	hull_damage = 1.25
+	shield_damage = 1.05
+	armor_damage = 0.80
+	tags = { weapon_type_energy t_slot }
+	resources = { category = ship_components cost = { alloys = 500 } }
+	ai_tags = { weapon_role_anti_hull weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+utility_component_template = {
+	key = "EW_FIRE_WARD"
+	size = aux
+	icon = "GFX_ew_fire_defense"
+	icon_frame = 1
+	prerequisites = { "tech_ew_fire_2" }
+	component_set = "EW_FIRE_WARD"
+	power = -5
+	resources = { category = ship_components cost = { alloys = 60 } }
+	modifier = { ship_armor_mult = 0.20 ship_shield_mult = 0.20 ship_hull_mult = 0.15 ship_armor_add = 250 ship_shield_add = 250 }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_ICE_S"
+	size = small
+	type = instant
+	icon = "GFX_ew_ice_s"
+	icon_frame = 1
+	prerequisites = { "tech_ew_ice_1" }
+	component_set = "EW_ICE_WEAPONS"
+	projectile_gfx = "ew_ice_laser_s"
+	power = -2.00
+	damage = { min = 16.00 max = 42.00 }
+	windup = { min = 5.00 max = 20.00 }
+	total_fire_time = 30.00
+	range = 40.00
+	accuracy = 0.82
+	tracking = 0.45
+	hull_damage = 1.05
+	shield_damage = 0.85
+	armor_damage = 1.25
+	tags = { weapon_type_energy s_slot }
+	resources = { category = ship_components cost = { alloys = 20 } }
+	ai_tags = { screen weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_ICE_M"
+	size = medium
+	type = instant
+	icon = "GFX_ew_ice_m"
+	icon_frame = 1
+	prerequisites = { "tech_ew_ice_1" }
+	component_set = "EW_ICE_WEAPONS"
+	projectile_gfx = "ew_ice_laser_m"
+	power = -5.00
+	damage = { min = 40.00 max = 106.00 }
+	windup = { min = 6.00 max = 24.00 }
+	total_fire_time = 35.00
+	range = 60.00
+	accuracy = 0.82
+	tracking = 0.25
+	hull_damage = 1.05
+	shield_damage = 0.85
+	armor_damage = 1.25
+	tags = { weapon_type_energy m_slot }
+	resources = { category = ship_components cost = { alloys = 45 } }
+	ai_tags = { screen weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_ICE_L"
+	size = large
+	type = instant
+	icon = "GFX_ew_ice_l"
+	icon_frame = 1
+	prerequisites = { "tech_ew_ice_1" }
+	component_set = "EW_ICE_WEAPONS"
+	projectile_gfx = "ew_ice_laser_l"
+	power = -10.00
+	damage = { min = 96.00 max = 252.00 }
+	windup = { min = 7.00 max = 27.00 }
+	total_fire_time = 40.00
+	range = 80.00
+	accuracy = 0.82
+	tracking = 0.10
+	hull_damage = 1.05
+	shield_damage = 0.85
+	armor_damage = 1.25
+	tags = { weapon_type_energy l_slot }
+	resources = { category = ship_components cost = { alloys = 90 } }
+	ai_tags = { screen weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_ICE_X"
+	size = extra_large
+	type = instant
+	icon = "GFX_ew_ice_x"
+	icon_frame = 1
+	prerequisites = { "tech_ew_ice_3" }
+	component_set = "EW_ICE_X"
+	projectile_gfx = "ew_ice_lance"
+	power = -35.00
+	damage = { min = 1200.00 max = 3000.00 }
+	windup = { min = 12.00 max = 47.00 }
+	total_fire_time = 70.00
+	range = 150.00
+	accuracy = 0.85
+	tracking = 0.00
+	hull_damage = 1.05
+	shield_damage = 0.85
+	armor_damage = 1.25
+	tags = { weapon_type_energy x_slot }
+	resources = { category = ship_components cost = { alloys = 250 } }
+	ai_tags = { screen weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_ICE_G"
+	size = torpedo
+	type = instant
+	firing_arc = 25.0
+	min_range = 45.0
+	icon = "GFX_ew_ice_g"
+	icon_frame = 1
+	prerequisites = { "tech_ew_ice_2" }
+	component_set = "EW_ICE_G"
+	projectile_gfx = "ew_ice_torpedo"
+	power = -8.00
+	damage = { min = 200.00 max = 300.00 }
+	windup = { min = 25.00 max = 100.00 }
+	total_fire_time = 150.00
+	range = 120.00
+	accuracy = 0.90
+	tracking = 0.15
+	hull_damage = 1.05
+	shield_damage = 0.85
+	armor_damage = 1.25
+	tags = { weapon_type_energy g_slot }
+	resources = { category = ship_components cost = { alloys = 70 } }
+	ai_tags = { screen weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_ICE_P"
+	size = point_defence
+	type = point_defence
+	icon = "GFX_ew_ice_p"
+	icon_frame = 1
+	prerequisites = { "tech_ew_ice_1" }
+	component_set = "EW_ICE_P"
+	projectile_gfx = "ew_ice_pd"
+	power = -3.00
+	damage = { min = 8.00 max = 16.00 }
+	windup = { min = 0.00 max = 0.00 }
+	total_fire_time = 5.00
+	range = 30.00
+	accuracy = 0.75
+	tracking = 0.65
+	hull_damage = 1.05
+	shield_damage = 0.85
+	armor_damage = 1.25
+	tags = { weapon_type_point_defense weapon_type_energy }
+	resources = { category = ship_components cost = { alloys = 30 } }
+	point_defence_targets = { "missile" "strike_craft" }
+	ai_tags = { weapon_role_point_defense screen }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+strike_craft_component_template = {
+	key = "EW_ICE_H"
+	size = LARGE
+	entity = "bomber_entity"
+	weapon_type = point_defence
+	projectile_gfx = "ew_ice_strike_craft"
+	icon = "GFX_ew_ice_h"
+	icon_frame = 1
+	prerequisites = { "tech_ew_ice_2" }
+	component_set = "EW_ICE_H"
+	power = -10
+	resources = { category = ship_components cost = { alloys = 100 } }
+	count = 8
+	regeneration_per_day = 0.25
+	launch_time = 2.0
+	damage = { min = 20 max = 44 }
+	cooldown = 2.5
+	range = 10
+	engagement_range = 100
+	accuracy = 0.8
+	tracking = 0.5
+	health = 10
+	armor = 10
+	shield = 10
+	evasion = 0.55
+	speed = 500
+	rotation_speed = 0.8
+	acceleration = 1
+	shield_damage = 0.85
+	armor_damage = 1.25
+	hull_damage = 1.05
+	ship_behavior = "fighters_behavior"
+	tags = { weapon_type_strike_craft }
+	ai_tags = { screen weapon_role_artillery carrier }
+}
+
+weapon_component_template = {
+	key = "EW_ICE_T"
+	size = titanic
+	type = instant
+	icon = "GFX_ew_ice_t"
+	icon_frame = 1
+	prerequisites = { "tech_ew_ice_3" }
+	component_set = "EW_ICE_T"
+	projectile_gfx = "ew_ice_titan"
+	power = -75.00
+	damage = { min = 5000.00 max = 10000.00 }
+	windup = { min = 30.00 max = 120.00 }
+	total_fire_time = 180.00
+	range = 250.00
+	accuracy = 0.90
+	tracking = 0.00
+	hull_damage = 1.05
+	shield_damage = 0.85
+	armor_damage = 1.25
+	tags = { weapon_type_energy t_slot }
+	resources = { category = ship_components cost = { alloys = 500 } }
+	ai_tags = { screen weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+utility_component_template = {
+	key = "EW_ICE_WARD"
+	size = aux
+	icon = "GFX_ew_ice_defense"
+	icon_frame = 1
+	prerequisites = { "tech_ew_ice_2" }
+	component_set = "EW_ICE_WARD"
+	power = -5
+	resources = { category = ship_components cost = { alloys = 60 } }
+	modifier = { ship_armor_mult = 0.20 ship_shield_mult = 0.20 ship_hull_mult = 0.15 ship_armor_add = 250 ship_shield_add = 250 }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_LIGHTNING_S"
+	size = small
+	type = instant
+	icon = "GFX_ew_lightning_s"
+	icon_frame = 1
+	prerequisites = { "tech_ew_lightning_1" }
+	component_set = "EW_LIGHTNING_WEAPONS"
+	projectile_gfx = "ew_lightning_laser_s"
+	power = -2.00
+	damage = { min = 16.00 max = 42.00 }
+	windup = { min = 5.00 max = 20.00 }
+	total_fire_time = 30.00
+	range = 40.00
+	accuracy = 0.82
+	tracking = 0.45
+	hull_damage = 0.90
+	shield_damage = 1.45
+	armor_damage = 0.70
+	tags = { weapon_type_energy s_slot }
+	resources = { category = ship_components cost = { alloys = 20 } }
+	ai_tags = { weapon_role_anti_shield weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_LIGHTNING_M"
+	size = medium
+	type = instant
+	icon = "GFX_ew_lightning_m"
+	icon_frame = 1
+	prerequisites = { "tech_ew_lightning_1" }
+	component_set = "EW_LIGHTNING_WEAPONS"
+	projectile_gfx = "ew_lightning_laser_m"
+	power = -5.00
+	damage = { min = 40.00 max = 106.00 }
+	windup = { min = 6.00 max = 24.00 }
+	total_fire_time = 35.00
+	range = 60.00
+	accuracy = 0.82
+	tracking = 0.25
+	hull_damage = 0.90
+	shield_damage = 1.45
+	armor_damage = 0.70
+	tags = { weapon_type_energy m_slot }
+	resources = { category = ship_components cost = { alloys = 45 } }
+	ai_tags = { weapon_role_anti_shield weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_LIGHTNING_L"
+	size = large
+	type = instant
+	icon = "GFX_ew_lightning_l"
+	icon_frame = 1
+	prerequisites = { "tech_ew_lightning_1" }
+	component_set = "EW_LIGHTNING_WEAPONS"
+	projectile_gfx = "ew_lightning_laser_l"
+	power = -10.00
+	damage = { min = 96.00 max = 252.00 }
+	windup = { min = 7.00 max = 27.00 }
+	total_fire_time = 40.00
+	range = 80.00
+	accuracy = 0.82
+	tracking = 0.10
+	hull_damage = 0.90
+	shield_damage = 1.45
+	armor_damage = 0.70
+	tags = { weapon_type_energy l_slot }
+	resources = { category = ship_components cost = { alloys = 90 } }
+	ai_tags = { weapon_role_anti_shield weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_LIGHTNING_X"
+	size = extra_large
+	type = instant
+	icon = "GFX_ew_lightning_x"
+	icon_frame = 1
+	prerequisites = { "tech_ew_lightning_3" }
+	component_set = "EW_LIGHTNING_X"
+	projectile_gfx = "ew_lightning_lance"
+	power = -35.00
+	damage = { min = 1200.00 max = 3000.00 }
+	windup = { min = 12.00 max = 47.00 }
+	total_fire_time = 70.00
+	range = 150.00
+	accuracy = 0.85
+	tracking = 0.00
+	hull_damage = 0.90
+	shield_damage = 1.45
+	armor_damage = 0.70
+	tags = { weapon_type_energy x_slot }
+	resources = { category = ship_components cost = { alloys = 250 } }
+	ai_tags = { weapon_role_anti_shield weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_LIGHTNING_G"
+	size = torpedo
+	type = instant
+	firing_arc = 25.0
+	min_range = 45.0
+	icon = "GFX_ew_lightning_g"
+	icon_frame = 1
+	prerequisites = { "tech_ew_lightning_2" }
+	component_set = "EW_LIGHTNING_G"
+	projectile_gfx = "ew_lightning_torpedo"
+	power = -8.00
+	damage = { min = 200.00 max = 300.00 }
+	windup = { min = 25.00 max = 100.00 }
+	total_fire_time = 150.00
+	range = 120.00
+	accuracy = 0.90
+	tracking = 0.15
+	hull_damage = 0.90
+	shield_damage = 1.45
+	armor_damage = 0.70
+	tags = { weapon_type_energy g_slot }
+	resources = { category = ship_components cost = { alloys = 70 } }
+	ai_tags = { weapon_role_anti_shield weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_LIGHTNING_P"
+	size = point_defence
+	type = point_defence
+	icon = "GFX_ew_lightning_p"
+	icon_frame = 1
+	prerequisites = { "tech_ew_lightning_1" }
+	component_set = "EW_LIGHTNING_P"
+	projectile_gfx = "ew_lightning_pd"
+	power = -3.00
+	damage = { min = 8.00 max = 16.00 }
+	windup = { min = 0.00 max = 0.00 }
+	total_fire_time = 5.00
+	range = 30.00
+	accuracy = 0.75
+	tracking = 0.65
+	hull_damage = 0.90
+	shield_damage = 1.45
+	armor_damage = 0.70
+	tags = { weapon_type_point_defense weapon_type_energy }
+	resources = { category = ship_components cost = { alloys = 30 } }
+	point_defence_targets = { "missile" "strike_craft" }
+	ai_tags = { weapon_role_point_defense screen }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+strike_craft_component_template = {
+	key = "EW_LIGHTNING_H"
+	size = LARGE
+	entity = "bomber_entity"
+	weapon_type = point_defence
+	projectile_gfx = "ew_lightning_strike_craft"
+	icon = "GFX_ew_lightning_h"
+	icon_frame = 1
+	prerequisites = { "tech_ew_lightning_2" }
+	component_set = "EW_LIGHTNING_H"
+	power = -10
+	resources = { category = ship_components cost = { alloys = 100 } }
+	count = 8
+	regeneration_per_day = 0.25
+	launch_time = 2.0
+	damage = { min = 20 max = 44 }
+	cooldown = 2.5
+	range = 10
+	engagement_range = 100
+	accuracy = 0.8
+	tracking = 0.5
+	health = 10
+	armor = 10
+	shield = 10
+	evasion = 0.55
+	speed = 500
+	rotation_speed = 0.8
+	acceleration = 1
+	shield_damage = 1.45
+	armor_damage = 0.7
+	hull_damage = 0.9
+	ship_behavior = "fighters_behavior"
+	tags = { weapon_type_strike_craft }
+	ai_tags = { weapon_role_anti_shield weapon_role_artillery carrier }
+}
+
+weapon_component_template = {
+	key = "EW_LIGHTNING_T"
+	size = titanic
+	type = instant
+	icon = "GFX_ew_lightning_t"
+	icon_frame = 1
+	prerequisites = { "tech_ew_lightning_3" }
+	component_set = "EW_LIGHTNING_T"
+	projectile_gfx = "ew_lightning_titan"
+	power = -75.00
+	damage = { min = 5000.00 max = 10000.00 }
+	windup = { min = 30.00 max = 120.00 }
+	total_fire_time = 180.00
+	range = 250.00
+	accuracy = 0.90
+	tracking = 0.00
+	hull_damage = 0.90
+	shield_damage = 1.45
+	armor_damage = 0.70
+	tags = { weapon_type_energy t_slot }
+	resources = { category = ship_components cost = { alloys = 500 } }
+	ai_tags = { weapon_role_anti_shield weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+utility_component_template = {
+	key = "EW_LIGHTNING_WARD"
+	size = aux
+	icon = "GFX_ew_lightning_defense"
+	icon_frame = 1
+	prerequisites = { "tech_ew_lightning_2" }
+	component_set = "EW_LIGHTNING_WARD"
+	power = -5
+	resources = { category = ship_components cost = { alloys = 60 } }
+	modifier = { ship_armor_mult = 0.20 ship_shield_mult = 0.20 ship_hull_mult = 0.15 ship_armor_add = 250 ship_shield_add = 250 }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_ACID_S"
+	size = small
+	type = instant
+	icon = "GFX_ew_acid_s"
+	icon_frame = 1
+	prerequisites = { "tech_ew_acid_1" }
+	component_set = "EW_ACID_WEAPONS"
+	projectile_gfx = "ew_acid_laser_s"
+	power = -2.00
+	damage = { min = 16.00 max = 42.00 }
+	windup = { min = 5.00 max = 20.00 }
+	total_fire_time = 30.00
+	range = 40.00
+	accuracy = 0.82
+	tracking = 0.45
+	hull_damage = 1.05
+	shield_damage = 0.70
+	armor_damage = 1.55
+	tags = { weapon_type_energy s_slot }
+	resources = { category = ship_components cost = { alloys = 20 } }
+	ai_tags = { weapon_role_anti_armor weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_ACID_M"
+	size = medium
+	type = instant
+	icon = "GFX_ew_acid_m"
+	icon_frame = 1
+	prerequisites = { "tech_ew_acid_1" }
+	component_set = "EW_ACID_WEAPONS"
+	projectile_gfx = "ew_acid_laser_m"
+	power = -5.00
+	damage = { min = 40.00 max = 106.00 }
+	windup = { min = 6.00 max = 24.00 }
+	total_fire_time = 35.00
+	range = 60.00
+	accuracy = 0.82
+	tracking = 0.25
+	hull_damage = 1.05
+	shield_damage = 0.70
+	armor_damage = 1.55
+	tags = { weapon_type_energy m_slot }
+	resources = { category = ship_components cost = { alloys = 45 } }
+	ai_tags = { weapon_role_anti_armor weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_ACID_L"
+	size = large
+	type = instant
+	icon = "GFX_ew_acid_l"
+	icon_frame = 1
+	prerequisites = { "tech_ew_acid_1" }
+	component_set = "EW_ACID_WEAPONS"
+	projectile_gfx = "ew_acid_laser_l"
+	power = -10.00
+	damage = { min = 96.00 max = 252.00 }
+	windup = { min = 7.00 max = 27.00 }
+	total_fire_time = 40.00
+	range = 80.00
+	accuracy = 0.82
+	tracking = 0.10
+	hull_damage = 1.05
+	shield_damage = 0.70
+	armor_damage = 1.55
+	tags = { weapon_type_energy l_slot }
+	resources = { category = ship_components cost = { alloys = 90 } }
+	ai_tags = { weapon_role_anti_armor weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_ACID_X"
+	size = extra_large
+	type = instant
+	icon = "GFX_ew_acid_x"
+	icon_frame = 1
+	prerequisites = { "tech_ew_acid_3" }
+	component_set = "EW_ACID_X"
+	projectile_gfx = "ew_acid_lance"
+	power = -35.00
+	damage = { min = 1200.00 max = 3000.00 }
+	windup = { min = 12.00 max = 47.00 }
+	total_fire_time = 70.00
+	range = 150.00
+	accuracy = 0.85
+	tracking = 0.00
+	hull_damage = 1.05
+	shield_damage = 0.70
+	armor_damage = 1.55
+	tags = { weapon_type_energy x_slot }
+	resources = { category = ship_components cost = { alloys = 250 } }
+	ai_tags = { weapon_role_anti_armor weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_ACID_G"
+	size = torpedo
+	type = instant
+	firing_arc = 25.0
+	min_range = 45.0
+	icon = "GFX_ew_acid_g"
+	icon_frame = 1
+	prerequisites = { "tech_ew_acid_2" }
+	component_set = "EW_ACID_G"
+	projectile_gfx = "ew_acid_torpedo"
+	power = -8.00
+	damage = { min = 200.00 max = 300.00 }
+	windup = { min = 25.00 max = 100.00 }
+	total_fire_time = 150.00
+	range = 120.00
+	accuracy = 0.90
+	tracking = 0.15
+	hull_damage = 1.05
+	shield_damage = 0.70
+	armor_damage = 1.55
+	tags = { weapon_type_energy g_slot }
+	resources = { category = ship_components cost = { alloys = 70 } }
+	ai_tags = { weapon_role_anti_armor weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_ACID_P"
+	size = point_defence
+	type = point_defence
+	icon = "GFX_ew_acid_p"
+	icon_frame = 1
+	prerequisites = { "tech_ew_acid_1" }
+	component_set = "EW_ACID_P"
+	projectile_gfx = "ew_acid_pd"
+	power = -3.00
+	damage = { min = 8.00 max = 16.00 }
+	windup = { min = 0.00 max = 0.00 }
+	total_fire_time = 5.00
+	range = 30.00
+	accuracy = 0.75
+	tracking = 0.65
+	hull_damage = 1.05
+	shield_damage = 0.70
+	armor_damage = 1.55
+	tags = { weapon_type_point_defense weapon_type_energy }
+	resources = { category = ship_components cost = { alloys = 30 } }
+	point_defence_targets = { "missile" "strike_craft" }
+	ai_tags = { weapon_role_point_defense screen }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+strike_craft_component_template = {
+	key = "EW_ACID_H"
+	size = LARGE
+	entity = "bomber_entity"
+	weapon_type = point_defence
+	projectile_gfx = "ew_acid_strike_craft"
+	icon = "GFX_ew_acid_h"
+	icon_frame = 1
+	prerequisites = { "tech_ew_acid_2" }
+	component_set = "EW_ACID_H"
+	power = -10
+	resources = { category = ship_components cost = { alloys = 100 } }
+	count = 8
+	regeneration_per_day = 0.25
+	launch_time = 2.0
+	damage = { min = 20 max = 44 }
+	cooldown = 2.5
+	range = 10
+	engagement_range = 100
+	accuracy = 0.8
+	tracking = 0.5
+	health = 10
+	armor = 10
+	shield = 10
+	evasion = 0.55
+	speed = 500
+	rotation_speed = 0.8
+	acceleration = 1
+	shield_damage = 0.7
+	armor_damage = 1.55
+	hull_damage = 1.05
+	ship_behavior = "fighters_behavior"
+	tags = { weapon_type_strike_craft }
+	ai_tags = { weapon_role_anti_armor weapon_role_artillery carrier }
+}
+
+weapon_component_template = {
+	key = "EW_ACID_T"
+	size = titanic
+	type = instant
+	icon = "GFX_ew_acid_t"
+	icon_frame = 1
+	prerequisites = { "tech_ew_acid_3" }
+	component_set = "EW_ACID_T"
+	projectile_gfx = "ew_acid_titan"
+	power = -75.00
+	damage = { min = 5000.00 max = 10000.00 }
+	windup = { min = 30.00 max = 120.00 }
+	total_fire_time = 180.00
+	range = 250.00
+	accuracy = 0.90
+	tracking = 0.00
+	hull_damage = 1.05
+	shield_damage = 0.70
+	armor_damage = 1.55
+	tags = { weapon_type_energy t_slot }
+	resources = { category = ship_components cost = { alloys = 500 } }
+	ai_tags = { weapon_role_anti_armor weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+utility_component_template = {
+	key = "EW_ACID_WARD"
+	size = aux
+	icon = "GFX_ew_acid_defense"
+	icon_frame = 1
+	prerequisites = { "tech_ew_acid_2" }
+	component_set = "EW_ACID_WARD"
+	power = -5
+	resources = { category = ship_components cost = { alloys = 60 } }
+	modifier = { ship_armor_mult = 0.20 ship_shield_mult = 0.20 ship_hull_mult = 0.15 ship_armor_add = 250 ship_shield_add = 250 }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_CHAOS_S"
+	size = small
+	type = instant
+	icon = "GFX_ew_chaos_s"
+	icon_frame = 1
+	prerequisites = { "tech_ew_chaos_1" }
+	component_set = "EW_CHAOS_WEAPONS"
+	projectile_gfx = "ew_chaos_laser_s"
+	power = -2.00
+	damage = { min = 16.00 max = 42.00 }
+	windup = { min = 5.00 max = 20.00 }
+	total_fire_time = 30.00
+	range = 40.00
+	accuracy = 0.82
+	tracking = 0.45
+	hull_damage = 1.15
+	shield_damage = 1.15
+	armor_damage = 1.15
+	tags = { weapon_type_energy s_slot }
+	resources = { category = ship_components cost = { alloys = 20 } }
+	ai_tags = { weapon_role_artillery weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_CHAOS_M"
+	size = medium
+	type = instant
+	icon = "GFX_ew_chaos_m"
+	icon_frame = 1
+	prerequisites = { "tech_ew_chaos_1" }
+	component_set = "EW_CHAOS_WEAPONS"
+	projectile_gfx = "ew_chaos_laser_m"
+	power = -5.00
+	damage = { min = 40.00 max = 106.00 }
+	windup = { min = 6.00 max = 24.00 }
+	total_fire_time = 35.00
+	range = 60.00
+	accuracy = 0.82
+	tracking = 0.25
+	hull_damage = 1.15
+	shield_damage = 1.15
+	armor_damage = 1.15
+	tags = { weapon_type_energy m_slot }
+	resources = { category = ship_components cost = { alloys = 45 } }
+	ai_tags = { weapon_role_artillery weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_CHAOS_L"
+	size = large
+	type = instant
+	icon = "GFX_ew_chaos_l"
+	icon_frame = 1
+	prerequisites = { "tech_ew_chaos_1" }
+	component_set = "EW_CHAOS_WEAPONS"
+	projectile_gfx = "ew_chaos_laser_l"
+	power = -10.00
+	damage = { min = 96.00 max = 252.00 }
+	windup = { min = 7.00 max = 27.00 }
+	total_fire_time = 40.00
+	range = 80.00
+	accuracy = 0.82
+	tracking = 0.10
+	hull_damage = 1.15
+	shield_damage = 1.15
+	armor_damage = 1.15
+	tags = { weapon_type_energy l_slot }
+	resources = { category = ship_components cost = { alloys = 90 } }
+	ai_tags = { weapon_role_artillery weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_CHAOS_X"
+	size = extra_large
+	type = instant
+	icon = "GFX_ew_chaos_x"
+	icon_frame = 1
+	prerequisites = { "tech_ew_chaos_3" }
+	component_set = "EW_CHAOS_X"
+	projectile_gfx = "ew_chaos_lance"
+	power = -35.00
+	damage = { min = 1200.00 max = 3000.00 }
+	windup = { min = 12.00 max = 47.00 }
+	total_fire_time = 70.00
+	range = 150.00
+	accuracy = 0.85
+	tracking = 0.00
+	hull_damage = 1.15
+	shield_damage = 1.15
+	armor_damage = 1.15
+	tags = { weapon_type_energy x_slot }
+	resources = { category = ship_components cost = { alloys = 250 } }
+	ai_tags = { weapon_role_artillery weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_CHAOS_G"
+	size = torpedo
+	type = instant
+	firing_arc = 25.0
+	min_range = 45.0
+	icon = "GFX_ew_chaos_g"
+	icon_frame = 1
+	prerequisites = { "tech_ew_chaos_2" }
+	component_set = "EW_CHAOS_G"
+	projectile_gfx = "ew_chaos_torpedo"
+	power = -8.00
+	damage = { min = 200.00 max = 300.00 }
+	windup = { min = 25.00 max = 100.00 }
+	total_fire_time = 150.00
+	range = 120.00
+	accuracy = 0.90
+	tracking = 0.15
+	hull_damage = 1.15
+	shield_damage = 1.15
+	armor_damage = 1.15
+	tags = { weapon_type_energy g_slot }
+	resources = { category = ship_components cost = { alloys = 70 } }
+	ai_tags = { weapon_role_artillery weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+weapon_component_template = {
+	key = "EW_CHAOS_P"
+	size = point_defence
+	type = point_defence
+	icon = "GFX_ew_chaos_p"
+	icon_frame = 1
+	prerequisites = { "tech_ew_chaos_1" }
+	component_set = "EW_CHAOS_P"
+	projectile_gfx = "ew_chaos_pd"
+	power = -3.00
+	damage = { min = 8.00 max = 16.00 }
+	windup = { min = 0.00 max = 0.00 }
+	total_fire_time = 5.00
+	range = 30.00
+	accuracy = 0.75
+	tracking = 0.65
+	hull_damage = 1.15
+	shield_damage = 1.15
+	armor_damage = 1.15
+	tags = { weapon_type_point_defense weapon_type_energy }
+	resources = { category = ship_components cost = { alloys = 30 } }
+	point_defence_targets = { "missile" "strike_craft" }
+	ai_tags = { weapon_role_point_defense screen }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+strike_craft_component_template = {
+	key = "EW_CHAOS_H"
+	size = LARGE
+	entity = "bomber_entity"
+	weapon_type = point_defence
+	projectile_gfx = "ew_chaos_strike_craft"
+	icon = "GFX_ew_chaos_h"
+	icon_frame = 1
+	prerequisites = { "tech_ew_chaos_2" }
+	component_set = "EW_CHAOS_H"
+	power = -10
+	resources = { category = ship_components cost = { alloys = 100 } }
+	count = 8
+	regeneration_per_day = 0.25
+	launch_time = 2.0
+	damage = { min = 20 max = 44 }
+	cooldown = 2.5
+	range = 10
+	engagement_range = 100
+	accuracy = 0.8
+	tracking = 0.5
+	health = 10
+	armor = 10
+	shield = 10
+	evasion = 0.55
+	speed = 500
+	rotation_speed = 0.8
+	acceleration = 1
+	shield_damage = 1.15
+	armor_damage = 1.15
+	hull_damage = 1.15
+	ship_behavior = "fighters_behavior"
+	tags = { weapon_type_strike_craft }
+	ai_tags = { weapon_role_artillery carrier }
+}
+
+weapon_component_template = {
+	key = "EW_CHAOS_T"
+	size = titanic
+	type = instant
+	icon = "GFX_ew_chaos_t"
+	icon_frame = 1
+	prerequisites = { "tech_ew_chaos_3" }
+	component_set = "EW_CHAOS_T"
+	projectile_gfx = "ew_chaos_titan"
+	power = -75.00
+	damage = { min = 5000.00 max = 10000.00 }
+	windup = { min = 30.00 max = 120.00 }
+	total_fire_time = 180.00
+	range = 250.00
+	accuracy = 0.90
+	tracking = 0.00
+	hull_damage = 1.15
+	shield_damage = 1.15
+	armor_damage = 1.15
+	tags = { weapon_type_energy t_slot }
+	resources = { category = ship_components cost = { alloys = 500 } }
+	ai_tags = { weapon_role_artillery weapon_role_artillery }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+
+utility_component_template = {
+	key = "EW_CHAOS_WARD"
+	size = aux
+	icon = "GFX_ew_chaos_defense"
+	icon_frame = 1
+	prerequisites = { "tech_ew_chaos_2" }
+	component_set = "EW_CHAOS_WARD"
+	power = -5
+	resources = { category = ship_components cost = { alloys = 60 } }
+	modifier = { ship_armor_mult = 0.20 ship_shield_mult = 0.20 ship_hull_mult = 0.15 ship_armor_add = 250 ship_shield_add = 250 }
+	ai_weight = {
+		weight = 0
+		modifier = { factor = 0 is_ai = yes }
+	}
+}
+

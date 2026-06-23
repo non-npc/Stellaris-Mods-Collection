@@ -1,0 +1,94 @@
+l_russian:
+
+ tech_fateweaving:0 "Плетение судьбы"
+ tech_fateweaving_desc:0 "Изучая архитектуру самой вероятности, наша цивилизация может научиться отмечать миры для невозможных исходов. Судьбу нельзя контролировать, но её можно пригласить."
+ tech_fateweaving_effect:0 "§HОткрывает функцию:§! Призвать судьбу на любой колонии. Отмеченные миры получат случайное благословение или катастрофу в течение от 30 до 90 дней."
+
+ fw_invoke_fate_button:0 "Призвать судьбу"
+ fw_deciding_fate_button:0 "Судьба решается..."
+ fw_fate_decided_button:0 "Судьба решена"
+
+ fw_invoke_fate_button_tooltip:0 "Призвать судьбу на этом мире и позволить року выбрать благословение или проклятие."
+ fw_fate_decided_button_tooltip:0 "Судьба для этого мира уже решена. Исход остаётся в силе, пока не истечёт срок."
+
+ fw.10.name:0 "Плетение судьбы"
+ fw.10.desc:0 "§Y[event_target:fw_target_colony.GetName]§! выбрана для плетения судьбы. Привести ли её судьбу в движение?"
+ fw.10.a:0 "Призвать судьбу"
+ fw.10.b:0 "Отмена"
+
+ fw.101.name:0 "$fw_fate_bountiful_harvest$"
+ fw.101.desc:0 "Судьба благословила §Y[event_target:fw_target_colony.GetName]§! изобилием и обновлённой гражданской уверенностью."
+
+ fw.102.name:0 "$fw_fate_golden_alignment$"
+ fw.102.desc:0 "Судьба направила §Y[event_target:fw_target_colony.GetName]§! к гармонии, порядку и исключительной стабильности."
+
+ fw.103.name:0 "$fw_fate_growth_surge$"
+ fw.103.desc:0 "Судьба избрала для §Y[event_target:fw_target_colony.GetName]§! обновление, миграцию, оптимизм и демографический импульс."
+
+ fw.104.name:0 "$fw_fate_serene_destiny$"
+ fw.104.desc:0 "Судьба смягчила тяготы на §Y[event_target:fw_target_colony.GetName]§! и принесла сезон спокойного процветания."
+
+ fw.105.name:0 "$fw_fate_scholars_dream$"
+ fw.105.desc:0 "Судьба пробудила любознательность и научный импульс на §Y[event_target:fw_target_colony.GetName]§!."
+
+ fw.201.name:0 "$fw_fate_shattered_luck$"
+ fw.201.desc:0 "Судьба обернулась против §Y[event_target:fw_target_colony.GetName]§!, рассеяв удачу и уверенность."
+
+ fw.202.name:0 "$fw_fate_ruined_machines$"
+ fw.202.desc:0 "Судьба подорвала промышленность и инженерное понимание на §Y[event_target:fw_target_colony.GetName]§!."
+
+ fw.203.name:0 "$fw_fate_hunger_shadow$"
+ fw.203.desc:0 "Судьба накрыла §Y[event_target:fw_target_colony.GetName]§! мраком нехватки и гибнущих урожаев."
+
+ fw.204.name:0 "$fw_fate_madness_weather$"
+ fw.204.desc:0 "Судьба нарушила повседневную жизнь на §Y[event_target:fw_target_colony.GetName]§! капризными условиями и ослабевшим моральным духом."
+
+ fw.205.name:0 "$fw_fate_cursed_silence$"
+ fw.205.desc:0 "Судьба заглушила единство и коллективную цель на §Y[event_target:fw_target_colony.GetName]§!."
+
+ fw_fate_pending_tooltip:0 "Судьба решается...\n\nБудущее этого мира притягивается невидимыми нитями. Окончательный исход ещё не проявился."
+
+ fw_fate_bountiful_harvest_tooltip:0 "§H$fw_fate_bountiful_harvest$§!\n\nСудьба благословила этот мир изобилием и обновлённой гражданской уверенностью.\n\nДлительность: 5 лет\nЭффекты: +10% пищи с должностей, +5 стабильности"
+ fw_fate_golden_alignment_tooltip:0 "§H$fw_fate_golden_alignment$§!\n\nСудьба направила этот мир к гармонии и исключительной стабильности.\n\nДлительность: 5 лет\nЭффекты: +10 стабильности"
+ fw_fate_growth_surge_tooltip:0 "§H$fw_fate_growth_surge$§!\n\nСудьба избрала обновление, миграцию, оптимизм и демографический импульс.\n\nДлительность: 5 лет\nЭффекты: +5 стабильности"
+ fw_fate_serene_destiny_tooltip:0 "§H$fw_fate_serene_destiny$§!\n\nСудьба смягчила тяготы и принесла сезон спокойного процветания.\n\nДлительность: 5 лет\nЭффекты: +10% удобств, +5 стабильности"
+ fw_fate_scholars_dream_tooltip:0 "§H$fw_fate_scholars_dream$§!\n\nСудьба пробудила любознательность и научный импульс.\n\nДлительность: 5 лет\nЭффекты: +10% производительности исследователей, +5 стабильности"
+
+ fw_fate_shattered_luck_tooltip:0 "§H$fw_fate_shattered_luck$§!\n\nСудьба обернулась против этого мира, рассеяв удачу и уверенность.\n\nДлительность: 5 лет\nЭффекты: -5 стабильности"
+ fw_fate_ruined_machines_tooltip:0 "§H$fw_fate_ruined_machines$§!\n\nСудьба подорвала промышленность и инженерное понимание.\n\nДлительность: 5 лет\nЭффекты: -10% инженерных исследований с должностей, -5 стабильности"
+ fw_fate_hunger_shadow_tooltip:0 "§H$fw_fate_hunger_shadow$§!\n\nСудьба накрыла мраком нехватки и гибнущих урожаев.\n\nДлительность: 5 лет\nЭффекты: -10% пищи с должностей, -5 стабильности"
+ fw_fate_madness_weather_tooltip:0 "§H$fw_fate_madness_weather$§!\n\nСудьба нарушила повседневную жизнь капризными условиями и ослабевшим моральным духом.\n\nДлительность: 5 лет\nЭффекты: -10% удобств, -5 стабильности"
+ fw_fate_cursed_silence_tooltip:0 "§H$fw_fate_cursed_silence$§!\n\nСудьба заглушила единство и коллективную цель.\n\nДлительность: 5 лет\nЭффекты: -10% единства, -5 стабильности"
+
+ fw_fate_pending_status_text:0 "§HСудьба решается§!\nИсход проявится через 30–90 дней."
+ fw_fate_bountiful_harvest_status_text:0 "§H$fw_fate_bountiful_harvest$§!\n+10% пищи, +5 стабильности\n§YОсталось [This.fw_fate_days_remaining] дн.§!"
+ fw_fate_golden_alignment_status_text:0 "§H$fw_fate_golden_alignment$§!\n+10 стабильности\n§YОсталось [This.fw_fate_days_remaining] дн.§!"
+ fw_fate_growth_surge_status_text:0 "§H$fw_fate_growth_surge$§!\n+5 стабильности\n§YОсталось [This.fw_fate_days_remaining] дн.§!"
+ fw_fate_serene_destiny_status_text:0 "§H$fw_fate_serene_destiny$§!\n+10% удобств, +5 стабильности\n§YОсталось [This.fw_fate_days_remaining] дн.§!"
+ fw_fate_scholars_dream_status_text:0 "§H$fw_fate_scholars_dream$§!\n+10% исследователей, +5 стабильности\n§YОсталось [This.fw_fate_days_remaining] дн.§!"
+ fw_fate_shattered_luck_status_text:0 "§H$fw_fate_shattered_luck$§!\n-5 стабильности\n§YОсталось [This.fw_fate_days_remaining] дн.§!"
+ fw_fate_ruined_machines_status_text:0 "§H$fw_fate_ruined_machines$§!\n-10% инж. исследований, -5 стабильности\n§YОсталось [This.fw_fate_days_remaining] дн.§!"
+ fw_fate_hunger_shadow_status_text:0 "§H$fw_fate_hunger_shadow$§!\n-10% пищи, -5 стабильности\n§YОсталось [This.fw_fate_days_remaining] дн.§!"
+ fw_fate_madness_weather_status_text:0 "§H$fw_fate_madness_weather$§!\n-10% удобств, -5 стабильности\n§YОсталось [This.fw_fate_days_remaining] дн.§!"
+ fw_fate_cursed_silence_status_text:0 "§H$fw_fate_cursed_silence$§!\n-10% единства, -5 стабильности\n§YОсталось [This.fw_fate_days_remaining] дн.§!"
+
+ fw_fate_growth_surge:0 "Волна роста"
+ fw_fate_growth_surge_desc:0 "Судьба избрала обновление, миграцию, оптимизм и демографический импульс."
+ fw_fate_bountiful_harvest:0 "Щедрый урожай"
+ fw_fate_bountiful_harvest_desc:0 "Судьба благословила этот мир изобилием и обновлённой гражданской уверенностью."
+ fw_fate_golden_alignment:0 "Золотое согласие"
+ fw_fate_golden_alignment_desc:0 "Судьба направила этот мир к гармонии и исключительной стабильности."
+ fw_fate_serene_destiny:0 "Безмятежная судьба"
+ fw_fate_serene_destiny_desc:0 "Судьба смягчила тяготы и принесла сезон спокойного процветания."
+ fw_fate_scholars_dream:0 "Сон учёного"
+ fw_fate_scholars_dream_desc:0 "Судьба пробудила любознательность и научный импульс."
+ fw_fate_shattered_luck:0 "Разбитая удача"
+ fw_fate_shattered_luck_desc:0 "Судьба обернулась против этого мира, рассеяв удачу и уверенность."
+ fw_fate_ruined_machines:0 "Разрушенные машины"
+ fw_fate_ruined_machines_desc:0 "Судьба подорвала промышленность и инженерное понимание."
+ fw_fate_hunger_shadow:0 "Тень голода"
+ fw_fate_hunger_shadow_desc:0 "Судьба накрыла мраком нехватки и гибнущих урожаев."
+ fw_fate_madness_weather:0 "Безумная погода"
+ fw_fate_madness_weather_desc:0 "Судьба нарушила повседневную жизнь капризными условиями и ослабевшим моральным духом."
+ fw_fate_cursed_silence:0 "Проклятое молчание"
+ fw_fate_cursed_silence_desc:0 "Судьба заглушила единство и коллективную цель."

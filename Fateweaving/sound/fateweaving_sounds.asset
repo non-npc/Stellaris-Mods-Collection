@@ -1,0 +1,37 @@
+category = {
+    name = "Effects"
+    soundeffects = {
+        fw_markcolony
+        fw_outcome
+    }
+}
+
+sound = {
+    name = "fw_markcolony"
+    file = "event/fw_markcolony.wav"
+    volume = 1.00
+}
+
+sound = {
+    name = "fw_outcome"
+    file = "event/fw_outcome.wav"
+    volume = 1.00
+}
+
+soundeffect = {
+    name = fw_markcolony
+    sounds = {
+        sound = fw_markcolony
+    }
+    max_audible = 1
+    max_audible_behaviour = fail
+}
+
+soundeffect = {
+    name = fw_outcome
+    sounds = {
+        sound = fw_outcome
+    }
+    max_audible = 1
+    max_audible_behaviour = fail
+}

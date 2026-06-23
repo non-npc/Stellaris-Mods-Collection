@@ -1,0 +1,19 @@
+cc_casino_transaction_pending = {
+	icon = "gfx/interface/icons/planet_modifiers/cc_casino_transaction_pending.dds"
+}
+
+cc_lucky_streak = {
+	pop_happiness = 0.05
+	country_trade_produces_mult = 0.05
+	icon = "gfx/interface/icons/planet_modifiers/cc_casino_lucky_streak.dds"
+}
+
+cc_house_favorite = {
+	planet_jobs_unity_produces_mult = 0.05
+	icon = "gfx/interface/icons/modifiers/mod_job_bureaucrat_produces_mult.dds"
+}
+
+cc_bad_luck = {
+	pop_happiness = -0.03
+	icon = "gfx/interface/icons/planet_modifiers/cc_casino_bad_luck.dds"
+}

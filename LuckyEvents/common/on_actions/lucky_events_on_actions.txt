@@ -1,0 +1,6 @@
+on_monthly_pulse_country = {
+    events = {
+        lucky_events.0
+        lucky_events.1
+    }
+}

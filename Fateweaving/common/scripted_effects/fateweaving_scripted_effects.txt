@@ -1,0 +1,77 @@
+fw_clear_fate_state = {
+	remove_carrier_flag = fw_fate_pending
+	remove_carrier_flag = fw_fate_result_active
+	remove_carrier_flag = fw_fate_bountiful_harvest_active
+	remove_carrier_flag = fw_fate_golden_alignment_active
+	remove_carrier_flag = fw_fate_growth_surge_active
+	remove_carrier_flag = fw_fate_serene_destiny_active
+	remove_carrier_flag = fw_fate_scholars_dream_active
+	remove_carrier_flag = fw_fate_shattered_luck_active
+	remove_carrier_flag = fw_fate_ruined_machines_active
+	remove_carrier_flag = fw_fate_hunger_shadow_active
+	remove_carrier_flag = fw_fate_madness_weather_active
+	remove_carrier_flag = fw_fate_cursed_silence_active
+	remove_carrier_flag = fw_fate_days_tick_active
+	carrier = { clear_variable = fw_fate_days_remaining }
+}
+
+fw_set_fate_outcome_days_remaining = {
+	carrier = {
+		set_variable = {
+			which = fw_fate_days_remaining
+			value = 1800
+		}
+	}
+}
+
+fw_start_fate_days_countdown = {
+	if = {
+		limit = {
+			NOT = { has_carrier_flag = fw_fate_days_tick_active }
+		}
+		set_carrier_flag = fw_fate_days_tick_active
+		colony_event = { id = fw.950 days = 1 }
+	}
+}
+
+fw_tick_fate_days_remaining = {
+	if = {
+		limit = {
+			carrier = {
+				check_variable = {
+					which = fw_fate_days_remaining
+					value > 0
+				}
+			}
+		}
+		carrier = {
+			change_variable = {
+				which = fw_fate_days_remaining
+				value = -1
+			}
+		}
+	}
+	if = {
+		limit = {
+			carrier = {
+				check_variable = {
+					which = fw_fate_days_remaining
+					value <= 0
+				}
+			}
+		}
+		fw_clear_fate_state = yes
+	}
+	else = {
+		if = {
+			limit = {
+				fw_planet_has_fate_result = yes
+			}
+			colony_event = { id = fw.950 days = 1 }
+		}
+		else = {
+			remove_carrier_flag = fw_fate_days_tick_active
+			carrier = { clear_variable = fw_fate_days_remaining }
+		}
+	}
+}

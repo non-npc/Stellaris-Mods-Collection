@@ -1,0 +1,37 @@
+# Temporary planetary elemental protocols.
+# icon + icon_frame display on the planet summary bar after enacting a Protocol decision.
+
+ew_fire_protocol_modifier = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_ew_fire_protocol.dds"
+	icon_frame = 1
+	planet_jobs_alloys_produces_mult = 0.10
+	planet_stability_add = -2
+}
+
+ew_ice_protocol_modifier = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_ew_ice_protocol.dds"
+	icon_frame = 1
+	planet_stability_add = 5
+	logistic_growth_mult = -0.05
+}
+
+ew_lightning_protocol_modifier = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_ew_lightning_protocol.dds"
+	icon_frame = 1
+	planet_jobs_energy_produces_mult = 0.10
+	planet_orbital_bombardment_damage = -0.10
+}
+
+ew_acid_protocol_modifier = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_ew_acid_protocol.dds"
+	icon_frame = 1
+	planet_jobs_engineering_research_produces_mult = 0.10
+	planet_crime_add = -5
+}
+
+ew_chaos_protocol_modifier = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_ew_chaos_protocol.dds"
+	icon_frame = 1
+	planet_jobs_unity_produces_mult = 0.15
+	planet_stability_add = -5
+}

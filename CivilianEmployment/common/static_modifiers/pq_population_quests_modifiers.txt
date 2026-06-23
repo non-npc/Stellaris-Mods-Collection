@@ -1,0 +1,20 @@
+pq_modifier_adventure_guild = {
+    icon = "gfx/interface/icons/planet_modifiers/pm_medieval_alien_civilization.dds"
+    icon_frame = 1
+
+    job_pq_job_adventurer_add = 999
+}
+
+pq_modifier_virtual_forces = {
+    icon = "gfx/interface/icons/planet_modifiers/pm_martial_law_hive.dds"
+    icon_frame = 1
+
+    job_pq_job_virtual_soldier_add = 999
+}
+
+pq_modifier_free_thinkers = {
+    icon = "gfx/interface/icons/planet_modifiers/pm_hyper_relays.dds"
+    icon_frame = 1
+
+    job_pq_job_free_thinker_add = 999
+}

@@ -1,0 +1,67 @@
+defined_text = {
+	name = GetCcCasinoWagerResource
+	text = {
+		trigger = { has_country_flag = cc_wager_energy }
+		localization_key = cc_resource_energy
+	}
+	text = {
+		trigger = { has_country_flag = cc_wager_minerals }
+		localization_key = cc_resource_minerals
+	}
+	text = {
+		trigger = { has_country_flag = cc_wager_alloys }
+		localization_key = cc_resource_alloys
+	}
+	text = {
+		trigger = { has_country_flag = cc_wager_unity }
+		localization_key = cc_resource_unity
+	}
+	text = {
+		trigger = { has_country_flag = cc_wager_consumer_goods }
+		localization_key = cc_resource_consumer_goods
+	}
+	text = {
+		trigger = { has_country_flag = cc_wager_food }
+		localization_key = cc_resource_food
+	}
+}
+
+defined_text = {
+	name = GetCcCasinoWagerName
+	text = {
+		trigger = { check_variable = { which = cc_wager_id value = 1 } }
+		localization_key = cc.wager_name_low_slots
+	}
+	text = {
+		trigger = { check_variable = { which = cc_wager_id value = 2 } }
+		localization_key = cc.wager_name_roulette
+	}
+	text = {
+		trigger = { check_variable = { which = cc_wager_id value = 3 } }
+		localization_key = cc.wager_name_mineral_dice
+	}
+	text = {
+		trigger = { check_variable = { which = cc_wager_id value = 4 } }
+		localization_key = cc.wager_name_alloy_wager
+	}
+	text = {
+		trigger = { check_variable = { which = cc_wager_id value = 5 } }
+		localization_key = cc.wager_name_unity_table
+	}
+	text = {
+		trigger = { check_variable = { which = cc_wager_id value = 6 } }
+		localization_key = cc.wager_name_consumer_luxury
+	}
+	text = {
+		trigger = { check_variable = { which = cc_wager_id value = 7 } }
+		localization_key = cc.wager_name_lottery
+	}
+	text = {
+		trigger = { check_variable = { which = cc_wager_id value = 8 } }
+		localization_key = cc.wager_name_food_futures
+	}
+	text = {
+		trigger = { check_variable = { which = cc_wager_id value = 9 } }
+		localization_key = cc.wager_name_cosmic_jackpot
+	}
+}

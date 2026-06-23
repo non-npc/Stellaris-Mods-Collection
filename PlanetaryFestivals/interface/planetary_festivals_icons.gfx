@@ -1,0 +1,26 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_decision_pf_unity_festival"
+        texturefile = "gfx/interface/icons/decisions/decision_pf_unity_festival.dds"
+    }
+    spriteType = {
+        name = "GFX_decision_pf_prosperity_festival"
+        texturefile = "gfx/interface/icons/decisions/decision_pf_prosperity_festival.dds"
+    }
+    spriteType = {
+        name = "GFX_decision_pf_remembrance_festival"
+        texturefile = "gfx/interface/icons/decisions/decision_pf_remembrance_festival.dds"
+    }
+    spriteType = {
+        name = "GFX_decision_pf_science_festival"
+        texturefile = "gfx/interface/icons/decisions/decision_pf_science_festival.dds"
+    }
+    spriteType = {
+        name = "GFX_decision_pf_cancel_festival"
+        texturefile = "gfx/interface/icons/decisions/decision_pf_cancel_festival.dds"
+    }
+    spriteType = {
+        name = "GFX_tech_pf_cultural_festival_coordination"
+        texturefile = "gfx/interface/icons/technologies/tech_pf_cultural_festival_coordination.dds"
+    }
+}

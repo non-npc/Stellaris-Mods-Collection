@@ -1,0 +1,38 @@
+fw_show_fateweaving_ui = {
+	from = {
+		has_technology = tech_fateweaving
+	}
+	colony? = {
+		is_colony = yes
+	}
+}
+
+fw_planet_has_fate_pending = {
+	colony? = {
+		has_carrier_flag = fw_fate_pending
+	}
+}
+
+fw_planet_has_fate_result = {
+	colony? = {
+		has_carrier_flag = fw_fate_result_active
+	}
+}
+
+fw_planet_has_fate_countdown = {
+	colony? = {
+		has_carrier_flag = fw_fate_result_active
+		carrier = {
+			check_variable = {
+				which = fw_fate_days_remaining
+				value > 0
+			}
+		}
+	}
+}
+
+fw_planet_can_invoke_fate = {
+	fw_show_fateweaving_ui = yes
+	NOT = { fw_planet_has_fate_pending = yes }
+	NOT = { fw_planet_has_fate_result = yes }
+}

@@ -1,0 +1,1967 @@
+namespace = lucky_events
+
+country_event = {
+    id = lucky_events.0
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = lucky_events_startup_delay_initialized }
+    }
+
+    immediate = {
+        set_country_flag = lucky_events_startup_delay_initialized
+
+        random_list = {
+            1 = { set_timed_country_flag = { flag = lucky_events_startup_block days = 635 } }
+            1 = { set_timed_country_flag = { flag = lucky_events_startup_block days = 815 } }
+        }
+    }
+}
+
+country_event = {
+    id = lucky_events.1
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = lucky_events_startup_block }
+        NOT = { has_country_flag = lucky_events_recent_lucky_event }
+    }
+
+    immediate = {
+        random_list = {
+            1 = { set_timed_country_flag = { flag = lucky_events_recent_lucky_event days = 1288 } }
+            1 = { set_timed_country_flag = { flag = lucky_events_recent_lucky_event days = 2588 } }
+        }
+
+        random_list = {
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_2 } } country_event = { id = lucky_events.2 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_3 } } country_event = { id = lucky_events.3 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_4 } } country_event = { id = lucky_events.4 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_5 } } country_event = { id = lucky_events.5 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_6 } } country_event = { id = lucky_events.6 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_7 } } country_event = { id = lucky_events.7 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_8 } } country_event = { id = lucky_events.8 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_9 } } country_event = { id = lucky_events.9 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_10 } } country_event = { id = lucky_events.10 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_11 } } country_event = { id = lucky_events.11 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_12 } } country_event = { id = lucky_events.12 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_13 } } country_event = { id = lucky_events.13 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_14 } } country_event = { id = lucky_events.14 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_15 } } country_event = { id = lucky_events.15 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_16 } } country_event = { id = lucky_events.16 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_17 } } country_event = { id = lucky_events.17 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_18 } } country_event = { id = lucky_events.18 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_19 } } country_event = { id = lucky_events.19 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_20 } } country_event = { id = lucky_events.20 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_21 } } country_event = { id = lucky_events.21 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_22 } } country_event = { id = lucky_events.22 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_23 } } country_event = { id = lucky_events.23 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_24 } } country_event = { id = lucky_events.24 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_25 } } country_event = { id = lucky_events.25 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_26 } } country_event = { id = lucky_events.26 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_27 } } country_event = { id = lucky_events.27 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_28 } } country_event = { id = lucky_events.28 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_29 } } country_event = { id = lucky_events.29 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_30 } } country_event = { id = lucky_events.30 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_31 } } country_event = { id = lucky_events.31 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_32 } } country_event = { id = lucky_events.32 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_33 } } country_event = { id = lucky_events.33 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_34 } } country_event = { id = lucky_events.34 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_35 } } country_event = { id = lucky_events.35 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_36 } } country_event = { id = lucky_events.36 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_37 } } country_event = { id = lucky_events.37 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_38 } } country_event = { id = lucky_events.38 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_39 } } country_event = { id = lucky_events.39 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_40 } } country_event = { id = lucky_events.40 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_41 } } country_event = { id = lucky_events.41 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_42 } } country_event = { id = lucky_events.42 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_43 } } country_event = { id = lucky_events.43 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_44 } } country_event = { id = lucky_events.44 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_45 } } country_event = { id = lucky_events.45 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_46 } } country_event = { id = lucky_events.46 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_47 } } country_event = { id = lucky_events.47 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_48 } } country_event = { id = lucky_events.48 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_49 } } country_event = { id = lucky_events.49 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_50 } } country_event = { id = lucky_events.50 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_51 } } country_event = { id = lucky_events.51 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_52 } } country_event = { id = lucky_events.52 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_53 } } country_event = { id = lucky_events.53 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_54 } } country_event = { id = lucky_events.54 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_55 } } country_event = { id = lucky_events.55 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_56 } } country_event = { id = lucky_events.56 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_57 } } country_event = { id = lucky_events.57 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_58 } } country_event = { id = lucky_events.58 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_59 } } country_event = { id = lucky_events.59 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_60 } } country_event = { id = lucky_events.60 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_61 } } country_event = { id = lucky_events.61 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_62 } } country_event = { id = lucky_events.62 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_63 } } country_event = { id = lucky_events.63 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_64 } } country_event = { id = lucky_events.64 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_65 } } country_event = { id = lucky_events.65 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_66 } } country_event = { id = lucky_events.66 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_67 } } country_event = { id = lucky_events.67 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_68 } } country_event = { id = lucky_events.68 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_69 } } country_event = { id = lucky_events.69 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_70 } } country_event = { id = lucky_events.70 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_71 } } country_event = { id = lucky_events.71 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_72 } } country_event = { id = lucky_events.72 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_73 } } country_event = { id = lucky_events.73 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_74 } } country_event = { id = lucky_events.74 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_75 } } country_event = { id = lucky_events.75 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_76 } } country_event = { id = lucky_events.76 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_77 } } country_event = { id = lucky_events.77 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_78 } } country_event = { id = lucky_events.78 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_79 } } country_event = { id = lucky_events.79 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_80 } } country_event = { id = lucky_events.80 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_81 } } country_event = { id = lucky_events.81 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_82 } } country_event = { id = lucky_events.82 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_83 } } country_event = { id = lucky_events.83 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_84 } } country_event = { id = lucky_events.84 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_85 } } country_event = { id = lucky_events.85 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_86 } } country_event = { id = lucky_events.86 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_87 } } country_event = { id = lucky_events.87 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_88 } } country_event = { id = lucky_events.88 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_89 } } country_event = { id = lucky_events.89 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_90 } } country_event = { id = lucky_events.90 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_91 } } country_event = { id = lucky_events.91 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_92 } } country_event = { id = lucky_events.92 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_93 } } country_event = { id = lucky_events.93 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_94 } } country_event = { id = lucky_events.94 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_95 } } country_event = { id = lucky_events.95 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_96 } } country_event = { id = lucky_events.96 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_97 } } country_event = { id = lucky_events.97 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_98 } } country_event = { id = lucky_events.98 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_99 } } country_event = { id = lucky_events.99 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_100 } } country_event = { id = lucky_events.100 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_101 } } country_event = { id = lucky_events.101 } } }
+        }
+    }
+}
+
+
+
+
+country_event = {
+	id = lucky_events.2
+	title = lucky_events.2.name
+	desc = lucky_events.2.desc
+	picture = GFX_lucky_evt_01
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_2 } }
+	immediate = { set_country_flag = lucky_events_seen_2 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			energy = 267
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.3
+	title = lucky_events.3.name
+	desc = lucky_events.3.desc
+	picture = GFX_lucky_evt_02
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_3 } }
+	immediate = { set_country_flag = lucky_events_seen_3 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			energy = 378
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.4
+	title = lucky_events.4.name
+	desc = lucky_events.4.desc
+	picture = GFX_lucky_evt_03
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_4 } }
+	immediate = { set_country_flag = lucky_events_seen_4 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			energy = 378
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.5
+	title = lucky_events.5.name
+	desc = lucky_events.5.desc
+	picture = GFX_lucky_evt_04
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_5 } }
+	immediate = { set_country_flag = lucky_events_seen_5 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			energy = 338
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.6
+	title = lucky_events.6.name
+	desc = lucky_events.6.desc
+	picture = GFX_lucky_evt_05
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_6 } }
+	immediate = { set_country_flag = lucky_events_seen_6 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			energy = 444
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.7
+	title = lucky_events.7.name
+	desc = lucky_events.7.desc
+	picture = GFX_lucky_evt_06
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_7 } }
+	immediate = { set_country_flag = lucky_events_seen_7 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			energy = 288
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.8
+	title = lucky_events.8.name
+	desc = lucky_events.8.desc
+	picture = GFX_lucky_evt_07
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_8 } }
+	immediate = { set_country_flag = lucky_events_seen_8 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			energy = 322
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.9
+	title = lucky_events.9.name
+	desc = lucky_events.9.desc
+	picture = GFX_lucky_evt_08
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_9 } }
+	immediate = { set_country_flag = lucky_events_seen_9 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			energy = 425
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.10
+	title = lucky_events.10.name
+	desc = lucky_events.10.desc
+	picture = GFX_lucky_evt_09
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_10 } }
+	immediate = { set_country_flag = lucky_events_seen_10 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			energy = 170
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.11
+	title = lucky_events.11.name
+	desc = lucky_events.11.desc
+	picture = GFX_lucky_evt_10
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_11 } }
+	immediate = { set_country_flag = lucky_events_seen_11 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			energy = 378
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.12
+	title = lucky_events.12.name
+	desc = lucky_events.12.desc
+	picture = GFX_lucky_evt_11
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_12 } }
+	immediate = { set_country_flag = lucky_events_seen_12 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			minerals = 542
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.13
+	title = lucky_events.13.name
+	desc = lucky_events.13.desc
+	picture = GFX_lucky_evt_12
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_13 } }
+	immediate = { set_country_flag = lucky_events_seen_13 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			minerals = 518
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.14
+	title = lucky_events.14.name
+	desc = lucky_events.14.desc
+	picture = GFX_lucky_evt_13
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_14 } }
+	immediate = { set_country_flag = lucky_events_seen_14 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			minerals = 480
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.15
+	title = lucky_events.15.name
+	desc = lucky_events.15.desc
+	picture = GFX_lucky_evt_14
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_15 } }
+	immediate = { set_country_flag = lucky_events_seen_15 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			minerals = 399
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.16
+	title = lucky_events.16.name
+	desc = lucky_events.16.desc
+	picture = GFX_lucky_evt_15
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_16 } }
+	immediate = { set_country_flag = lucky_events_seen_16 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			minerals = 507
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.17
+	title = lucky_events.17.name
+	desc = lucky_events.17.desc
+	picture = GFX_lucky_evt_16
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_17 } }
+	immediate = { set_country_flag = lucky_events_seen_17 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			minerals = 347
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.18
+	title = lucky_events.18.name
+	desc = lucky_events.18.desc
+	picture = GFX_lucky_evt_17
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_18 } }
+	immediate = { set_country_flag = lucky_events_seen_18 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			minerals = 261
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.19
+	title = lucky_events.19.name
+	desc = lucky_events.19.desc
+	picture = GFX_lucky_evt_18
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_19 } }
+	immediate = { set_country_flag = lucky_events_seen_19 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			minerals = 258
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.20
+	title = lucky_events.20.name
+	desc = lucky_events.20.desc
+	picture = GFX_lucky_evt_19
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_20 } }
+	immediate = { set_country_flag = lucky_events_seen_20 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			minerals = 554
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.21
+	title = lucky_events.21.name
+	desc = lucky_events.21.desc
+	picture = GFX_lucky_evt_20
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_21 } }
+	immediate = { set_country_flag = lucky_events_seen_21 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			minerals = 239
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.22
+	title = lucky_events.22.name
+	desc = lucky_events.22.desc
+	picture = GFX_lucky_evt_01
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_22 } }
+	immediate = { set_country_flag = lucky_events_seen_22 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			alloys = 327
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.23
+	title = lucky_events.23.name
+	desc = lucky_events.23.desc
+	picture = GFX_lucky_evt_02
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_23 } }
+	immediate = { set_country_flag = lucky_events_seen_23 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			alloys = 185
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.24
+	title = lucky_events.24.name
+	desc = lucky_events.24.desc
+	picture = GFX_lucky_evt_03
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_24 } }
+	immediate = { set_country_flag = lucky_events_seen_24 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			alloys = 126
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.25
+	title = lucky_events.25.name
+	desc = lucky_events.25.desc
+	picture = GFX_lucky_evt_04
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_25 } }
+	immediate = { set_country_flag = lucky_events_seen_25 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			alloys = 319
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.26
+	title = lucky_events.26.name
+	desc = lucky_events.26.desc
+	picture = GFX_lucky_evt_05
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_26 } }
+	immediate = { set_country_flag = lucky_events_seen_26 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			alloys = 289
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.27
+	title = lucky_events.27.name
+	desc = lucky_events.27.desc
+	picture = GFX_lucky_evt_06
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_27 } }
+	immediate = { set_country_flag = lucky_events_seen_27 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			alloys = 338
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.28
+	title = lucky_events.28.name
+	desc = lucky_events.28.desc
+	picture = GFX_lucky_evt_07
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_28 } }
+	immediate = { set_country_flag = lucky_events_seen_28 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			alloys = 333
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.29
+	title = lucky_events.29.name
+	desc = lucky_events.29.desc
+	picture = GFX_lucky_evt_08
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_29 } }
+	immediate = { set_country_flag = lucky_events_seen_29 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			alloys = 100
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.30
+	title = lucky_events.30.name
+	desc = lucky_events.30.desc
+	picture = GFX_lucky_evt_09
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_30 } }
+	immediate = { set_country_flag = lucky_events_seen_30 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			alloys = 314
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.31
+	title = lucky_events.31.name
+	desc = lucky_events.31.desc
+	picture = GFX_lucky_evt_10
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_31 } }
+	immediate = { set_country_flag = lucky_events_seen_31 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			alloys = 264
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.32
+	title = lucky_events.32.name
+	desc = lucky_events.32.desc
+	picture = GFX_lucky_evt_11
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_32 } }
+	immediate = { set_country_flag = lucky_events_seen_32 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			consumer_goods = 247
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.33
+	title = lucky_events.33.name
+	desc = lucky_events.33.desc
+	picture = GFX_lucky_evt_12
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_33 } }
+	immediate = { set_country_flag = lucky_events_seen_33 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			consumer_goods = 186
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.34
+	title = lucky_events.34.name
+	desc = lucky_events.34.desc
+	picture = GFX_lucky_evt_13
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_34 } }
+	immediate = { set_country_flag = lucky_events_seen_34 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			consumer_goods = 173
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.35
+	title = lucky_events.35.name
+	desc = lucky_events.35.desc
+	picture = GFX_lucky_evt_14
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_35 } }
+	immediate = { set_country_flag = lucky_events_seen_35 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			consumer_goods = 249
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.36
+	title = lucky_events.36.name
+	desc = lucky_events.36.desc
+	picture = GFX_lucky_evt_15
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_36 } }
+	immediate = { set_country_flag = lucky_events_seen_36 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			consumer_goods = 168
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.37
+	title = lucky_events.37.name
+	desc = lucky_events.37.desc
+	picture = GFX_lucky_evt_16
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_37 } }
+	immediate = { set_country_flag = lucky_events_seen_37 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			consumer_goods = 127
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.38
+	title = lucky_events.38.name
+	desc = lucky_events.38.desc
+	picture = GFX_lucky_evt_17
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_38 } }
+	immediate = { set_country_flag = lucky_events_seen_38 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			consumer_goods = 261
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.39
+	title = lucky_events.39.name
+	desc = lucky_events.39.desc
+	picture = GFX_lucky_evt_18
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_39 } }
+	immediate = { set_country_flag = lucky_events_seen_39 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			consumer_goods = 270
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.40
+	title = lucky_events.40.name
+	desc = lucky_events.40.desc
+	picture = GFX_lucky_evt_19
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_40 } }
+	immediate = { set_country_flag = lucky_events_seen_40 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			consumer_goods = 322
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.41
+	title = lucky_events.41.name
+	desc = lucky_events.41.desc
+	picture = GFX_lucky_evt_20
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_41 } }
+	immediate = { set_country_flag = lucky_events_seen_41 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			consumer_goods = 153
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.42
+	title = lucky_events.42.name
+	desc = lucky_events.42.desc
+	picture = GFX_lucky_evt_01
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_42 } }
+	immediate = { set_country_flag = lucky_events_seen_42 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			unity = 309
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.43
+	title = lucky_events.43.name
+	desc = lucky_events.43.desc
+	picture = GFX_lucky_evt_02
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_43 } }
+	immediate = { set_country_flag = lucky_events_seen_43 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			unity = 406
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.44
+	title = lucky_events.44.name
+	desc = lucky_events.44.desc
+	picture = GFX_lucky_evt_03
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_44 } }
+	immediate = { set_country_flag = lucky_events_seen_44 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			unity = 214
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.45
+	title = lucky_events.45.name
+	desc = lucky_events.45.desc
+	picture = GFX_lucky_evt_04
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_45 } }
+	immediate = { set_country_flag = lucky_events_seen_45 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			unity = 362
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.46
+	title = lucky_events.46.name
+	desc = lucky_events.46.desc
+	picture = GFX_lucky_evt_05
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_46 } }
+	immediate = { set_country_flag = lucky_events_seen_46 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			unity = 450
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.47
+	title = lucky_events.47.name
+	desc = lucky_events.47.desc
+	picture = GFX_lucky_evt_06
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_47 } }
+	immediate = { set_country_flag = lucky_events_seen_47 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			unity = 167
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.48
+	title = lucky_events.48.name
+	desc = lucky_events.48.desc
+	picture = GFX_lucky_evt_07
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_48 } }
+	immediate = { set_country_flag = lucky_events_seen_48 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			unity = 328
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.49
+	title = lucky_events.49.name
+	desc = lucky_events.49.desc
+	picture = GFX_lucky_evt_08
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_49 } }
+	immediate = { set_country_flag = lucky_events_seen_49 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			unity = 462
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.50
+	title = lucky_events.50.name
+	desc = lucky_events.50.desc
+	picture = GFX_lucky_evt_09
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_50 } }
+	immediate = { set_country_flag = lucky_events_seen_50 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			unity = 225
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.51
+	title = lucky_events.51.name
+	desc = lucky_events.51.desc
+	picture = GFX_lucky_evt_10
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_51 } }
+	immediate = { set_country_flag = lucky_events_seen_51 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			unity = 445
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.52
+	title = lucky_events.52.name
+	desc = lucky_events.52.desc
+	picture = GFX_lucky_evt_11
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_52 } }
+	immediate = { set_country_flag = lucky_events_seen_52 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			physics_research = 519
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.53
+	title = lucky_events.53.name
+	desc = lucky_events.53.desc
+	picture = GFX_lucky_evt_12
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_53 } }
+	immediate = { set_country_flag = lucky_events_seen_53 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			physics_research = 289
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.54
+	title = lucky_events.54.name
+	desc = lucky_events.54.desc
+	picture = GFX_lucky_evt_13
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_54 } }
+	immediate = { set_country_flag = lucky_events_seen_54 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			physics_research = 529
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.55
+	title = lucky_events.55.name
+	desc = lucky_events.55.desc
+	picture = GFX_lucky_evt_14
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_55 } }
+	immediate = { set_country_flag = lucky_events_seen_55 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			physics_research = 529
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.56
+	title = lucky_events.56.name
+	desc = lucky_events.56.desc
+	picture = GFX_lucky_evt_15
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_56 } }
+	immediate = { set_country_flag = lucky_events_seen_56 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			physics_research = 588
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.57
+	title = lucky_events.57.name
+	desc = lucky_events.57.desc
+	picture = GFX_lucky_evt_16
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_57 } }
+	immediate = { set_country_flag = lucky_events_seen_57 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			physics_research = 390
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.58
+	title = lucky_events.58.name
+	desc = lucky_events.58.desc
+	picture = GFX_lucky_evt_17
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_58 } }
+	immediate = { set_country_flag = lucky_events_seen_58 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			physics_research = 694
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.59
+	title = lucky_events.59.name
+	desc = lucky_events.59.desc
+	picture = GFX_lucky_evt_18
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_59 } }
+	immediate = { set_country_flag = lucky_events_seen_59 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			physics_research = 646
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.60
+	title = lucky_events.60.name
+	desc = lucky_events.60.desc
+	picture = GFX_lucky_evt_19
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_60 } }
+	immediate = { set_country_flag = lucky_events_seen_60 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			physics_research = 603
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.61
+	title = lucky_events.61.name
+	desc = lucky_events.61.desc
+	picture = GFX_lucky_evt_20
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_61 } }
+	immediate = { set_country_flag = lucky_events_seen_61 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			physics_research = 504
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.62
+	title = lucky_events.62.name
+	desc = lucky_events.62.desc
+	picture = GFX_lucky_evt_01
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_62 } }
+	immediate = { set_country_flag = lucky_events_seen_62 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			society_research = 298
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.63
+	title = lucky_events.63.name
+	desc = lucky_events.63.desc
+	picture = GFX_lucky_evt_02
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_63 } }
+	immediate = { set_country_flag = lucky_events_seen_63 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			society_research = 530
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.64
+	title = lucky_events.64.name
+	desc = lucky_events.64.desc
+	picture = GFX_lucky_evt_03
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_64 } }
+	immediate = { set_country_flag = lucky_events_seen_64 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			society_research = 480
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.65
+	title = lucky_events.65.name
+	desc = lucky_events.65.desc
+	picture = GFX_lucky_evt_04
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_65 } }
+	immediate = { set_country_flag = lucky_events_seen_65 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			society_research = 336
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.66
+	title = lucky_events.66.name
+	desc = lucky_events.66.desc
+	picture = GFX_lucky_evt_05
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_66 } }
+	immediate = { set_country_flag = lucky_events_seen_66 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			society_research = 255
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.67
+	title = lucky_events.67.name
+	desc = lucky_events.67.desc
+	picture = GFX_lucky_evt_06
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_67 } }
+	immediate = { set_country_flag = lucky_events_seen_67 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			engineering_research = 474
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.68
+	title = lucky_events.68.name
+	desc = lucky_events.68.desc
+	picture = GFX_lucky_evt_07
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_68 } }
+	immediate = { set_country_flag = lucky_events_seen_68 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			engineering_research = 381
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.69
+	title = lucky_events.69.name
+	desc = lucky_events.69.desc
+	picture = GFX_lucky_evt_08
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_69 } }
+	immediate = { set_country_flag = lucky_events_seen_69 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			engineering_research = 361
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.70
+	title = lucky_events.70.name
+	desc = lucky_events.70.desc
+	picture = GFX_lucky_evt_09
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_70 } }
+	immediate = { set_country_flag = lucky_events_seen_70 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			engineering_research = 587
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.71
+	title = lucky_events.71.name
+	desc = lucky_events.71.desc
+	picture = GFX_lucky_evt_10
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_71 } }
+	immediate = { set_country_flag = lucky_events_seen_71 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			engineering_research = 538
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.72
+	title = lucky_events.72.name
+	desc = lucky_events.72.desc
+	picture = GFX_lucky_evt_11
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_72 } }
+	immediate = { set_country_flag = lucky_events_seen_72 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			volatile_motes = 74
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.73
+	title = lucky_events.73.name
+	desc = lucky_events.73.desc
+	picture = GFX_lucky_evt_12
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_73 } }
+	immediate = { set_country_flag = lucky_events_seen_73 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			exotic_gases = 36
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.74
+	title = lucky_events.74.name
+	desc = lucky_events.74.desc
+	picture = GFX_lucky_evt_13
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_74 } }
+	immediate = { set_country_flag = lucky_events_seen_74 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			rare_crystals = 73
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.75
+	title = lucky_events.75.name
+	desc = lucky_events.75.desc
+	picture = GFX_lucky_evt_14
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_75 } }
+	immediate = { set_country_flag = lucky_events_seen_75 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			volatile_motes = 47
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.76
+	title = lucky_events.76.name
+	desc = lucky_events.76.desc
+	picture = GFX_lucky_evt_15
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_76 } }
+	immediate = { set_country_flag = lucky_events_seen_76 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			exotic_gases = 86
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.77
+	title = lucky_events.77.name
+	desc = lucky_events.77.desc
+	picture = GFX_lucky_evt_16
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_77 } }
+	immediate = { set_country_flag = lucky_events_seen_77 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			rare_crystals = 33
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.78
+	title = lucky_events.78.name
+	desc = lucky_events.78.desc
+	picture = GFX_lucky_evt_17
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_78 } }
+	immediate = { set_country_flag = lucky_events_seen_78 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			volatile_motes = 75
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.79
+	title = lucky_events.79.name
+	desc = lucky_events.79.desc
+	picture = GFX_lucky_evt_18
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_79 } }
+	immediate = { set_country_flag = lucky_events_seen_79 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			exotic_gases = 65
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.80
+	title = lucky_events.80.name
+	desc = lucky_events.80.desc
+	picture = GFX_lucky_evt_19
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_80 } }
+	immediate = { set_country_flag = lucky_events_seen_80 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			rare_crystals = 64
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.81
+	title = lucky_events.81.name
+	desc = lucky_events.81.desc
+	picture = GFX_lucky_evt_20
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_81 } }
+	immediate = { set_country_flag = lucky_events_seen_81 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			volatile_motes = 49
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.82
+	title = lucky_events.82.name
+	desc = lucky_events.82.desc
+	picture = GFX_lucky_evt_01
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_82 } }
+	immediate = { set_country_flag = lucky_events_seen_82 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			energy = 174
+			unity = 144
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.83
+	title = lucky_events.83.name
+	desc = lucky_events.83.desc
+	picture = GFX_lucky_evt_02
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_83 } }
+	immediate = { set_country_flag = lucky_events_seen_83 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			energy = 181
+			unity = 241
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.84
+	title = lucky_events.84.name
+	desc = lucky_events.84.desc
+	picture = GFX_lucky_evt_03
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_84 } }
+	immediate = { set_country_flag = lucky_events_seen_84 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			energy = 363
+			unity = 249
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.85
+	title = lucky_events.85.name
+	desc = lucky_events.85.desc
+	picture = GFX_lucky_evt_04
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_85 } }
+	immediate = { set_country_flag = lucky_events_seen_85 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			energy = 158
+			unity = 101
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.86
+	title = lucky_events.86.name
+	desc = lucky_events.86.desc
+	picture = GFX_lucky_evt_05
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_86 } }
+	immediate = { set_country_flag = lucky_events_seen_86 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			energy = 399
+			unity = 220
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.87
+	title = lucky_events.87.name
+	desc = lucky_events.87.desc
+	picture = GFX_lucky_evt_06
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_87 } }
+	immediate = { set_country_flag = lucky_events_seen_87 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			energy = 300
+			unity = 167
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.88
+	title = lucky_events.88.name
+	desc = lucky_events.88.desc
+	picture = GFX_lucky_evt_07
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_88 } }
+	immediate = { set_country_flag = lucky_events_seen_88 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			energy = 315
+			unity = 168
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.89
+	title = lucky_events.89.name
+	desc = lucky_events.89.desc
+	picture = GFX_lucky_evt_08
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_89 } }
+	immediate = { set_country_flag = lucky_events_seen_89 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			energy = 361
+			unity = 102
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.90
+	title = lucky_events.90.name
+	desc = lucky_events.90.desc
+	picture = GFX_lucky_evt_09
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_90 } }
+	immediate = { set_country_flag = lucky_events_seen_90 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			energy = 193
+			unity = 278
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.91
+	title = lucky_events.91.name
+	desc = lucky_events.91.desc
+	picture = GFX_lucky_evt_10
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_91 } }
+	immediate = { set_country_flag = lucky_events_seen_91 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			energy = 180
+			unity = 264
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.92
+	title = lucky_events.92.name
+	desc = lucky_events.92.desc
+	picture = GFX_lucky_evt_11
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_92 } }
+	immediate = { set_country_flag = lucky_events_seen_92 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			minerals = 454
+			engineering_research = 447
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.93
+	title = lucky_events.93.name
+	desc = lucky_events.93.desc
+	picture = GFX_lucky_evt_12
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_93 } }
+	immediate = { set_country_flag = lucky_events_seen_93 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			minerals = 263
+			engineering_research = 584
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.94
+	title = lucky_events.94.name
+	desc = lucky_events.94.desc
+	picture = GFX_lucky_evt_13
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_94 } }
+	immediate = { set_country_flag = lucky_events_seen_94 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			minerals = 454
+			engineering_research = 457
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.95
+	title = lucky_events.95.name
+	desc = lucky_events.95.desc
+	picture = GFX_lucky_evt_14
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_95 } }
+	immediate = { set_country_flag = lucky_events_seen_95 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			minerals = 416
+			engineering_research = 454
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.96
+	title = lucky_events.96.name
+	desc = lucky_events.96.desc
+	picture = GFX_lucky_evt_15
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_96 } }
+	immediate = { set_country_flag = lucky_events_seen_96 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			minerals = 427
+			engineering_research = 425
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.97
+	title = lucky_events.97.name
+	desc = lucky_events.97.desc
+	picture = GFX_lucky_evt_16
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_97 } }
+	immediate = { set_country_flag = lucky_events_seen_97 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			minerals = 481
+			engineering_research = 432
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.98
+	title = lucky_events.98.name
+	desc = lucky_events.98.desc
+	picture = GFX_lucky_evt_17
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_98 } }
+	immediate = { set_country_flag = lucky_events_seen_98 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			minerals = 477
+			engineering_research = 559
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.99
+	title = lucky_events.99.name
+	desc = lucky_events.99.desc
+	picture = GFX_lucky_evt_18
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_99 } }
+	immediate = { set_country_flag = lucky_events_seen_99 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			minerals = 459
+			engineering_research = 276
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.100
+	title = lucky_events.100.name
+	desc = lucky_events.100.desc
+	picture = GFX_lucky_evt_19
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_100 } }
+	immediate = { set_country_flag = lucky_events_seen_100 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			minerals = 227
+			engineering_research = 441
+		}
+	}
+}
+
+
+country_event = {
+	id = lucky_events.101
+	title = lucky_events.101.name
+	desc = lucky_events.101.desc
+	picture = GFX_lucky_evt_20
+	show_sound = lucky_events_popup
+	is_triggered_only = yes
+	trigger = { is_ai = no NOT = { has_country_flag = lucky_events_seen_101 } }
+	immediate = { set_country_flag = lucky_events_seen_101 }
+	option = {
+		name = lucky_events.ok
+		add_resource = {
+			energy = 1000
+			minerals = 1000
+			alloys = 500
+			unity = 750
+		}
+	}
+}

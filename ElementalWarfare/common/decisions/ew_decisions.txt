@@ -1,0 +1,61 @@
+# Elemental planetary protocols.
+
+decision_ew_fire_protocol = {
+	owned_planets_only = yes
+	icon = decision_ew_fire_protocol
+	enactment_time = 30
+	resources = { category = decisions cost = { unity = 100 } }
+	prerequisites = { "tech_ew_fire_1" }
+	potential = { owner = { has_technology = tech_ew_fire_1 is_ai = no } }
+	allow = { NOT = { has_modifier = ew_fire_protocol_modifier } }
+	effect = { add_modifier = { modifier = ew_fire_protocol_modifier days = 1800 } }
+	ai_weight = { weight = 0 }
+}
+
+decision_ew_ice_protocol = {
+	owned_planets_only = yes
+	icon = decision_ew_ice_protocol
+	enactment_time = 30
+	resources = { category = decisions cost = { unity = 100 } }
+	prerequisites = { "tech_ew_ice_1" }
+	potential = { owner = { has_technology = tech_ew_ice_1 is_ai = no } }
+	allow = { NOT = { has_modifier = ew_ice_protocol_modifier } }
+	effect = { add_modifier = { modifier = ew_ice_protocol_modifier days = 1800 } }
+	ai_weight = { weight = 0 }
+}
+
+decision_ew_lightning_protocol = {
+	owned_planets_only = yes
+	icon = decision_ew_lightning_protocol
+	enactment_time = 30
+	resources = { category = decisions cost = { unity = 100 } }
+	prerequisites = { "tech_ew_lightning_1" }
+	potential = { owner = { has_technology = tech_ew_lightning_1 is_ai = no } }
+	allow = { NOT = { has_modifier = ew_lightning_protocol_modifier } }
+	effect = { add_modifier = { modifier = ew_lightning_protocol_modifier days = 1800 } }
+	ai_weight = { weight = 0 }
+}
+
+decision_ew_acid_protocol = {
+	owned_planets_only = yes
+	icon = decision_ew_acid_protocol
+	enactment_time = 30
+	resources = { category = decisions cost = { unity = 100 } }
+	prerequisites = { "tech_ew_acid_1" }
+	potential = { owner = { has_technology = tech_ew_acid_1 is_ai = no } }
+	allow = { NOT = { has_modifier = ew_acid_protocol_modifier } }
+	effect = { add_modifier = { modifier = ew_acid_protocol_modifier days = 1800 } }
+	ai_weight = { weight = 0 }
+}
+
+decision_ew_chaos_protocol = {
+	owned_planets_only = yes
+	icon = decision_ew_chaos_protocol
+	enactment_time = 30
+	resources = { category = decisions cost = { unity = 100 } }
+	prerequisites = { "tech_ew_chaos_1" }
+	potential = { owner = { has_technology = tech_ew_chaos_1 is_ai = no } }
+	allow = { NOT = { has_modifier = ew_chaos_protocol_modifier } }
+	effect = { add_modifier = { modifier = ew_chaos_protocol_modifier days = 1800 } }
+	ai_weight = { weight = 0 }
+}

@@ -1,0 +1,593 @@
+fw_invoke_fate_button_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		NOT = { has_carrier_flag = fw_fate_pending }
+		NOT = { has_carrier_flag = fw_fate_result_active }
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			success_text = fw_invoke_fate_button_tooltip
+			always = yes
+		}
+	}
+	effect = {
+		colony = {
+			save_event_target_as = fw_target_colony
+		}
+		from = {
+			save_event_target_as = fw_invoker_country
+			country_event = { id = fw.10 }
+		}
+	}
+}
+
+fw_fate_deciding_button_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_pending
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			text = fw_fate_pending_tooltip
+			always = no
+		}
+	}
+	effect = { }
+}
+
+fw_fate_decided_button_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_result_active
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			success_text = fw_fate_decided_button_tooltip
+			always = yes
+		}
+	}
+	effect = { }
+}
+
+fw_fate_bountiful_harvest_button_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_bountiful_harvest_active
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			text = fw_fate_bountiful_harvest_tooltip
+			always = no
+		}
+	}
+	effect = { }
+}
+
+fw_fate_golden_alignment_button_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_golden_alignment_active
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			text = fw_fate_golden_alignment_tooltip
+			always = no
+		}
+	}
+	effect = { }
+}
+
+fw_fate_scholars_dream_button_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_scholars_dream_active
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			text = fw_fate_scholars_dream_tooltip
+			always = no
+		}
+	}
+	effect = { }
+}
+
+fw_fate_growth_surge_button_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_growth_surge_active
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			text = fw_fate_growth_surge_tooltip
+			always = no
+		}
+	}
+	effect = { }
+}
+
+fw_fate_serene_destiny_button_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_serene_destiny_active
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			text = fw_fate_serene_destiny_tooltip
+			always = no
+		}
+	}
+	effect = { }
+}
+
+fw_fate_shattered_luck_button_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_shattered_luck_active
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			text = fw_fate_shattered_luck_tooltip
+			always = no
+		}
+	}
+	effect = { }
+}
+
+fw_fate_ruined_machines_button_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_ruined_machines_active
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			text = fw_fate_ruined_machines_tooltip
+			always = no
+		}
+	}
+	effect = { }
+}
+
+fw_fate_hunger_shadow_button_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_hunger_shadow_active
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			text = fw_fate_hunger_shadow_tooltip
+			always = no
+		}
+	}
+	effect = { }
+}
+
+fw_fate_madness_weather_button_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_madness_weather_active
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			text = fw_fate_madness_weather_tooltip
+			always = no
+		}
+	}
+	effect = { }
+}
+
+fw_fate_cursed_silence_button_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_cursed_silence_active
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			text = fw_fate_cursed_silence_tooltip
+			always = no
+		}
+	}
+	effect = { }
+}
+
+fw_fateweaving_button_border_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		fw_show_fateweaving_ui = yes
+	}
+	allow = { always = yes }
+	effect = { }
+}
+
+fw_fate_status_panel_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		OR = {
+			has_carrier_flag = fw_fate_pending
+			has_carrier_flag = fw_fate_result_active
+		}
+		}
+	}
+	allow = { always = yes }
+	effect = { }
+}
+
+fw_fate_pending_status_icon_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_pending
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			success_text = fw_fate_pending_tooltip
+			always = yes
+		}
+	}
+	effect = { }
+}
+
+fw_fate_bountiful_harvest_icon_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_bountiful_harvest_active
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			success_text = fw_fate_bountiful_harvest_tooltip
+			always = yes
+		}
+	}
+	effect = { }
+}
+
+fw_fate_golden_alignment_icon_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_golden_alignment_active
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			success_text = fw_fate_golden_alignment_tooltip
+			always = yes
+		}
+	}
+	effect = { }
+}
+
+fw_fate_scholars_dream_icon_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_scholars_dream_active
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			success_text = fw_fate_scholars_dream_tooltip
+			always = yes
+		}
+	}
+	effect = { }
+}
+
+fw_fate_growth_surge_icon_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_growth_surge_active
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			success_text = fw_fate_growth_surge_tooltip
+			always = yes
+		}
+	}
+	effect = { }
+}
+
+fw_fate_serene_destiny_icon_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_serene_destiny_active
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			success_text = fw_fate_serene_destiny_tooltip
+			always = yes
+		}
+	}
+	effect = { }
+}
+
+fw_fate_shattered_luck_icon_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_shattered_luck_active
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			success_text = fw_fate_shattered_luck_tooltip
+			always = yes
+		}
+	}
+	effect = { }
+}
+
+fw_fate_ruined_machines_icon_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_ruined_machines_active
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			success_text = fw_fate_ruined_machines_tooltip
+			always = yes
+		}
+	}
+	effect = { }
+}
+
+fw_fate_hunger_shadow_icon_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_hunger_shadow_active
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			success_text = fw_fate_hunger_shadow_tooltip
+			always = yes
+		}
+	}
+	effect = { }
+}
+
+fw_fate_madness_weather_icon_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_madness_weather_active
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			success_text = fw_fate_madness_weather_tooltip
+			always = yes
+		}
+	}
+	effect = { }
+}
+
+fw_fate_cursed_silence_icon_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			has_technology = tech_fateweaving
+		}
+		colony = {
+			is_colony = yes
+		has_carrier_flag = fw_fate_cursed_silence_active
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			success_text = fw_fate_cursed_silence_tooltip
+			always = yes
+		}
+	}
+	effect = { }
+}

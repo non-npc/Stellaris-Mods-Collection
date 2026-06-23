@@ -1,0 +1,342 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_grlp_evt_01"
+        texturefile = "gfx/event_pictures/grlp_evt_01.dds"
+        masking_texture = "gfx/interface/situation_log/event_mask.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_01_nomask"
+        texturefile = "gfx/event_pictures/grlp_evt_01.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        parent = "GFX_grlp_evt_01_nomask"
+        name = "GFX_grlp_evt_01_zoom_1"
+        upper_left = { x = 0 y = 0 }
+        lower_right = { x = 450 y = 150 }
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_02"
+        texturefile = "gfx/event_pictures/grlp_evt_02.dds"
+        masking_texture = "gfx/interface/situation_log/event_mask.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_02_nomask"
+        texturefile = "gfx/event_pictures/grlp_evt_02.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        parent = "GFX_grlp_evt_02_nomask"
+        name = "GFX_grlp_evt_02_zoom_1"
+        upper_left = { x = 0 y = 0 }
+        lower_right = { x = 450 y = 150 }
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_03"
+        texturefile = "gfx/event_pictures/grlp_evt_03.dds"
+        masking_texture = "gfx/interface/situation_log/event_mask.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_03_nomask"
+        texturefile = "gfx/event_pictures/grlp_evt_03.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        parent = "GFX_grlp_evt_03_nomask"
+        name = "GFX_grlp_evt_03_zoom_1"
+        upper_left = { x = 0 y = 0 }
+        lower_right = { x = 450 y = 150 }
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_04"
+        texturefile = "gfx/event_pictures/grlp_evt_04.dds"
+        masking_texture = "gfx/interface/situation_log/event_mask.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_04_nomask"
+        texturefile = "gfx/event_pictures/grlp_evt_04.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        parent = "GFX_grlp_evt_04_nomask"
+        name = "GFX_grlp_evt_04_zoom_1"
+        upper_left = { x = 0 y = 0 }
+        lower_right = { x = 450 y = 150 }
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_05"
+        texturefile = "gfx/event_pictures/grlp_evt_05.dds"
+        masking_texture = "gfx/interface/situation_log/event_mask.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_05_nomask"
+        texturefile = "gfx/event_pictures/grlp_evt_05.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        parent = "GFX_grlp_evt_05_nomask"
+        name = "GFX_grlp_evt_05_zoom_1"
+        upper_left = { x = 0 y = 0 }
+        lower_right = { x = 450 y = 150 }
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_06"
+        texturefile = "gfx/event_pictures/grlp_evt_06.dds"
+        masking_texture = "gfx/interface/situation_log/event_mask.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_06_nomask"
+        texturefile = "gfx/event_pictures/grlp_evt_06.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        parent = "GFX_grlp_evt_06_nomask"
+        name = "GFX_grlp_evt_06_zoom_1"
+        upper_left = { x = 0 y = 0 }
+        lower_right = { x = 450 y = 150 }
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_07"
+        texturefile = "gfx/event_pictures/grlp_evt_07.dds"
+        masking_texture = "gfx/interface/situation_log/event_mask.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_07_nomask"
+        texturefile = "gfx/event_pictures/grlp_evt_07.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        parent = "GFX_grlp_evt_07_nomask"
+        name = "GFX_grlp_evt_07_zoom_1"
+        upper_left = { x = 0 y = 0 }
+        lower_right = { x = 450 y = 150 }
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_08"
+        texturefile = "gfx/event_pictures/grlp_evt_08.dds"
+        masking_texture = "gfx/interface/situation_log/event_mask.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_08_nomask"
+        texturefile = "gfx/event_pictures/grlp_evt_08.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        parent = "GFX_grlp_evt_08_nomask"
+        name = "GFX_grlp_evt_08_zoom_1"
+        upper_left = { x = 0 y = 0 }
+        lower_right = { x = 450 y = 150 }
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_09"
+        texturefile = "gfx/event_pictures/grlp_evt_09.dds"
+        masking_texture = "gfx/interface/situation_log/event_mask.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_09_nomask"
+        texturefile = "gfx/event_pictures/grlp_evt_09.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        parent = "GFX_grlp_evt_09_nomask"
+        name = "GFX_grlp_evt_09_zoom_1"
+        upper_left = { x = 0 y = 0 }
+        lower_right = { x = 450 y = 150 }
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_10"
+        texturefile = "gfx/event_pictures/grlp_evt_10.dds"
+        masking_texture = "gfx/interface/situation_log/event_mask.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_10_nomask"
+        texturefile = "gfx/event_pictures/grlp_evt_10.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        parent = "GFX_grlp_evt_10_nomask"
+        name = "GFX_grlp_evt_10_zoom_1"
+        upper_left = { x = 0 y = 0 }
+        lower_right = { x = 450 y = 150 }
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_11"
+        texturefile = "gfx/event_pictures/grlp_evt_11.dds"
+        masking_texture = "gfx/interface/situation_log/event_mask.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_11_nomask"
+        texturefile = "gfx/event_pictures/grlp_evt_11.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        parent = "GFX_grlp_evt_11_nomask"
+        name = "GFX_grlp_evt_11_zoom_1"
+        upper_left = { x = 0 y = 0 }
+        lower_right = { x = 450 y = 150 }
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_12"
+        texturefile = "gfx/event_pictures/grlp_evt_12.dds"
+        masking_texture = "gfx/interface/situation_log/event_mask.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_12_nomask"
+        texturefile = "gfx/event_pictures/grlp_evt_12.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        parent = "GFX_grlp_evt_12_nomask"
+        name = "GFX_grlp_evt_12_zoom_1"
+        upper_left = { x = 0 y = 0 }
+        lower_right = { x = 450 y = 150 }
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_13"
+        texturefile = "gfx/event_pictures/grlp_evt_13.dds"
+        masking_texture = "gfx/interface/situation_log/event_mask.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_13_nomask"
+        texturefile = "gfx/event_pictures/grlp_evt_13.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        parent = "GFX_grlp_evt_13_nomask"
+        name = "GFX_grlp_evt_13_zoom_1"
+        upper_left = { x = 0 y = 0 }
+        lower_right = { x = 450 y = 150 }
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_14"
+        texturefile = "gfx/event_pictures/grlp_evt_14.dds"
+        masking_texture = "gfx/interface/situation_log/event_mask.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_14_nomask"
+        texturefile = "gfx/event_pictures/grlp_evt_14.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        parent = "GFX_grlp_evt_14_nomask"
+        name = "GFX_grlp_evt_14_zoom_1"
+        upper_left = { x = 0 y = 0 }
+        lower_right = { x = 450 y = 150 }
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_15"
+        texturefile = "gfx/event_pictures/grlp_evt_15.dds"
+        masking_texture = "gfx/interface/situation_log/event_mask.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_15_nomask"
+        texturefile = "gfx/event_pictures/grlp_evt_15.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        parent = "GFX_grlp_evt_15_nomask"
+        name = "GFX_grlp_evt_15_zoom_1"
+        upper_left = { x = 0 y = 0 }
+        lower_right = { x = 450 y = 150 }
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_16"
+        texturefile = "gfx/event_pictures/grlp_evt_16.dds"
+        masking_texture = "gfx/interface/situation_log/event_mask.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_16_nomask"
+        texturefile = "gfx/event_pictures/grlp_evt_16.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        parent = "GFX_grlp_evt_16_nomask"
+        name = "GFX_grlp_evt_16_zoom_1"
+        upper_left = { x = 0 y = 0 }
+        lower_right = { x = 450 y = 150 }
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_17"
+        texturefile = "gfx/event_pictures/grlp_evt_17.dds"
+        masking_texture = "gfx/interface/situation_log/event_mask.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_17_nomask"
+        texturefile = "gfx/event_pictures/grlp_evt_17.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        parent = "GFX_grlp_evt_17_nomask"
+        name = "GFX_grlp_evt_17_zoom_1"
+        upper_left = { x = 0 y = 0 }
+        lower_right = { x = 450 y = 150 }
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_18"
+        texturefile = "gfx/event_pictures/grlp_evt_18.dds"
+        masking_texture = "gfx/interface/situation_log/event_mask.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_18_nomask"
+        texturefile = "gfx/event_pictures/grlp_evt_18.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        parent = "GFX_grlp_evt_18_nomask"
+        name = "GFX_grlp_evt_18_zoom_1"
+        upper_left = { x = 0 y = 0 }
+        lower_right = { x = 450 y = 150 }
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_19"
+        texturefile = "gfx/event_pictures/grlp_evt_19.dds"
+        masking_texture = "gfx/interface/situation_log/event_mask.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_19_nomask"
+        texturefile = "gfx/event_pictures/grlp_evt_19.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        parent = "GFX_grlp_evt_19_nomask"
+        name = "GFX_grlp_evt_19_zoom_1"
+        upper_left = { x = 0 y = 0 }
+        lower_right = { x = 450 y = 150 }
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_20"
+        texturefile = "gfx/event_pictures/grlp_evt_20.dds"
+        masking_texture = "gfx/interface/situation_log/event_mask.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_grlp_evt_20_nomask"
+        texturefile = "gfx/event_pictures/grlp_evt_20.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        parent = "GFX_grlp_evt_20_nomask"
+        name = "GFX_grlp_evt_20_zoom_1"
+        upper_left = { x = 0 y = 0 }
+        lower_right = { x = 450 y = 150 }
+    }
+}

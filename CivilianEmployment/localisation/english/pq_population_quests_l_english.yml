@@ -1,0 +1,72 @@
+﻿l_english:
+
+ tech_pq_population_quests: "Civilian Employment"
+ tech_pq_population_quests_desc: "A modern empire cannot afford to leave its spare civilian population without purpose. By creating alternative occupations for idle citizens, colonies can turn excess population into modest local productivity, training, and discovery."
+
+ pq_job_adventurer: "Adventurer"
+ pq_job_adventurer_plural: "Adventurers"
+ pq_job_adventurer_desc: "Idle civilians who take on colony contracts, frontier errands, resource-gathering expeditions, and other low-priority tasks that keep spare population useful without disrupting the formal economy."
+
+ decision_pq_adventure_quests: "Adventure Quests"
+ decision_pq_adventure_quests_desc: "Retrieve missing cargo. Hunt local predators. Deliver supplies to remote outposts. Nobody said frontier life would be glamorous."
+ decision_pq_adventure_quests_effect: "Idle civilian populations may take alternative Adventurer occupations, providing the colony with minor resources."
+
+ pq_modifier_adventure_guild: "Adventure Guild"
+ pq_modifier_adventure_guild_desc: "This planet houses an Adventure Guild, routing spare civilian populations into local contracts, expedition work, recovery missions, and other useful colony services."
+
+ pq_job_virtual_soldier: "Virtual Soldier"
+ pq_job_virtual_soldier_plural: "Virtual Soldiers"
+ pq_job_virtual_soldier_desc: "Idle civilians assigned to virtual combat leagues, tactical simulations, and defensive preparedness programs that convert spare population into unity and local defense readiness."
+
+ decision_pq_virtual_strike: "Virtual Strike"
+ decision_pq_virtual_strike_desc: "This is what they are trained for!"
+ decision_pq_virtual_strike_effect: "Idle civilian populations may take alternative Virtual Soldier occupations, providing the colony with minor unity and defense readiness."
+
+ pq_modifier_virtual_forces: "Virtual Forces"
+ pq_modifier_virtual_forces_desc: "This planet maintains a dedicated Virtual Force program, where spare civilian populations are routed into simulated training, competitive exercises, and defensive coordination drills."
+
+ pq_job_free_thinker: "Free Thinker"
+ pq_job_free_thinker_plural: "Free Thinkers"
+ pq_job_free_thinker_desc: "Idle civilians encouraged to pursue independent study, theoretical research, public archives, and experimental problem-solving while outside the formal specialist economy."
+
+ decision_pq_dreams_of_tomorrow: "Dreams of Tomorrow"
+ decision_pq_dreams_of_tomorrow_desc: "I, Giorno Giovanna, have a dream..."
+ decision_pq_dreams_of_tomorrow_effect: "Idle civilian populations may take alternative Free Thinker occupations, providing the colony with minor research output."
+
+ pq_modifier_free_thinkers: "Free Thinkers"
+ pq_modifier_free_thinkers_desc: "This planet promotes creativity and study, giving spare civilian populations access to public research programs, open archives, and independent learning initiatives."
+
+ mod_job_pq_job_adventurer_add: "Adventurer Jobs"
+ mod_job_pq_job_adventurer_add_desc: "Additional Adventurer Jobs"
+
+ mod_job_pq_job_virtual_soldier_add: "Virtual Soldier Jobs"
+ mod_job_pq_job_virtual_soldier_add_desc: "Additional Virtual Soldier Jobs"
+
+ mod_job_pq_job_free_thinker_add: "Free Thinker Jobs"
+ mod_job_pq_job_free_thinker_add_desc: "Additional Free Thinker Jobs"
+
+ job_pq_job_adventurer: "Adventurer"
+ job_pq_job_adventurer_plural: "Adventurers"
+ job_pq_job_adventurer_desc: "Idle civilians assigned to local contracts, expeditions, and colony support tasks."
+
+ job_pq_job_virtual_soldier: "Virtual Soldier"
+ job_pq_job_virtual_soldier_plural: "Virtual Soldiers"
+ job_pq_job_virtual_soldier_desc: "Idle civilians participating in simulated combat drills and defense programs."
+
+ job_pq_job_free_thinker: "Free Thinker"
+ job_pq_job_free_thinker_plural: "Free Thinkers"
+ job_pq_job_free_thinker_desc: "Idle civilians pursuing study, research, and independent learning initiatives."
+decision_pq_disable_civilian_employment: "Disable Civilian Employment Programs"
+decision_pq_disable_civilian_employment_desc: "Discontinue all alternative civilian occupation programs on this planet and return spare civilian populations to the standard economic system."
+decision_pq_disable_civilian_employment_effect: "Removes all active Civilian Employment programs from this planet."
+
+ pq_arkship_civilian_employment_button: "Employment"
+ pq_arkship_civilian_employment_button_tooltip: "Manage alternative civilian employment aboard this Arkship."
+
+ pq_civilian_employment.1.name: "Arkship Civilian Employment"
+ pq_civilian_employment.1.desc: "Select an alternative occupation program for the spare civilian population aboard this Arkship. Establishing or changing a program costs £influence£50 Influence."
+ pq_civilian_employment.1.adventure: "Establish Adventure Quests — £influence£50"
+ pq_civilian_employment.1.virtual: "Launch a Virtual Strike program — £influence£50"
+ pq_civilian_employment.1.thinkers: "Encourage Dreams of Tomorrow — £influence£50"
+ pq_civilian_employment.1.disable: "Disable Civilian Employment programs"
+ pq_civilian_employment.1.close: "Leave the current program unchanged"

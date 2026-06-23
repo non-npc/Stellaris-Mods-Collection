@@ -1,0 +1,83 @@
+﻿l_english:
+ mod_battle_perks:0 "Battle Perks"
+
+ ap_bp_fortress_doctrine:0 "Fortress Doctrine"
+ ap_bp_fortress_doctrine_desc:0 "Our borders shall become walls of steel, our stations bastions, and our colonies hardened redoubts against the enemy."
+
+ ap_bp_total_war_economy:0 "Total War Economy"
+ ap_bp_total_war_economy_desc:0 "The civilian economy is reorganized around permanent military readiness, accelerating ship production and alloy output at a social cost."
+
+ ap_bp_fleet_supremacy_protocols:0 "Fleet Supremacy Protocols"
+ ap_bp_fleet_supremacy_protocols_desc:0 "Centralized naval command allows our fleets to operate at a scale and precision lesser powers cannot match."
+
+ ap_bp_planetary_shield_mandate:0 "Planetary Shield Mandate"
+ ap_bp_planetary_shield_mandate_desc:0 "Every colony is mandated to maintain emergency shield systems, hardened garrisons, and planetary defense infrastructure."
+ ap_bp_planetary_shield_mandate_unlock:0 "Unlocks the §YActivate Shield Mandate§! planetary decision."
+
+ ap_bp_siege_masters:0 "Siege Masters"
+ ap_bp_siege_masters_desc:0 "Our armies and fleets are trained to break fortified systems, shatter morale, and end planetary resistance with ruthless efficiency.\n\n§EUnlocks Army:§! §YSiege Breaker Army§!"
+ ap_bp_siege_masters_unlock:0 "Unlocks recruitment of §YSiege Breaker Armies§! on owned colonies."
+
+ ap_bp_adaptive_battle_networks:0 "Adaptive Battle Networks"
+ ap_bp_adaptive_battle_networks_desc:0 "Combat data is synchronized across the fleet, allowing targeting systems and tactical computers to adapt in real time.\n\n§EUnlocks:§! §YAdaptive Combat Computers§!\n§EUnlocks Edict:§! §YBattle Network Synchronization§!"
+
+
+ ap_bp_adaptive_battle_networks_unlock:0 "Unlocks §YAdaptive Combat Computers§! for ship designs and the §YBattle Network Synchronization§! edict."
+ ap_bp_crisis_response_mandate_unlock:0 "Unlocks the §YEmergency Mobilization§! edict."
+
+ ap_bp_eternal_watch:0 "Eternal Watch"
+ ap_bp_eternal_watch_desc:0 "Our empire maintains permanent military surveillance arrays, border sensors, and tracking systems to expose threats before they strike."
+
+ ap_bp_warborn_society:0 "Warborn Society"
+ ap_bp_warborn_society_desc:0 "Military service defines civic life. Every citizen understands that survival is secured through discipline, sacrifice, and force."
+
+ ap_bp_crisis_response_mandate:0 "Crisis Response Mandate"
+ ap_bp_crisis_response_mandate_desc:0 "Our fleets are prepared for existential threats, mobilizing rapidly against crisis factions, marauders, invaders, and galactic predators.\n\n§EUnlocks Edict:§! §YEmergency Mobilization§!"
+
+ ap_bp_bastion_worlds:0 "Bastion Worlds"
+ ap_bp_bastion_worlds_desc:0 "Key colonies may be transformed into fortress worlds capable of anchoring entire sectors against invasion.\n\n§EUnlocks Building:§! §YFortress Command Nexus§!\n§EUnlocks Decision:§! §YDesignate Bastion World§!"
+ ap_bp_bastion_worlds_unlock:0 "Unlocks the §YFortress Command Nexus§! building and the §YDesignate Bastion World§! planetary decision."
+
+ bp_siege_breaker_army:0 "Siege Breaker Army"
+ bp_siege_breaker_army_desc:0 "Elite planetary assault formations trained to break fortified worlds, crush entrenched defenders, and end resistance through overwhelming siege warfare."
+
+ COMBAT_COMPUTER_BP_ADAPTIVE_LINE:0 "Adaptive Combat Computer (Line)"
+ COMBAT_COMPUTER_BP_ADAPTIVE_LINE_DESC:0 "Synchronized battlefield analytics optimize line combat formations with improved accuracy, tracking, and disengagement logic."
+
+ COMBAT_COMPUTER_BP_ADAPTIVE_ARTILLERY:0 "Adaptive Combat Computer (Artillery)"
+ COMBAT_COMPUTER_BP_ADAPTIVE_ARTILLERY_DESC:0 "Real-time tactical data improves long-range targeting, fleet coordination, and emergency withdrawal protocols for artillery formations."
+
+ COMBAT_COMPUTER_BP_ADAPTIVE_PICKET:0 "Adaptive Combat Computer (Picket)"
+ COMBAT_COMPUTER_BP_ADAPTIVE_PICKET_DESC:0 "Adaptive tracking networks enhance picket screening operations, improving accuracy, pursuit, and tactical disengagement."
+
+ building_bp_fortress_command_nexus:0 "Fortress Command Nexus"
+ building_bp_fortress_command_nexus_desc:0 "A planetary military command complex coordinating defenses, emergency response, orbital integration, and sector logistics for a true fortress world."
+
+ decision_bp_activate_shield_mandate:0 "Activate Shield Mandate"
+ decision_bp_activate_shield_mandate_desc:0 "Deploy emergency planetary shields, reinforce defensive networks, and harden this colony against invasion."
+
+ decision_bp_designate_bastion_world:0 "Designate Bastion World"
+ decision_bp_designate_bastion_world_desc:0 "Transform this colony into a permanent bastion world focused on sector defense and military readiness."
+
+ bp_emergency_mobilization:0 "Emergency Mobilization"
+ bp_emergency_mobilization_desc:0 "Temporarily expand naval mobilization and weapons readiness in response to major threats."
+
+ bp_battle_network_sync:0 "Battle Network Synchronization"
+ bp_battle_network_sync_desc:0 "Synchronize fleet tactical systems to improve targeting accuracy and tracking."
+
+ bp_shield_mandate_active:0 "Shield Mandate Active"
+ bp_shield_mandate_active_desc:0 "This colony is protected by emergency shield systems and reinforced defensive infrastructure."
+
+ bp_bastion_world:0 "Bastion World"
+ bp_bastion_world_desc:0 "This colony has been designated as a hardened military bastion."
+
+
+ edict_bp_emergency_mobilization:0 "Emergency Mobilization"
+ edict_bp_emergency_mobilization_desc:0 "Temporarily expand naval mobilization and weapons readiness in response to major threats."
+ edict_bp_battle_network_sync:0 "Battle Network Synchronization"
+ edict_bp_battle_network_sync_desc:0 "Synchronize fleet tactical systems to improve targeting accuracy and tracking."
+ edict_edict_bp_emergency_mobilization:0 "Emergency Mobilization"
+ edict_edict_bp_emergency_mobilization_desc:0 "Temporarily expand naval mobilization and weapons readiness in response to major threats."
+ edict_edict_bp_battle_network_sync:0 "Battle Network Synchronization"
+ edict_edict_bp_battle_network_sync_desc:0 "Synchronize fleet tactical systems to improve targeting accuracy and tracking."
+ bp_requires_non_nomadic_empire:0 "Unavailable to Nomadic empires."

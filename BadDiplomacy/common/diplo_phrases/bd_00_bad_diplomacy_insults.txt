@@ -1,0 +1,3692 @@
+action_insult = {
+	propose = {
+		BD_GENERIC_001_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_002_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_003_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_004_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_005_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_006_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_007_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_008_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_009_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_010_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_011_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_012_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_013_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_014_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_015_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_016_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_017_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_018_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_019_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_020_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_021_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_022_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_023_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_024_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_025_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_026_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_027_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_028_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_029_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_030_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_031_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_032_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_033_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_034_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_035_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_036_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_037_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_038_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_039_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_040_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_041_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_042_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_043_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_044_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_045_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_046_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_047_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_048_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_049_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_050_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_051_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_052_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_053_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_054_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_055_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_056_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_057_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_058_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_059_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_060_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_061_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_062_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_063_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_064_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_065_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_066_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_067_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_068_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_069_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_070_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_071_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_072_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_073_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_074_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_075_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_076_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_077_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_078_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_079_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_080_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_081_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_082_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_083_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_084_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_085_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_086_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_087_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_088_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_089_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_090_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_091_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_092_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_093_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_094_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_095_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_096_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_097_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_098_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_099_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_100_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_101_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_102_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_103_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_104_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_105_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_106_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_107_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_108_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_109_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_110_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_111_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_112_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_113_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_114_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_115_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_116_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_117_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_118_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_119_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_120_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_121_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_122_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_123_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_124_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_125_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_126_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_127_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_128_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_129_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_130_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_131_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_132_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_133_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_134_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_135_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_136_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_137_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_138_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_139_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_140_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_141_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_142_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_143_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_144_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_145_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_146_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_147_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_148_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_149_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_150_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_151_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_152_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_153_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_154_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_155_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_156_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_157_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_158_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_159_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_160_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_161_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_162_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_163_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_164_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_165_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_166_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_167_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_168_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_169_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_170_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_171_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_172_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_173_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_174_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_175_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_176_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_177_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_178_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_179_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_180_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_181_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_182_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_183_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_184_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_185_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_186_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_187_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_188_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_189_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_190_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_191_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_192_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_193_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_194_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_195_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_196_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_197_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_198_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_199_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_GENERIC_200_INSULT_PROPOSE = {
+			weight = 10
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_MILITARIST_001_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_002_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_003_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_004_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_005_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_006_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_007_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_008_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_009_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_010_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_011_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_012_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_013_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_014_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_015_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_016_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_017_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_018_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_019_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_020_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_021_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_022_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_023_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_024_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_025_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_026_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_027_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_028_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_029_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_030_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_031_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_032_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_033_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_034_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_035_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_036_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_037_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_038_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_039_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_040_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_041_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_042_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_043_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_044_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_045_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_046_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_047_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_048_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_049_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_MILITARIST_050_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_militarist has_ethic = ethic_fanatic_militarist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_001_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_002_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_003_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_004_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_005_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_006_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_007_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_008_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_009_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_010_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_011_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_012_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_013_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_014_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_015_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_016_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_017_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_018_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_019_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_020_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_021_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_022_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_023_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_024_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_025_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_026_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_027_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_028_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_029_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_030_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_031_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_032_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_033_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_034_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_035_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_036_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_037_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_038_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_039_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_040_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_041_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_042_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_043_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_044_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_045_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_046_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_047_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_048_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_049_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_PACIFIST_050_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_001_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_002_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_003_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_004_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_005_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_006_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_007_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_008_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_009_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_010_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_011_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_012_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_013_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_014_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_015_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_016_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_017_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_018_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_019_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_020_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_021_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_022_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_023_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_024_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_025_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_026_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_027_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_028_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_029_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_030_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_031_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_032_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_033_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_034_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_035_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_036_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_037_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_038_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_039_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_040_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_041_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_042_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_043_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_044_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_045_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_046_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_047_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_048_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_049_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHILE_050_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_001_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_002_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_003_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_004_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_005_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_006_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_007_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_008_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_009_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_010_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_011_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_012_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_013_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_014_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_015_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_016_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_017_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_018_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_019_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_020_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_021_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_022_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_023_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_024_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_025_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_026_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_027_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_028_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_029_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_030_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_031_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_032_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_033_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_034_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_035_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_036_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_037_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_038_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_039_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_040_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_041_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_042_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_043_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_044_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_045_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_046_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_047_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_048_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_049_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_XENOPHOBE_050_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_001_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_002_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_003_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_004_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_005_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_006_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_007_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_008_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_009_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_010_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_011_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_012_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_013_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_014_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_015_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_016_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_017_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_018_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_019_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_020_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_021_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_022_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_023_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_024_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_025_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_026_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_027_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_028_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_029_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_030_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_031_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_032_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_033_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_034_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_035_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_036_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_037_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_038_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_039_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_040_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_041_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_042_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_043_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_044_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_045_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_046_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_047_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_048_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_049_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_MATERIALIST_050_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_001_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_002_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_003_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_004_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_005_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_006_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_007_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_008_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_009_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_010_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_011_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_012_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_013_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_014_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_015_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_016_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_017_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_018_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_019_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_020_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_021_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_022_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_023_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_024_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_025_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_026_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_027_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_028_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_029_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_030_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_031_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_032_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_033_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_034_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_035_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_036_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_037_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_038_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_039_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_040_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_041_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_042_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_043_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_044_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_045_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_046_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_047_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_048_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_049_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_SPIRITUALIST_050_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { OR = { has_ethic = ethic_spiritualist has_ethic = ethic_fanatic_spiritualist } } }
+		}
+	}
+	propose = {
+		BD_MACHINE_001_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_002_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_003_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_004_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_005_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_006_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_007_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_008_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_009_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_010_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_011_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_012_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_013_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_014_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_015_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_016_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_017_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_018_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_019_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_020_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_021_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_022_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_023_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_024_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_025_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_026_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_027_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_028_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_029_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_MACHINE_030_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	propose = {
+		BD_HIVE_001_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_002_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_003_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_004_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_005_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_006_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_007_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_008_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_009_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_010_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_011_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_012_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_013_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_014_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_015_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_016_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_017_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_018_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_019_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_020_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_021_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_022_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_023_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_024_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_025_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_026_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_027_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_028_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_029_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_HIVE_030_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { has_authority = auth_hive_mind } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_001_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_002_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_003_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_004_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_005_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_006_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_007_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_008_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_009_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_010_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_011_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_012_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_013_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_014_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_015_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_016_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_017_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_018_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_019_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_020_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_021_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_022_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_023_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_024_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_025_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_026_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_027_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_028_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_029_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_MEGACORP_030_INSULT_PROPOSE = {
+			weight = 50
+			trigger = { FROM = { is_megacorp = yes } }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_001_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_002_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_003_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_004_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_005_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_006_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_007_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_008_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_009_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_010_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_011_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_012_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_013_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_014_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_015_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_016_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_017_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_018_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_019_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_020_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_021_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_022_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_023_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_024_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+	propose = {
+		BD_LEGENDARY_025_INSULT_PROPOSE = {
+			weight = 1
+			trigger = { always = yes }
+		}
+	}
+}

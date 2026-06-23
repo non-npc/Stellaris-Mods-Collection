@@ -1,0 +1,83 @@
+﻿l_german:
+ mod_battle_perks:0 "Kampf-Vorteile"
+
+ ap_bp_fortress_doctrine:0 "Festungsdoktrin"
+ ap_bp_fortress_doctrine_desc:0 "Unsere Grenzen werden zu Mauern aus Stahl, unsere Stationen zu Bastionen und unsere Kolonien zu verstärkten Widerstandsnestern gegen den Feind."
+
+ ap_bp_total_war_economy:0 "Wirtschaft des totalen Krieges"
+ ap_bp_total_war_economy_desc:0 "Die zivile Wirtschaft wird um permanente militärische Bereitschaft herum reorganisiert und beschleunigt Schiffsproduktion und Legierungsausstoß auf Kosten der Gesellschaft."
+
+ ap_bp_fleet_supremacy_protocols:0 "Protokolle der Flottenüberlegenheit"
+ ap_bp_fleet_supremacy_protocols_desc:0 "Zentralisierte Flottenführung ermöglicht es unseren Flotten, in einem Maßstab und mit einer Präzision zu operieren, die schwächere Mächte nicht erreichen können."
+
+ ap_bp_planetary_shield_mandate:0 "Mandat für Planetenschilder"
+ ap_bp_planetary_shield_mandate_desc:0 "Jede Kolonie ist verpflichtet, Notfallschildsysteme, verstärkte Garnisonen und planetare Verteidigungsinfrastruktur zu unterhalten."
+ ap_bp_planetary_shield_mandate_unlock:0 "Schaltet die planetare Entscheidung §YSchildmandat aktivieren§! frei."
+
+ ap_bp_siege_masters:0 "Meister der Belagerung"
+ ap_bp_siege_masters_desc:0 "Unsere Armeen und Flotten sind darauf trainiert, befestigte Systeme zu durchbrechen, die Moral zu zerschmettern und planetaren Widerstand mit rücksichtsloser Effizienz zu beenden.\n\n§ESchaltet Armee frei:§! §YBelagerungsbrecher-Armee§!"
+ ap_bp_siege_masters_unlock:0 "Schaltet die Rekrutierung von §YBelagerungsbrecher-Armeen§! auf eigenen Kolonien frei."
+
+ ap_bp_adaptive_battle_networks:0 "Adaptive Kampfnetzwerke"
+ ap_bp_adaptive_battle_networks_desc:0 "Kampfdaten werden in der gesamten Flotte synchronisiert, sodass Zielsysteme und taktische Computer sich in Echtzeit anpassen können.\n\n§ESchaltet frei:§! §YAdaptive Kampfcomputer§!\n§ESchaltet Erlass frei:§! §YKampfnetzwerk-Synchronisation§!"
+
+
+ ap_bp_adaptive_battle_networks_unlock:0 "Schaltet §YAdaptive Kampfcomputer§! für Schiffsdesigns und den Erlass §YKampfnetzwerk-Synchronisation§! frei."
+ ap_bp_crisis_response_mandate_unlock:0 "Schaltet den Erlass §YNotfallmobilisierung§! frei."
+
+ ap_bp_eternal_watch:0 "Ewige Wacht"
+ ap_bp_eternal_watch_desc:0 "Unser Imperium unterhält permanente militärische Überwachungsnetze, Grenzsensoren und Verfolgungssysteme, um Bedrohungen aufzudecken, bevor sie zuschlagen."
+
+ ap_bp_warborn_society:0 "Kriegsgeborene Gesellschaft"
+ ap_bp_warborn_society_desc:0 "Militärdienst definiert das bürgerliche Leben. Jeder Bürger versteht, dass das Überleben durch Disziplin, Opfer und Gewalt gesichert wird."
+
+ ap_bp_crisis_response_mandate:0 "Mandat der Krisenreaktion"
+ ap_bp_crisis_response_mandate_desc:0 "Unsere Flotten sind auf existenzielle Bedrohungen vorbereitet und mobilisieren sich schnell gegen Krisenfraktionen, Plünderer, Invasoren und galaktische Räuber.\n\n§ESchaltet Erlass frei:§! §YNotfallmobilisierung§!"
+
+ ap_bp_bastion_worlds:0 "Bastionswelten"
+ ap_bp_bastion_worlds_desc:0 "Schlüsselkolonien können in Festungswelten verwandelt werden, die ganze Sektoren gegen Invasionen verankern können.\n\n§ESchaltet Gebäude frei:§! §YFestungskommandonexus§!\n§ESchaltet Entscheidung frei:§! §YBastionswelt designieren§!"
+ ap_bp_bastion_worlds_unlock:0 "Schaltet das Gebäude §YFestungskommandonexus§! und die planetare Entscheidung §YBastionswelt designieren§! frei."
+
+ bp_siege_breaker_army:0 "Belagerungsbrecher-Armee"
+ bp_siege_breaker_army_desc:0 "Elite-Planetenangriffsformationen, die darauf trainiert sind, befestigte Welten zu durchbrechen, eingegrabene Verteidiger zu zerschmettern und Widerstand durch überwältigende Belagerungskriegsführung zu beenden."
+
+ COMBAT_COMPUTER_BP_ADAPTIVE_LINE:0 "Adaptiver Kampfcomputer (Linie)"
+ COMBAT_COMPUTER_BP_ADAPTIVE_LINE_DESC:0 "Synchronisierte Schlachtfeldanalysen optimieren Linienkampfformationen mit verbesserter Genauigkeit, Verfolgung und Ausweichlogik."
+
+ COMBAT_COMPUTER_BP_ADAPTIVE_ARTILLERY:0 "Adaptiver Kampfcomputer (Artillerie)"
+ COMBAT_COMPUTER_BP_ADAPTIVE_ARTILLERY_DESC:0 "Taktische Echtzeitdaten verbessern Fernzielsysteme, Flottenkoordination und Notfall-Rückzugsprotokolle für Artillerieformationen."
+
+ COMBAT_COMPUTER_BP_ADAPTIVE_PICKET:0 "Adaptiver Kampfcomputer (Picket)"
+ COMBAT_COMPUTER_BP_ADAPTIVE_PICKET_DESC:0 "Adaptive Verfolgungsnetzwerke verbessern Picket-Abschirmungsoperationen und steigern Genauigkeit, Verfolgung und taktisches Ausweichen."
+
+ building_bp_fortress_command_nexus:0 "Festungskommandonexus"
+ building_bp_fortress_command_nexus_desc:0 "Ein planetarer militärischer Kommandokomplex, der Verteidigung, Notfallreaktion, orbitale Integration und Sektorlogistik für eine wahre Festungswelt koordiniert."
+
+ decision_bp_activate_shield_mandate:0 "Schildmandat aktivieren"
+ decision_bp_activate_shield_mandate_desc:0 "Notfall-Planetenschilder einsetzen, Verteidigungsnetzwerke verstärken und diese Kolonie gegen Invasionen härten."
+
+ decision_bp_designate_bastion_world:0 "Bastionswelt designieren"
+ decision_bp_designate_bastion_world_desc:0 "Diese Kolonie in eine permanente Bastionswelt verwandeln, die auf Sektorverteidigung und militärische Bereitschaft ausgerichtet ist."
+
+ bp_emergency_mobilization:0 "Notfallmobilisierung"
+ bp_emergency_mobilization_desc:0 "Erweitert vorübergehend die Flottenmobilisierung und Waffenbereitschaft als Reaktion auf schwerwiegende Bedrohungen."
+
+ bp_battle_network_sync:0 "Kampfnetzwerk-Synchronisation"
+ bp_battle_network_sync_desc:0 "Synchronisiert taktische Flottensysteme, um Zielgenauigkeit und Verfolgung zu verbessern."
+
+ bp_shield_mandate_active:0 "Schildmandat aktiv"
+ bp_shield_mandate_active_desc:0 "Diese Kolonie ist durch Notfallschildsysteme und verstärkte Verteidigungsinfrastruktur geschützt."
+
+ bp_bastion_world:0 "Bastionswelt"
+ bp_bastion_world_desc:0 "Diese Kolonie wurde als verstärkte militärische Bastion designiert."
+
+
+ edict_bp_emergency_mobilization:0 "Notfallmobilisierung"
+ edict_bp_emergency_mobilization_desc:0 "Erweitert vorübergehend die Flottenmobilisierung und Waffenbereitschaft als Reaktion auf schwerwiegende Bedrohungen."
+ edict_bp_battle_network_sync:0 "Kampfnetzwerk-Synchronisation"
+ edict_bp_battle_network_sync_desc:0 "Synchronisiert taktische Flottensysteme, um Zielgenauigkeit und Verfolgung zu verbessern."
+ edict_edict_bp_emergency_mobilization:0 "Notfallmobilisierung"
+ edict_edict_bp_emergency_mobilization_desc:0 "Erweitert vorübergehend die Flottenmobilisierung und Waffenbereitschaft als Reaktion auf schwerwiegende Bedrohungen."
+ edict_edict_bp_battle_network_sync:0 "Kampfnetzwerk-Synchronisation"
+ edict_edict_bp_battle_network_sync_desc:0 "Synchronisiert taktische Flottensysteme, um Zielgenauigkeit und Verfolgung zu verbessern."
+ bp_requires_non_nomadic_empire:0 "Für nomadische Reiche nicht verfügbar."

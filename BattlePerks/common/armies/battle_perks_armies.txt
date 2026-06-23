@@ -1,0 +1,82 @@
+# Battle Perks - Siege Breaker Army
+# Unlocked by the Siege Masters ascension perk.
+
+bp_siege_breaker_army = {
+	damage = 6.25
+	health = 2.00
+	morale = 2.00
+	morale_damage = 2.50
+	collateral_damage = 1.75
+	war_exhaustion = 2.50
+	time = 180
+	icon = GFX_bp_siege_breaker_army
+
+	prerequisites = { "tech_assault_armies" }
+
+	resources = {
+		category = armies
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			minerals = 350
+			alloys = 25
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = 350
+			alloys = 25
+			mult = @mineral_to_food_cost_ratio
+		}
+
+		upkeep = {
+			energy = 4
+			alloys = 0.25
+		}
+	}
+
+	potential_country = {
+		has_ascension_perk = ap_bp_siege_masters
+		is_wilderness_empire = no
+	}
+
+	potential = {
+		from = {
+			OR = {
+				has_trait = trait_shroud_forged
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					has_trait = trait_limited_cybernetic
+					is_sapient = no
+				}
+			}
+		}
+		owner = {
+			OR = {
+				is_machine_empire = no
+				has_valid_civic = civic_machine_assimilator
+				has_origin = origin_shroud_forged
+			}
+			is_wilderness_empire = no
+		}
+	}
+
+	ai_weight = {
+		base = 100
+		modifier = {
+			set = 0
+			NOT = { has_ascension_perk = ap_bp_siege_masters }
+		}
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+	}
+}

@@ -1,0 +1,10 @@
+version="1.4.5"
+tags={
+	"Gameplay"
+	"Balance"
+	"Technologies"
+	"Events"
+}
+name="Fateweaving"
+supported_version="v4.4.3"
+remote_file_id="3738216277"

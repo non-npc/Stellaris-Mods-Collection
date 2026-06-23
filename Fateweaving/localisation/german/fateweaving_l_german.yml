@@ -1,0 +1,94 @@
+l_german:
+
+ tech_fateweaving:0 "Schicksalsweberei"
+ tech_fateweaving_desc:0 "Indem wir die Architektur der Wahrscheinlichkeit selbst erforschen, kann unsere Zivilisation lernen, Welten für unmögliche Ausgänge zu markieren. Das Schicksal lässt sich nicht beherrschen, aber es lässt sich einladen."
+ tech_fateweaving_effect:0 "§HSchaltet Funktion frei:§! Schicksal auf jeder Kolonie heraufbeschwören. Markierte Welten erhalten innerhalb von 30 bis 90 Tagen einen zufälligen Segen oder eine Katastrophe."
+
+ fw_invoke_fate_button:0 "Invoke Fate"
+ fw_deciding_fate_button:0 "Deciding Fate..."
+ fw_fate_decided_button:0 "Fate Decided"
+
+ fw_invoke_fate_button_tooltip:0 "Beschwört auf dieser Welt das Schicksal herauf und lässt das Verhängnis einen Segen oder einen Fluch wählen."
+ fw_fate_decided_button_tooltip:0 "Das Schicksal dieser Welt ist bereits entschieden. Der Ausgang bleibt wirksam, bis er abläuft."
+
+ fw.10.name:0 "Schicksalsweberei"
+ fw.10.desc:0 "§Y[event_target:fw_target_colony.GetName]§! wurde für die Schicksalsweberei ausgewählt. Sollen wir ihr Schicksal in Bewegung setzen?"
+ fw.10.a:0 "Invoke Fate"
+ fw.10.b:0 "Abbrechen"
+
+ fw.101.name:0 "$fw_fate_bountiful_harvest$"
+ fw.101.desc:0 "Das Schicksal hat §Y[event_target:fw_target_colony.GetName]§! mit Überfluss und erneuertem bürgerlichem Vertrauen gesegnet."
+
+ fw.102.name:0 "$fw_fate_golden_alignment$"
+ fw.102.desc:0 "Das Schicksal hat §Y[event_target:fw_target_colony.GetName]§! auf Harmonie, Ordnung und außergewöhnliche Stabilität ausgerichtet."
+
+ fw.103.name:0 "$fw_fate_growth_surge$"
+ fw.103.desc:0 "Das Schicksal hat Erneuerung, Migration, Optimismus und demografischen Schwung für §Y[event_target:fw_target_colony.GetName]§! gewählt."
+
+ fw.104.name:0 "$fw_fate_serene_destiny$"
+ fw.104.desc:0 "Das Schicksal hat die Not auf §Y[event_target:fw_target_colony.GetName]§! gemildert und eine Zeit ruhigen Wohlstands gebracht."
+
+ fw.105.name:0 "$fw_fate_scholars_dream$"
+ fw.105.desc:0 "Das Schicksal hat Neugier und wissenschaftlichen Schwung auf §Y[event_target:fw_target_colony.GetName]§! geweckt."
+
+ fw.201.name:0 "$fw_fate_shattered_luck$"
+ fw.201.desc:0 "Das Schicksal hat sich gegen §Y[event_target:fw_target_colony.GetName]§! gewandt und Glück und Zuversicht zerstreut."
+
+ fw.202.name:0 "$fw_fate_ruined_machines$"
+ fw.202.desc:0 "Das Schicksal hat Industrie und ingenieurtechnisches Verständnis auf §Y[event_target:fw_target_colony.GetName]§! sabotiert."
+
+ fw.203.name:0 "$fw_fate_hunger_shadow$"
+ fw.203.desc:0 "Das Schicksal hat §Y[event_target:fw_target_colony.GetName]§! mit einer Schattenwand aus Knappheit und misslingenden Ernten überzogen."
+
+ fw.204.name:0 "$fw_fate_madness_weather$"
+ fw.204.desc:0 "Das Schicksal hat das tägliche Leben auf §Y[event_target:fw_target_colony.GetName]§! mit unberechenbaren Bedingungen und bröckelnder Moral ins Wanken gebracht."
+
+ fw.205.name:0 "$fw_fate_cursed_silence$"
+ fw.205.desc:0 "Das Schicksal hat Einheit und kollektiven Willen auf §Y[event_target:fw_target_colony.GetName]§! erstickt."
+
+ fw_fate_pending_tooltip:0 "Schicksal wird entschieden...\n\nDie Zukunft dieser Welt wird durch unsichtbare Fäden gezogen. Der endgültige Ausgang hat sich noch nicht manifestiert."
+
+ fw_fate_bountiful_harvest_tooltip:0 "§H$fw_fate_bountiful_harvest$§!\n\nDas Schicksal hat diese Welt mit Überfluss und erneuertem bürgerlichem Vertrauen gesegnet.\n\nDauer: 5 Jahre\nEffekte: +10 % Nahrung aus Jobs, +5 Stabilität"
+ fw_fate_golden_alignment_tooltip:0 "§H$fw_fate_golden_alignment$§!\n\nDas Schicksal hat diese Welt auf Harmonie und außergewöhnliche Stabilität ausgerichtet.\n\nDauer: 5 Jahre\nEffekte: +10 Stabilität"
+ fw_fate_growth_surge_tooltip:0 "§H$fw_fate_growth_surge$§!\n\nDas Schicksal hat Erneuerung, Migration, Optimismus und demografischen Schwung gewählt.\n\nDauer: 5 Jahre\nEffekte: +5 Stabilität"
+ fw_fate_serene_destiny_tooltip:0 "§H$fw_fate_serene_destiny$§!\n\nDas Schicksal hat die Not gemildert und eine Zeit ruhigen Wohlstands gebracht.\n\nDauer: 5 Jahre\nEffekte: +10 % Annehmlichkeiten, +5 Stabilität"
+ fw_fate_scholars_dream_tooltip:0 "§H$fw_fate_scholars_dream$§!\n\nDas Schicksal hat Neugier und wissenschaftlichen Schwung geweckt.\n\nDauer: 5 Jahre\nEffekte: +10 % Forscherleistung, +5 Stabilität"
+
+ fw_fate_shattered_luck_tooltip:0 "§H$fw_fate_shattered_luck$§!\n\nDas Schicksal hat sich gegen diese Welt gewandt und Glück und Zuversicht zerstreut.\n\nDauer: 5 Jahre\nEffekte: -5 Stabilität"
+ fw_fate_ruined_machines_tooltip:0 "§H$fw_fate_ruined_machines$§!\n\nDas Schicksal hat Industrie und ingenieurtechnisches Verständnis sabotiert.\n\nDauer: 5 Jahre\nEffekte: -10 % Ingenieurforschung aus Jobs, -5 Stabilität"
+ fw_fate_hunger_shadow_tooltip:0 "§H$fw_fate_hunger_shadow$§!\n\nDas Schicksal hat eine Schattenwand aus Knappheit und misslingenden Ernten überzogen.\n\nDauer: 5 Jahre\nEffekte: -10 % Nahrung aus Jobs, -5 Stabilität"
+ fw_fate_madness_weather_tooltip:0 "§H$fw_fate_madness_weather$§!\n\nDas Schicksal hat das tägliche Leben mit unberechenbaren Bedingungen und bröckelnder Moral ins Wanken gebracht.\n\nDauer: 5 Jahre\nEffekte: -10 % Annehmlichkeiten, -5 Stabilität"
+ fw_fate_cursed_silence_tooltip:0 "§H$fw_fate_cursed_silence$§!\n\nDas Schicksal hat Einheit und kollektiven Willen erstickt.\n\nDauer: 5 Jahre\nEffekte: -10 % Einigkeit, -5 Stabilität"
+
+ fw_fate_pending_status_text:0 "§HSchicksal wird entschieden§!\nAusgang manifestiert sich in 30–90 Tagen."
+ fw_fate_bountiful_harvest_status_text:0 "§H$fw_fate_bountiful_harvest$§!\n+10 % Nahrung, +5 Stabilität\n§Y[This.fw_fate_days_remaining] Tage verbleibend§!"
+ fw_fate_golden_alignment_status_text:0 "§H$fw_fate_golden_alignment$§!\n+10 Stabilität\n§Y[This.fw_fate_days_remaining] Tage verbleibend§!"
+ fw_fate_growth_surge_status_text:0 "§H$fw_fate_growth_surge$§!\n+5 Stabilität\n§Y[This.fw_fate_days_remaining] Tage verbleibend§!"
+ fw_fate_serene_destiny_status_text:0 "§H$fw_fate_serene_destiny$§!\n+10 % Annehmlichkeiten, +5 Stabilität\n§Y[This.fw_fate_days_remaining] Tage verbleibend§!"
+ fw_fate_scholars_dream_status_text:0 "§H$fw_fate_scholars_dream$§!\n+10 % Forscherleistung, +5 Stabilität\n§Y[This.fw_fate_days_remaining] Tage verbleibend§!"
+ fw_fate_shattered_luck_status_text:0 "§H$fw_fate_shattered_luck$§!\n-5 Stabilität\n§Y[This.fw_fate_days_remaining] Tage verbleibend§!"
+ fw_fate_ruined_machines_status_text:0 "§H$fw_fate_ruined_machines$§!\n-10 % Ingenieurforschung, -5 Stabilität\n§Y[This.fw_fate_days_remaining] Tage verbleibend§!"
+ fw_fate_hunger_shadow_status_text:0 "§H$fw_fate_hunger_shadow$§!\n-10 % Nahrung, -5 Stabilität\n§Y[This.fw_fate_days_remaining] Tage verbleibend§!"
+ fw_fate_madness_weather_status_text:0 "§H$fw_fate_madness_weather$§!\n-10 % Annehmlichkeiten, -5 Stabilität\n§Y[This.fw_fate_days_remaining] Tage verbleibend§!"
+ fw_fate_cursed_silence_status_text:0 "§H$fw_fate_cursed_silence$§!\n-10 % Einigkeit, -5 Stabilität\n§Y[This.fw_fate_days_remaining] Tage verbleibend§!"
+
+ fw_fate_growth_surge:0 "Wachstumsschub"
+ fw_fate_growth_surge_desc:0 "Das Schicksal hat Erneuerung, Migration, Optimismus und demografischen Schwung gewählt."
+ fw_fate_bountiful_harvest:0 "Üppige Ernte"
+ fw_fate_bountiful_harvest_desc:0 "Das Schicksal hat diese Welt mit Überfluss und erneuertem bürgerlichem Vertrauen gesegnet."
+ fw_fate_golden_alignment:0 "Goldene Ausrichtung"
+ fw_fate_golden_alignment_desc:0 "Das Schicksal hat diese Welt auf Harmonie und außergewöhnliche Stabilität ausgerichtet."
+ fw_fate_serene_destiny:0 "Heiteres Schicksal"
+ fw_fate_serene_destiny_desc:0 "Das Schicksal hat die Not gemildert und eine Zeit ruhigen Wohlstands gebracht."
+ fw_fate_scholars_dream:0 "Traum des Gelehrten"
+ fw_fate_scholars_dream_desc:0 "Das Schicksal hat Neugier und wissenschaftlichen Schwung geweckt."
+ fw_fate_shattered_luck:0 "Zerschmettertes Glück"
+ fw_fate_shattered_luck_desc:0 "Das Schicksal hat sich gegen diese Welt gewandt und Glück und Zuversicht zerstreut."
+ fw_fate_ruined_machines:0 "Zerstörte Maschinen"
+ fw_fate_ruined_machines_desc:0 "Das Schicksal hat Industrie und ingenieurtechnisches Verständnis sabotiert."
+ fw_fate_hunger_shadow:0 "Hungerschatten"
+ fw_fate_hunger_shadow_desc:0 "Das Schicksal hat eine Schattenwand aus Knappheit und misslingenden Ernten überzogen."
+ fw_fate_madness_weather:0 "Wahnsinnswetter"
+ fw_fate_madness_weather_desc:0 "Das Schicksal hat das tägliche Leben mit unberechenbaren Bedingungen und bröckelnder Moral ins Wanken gebracht."
+ fw_fate_cursed_silence:0 "Verfluchtes Schweigen"
+ fw_fate_cursed_silence_desc:0 "Das Schicksal hat Einheit und kollektiven Willen erstickt."

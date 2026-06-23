@@ -1,0 +1,8 @@
+pf_has_active_planetary_festival = {
+    OR = {
+        has_modifier = pf_unity_festival_modifier
+        has_modifier = pf_prosperity_festival_modifier
+        has_modifier = pf_remembrance_festival_modifier
+        has_modifier = pf_science_festival_modifier
+    }
+}

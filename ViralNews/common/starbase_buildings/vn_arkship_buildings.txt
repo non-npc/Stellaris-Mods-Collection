@@ -1,0 +1,81 @@
+vn_arkship_hypernet_media_nexus = {
+	icon = "GFX_building_vn_hypernet_media_nexus"
+	starbase_type = arkship
+	construction_days = 720
+	category = sm_colony_cat
+
+	starbase_limit = {
+		base = 1
+	}
+
+	potential = {
+		is_arkship_starbase = yes
+		owner? = {
+			has_technology = tech_viral_news_network
+			is_ai = no
+		}
+	}
+
+	possible = {
+		owner? = {
+			custom_tooltip = {
+				fail_text = vn_requires_no_existing_hypernet_media_nexus
+				NOR = {
+					any_owned_planet = {
+						has_building = building_vn_hypernet_media_nexus
+					}
+					any_owned_starbase = {
+						has_starbase_building = vn_arkship_hypernet_media_nexus
+					}
+					any_owned_fleet = {
+						starbase? = {
+							has_starbase_building = vn_arkship_hypernet_media_nexus
+						}
+					}
+				}
+			}
+		}
+	}
+
+	show_in_tech = "tech_viral_news_network"
+
+	show_tech_unlock_if = {
+		is_nomadic = yes
+	}
+
+	resources = {
+		category = starbase_arkship_upgrades
+		cost = {
+			alloys = 800
+			consumer_goods = 200
+		}
+		upkeep = {
+			energy = 5
+			consumer_goods = 2
+		}
+		produces = {
+			unity = 8
+		}
+	}
+
+	planet_modifier = {
+		planet_amenities_add = 10
+	}
+
+	on_finished = {
+		owner = {
+			if = {
+				limit = {
+					is_ai = no
+					NOT = { has_country_flag = vn_network_active }
+					NOT = { has_country_flag = vn_network_activation_pending }
+				}
+				vn_begin_network_launch = yes
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

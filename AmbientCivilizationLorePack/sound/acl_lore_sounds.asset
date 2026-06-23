@@ -1,0 +1,21 @@
+category = {
+    name = "Effects"
+    soundeffects = {
+        acl_popup
+    }
+}
+
+sound = {
+    name = "acl_popup"
+    file = "event/popup_acl.wav"
+    volume = 0.70
+}
+
+soundeffect = {
+    name = acl_popup
+    sounds = {
+        sound = acl_popup
+    }
+    max_audible = 1
+    max_audible_behaviour = fail
+}

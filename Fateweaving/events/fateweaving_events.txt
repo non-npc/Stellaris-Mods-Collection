@@ -1,0 +1,389 @@
+namespace = fw
+
+country_event = {
+	id = fw.10
+	title = fw.10.name
+	desc = fw.10.desc
+	picture = GFX_fw_evt_marked
+	show_sound = fw_markcolony
+	location = event_target:fw_target_colony
+	is_triggered_only = yes
+
+	trigger = {
+		exists = event_target:fw_target_colony
+		exists = event_target:fw_invoker_country
+		event_target:fw_invoker_country = {
+			has_technology = tech_fateweaving
+		}
+		event_target:fw_target_colony = {
+			is_colony = yes
+			NOT = { has_carrier_flag = fw_fate_pending }
+			NOT = { has_carrier_flag = fw_fate_result_active }
+		}
+	}
+
+	option = {
+		name = fw.10.a
+		hidden_effect = {
+			country_event = { id = fw.11 }
+		}
+	}
+
+	option = {
+		name = fw.10.b
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	id = fw.11
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = event_target:fw_target_colony
+		event_target:fw_target_colony = {
+			is_colony = yes
+			NOT = { has_carrier_flag = fw_fate_pending }
+			NOT = { has_carrier_flag = fw_fate_result_active }
+		}
+	}
+
+	immediate = {
+		event_target:fw_target_colony = {
+			set_carrier_flag = fw_fate_pending
+			colony_event = { id = fw.100 days = 30 random = 60 }
+		}
+	}
+}
+
+colony_event = {
+	id = fw.100
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_carrier_flag = fw_fate_pending
+	}
+
+	immediate = {
+		save_event_target_as = fw_target_colony
+		from = {
+			save_event_target_as = fw_invoker_country
+			random_list = {
+				1 = { country_event = { id = fw.101 } }
+				1 = { country_event = { id = fw.102 } }
+				1 = { country_event = { id = fw.103 } }
+				1 = { country_event = { id = fw.104 } }
+				1 = { country_event = { id = fw.105 } }
+				1 = { country_event = { id = fw.201 } }
+				1 = { country_event = { id = fw.202 } }
+				1 = { country_event = { id = fw.203 } }
+				1 = { country_event = { id = fw.204 } }
+				1 = { country_event = { id = fw.205 } }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = fw.101
+	title = fw.101.name
+	desc = fw.101.desc
+	picture = GFX_fw_evt_blessing
+	show_sound = fw_outcome
+	location = event_target:fw_target_colony
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:fw_target_colony = {
+			remove_carrier_flag = fw_fate_pending
+			set_timed_carrier_flag = { flag = fw_fate_result_active days = 1800 }
+			set_timed_carrier_flag = { flag = fw_fate_bountiful_harvest_active days = 1800 }
+			add_modifier = {
+				modifier = fw_fate_bountiful_harvest
+				days = 1800
+			}
+			fw_set_fate_outcome_days_remaining = yes
+			fw_start_fate_days_countdown = yes
+		}
+	}
+
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = fw.102
+	title = fw.102.name
+	desc = fw.102.desc
+	picture = GFX_fw_evt_blessing
+	show_sound = fw_outcome
+	location = event_target:fw_target_colony
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:fw_target_colony = {
+			remove_carrier_flag = fw_fate_pending
+			set_timed_carrier_flag = { flag = fw_fate_result_active days = 1800 }
+			set_timed_carrier_flag = { flag = fw_fate_golden_alignment_active days = 1800 }
+			add_modifier = {
+				modifier = fw_fate_golden_alignment
+				days = 1800
+			}
+			fw_set_fate_outcome_days_remaining = yes
+			fw_start_fate_days_countdown = yes
+		}
+	}
+
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = fw.103
+	title = fw.103.name
+	desc = fw.103.desc
+	picture = GFX_fw_evt_blessing
+	show_sound = fw_outcome
+	location = event_target:fw_target_colony
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:fw_target_colony = {
+			remove_carrier_flag = fw_fate_pending
+			set_timed_carrier_flag = { flag = fw_fate_result_active days = 1800 }
+			set_timed_carrier_flag = { flag = fw_fate_growth_surge_active days = 1800 }
+			add_modifier = {
+				modifier = fw_fate_growth_surge
+				days = 1800
+			}
+			fw_set_fate_outcome_days_remaining = yes
+			fw_start_fate_days_countdown = yes
+		}
+	}
+
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = fw.104
+	title = fw.104.name
+	desc = fw.104.desc
+	picture = GFX_fw_evt_blessing
+	show_sound = fw_outcome
+	location = event_target:fw_target_colony
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:fw_target_colony = {
+			remove_carrier_flag = fw_fate_pending
+			set_timed_carrier_flag = { flag = fw_fate_result_active days = 1800 }
+			set_timed_carrier_flag = { flag = fw_fate_serene_destiny_active days = 1800 }
+			add_modifier = {
+				modifier = fw_fate_serene_destiny
+				days = 1800
+			}
+			fw_set_fate_outcome_days_remaining = yes
+			fw_start_fate_days_countdown = yes
+		}
+	}
+
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = fw.105
+	title = fw.105.name
+	desc = fw.105.desc
+	picture = GFX_fw_evt_blessing
+	show_sound = fw_outcome
+	location = event_target:fw_target_colony
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:fw_target_colony = {
+			remove_carrier_flag = fw_fate_pending
+			set_timed_carrier_flag = { flag = fw_fate_result_active days = 1800 }
+			set_timed_carrier_flag = { flag = fw_fate_scholars_dream_active days = 1800 }
+			add_modifier = {
+				modifier = fw_fate_scholars_dream
+				days = 1800
+			}
+			fw_set_fate_outcome_days_remaining = yes
+			fw_start_fate_days_countdown = yes
+		}
+	}
+
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = fw.201
+	title = fw.201.name
+	desc = fw.201.desc
+	picture = GFX_fw_evt_catastrophe
+	show_sound = fw_outcome
+	location = event_target:fw_target_colony
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:fw_target_colony = {
+			remove_carrier_flag = fw_fate_pending
+			set_timed_carrier_flag = { flag = fw_fate_result_active days = 1800 }
+			set_timed_carrier_flag = { flag = fw_fate_shattered_luck_active days = 1800 }
+			add_modifier = {
+				modifier = fw_fate_shattered_luck
+				days = 1800
+			}
+			fw_set_fate_outcome_days_remaining = yes
+			fw_start_fate_days_countdown = yes
+		}
+	}
+
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = fw.202
+	title = fw.202.name
+	desc = fw.202.desc
+	picture = GFX_fw_evt_catastrophe
+	show_sound = fw_outcome
+	location = event_target:fw_target_colony
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:fw_target_colony = {
+			remove_carrier_flag = fw_fate_pending
+			set_timed_carrier_flag = { flag = fw_fate_result_active days = 1800 }
+			set_timed_carrier_flag = { flag = fw_fate_ruined_machines_active days = 1800 }
+			add_modifier = {
+				modifier = fw_fate_ruined_machines
+				days = 1800
+			}
+			fw_set_fate_outcome_days_remaining = yes
+			fw_start_fate_days_countdown = yes
+		}
+	}
+
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = fw.203
+	title = fw.203.name
+	desc = fw.203.desc
+	picture = GFX_fw_evt_catastrophe
+	show_sound = fw_outcome
+	location = event_target:fw_target_colony
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:fw_target_colony = {
+			remove_carrier_flag = fw_fate_pending
+			set_timed_carrier_flag = { flag = fw_fate_result_active days = 1800 }
+			set_timed_carrier_flag = { flag = fw_fate_hunger_shadow_active days = 1800 }
+			add_modifier = {
+				modifier = fw_fate_hunger_shadow
+				days = 1800
+			}
+			fw_set_fate_outcome_days_remaining = yes
+			fw_start_fate_days_countdown = yes
+		}
+	}
+
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = fw.204
+	title = fw.204.name
+	desc = fw.204.desc
+	picture = GFX_fw_evt_catastrophe
+	show_sound = fw_outcome
+	location = event_target:fw_target_colony
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:fw_target_colony = {
+			remove_carrier_flag = fw_fate_pending
+			set_timed_carrier_flag = { flag = fw_fate_result_active days = 1800 }
+			set_timed_carrier_flag = { flag = fw_fate_madness_weather_active days = 1800 }
+			add_modifier = {
+				modifier = fw_fate_madness_weather
+				days = 1800
+			}
+			fw_set_fate_outcome_days_remaining = yes
+			fw_start_fate_days_countdown = yes
+		}
+	}
+
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = fw.205
+	title = fw.205.name
+	desc = fw.205.desc
+	picture = GFX_fw_evt_catastrophe
+	show_sound = fw_outcome
+	location = event_target:fw_target_colony
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:fw_target_colony = {
+			remove_carrier_flag = fw_fate_pending
+			set_timed_carrier_flag = { flag = fw_fate_result_active days = 1800 }
+			set_timed_carrier_flag = { flag = fw_fate_cursed_silence_active days = 1800 }
+			add_modifier = {
+				modifier = fw_fate_cursed_silence
+				days = 1800
+			}
+			fw_set_fate_outcome_days_remaining = yes
+			fw_start_fate_days_countdown = yes
+		}
+	}
+
+	option = {
+		name = OK
+	}
+}
+
+colony_event = {
+	id = fw.900
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = { }
+}
+
+colony_event = {
+	id = fw.950
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_carrier_flag = fw_fate_days_tick_active
+	}
+
+	immediate = {
+		fw_tick_fate_days_remaining = yes
+	}
+}

@@ -1,0 +1,269 @@
+namespace = vn
+
+country_event = {
+	id = vn.5000
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = { vn_can_receive_news = yes }
+
+	immediate = {
+		if = {
+			limit = { vn_can_receive_news = yes }
+			# random_owned_colony includes both ordinary colonies and Arkship colonies.
+			random_owned_colony = {
+				limit = { is_colony = yes }
+				save_event_target_as = vn_news_planet
+			}
+			if = {
+				limit = { exists = event_target:vn_news_planet }
+				random_list = {
+				10 = { country_event = { id = vn.100 } }
+				10 = { country_event = { id = vn.101 } }
+				10 = { country_event = { id = vn.102 } }
+				10 = { country_event = { id = vn.103 } }
+				10 = { country_event = { id = vn.104 } }
+				10 = { country_event = { id = vn.105 } }
+				10 = { country_event = { id = vn.106 } }
+				10 = { country_event = { id = vn.107 } }
+				10 = { country_event = { id = vn.108 } }
+				10 = { country_event = { id = vn.109 } }
+				10 = { country_event = { id = vn.110 } }
+				10 = { country_event = { id = vn.111 } }
+				10 = { country_event = { id = vn.112 } }
+				10 = { country_event = { id = vn.113 } }
+				10 = { country_event = { id = vn.114 } }
+				10 = { country_event = { id = vn.115 } }
+				10 = { country_event = { id = vn.116 } }
+				10 = { country_event = { id = vn.117 } }
+				10 = { country_event = { id = vn.118 } }
+				10 = { country_event = { id = vn.119 } }
+				10 = { country_event = { id = vn.120 } }
+				10 = { country_event = { id = vn.121 } }
+				10 = { country_event = { id = vn.122 } }
+				10 = { country_event = { id = vn.123 } }
+				10 = { country_event = { id = vn.124 } }
+				10 = { country_event = { id = vn.125 } }
+				10 = { country_event = { id = vn.126 } }
+				10 = { country_event = { id = vn.127 } }
+				10 = { country_event = { id = vn.128 } }
+				10 = { country_event = { id = vn.129 } }
+				10 = { country_event = { id = vn.130 } }
+				10 = { country_event = { id = vn.131 } }
+				10 = { country_event = { id = vn.132 } }
+				10 = { country_event = { id = vn.133 } }
+				10 = { country_event = { id = vn.134 } }
+				10 = { country_event = { id = vn.135 } }
+				10 = { country_event = { id = vn.136 } }
+				10 = { country_event = { id = vn.137 } }
+				10 = { country_event = { id = vn.138 } }
+				10 = { country_event = { id = vn.139 } }
+				10 = { country_event = { id = vn.140 } }
+				10 = { country_event = { id = vn.141 } }
+				10 = { country_event = { id = vn.142 } }
+				10 = { country_event = { id = vn.143 } }
+				10 = { country_event = { id = vn.144 } }
+				10 = { country_event = { id = vn.145 } }
+				10 = { country_event = { id = vn.146 } }
+				10 = { country_event = { id = vn.147 } }
+				10 = { country_event = { id = vn.148 } }
+				10 = { country_event = { id = vn.149 } }
+				10 = { country_event = { id = vn.150 } }
+				10 = { country_event = { id = vn.151 } }
+				10 = { country_event = { id = vn.152 } }
+				10 = { country_event = { id = vn.153 } }
+				10 = { country_event = { id = vn.154 } }
+				10 = { country_event = { id = vn.155 } }
+				10 = { country_event = { id = vn.156 } }
+				10 = { country_event = { id = vn.157 } }
+				10 = { country_event = { id = vn.158 } }
+				10 = { country_event = { id = vn.159 } }
+				10 = { country_event = { id = vn.160 } }
+				10 = { country_event = { id = vn.161 } }
+				10 = { country_event = { id = vn.162 } }
+				10 = { country_event = { id = vn.163 } }
+				10 = { country_event = { id = vn.164 } }
+				10 = { country_event = { id = vn.165 } }
+				10 = { country_event = { id = vn.166 } }
+				10 = { country_event = { id = vn.167 } }
+				10 = { country_event = { id = vn.168 } }
+				10 = { country_event = { id = vn.169 } }
+				10 = { country_event = { id = vn.170 } }
+				10 = { country_event = { id = vn.171 } }
+				10 = { country_event = { id = vn.172 } }
+				10 = { country_event = { id = vn.173 } }
+				10 = { country_event = { id = vn.174 } }
+				10 = { country_event = { id = vn.175 } }
+				10 = { country_event = { id = vn.176 } }
+				10 = { country_event = { id = vn.177 } }
+				10 = { country_event = { id = vn.178 } }
+				10 = { country_event = { id = vn.179 } }
+				10 = { country_event = { id = vn.180 } }
+				10 = { country_event = { id = vn.181 } }
+				10 = { country_event = { id = vn.182 } }
+				10 = { country_event = { id = vn.183 } }
+				10 = { country_event = { id = vn.184 } }
+				10 = { country_event = { id = vn.185 } }
+				10 = { country_event = { id = vn.186 } }
+				10 = { country_event = { id = vn.187 } }
+				10 = { country_event = { id = vn.188 } }
+				10 = { country_event = { id = vn.189 } }
+				10 = { country_event = { id = vn.190 } }
+				10 = { country_event = { id = vn.191 } }
+				10 = { country_event = { id = vn.192 } }
+				10 = { country_event = { id = vn.193 } }
+				10 = { country_event = { id = vn.194 } }
+				10 = { country_event = { id = vn.195 } }
+				10 = { country_event = { id = vn.196 } }
+				10 = { country_event = { id = vn.197 } }
+				10 = { country_event = { id = vn.198 } }
+				10 = { country_event = { id = vn.199 } }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = vn.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+		NOT = { has_country_flag = vn_network_active }
+		NOT = { has_country_flag = vn_network_activation_pending }
+		vn_has_hypernet_nexus = yes
+	}
+
+	immediate = {
+		vn_begin_network_launch = yes
+	}
+}
+
+namespace = vnlaunch
+
+country_event = {
+	id = vnlaunch.1
+	title = vn.900.name
+	desc = vn.900.desc
+	picture = GFX_evt_vn_newsroom
+	show_sound = vn_event
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+		has_country_flag = vn_network_activation_pending
+		NOT = { has_country_flag = vn_network_active }
+		vn_has_hypernet_nexus = yes
+	}
+
+	option = {
+		name = vn.900.a
+		set_country_flag = vn_network_active
+		remove_country_flag = vn_network_activation_pending
+	}
+}
+
+namespace = vn
+
+country_event = { id = vn.100 title = vn.100.name desc = vn.100.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_viral_buzz days = 720 } } } } }
+country_event = { id = vn.101 title = vn.101.name desc = vn.101.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_public_panic days = 720 } } } } }
+country_event = { id = vn.102 title = vn.102.name desc = vn.102.desc picture = GFX_evt_vn_celebrity show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_tourism_spike days = 720 } } } } }
+country_event = { id = vn.103 title = vn.103.name desc = vn.103.desc picture = GFX_evt_vn_social show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_human_interest days = 720 } } } } }
+country_event = { id = vn.104 title = vn.104.name desc = vn.104.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes } }
+country_event = { id = vn.105 title = vn.105.name desc = vn.105.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_viral_buzz days = 720 } } } } }
+country_event = { id = vn.106 title = vn.106.name desc = vn.106.desc picture = GFX_evt_vn_social show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_public_panic days = 720 } } } } }
+country_event = { id = vn.107 title = vn.107.name desc = vn.107.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_tourism_spike days = 720 } } } } }
+country_event = { id = vn.108 title = vn.108.name desc = vn.108.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_human_interest days = 720 } } } } }
+country_event = { id = vn.109 title = vn.109.name desc = vn.109.desc picture = GFX_evt_vn_celebrity show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes } }
+country_event = { id = vn.110 title = vn.110.name desc = vn.110.desc picture = GFX_evt_vn_celebrity show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_viral_buzz days = 720 } } } } }
+country_event = { id = vn.111 title = vn.111.name desc = vn.111.desc picture = GFX_evt_vn_celebrity show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_public_panic days = 720 } } } } }
+country_event = { id = vn.112 title = vn.112.name desc = vn.112.desc picture = GFX_evt_vn_social show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_tourism_spike days = 720 } } } } }
+country_event = { id = vn.113 title = vn.113.name desc = vn.113.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_human_interest days = 720 } } } } }
+country_event = { id = vn.114 title = vn.114.name desc = vn.114.desc picture = GFX_evt_vn_celebrity show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes } }
+country_event = { id = vn.115 title = vn.115.name desc = vn.115.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_viral_buzz days = 720 } } } } }
+country_event = { id = vn.116 title = vn.116.name desc = vn.116.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_public_panic days = 720 } } } } }
+country_event = { id = vn.117 title = vn.117.name desc = vn.117.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_tourism_spike days = 720 } } } } }
+country_event = { id = vn.118 title = vn.118.name desc = vn.118.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_human_interest days = 720 } } } } }
+country_event = { id = vn.119 title = vn.119.name desc = vn.119.desc picture = GFX_evt_vn_celebrity show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes } }
+country_event = { id = vn.120 title = vn.120.name desc = vn.120.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_viral_buzz days = 720 } } } } }
+country_event = { id = vn.121 title = vn.121.name desc = vn.121.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_public_panic days = 720 } } } } }
+country_event = { id = vn.122 title = vn.122.name desc = vn.122.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_tourism_spike days = 720 } } } } }
+country_event = { id = vn.123 title = vn.123.name desc = vn.123.desc picture = GFX_evt_vn_social show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_human_interest days = 720 } } } } }
+country_event = { id = vn.124 title = vn.124.name desc = vn.124.desc picture = GFX_evt_vn_celebrity show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes } }
+country_event = { id = vn.125 title = vn.125.name desc = vn.125.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_viral_buzz days = 720 } } } } }
+country_event = { id = vn.126 title = vn.126.name desc = vn.126.desc picture = GFX_evt_vn_social show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_public_panic days = 720 } } } } }
+country_event = { id = vn.127 title = vn.127.name desc = vn.127.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_tourism_spike days = 720 } } } } }
+country_event = { id = vn.128 title = vn.128.name desc = vn.128.desc picture = GFX_evt_vn_celebrity show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_human_interest days = 720 } } } } }
+country_event = { id = vn.129 title = vn.129.name desc = vn.129.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes } }
+country_event = { id = vn.130 title = vn.130.name desc = vn.130.desc picture = GFX_evt_vn_social show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_viral_buzz days = 720 } } } } }
+country_event = { id = vn.131 title = vn.131.name desc = vn.131.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_public_panic days = 720 } } } } }
+country_event = { id = vn.132 title = vn.132.name desc = vn.132.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_tourism_spike days = 720 } } } } }
+country_event = { id = vn.133 title = vn.133.name desc = vn.133.desc picture = GFX_evt_vn_celebrity show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_human_interest days = 720 } } } } }
+country_event = { id = vn.134 title = vn.134.name desc = vn.134.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes } }
+country_event = { id = vn.135 title = vn.135.name desc = vn.135.desc picture = GFX_evt_vn_social show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_viral_buzz days = 720 } } } } }
+country_event = { id = vn.136 title = vn.136.name desc = vn.136.desc picture = GFX_evt_vn_celebrity show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_public_panic days = 720 } } } } }
+country_event = { id = vn.137 title = vn.137.name desc = vn.137.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_tourism_spike days = 720 } } } } }
+country_event = { id = vn.138 title = vn.138.name desc = vn.138.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_human_interest days = 720 } } } } }
+country_event = { id = vn.139 title = vn.139.name desc = vn.139.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes } }
+country_event = { id = vn.140 title = vn.140.name desc = vn.140.desc picture = GFX_evt_vn_social show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_viral_buzz days = 720 } } } } }
+country_event = { id = vn.141 title = vn.141.name desc = vn.141.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_public_panic days = 720 } } } } }
+country_event = { id = vn.142 title = vn.142.name desc = vn.142.desc picture = GFX_evt_vn_celebrity show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_tourism_spike days = 720 } } } } }
+country_event = { id = vn.143 title = vn.143.name desc = vn.143.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_human_interest days = 720 } } } } }
+country_event = { id = vn.144 title = vn.144.name desc = vn.144.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes } }
+country_event = { id = vn.145 title = vn.145.name desc = vn.145.desc picture = GFX_evt_vn_celebrity show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_viral_buzz days = 720 } } } } }
+country_event = { id = vn.146 title = vn.146.name desc = vn.146.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_public_panic days = 720 } } } } }
+country_event = { id = vn.147 title = vn.147.name desc = vn.147.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_tourism_spike days = 720 } } } } }
+country_event = { id = vn.148 title = vn.148.name desc = vn.148.desc picture = GFX_evt_vn_social show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_human_interest days = 720 } } } } }
+country_event = { id = vn.149 title = vn.149.name desc = vn.149.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes } }
+country_event = { id = vn.150 title = vn.150.name desc = vn.150.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_viral_buzz days = 720 } } } } }
+country_event = { id = vn.151 title = vn.151.name desc = vn.151.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_public_panic days = 720 } } } } }
+country_event = { id = vn.152 title = vn.152.name desc = vn.152.desc picture = GFX_evt_vn_celebrity show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_tourism_spike days = 720 } } } } }
+country_event = { id = vn.153 title = vn.153.name desc = vn.153.desc picture = GFX_evt_vn_social show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_human_interest days = 720 } } } } }
+country_event = { id = vn.154 title = vn.154.name desc = vn.154.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes } }
+country_event = { id = vn.155 title = vn.155.name desc = vn.155.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_viral_buzz days = 720 } } } } }
+country_event = { id = vn.156 title = vn.156.name desc = vn.156.desc picture = GFX_evt_vn_celebrity show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_public_panic days = 720 } } } } }
+country_event = { id = vn.157 title = vn.157.name desc = vn.157.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_tourism_spike days = 720 } } } } }
+country_event = { id = vn.158 title = vn.158.name desc = vn.158.desc picture = GFX_evt_vn_social show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_human_interest days = 720 } } } } }
+country_event = { id = vn.159 title = vn.159.name desc = vn.159.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes } }
+country_event = { id = vn.160 title = vn.160.name desc = vn.160.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_viral_buzz days = 720 } } } } }
+country_event = { id = vn.161 title = vn.161.name desc = vn.161.desc picture = GFX_evt_vn_social show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_public_panic days = 720 } } } } }
+country_event = { id = vn.162 title = vn.162.name desc = vn.162.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_tourism_spike days = 720 } } } } }
+country_event = { id = vn.163 title = vn.163.name desc = vn.163.desc picture = GFX_evt_vn_celebrity show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_human_interest days = 720 } } } } }
+country_event = { id = vn.164 title = vn.164.name desc = vn.164.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes } }
+country_event = { id = vn.165 title = vn.165.name desc = vn.165.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_viral_buzz days = 720 } } } } }
+country_event = { id = vn.166 title = vn.166.name desc = vn.166.desc picture = GFX_evt_vn_celebrity show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_public_panic days = 720 } } } } }
+country_event = { id = vn.167 title = vn.167.name desc = vn.167.desc picture = GFX_evt_vn_social show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_tourism_spike days = 720 } } } } }
+country_event = { id = vn.168 title = vn.168.name desc = vn.168.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_human_interest days = 720 } } } } }
+country_event = { id = vn.169 title = vn.169.name desc = vn.169.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes } }
+country_event = { id = vn.170 title = vn.170.name desc = vn.170.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_viral_buzz days = 720 } } } } }
+country_event = { id = vn.171 title = vn.171.name desc = vn.171.desc picture = GFX_evt_vn_celebrity show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_public_panic days = 720 } } } } }
+country_event = { id = vn.172 title = vn.172.name desc = vn.172.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_tourism_spike days = 720 } } } } }
+country_event = { id = vn.173 title = vn.173.name desc = vn.173.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_human_interest days = 720 } } } } }
+country_event = { id = vn.174 title = vn.174.name desc = vn.174.desc picture = GFX_evt_vn_social show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes } }
+country_event = { id = vn.175 title = vn.175.name desc = vn.175.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_viral_buzz days = 720 } } } } }
+country_event = { id = vn.176 title = vn.176.name desc = vn.176.desc picture = GFX_evt_vn_celebrity show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_public_panic days = 720 } } } } }
+country_event = { id = vn.177 title = vn.177.name desc = vn.177.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_tourism_spike days = 720 } } } } }
+country_event = { id = vn.178 title = vn.178.name desc = vn.178.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_human_interest days = 720 } } } } }
+country_event = { id = vn.179 title = vn.179.name desc = vn.179.desc picture = GFX_evt_vn_social show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes } }
+country_event = { id = vn.180 title = vn.180.name desc = vn.180.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_viral_buzz days = 720 } } } } }
+country_event = { id = vn.181 title = vn.181.name desc = vn.181.desc picture = GFX_evt_vn_celebrity show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_public_panic days = 720 } } } } }
+country_event = { id = vn.182 title = vn.182.name desc = vn.182.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_tourism_spike days = 720 } } } } }
+country_event = { id = vn.183 title = vn.183.name desc = vn.183.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_human_interest days = 720 } } } } }
+country_event = { id = vn.184 title = vn.184.name desc = vn.184.desc picture = GFX_evt_vn_social show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes } }
+country_event = { id = vn.185 title = vn.185.name desc = vn.185.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_viral_buzz days = 720 } } } } }
+country_event = { id = vn.186 title = vn.186.name desc = vn.186.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_public_panic days = 720 } } } } }
+country_event = { id = vn.187 title = vn.187.name desc = vn.187.desc picture = GFX_evt_vn_celebrity show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_tourism_spike days = 720 } } } } }
+country_event = { id = vn.188 title = vn.188.name desc = vn.188.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_human_interest days = 720 } } } } }
+country_event = { id = vn.189 title = vn.189.name desc = vn.189.desc picture = GFX_evt_vn_social show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes } }
+country_event = { id = vn.190 title = vn.190.name desc = vn.190.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_viral_buzz days = 720 } } } } }
+country_event = { id = vn.191 title = vn.191.name desc = vn.191.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_public_panic days = 720 } } } } }
+country_event = { id = vn.192 title = vn.192.name desc = vn.192.desc picture = GFX_evt_vn_celebrity show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_tourism_spike days = 720 } } } } }
+country_event = { id = vn.193 title = vn.193.name desc = vn.193.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_human_interest days = 720 } } } } }
+country_event = { id = vn.194 title = vn.194.name desc = vn.194.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes } }
+country_event = { id = vn.195 title = vn.195.name desc = vn.195.desc picture = GFX_evt_vn_celebrity show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_viral_buzz days = 720 } } } } }
+country_event = { id = vn.196 title = vn.196.name desc = vn.196.desc picture = GFX_evt_vn_social show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_public_panic days = 720 } } } } }
+country_event = { id = vn.197 title = vn.197.name desc = vn.197.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_tourism_spike days = 720 } } } } }
+country_event = { id = vn.198 title = vn.198.name desc = vn.198.desc picture = GFX_evt_vn_mystery show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes if = { limit = { exists = event_target:vn_news_planet } event_target:vn_news_planet = { add_modifier = { modifier = vn_human_interest days = 720 } } } } }
+country_event = { id = vn.199 title = vn.199.name desc = vn.199.desc picture = GFX_evt_vn_newsroom show_sound = vn_event is_triggered_only = yes option = { name = vn.ok vn_start_news_cooldown = yes } }

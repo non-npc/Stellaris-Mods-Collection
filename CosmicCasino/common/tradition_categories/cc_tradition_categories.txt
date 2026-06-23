@@ -1,0 +1,22 @@
+tradition_cc_gaming = {
+	tree_template = "tree_12_11"
+	adoption_bonus = "tr_cc_gaming_adopt"
+	finish_bonus = "tr_cc_casino_finish"
+	traditions = {
+		"tr_cc_lucky_break"
+		"tr_cc_house_advantage"
+		"tr_cc_entertainment_networks"
+		"tr_cc_high_rollers"
+		"tr_cc_fortune_seekers"
+	}
+	potential = {
+		is_regular_empire = yes
+	}
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 0
+			is_ai = yes
+		}
+	}
+}

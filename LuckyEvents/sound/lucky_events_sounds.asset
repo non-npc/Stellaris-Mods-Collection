@@ -1,0 +1,21 @@
+category = {
+    name = "Effects"
+    soundeffects = {
+        lucky_events_popup
+    }
+}
+
+sound = {
+    name = "lucky_events_popup"
+    file = "event/popup_lk.wav"
+    volume = 0.70
+}
+
+soundeffect = {
+    name = lucky_events_popup
+    sounds = {
+        sound = lucky_events_popup
+    }
+    max_audible = 1
+    max_audible_behaviour = fail
+}

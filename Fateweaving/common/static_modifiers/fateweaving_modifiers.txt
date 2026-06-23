@@ -1,0 +1,66 @@
+fw_fate_growth_surge = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_fw_fate_growth_surge.dds"
+	icon_frame = 1
+	planet_stability_add = 5
+}
+
+fw_fate_bountiful_harvest = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_fw_fate_bountiful_harvest.dds"
+	icon_frame = 1
+	planet_jobs_food_produces_mult = 0.10
+	planet_stability_add = 5
+}
+
+fw_fate_golden_alignment = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_fw_fate_golden_alignment.dds"
+	icon_frame = 1
+	planet_stability_add = 10
+}
+
+fw_fate_serene_destiny = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_fw_fate_serene_destiny.dds"
+	icon_frame = 1
+	planet_amenities_mult = 0.10
+	planet_stability_add = 5
+}
+
+fw_fate_scholars_dream = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_fw_fate_scholars_dream.dds"
+	icon_frame = 1
+	planet_researchers_produces_mult = 0.10
+	planet_stability_add = 5
+}
+
+fw_fate_shattered_luck = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_fw_fate_shattered_luck.dds"
+	icon_frame = 3
+	planet_stability_add = -5
+}
+
+fw_fate_ruined_machines = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_fw_fate_ruined_machines.dds"
+	icon_frame = 3
+	planet_jobs_engineering_research_produces_mult = -0.10
+	planet_stability_add = -5
+}
+
+fw_fate_hunger_shadow = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_fw_fate_hunger_shadow.dds"
+	icon_frame = 3
+	planet_jobs_food_produces_mult = -0.10
+	planet_stability_add = -5
+}
+
+fw_fate_madness_weather = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_fw_fate_madness_weather.dds"
+	icon_frame = 3
+	planet_amenities_mult = -0.10
+	planet_stability_add = -5
+}
+
+fw_fate_cursed_silence = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_fw_fate_cursed_silence.dds"
+	icon_frame = 3
+	planet_jobs_unity_produces_mult = -0.10
+	planet_stability_add = -5
+}

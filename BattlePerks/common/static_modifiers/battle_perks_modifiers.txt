@@ -1,0 +1,16 @@
+# Battle Perks - Static Modifiers
+
+bp_shield_mandate_active = {
+    icon = "gfx/interface/icons/modifiers/bp_shield_mandate_active.dds"
+    planet_stability_add = 5
+    planet_crime_add = -10
+    army_defense_health_mult = 0.25
+}
+
+bp_bastion_world = {
+    icon = "gfx/interface/icons/modifiers/bp_bastion_world.dds"
+    planet_stability_add = 5
+    army_defense_health_mult = 0.50
+    army_defense_damage_mult = 0.20
+    planet_soldiers_unity_produces_add = 1
+}

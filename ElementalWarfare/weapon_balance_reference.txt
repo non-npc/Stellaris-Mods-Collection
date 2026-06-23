@@ -1,0 +1,172 @@
+Elemental Warfare (v1.4) — Weapon Balance Reference
+=============================================
+
+Source: common/component_templates/ew_components.txt (inline stats)
+Compared against vanilla Stellaris weapon_components.csv and component templates.
+
+
+Overview
+--------
+
+All five elements share identical base damage, fire rate, range, and power per slot
+size. Element choice only changes hull / shield / armor damage multipliers.
+
+Tech unlocks:
+
+  Elemental Theory (tier 2, physics)
+    Requires: tech_plasma_1 (Plasma Throwers I)
+    Chain: Red Lasers → Blue Lasers → Plasma I → Elemental Theory
+
+  Element tier 1 (after Elemental Theory) — S, M, L, P slots
+  Element tier 2 — G (torpedo), H (strike craft)
+  Element tier 3 — X (spinal), T (titan beam)
+
+Overall: EW weapons sit around mid-to-late vanilla energy-weapon damage numbers.
+Elemental Theory opens after Plasma I (vanilla tier 2). Power draw is far lower
+than equivalent vanilla weapons. Accuracy is slightly lower than standard lasers
+(0.82 vs 0.90 on batteries).
+
+
+Element damage multipliers
+--------------------------
+
+Element     Role            Hull    Shield  Armor
+--------    ------------    ----    ------  -----
+Fire        Anti-hull       1.25    1.05    0.80
+Ice         Anti-armor      1.05    0.85    1.25 (** Updated in v1.5.2)
+Lightning   Anti-shield     0.90    1.45    0.70
+Acid        Heavy anti-armor 1.05   0.70    1.55
+Chaos       Generalist      1.15    1.15    1.15
+
+(**) Ice weapon balance suggestion contributed by Barga_rus.
+
+
+Base stats by slot (all elements)
+---------------------------------
+
+Slot   Damage (min–max)   Cooldown   Range   Power    Accuracy   Tracking
+----   ----------------   --------   -----   -----    --------   --------
+S      16–42              30         40      −2       0.82       0.45
+M      40–106             35         60      −5       0.82       0.25
+L      96–252             40         80      −10      0.82       0.10
+P      8–16               5          30      −3       0.75       0.65
+G      200–300            150        120     −8       0.90       0.15
+H      20–44 (per craft)  2.5        10      −10      0.80       0.50
+X      1200–3000          70         150     −35      0.85       0.00
+T      5000–10000         180        250     −75      0.90       0.00
+
+G slot: min_range 45, firing_arc 25
+H slot: 8 craft, regeneration 0.25/day, engagement_range 100
+Windup values match vanilla laser/lance timing per slot (see ew_components.txt)
+
+
+Slot-by-slot vanilla comparison
+-------------------------------
+
+S (Small Battery)
+  EW: 16–42, power −2, cooldown 30
+  Vanilla reference:
+    X-Ray Laser:     13–35,  power −13
+    Plasma II:       16–43,  power −17, cooldown 35
+    Gamma Laser:     17–46,  power −17, cooldown 30
+  Verdict: Between X-Ray and Plasma II / Gamma in raw damage, with laser fire rate
+           and much lower power cost.
+
+M (Medium Battery)
+  EW: 40–106, power −5, cooldown 35
+  Vanilla reference:
+    X-Ray Laser:     33–88,  power −30
+    Plasma II:       40–108, power −36, cooldown 40
+    Gamma Laser:     43–115, power −39, cooldown 35
+  Verdict: Essentially Plasma II damage at laser cadence. Power −5 vs Plasma II −36.
+
+L (Large Battery)
+  EW: 96–252, power −10, cooldown 40
+  Vanilla reference:
+    X-Ray Laser:     78–210,  power −67
+    Plasma II:       96–258,  power −82, cooldown 45
+    Gamma Laser:     102–276, power −88, cooldown 40
+  Verdict: Just under Plasma II / Gamma. Power −10 vs Plasma II −82.
+
+P (Point Defense)
+  EW: 8–16, power −3, cooldown 5
+  Vanilla reference:
+    Point Defense III: 4–8
+    Flak Battery IV:   6–11
+  Verdict: Strong PD per shot — above top-tier flak and point defense.
+
+G (Torpedo)
+  EW: 200–300, power −8, cooldown 150 (instant torpedo, not missile)
+  Vanilla reference:
+    Energy Torpedo I:  47–101
+    Energy Torpedo II: 61–131
+    Kinetic Torpedo III: 169–254
+  Verdict: Well above energy torpedoes; comparable to high-tier kinetic torpedoes.
+           Tier 2 unlock.
+
+H (Strike Craft)
+  EW: 20–44 per craft, 8 craft, cooldown 2.5, power −10
+  Vanilla reference:
+    Strike Craft I:   4–8
+    Strike Craft II:  5–13
+    Strike Craft III: 6–17
+  Verdict: Far above Strike Craft III per craft. Tier 2 unlock.
+
+X (Spinal Lance)
+  EW: 1200–3000, power −35, cooldown 70
+  Vanilla reference:
+    Energy Lance I:    600–1500,  power −200
+    Energy Lance II:   780–1950,  power −260
+    Mass Accelerator I: 700–2000, power −200
+    Arc Emitter I:     1–1300 (high variance)
+  Verdict: Between Energy Lance I and II on average; high rolls approach Mass
+           Accelerator territory. Power −35 vs Lance −200/−260. Tier 3 unlock.
+
+T (Titan Beam)
+  EW: 5000–10000, power −75, cooldown 180, range 250
+  Vanilla reference:
+    Titan Laser: 5000–10000, power −500, cooldown 180, range 250
+  Verdict: Identical damage, timing, and range to Titan Laser. EW power draw in
+           ew_components.txt is −75 (vanilla CSV lists −500 for TITAN_LASER).
+           Tier 3 unlock.
+
+
+Vanilla tier mapping (approximate)
+----------------------------------
+
+EW unlock              Slots unlocked    Feels like vanilla…
+---------              ----------------    -------------------
+Plasma I → Elemental   —                 Gate: mid-game energy investment
+Theory → element tier 1
+Element tier 1         S, M, L, P        Plasma II / X-Ray tier damage
+Element tier 2         G, H              Top torpedoes + super-strike craft
+Element tier 3         X, T              Energy Lance I–II (X), Titan Laser (T)
+
+
+Practical notes
+---------------
+
+1. Tier 1 is strong for unlock timing
+   Plasma-tier punch at laser fire rates after Plasma I, Elemental Theory, and
+   one element tier-1 tech. Elemental weapons are a step up from Plasma I stats.
+
+2. Power efficiency is a major hidden advantage
+   Same-ish damage at a fraction of vanilla power — more weapons or utilities on
+   the same hull.
+
+3. Element choice is matchup, not base DPS
+   Shields  → Lightning (1.45 shield mult)
+   Armor    → Acid (1.55 armor mult) or Ice (1.25)
+   Hull     → Fire (1.25 hull mult)
+   Mixed    → Chaos (1.15 all)
+
+4. Accuracy tradeoff
+   EW batteries use 0.82 accuracy vs 0.90 on standard lasers — slightly more
+   damage lost to misses.
+
+5. Alloy costs (EW vs vanilla, approximate)
+   S: 20 alloys    |  UV Laser S: 17
+   M: 45 alloys    |  Plasma II M: 69
+   L: 90 alloys    |  Plasma II L: 164
+   X: 250 alloys   |  Energy Lance I: 250
+   T: 500 alloys   |  Titan Laser: 500

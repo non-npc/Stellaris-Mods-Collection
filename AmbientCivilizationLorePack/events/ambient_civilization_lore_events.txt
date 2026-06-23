@@ -1,0 +1,2246 @@
+namespace = acl
+
+country_event = {
+    id = acl.0
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = acl_startup_delay_initialized }
+    }
+
+    immediate = {
+        set_country_flag = acl_startup_delay_initialized
+
+        random_list = {
+            1 = { set_timed_country_flag = { flag = acl_startup_block days = 466 } }
+            1 = { set_timed_country_flag = { flag = acl_startup_block days = 546 } }
+            1 = { set_timed_country_flag = { flag = acl_startup_block days = 726 } }
+        }
+    }
+}
+
+country_event = {
+    id = acl.1
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = acl_startup_block }
+        NOT = { has_country_flag = acl_recent_lore_event }
+        acl_has_unseen_lore = yes
+    }
+
+    immediate = {
+        random_list = {
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1000 }
+                country_event = { id = acl.1000 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1001 }
+                country_event = { id = acl.1001 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1002 }
+                country_event = { id = acl.1002 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1003 }
+                country_event = { id = acl.1003 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1004 }
+                country_event = { id = acl.1004 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1005 }
+                country_event = { id = acl.1005 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1006 }
+                country_event = { id = acl.1006 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1007 }
+                country_event = { id = acl.1007 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1008 }
+                country_event = { id = acl.1008 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1009 }
+                country_event = { id = acl.1009 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1010 }
+                country_event = { id = acl.1010 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1011 }
+                country_event = { id = acl.1011 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1012 }
+                country_event = { id = acl.1012 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1013 }
+                country_event = { id = acl.1013 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1014 }
+                country_event = { id = acl.1014 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1015 }
+                country_event = { id = acl.1015 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1016 }
+                country_event = { id = acl.1016 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1017 }
+                country_event = { id = acl.1017 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1018 }
+                country_event = { id = acl.1018 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1019 }
+                country_event = { id = acl.1019 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1020 }
+                country_event = { id = acl.1020 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1021 }
+                country_event = { id = acl.1021 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1022 }
+                country_event = { id = acl.1022 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1023 }
+                country_event = { id = acl.1023 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1024 }
+                country_event = { id = acl.1024 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1025 }
+                country_event = { id = acl.1025 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1026 }
+                country_event = { id = acl.1026 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1027 }
+                country_event = { id = acl.1027 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1028 }
+                country_event = { id = acl.1028 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1029 }
+                country_event = { id = acl.1029 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1030 }
+                country_event = { id = acl.1030 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1031 }
+                country_event = { id = acl.1031 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1032 }
+                country_event = { id = acl.1032 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1033 }
+                country_event = { id = acl.1033 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1034 }
+                country_event = { id = acl.1034 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1035 }
+                country_event = { id = acl.1035 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1036 }
+                country_event = { id = acl.1036 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1037 }
+                country_event = { id = acl.1037 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1038 }
+                country_event = { id = acl.1038 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1039 }
+                country_event = { id = acl.1039 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1040 }
+                country_event = { id = acl.1040 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1041 }
+                country_event = { id = acl.1041 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1042 }
+                country_event = { id = acl.1042 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1043 }
+                country_event = { id = acl.1043 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1044 }
+                country_event = { id = acl.1044 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1045 }
+                country_event = { id = acl.1045 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1046 }
+                country_event = { id = acl.1046 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1047 }
+                country_event = { id = acl.1047 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1048 }
+                country_event = { id = acl.1048 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1049 }
+                country_event = { id = acl.1049 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1050 }
+                country_event = { id = acl.1050 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1051 }
+                country_event = { id = acl.1051 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1052 }
+                country_event = { id = acl.1052 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1053 }
+                country_event = { id = acl.1053 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1054 }
+                country_event = { id = acl.1054 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1055 }
+                country_event = { id = acl.1055 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1056 }
+                country_event = { id = acl.1056 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1057 }
+                country_event = { id = acl.1057 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1058 }
+                country_event = { id = acl.1058 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1059 }
+                country_event = { id = acl.1059 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1060 }
+                country_event = { id = acl.1060 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1061 }
+                country_event = { id = acl.1061 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1062 }
+                country_event = { id = acl.1062 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1063 }
+                country_event = { id = acl.1063 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1064 }
+                country_event = { id = acl.1064 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1065 }
+                country_event = { id = acl.1065 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1066 }
+                country_event = { id = acl.1066 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1067 }
+                country_event = { id = acl.1067 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1068 }
+                country_event = { id = acl.1068 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1069 }
+                country_event = { id = acl.1069 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1070 }
+                country_event = { id = acl.1070 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1071 }
+                country_event = { id = acl.1071 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1072 }
+                country_event = { id = acl.1072 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1073 }
+                country_event = { id = acl.1073 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1074 }
+                country_event = { id = acl.1074 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1075 }
+                country_event = { id = acl.1075 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1076 }
+                country_event = { id = acl.1076 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1077 }
+                country_event = { id = acl.1077 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1078 }
+                country_event = { id = acl.1078 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1079 }
+                country_event = { id = acl.1079 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1080 }
+                country_event = { id = acl.1080 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1081 }
+                country_event = { id = acl.1081 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1082 }
+                country_event = { id = acl.1082 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1083 }
+                country_event = { id = acl.1083 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1084 }
+                country_event = { id = acl.1084 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1085 }
+                country_event = { id = acl.1085 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1086 }
+                country_event = { id = acl.1086 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1087 }
+                country_event = { id = acl.1087 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1088 }
+                country_event = { id = acl.1088 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1089 }
+                country_event = { id = acl.1089 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1090 }
+                country_event = { id = acl.1090 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1091 }
+                country_event = { id = acl.1091 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1092 }
+                country_event = { id = acl.1092 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1093 }
+                country_event = { id = acl.1093 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1094 }
+                country_event = { id = acl.1094 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1095 }
+                country_event = { id = acl.1095 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1096 }
+                country_event = { id = acl.1096 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1097 }
+                country_event = { id = acl.1097 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1098 }
+                country_event = { id = acl.1098 }
+            }
+            1 = {
+                modifier = { factor = 0 has_country_flag = acl_seen_1099 }
+                country_event = { id = acl.1099 }
+            }
+        }
+        random_list = {
+            1 = { set_timed_country_flag = { flag = acl_recent_lore_event days = 1252 } }
+            1 = { set_timed_country_flag = { flag = acl_recent_lore_event days = 1740 } }
+            1 = { set_timed_country_flag = { flag = acl_recent_lore_event days = 1940 } }
+        }
+    }
+}
+
+country_event = {
+    id = acl.1000
+    title = acl.1000.title
+    desc = acl.1000.desc
+    picture = GFX_acl_evt_01
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1000
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1001
+    title = acl.1001.title
+    desc = acl.1001.desc
+    picture = GFX_acl_evt_02
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1001
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1002
+    title = acl.1002.title
+    desc = acl.1002.desc
+    picture = GFX_acl_evt_03
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1002
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1003
+    title = acl.1003.title
+    desc = acl.1003.desc
+    picture = GFX_acl_evt_04
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1003
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1004
+    title = acl.1004.title
+    desc = acl.1004.desc
+    picture = GFX_acl_evt_05
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1004
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1005
+    title = acl.1005.title
+    desc = acl.1005.desc
+    picture = GFX_acl_evt_06
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1005
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1006
+    title = acl.1006.title
+    desc = acl.1006.desc
+    picture = GFX_acl_evt_07
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1006
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1007
+    title = acl.1007.title
+    desc = acl.1007.desc
+    picture = GFX_acl_evt_08
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1007
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1008
+    title = acl.1008.title
+    desc = acl.1008.desc
+    picture = GFX_acl_evt_09
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1008
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1009
+    title = acl.1009.title
+    desc = acl.1009.desc
+    picture = GFX_acl_evt_10
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1009
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1010
+    title = acl.1010.title
+    desc = acl.1010.desc
+    picture = GFX_acl_evt_11
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1010
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1011
+    title = acl.1011.title
+    desc = acl.1011.desc
+    picture = GFX_acl_evt_12
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1011
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1012
+    title = acl.1012.title
+    desc = acl.1012.desc
+    picture = GFX_acl_evt_13
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1012
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1013
+    title = acl.1013.title
+    desc = acl.1013.desc
+    picture = GFX_acl_evt_14
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1013
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1014
+    title = acl.1014.title
+    desc = acl.1014.desc
+    picture = GFX_acl_evt_15
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1014
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1015
+    title = acl.1015.title
+    desc = acl.1015.desc
+    picture = GFX_acl_evt_16
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1015
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1016
+    title = acl.1016.title
+    desc = acl.1016.desc
+    picture = GFX_acl_evt_17
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1016
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1017
+    title = acl.1017.title
+    desc = acl.1017.desc
+    picture = GFX_acl_evt_18
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1017
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1018
+    title = acl.1018.title
+    desc = acl.1018.desc
+    picture = GFX_acl_evt_19
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1018
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1019
+    title = acl.1019.title
+    desc = acl.1019.desc
+    picture = GFX_acl_evt_20
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1019
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1020
+    title = acl.1020.title
+    desc = acl.1020.desc
+    picture = GFX_acl_evt_01
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1020
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1021
+    title = acl.1021.title
+    desc = acl.1021.desc
+    picture = GFX_acl_evt_02
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1021
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1022
+    title = acl.1022.title
+    desc = acl.1022.desc
+    picture = GFX_acl_evt_03
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1022
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1023
+    title = acl.1023.title
+    desc = acl.1023.desc
+    picture = GFX_acl_evt_04
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1023
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1024
+    title = acl.1024.title
+    desc = acl.1024.desc
+    picture = GFX_acl_evt_05
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1024
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1025
+    title = acl.1025.title
+    desc = acl.1025.desc
+    picture = GFX_acl_evt_06
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1025
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1026
+    title = acl.1026.title
+    desc = acl.1026.desc
+    picture = GFX_acl_evt_07
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1026
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1027
+    title = acl.1027.title
+    desc = acl.1027.desc
+    picture = GFX_acl_evt_08
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1027
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1028
+    title = acl.1028.title
+    desc = acl.1028.desc
+    picture = GFX_acl_evt_09
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1028
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1029
+    title = acl.1029.title
+    desc = acl.1029.desc
+    picture = GFX_acl_evt_10
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1029
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1030
+    title = acl.1030.title
+    desc = acl.1030.desc
+    picture = GFX_acl_evt_11
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1030
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1031
+    title = acl.1031.title
+    desc = acl.1031.desc
+    picture = GFX_acl_evt_12
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1031
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1032
+    title = acl.1032.title
+    desc = acl.1032.desc
+    picture = GFX_acl_evt_13
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1032
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1033
+    title = acl.1033.title
+    desc = acl.1033.desc
+    picture = GFX_acl_evt_14
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1033
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1034
+    title = acl.1034.title
+    desc = acl.1034.desc
+    picture = GFX_acl_evt_15
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1034
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1035
+    title = acl.1035.title
+    desc = acl.1035.desc
+    picture = GFX_acl_evt_16
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1035
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1036
+    title = acl.1036.title
+    desc = acl.1036.desc
+    picture = GFX_acl_evt_17
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1036
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1037
+    title = acl.1037.title
+    desc = acl.1037.desc
+    picture = GFX_acl_evt_18
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1037
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1038
+    title = acl.1038.title
+    desc = acl.1038.desc
+    picture = GFX_acl_evt_19
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1038
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1039
+    title = acl.1039.title
+    desc = acl.1039.desc
+    picture = GFX_acl_evt_20
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1039
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1040
+    title = acl.1040.title
+    desc = acl.1040.desc
+    picture = GFX_acl_evt_01
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1040
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1041
+    title = acl.1041.title
+    desc = acl.1041.desc
+    picture = GFX_acl_evt_02
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1041
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1042
+    title = acl.1042.title
+    desc = acl.1042.desc
+    picture = GFX_acl_evt_03
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1042
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1043
+    title = acl.1043.title
+    desc = acl.1043.desc
+    picture = GFX_acl_evt_04
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1043
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1044
+    title = acl.1044.title
+    desc = acl.1044.desc
+    picture = GFX_acl_evt_05
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1044
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1045
+    title = acl.1045.title
+    desc = acl.1045.desc
+    picture = GFX_acl_evt_06
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1045
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1046
+    title = acl.1046.title
+    desc = acl.1046.desc
+    picture = GFX_acl_evt_07
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1046
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1047
+    title = acl.1047.title
+    desc = acl.1047.desc
+    picture = GFX_acl_evt_08
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1047
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1048
+    title = acl.1048.title
+    desc = acl.1048.desc
+    picture = GFX_acl_evt_09
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1048
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1049
+    title = acl.1049.title
+    desc = acl.1049.desc
+    picture = GFX_acl_evt_10
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1049
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1050
+    title = acl.1050.title
+    desc = acl.1050.desc
+    picture = GFX_acl_evt_11
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1050
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1051
+    title = acl.1051.title
+    desc = acl.1051.desc
+    picture = GFX_acl_evt_12
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1051
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1052
+    title = acl.1052.title
+    desc = acl.1052.desc
+    picture = GFX_acl_evt_13
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1052
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1053
+    title = acl.1053.title
+    desc = acl.1053.desc
+    picture = GFX_acl_evt_14
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1053
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1054
+    title = acl.1054.title
+    desc = acl.1054.desc
+    picture = GFX_acl_evt_15
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1054
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1055
+    title = acl.1055.title
+    desc = acl.1055.desc
+    picture = GFX_acl_evt_16
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1055
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1056
+    title = acl.1056.title
+    desc = acl.1056.desc
+    picture = GFX_acl_evt_17
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1056
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1057
+    title = acl.1057.title
+    desc = acl.1057.desc
+    picture = GFX_acl_evt_18
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1057
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1058
+    title = acl.1058.title
+    desc = acl.1058.desc
+    picture = GFX_acl_evt_19
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1058
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1059
+    title = acl.1059.title
+    desc = acl.1059.desc
+    picture = GFX_acl_evt_20
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1059
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1060
+    title = acl.1060.title
+    desc = acl.1060.desc
+    picture = GFX_acl_evt_01
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1060
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1061
+    title = acl.1061.title
+    desc = acl.1061.desc
+    picture = GFX_acl_evt_02
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1061
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1062
+    title = acl.1062.title
+    desc = acl.1062.desc
+    picture = GFX_acl_evt_03
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1062
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1063
+    title = acl.1063.title
+    desc = acl.1063.desc
+    picture = GFX_acl_evt_04
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1063
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1064
+    title = acl.1064.title
+    desc = acl.1064.desc
+    picture = GFX_acl_evt_05
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1064
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1065
+    title = acl.1065.title
+    desc = acl.1065.desc
+    picture = GFX_acl_evt_06
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1065
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1066
+    title = acl.1066.title
+    desc = acl.1066.desc
+    picture = GFX_acl_evt_07
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1066
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1067
+    title = acl.1067.title
+    desc = acl.1067.desc
+    picture = GFX_acl_evt_08
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1067
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1068
+    title = acl.1068.title
+    desc = acl.1068.desc
+    picture = GFX_acl_evt_09
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1068
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1069
+    title = acl.1069.title
+    desc = acl.1069.desc
+    picture = GFX_acl_evt_10
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1069
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1070
+    title = acl.1070.title
+    desc = acl.1070.desc
+    picture = GFX_acl_evt_11
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1070
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1071
+    title = acl.1071.title
+    desc = acl.1071.desc
+    picture = GFX_acl_evt_12
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1071
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1072
+    title = acl.1072.title
+    desc = acl.1072.desc
+    picture = GFX_acl_evt_13
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1072
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1073
+    title = acl.1073.title
+    desc = acl.1073.desc
+    picture = GFX_acl_evt_14
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1073
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1074
+    title = acl.1074.title
+    desc = acl.1074.desc
+    picture = GFX_acl_evt_15
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1074
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1075
+    title = acl.1075.title
+    desc = acl.1075.desc
+    picture = GFX_acl_evt_16
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1075
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1076
+    title = acl.1076.title
+    desc = acl.1076.desc
+    picture = GFX_acl_evt_17
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1076
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1077
+    title = acl.1077.title
+    desc = acl.1077.desc
+    picture = GFX_acl_evt_18
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1077
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1078
+    title = acl.1078.title
+    desc = acl.1078.desc
+    picture = GFX_acl_evt_19
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1078
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1079
+    title = acl.1079.title
+    desc = acl.1079.desc
+    picture = GFX_acl_evt_20
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1079
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1080
+    title = acl.1080.title
+    desc = acl.1080.desc
+    picture = GFX_acl_evt_01
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1080
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1081
+    title = acl.1081.title
+    desc = acl.1081.desc
+    picture = GFX_acl_evt_02
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1081
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1082
+    title = acl.1082.title
+    desc = acl.1082.desc
+    picture = GFX_acl_evt_03
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1082
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1083
+    title = acl.1083.title
+    desc = acl.1083.desc
+    picture = GFX_acl_evt_04
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1083
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1084
+    title = acl.1084.title
+    desc = acl.1084.desc
+    picture = GFX_acl_evt_05
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1084
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1085
+    title = acl.1085.title
+    desc = acl.1085.desc
+    picture = GFX_acl_evt_06
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1085
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1086
+    title = acl.1086.title
+    desc = acl.1086.desc
+    picture = GFX_acl_evt_07
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1086
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1087
+    title = acl.1087.title
+    desc = acl.1087.desc
+    picture = GFX_acl_evt_08
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1087
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1088
+    title = acl.1088.title
+    desc = acl.1088.desc
+    picture = GFX_acl_evt_09
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1088
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1089
+    title = acl.1089.title
+    desc = acl.1089.desc
+    picture = GFX_acl_evt_10
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1089
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1090
+    title = acl.1090.title
+    desc = acl.1090.desc
+    picture = GFX_acl_evt_11
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1090
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1091
+    title = acl.1091.title
+    desc = acl.1091.desc
+    picture = GFX_acl_evt_12
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1091
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1092
+    title = acl.1092.title
+    desc = acl.1092.desc
+    picture = GFX_acl_evt_13
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1092
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1093
+    title = acl.1093.title
+    desc = acl.1093.desc
+    picture = GFX_acl_evt_14
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1093
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1094
+    title = acl.1094.title
+    desc = acl.1094.desc
+    picture = GFX_acl_evt_15
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1094
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1095
+    title = acl.1095.title
+    desc = acl.1095.desc
+    picture = GFX_acl_evt_16
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1095
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1096
+    title = acl.1096.title
+    desc = acl.1096.desc
+    picture = GFX_acl_evt_17
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1096
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1097
+    title = acl.1097.title
+    desc = acl.1097.desc
+    picture = GFX_acl_evt_18
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1097
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1098
+    title = acl.1098.title
+    desc = acl.1098.desc
+    picture = GFX_acl_evt_19
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1098
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+
+country_event = {
+    id = acl.1099
+    title = acl.1099.title
+    desc = acl.1099.desc
+    picture = GFX_acl_evt_20
+    show_sound = acl_popup
+    is_triggered_only = yes
+
+
+    immediate = {
+        set_country_flag = acl_seen_1099
+    }
+
+    option = {
+        name = acl.option.archive
+    }
+}
+

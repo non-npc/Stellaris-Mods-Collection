@@ -1,0 +1,215 @@
+# Component sets shown in the ship designer weapon picker.
+
+component_set = {
+	key = "EW_FIRE_WARD"
+	icon = "GFX_ew_fire_defense"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_ICE_WARD"
+	icon = "GFX_ew_ice_defense"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_LIGHTNING_WARD"
+	icon = "GFX_ew_lightning_defense"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_ACID_WARD"
+	icon = "GFX_ew_acid_defense"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_CHAOS_WARD"
+	icon = "GFX_ew_chaos_defense"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_FIRE_WEAPONS"
+	icon = "GFX_ew_fire_s"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_ICE_WEAPONS"
+	icon = "GFX_ew_ice_s"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_LIGHTNING_WEAPONS"
+	icon = "GFX_ew_lightning_s"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_ACID_WEAPONS"
+	icon = "GFX_ew_acid_s"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_CHAOS_WEAPONS"
+	icon = "GFX_ew_chaos_s"
+	icon_frame = 1
+}
+
+# Special weapon slots need independent component sets. Mixing X/G/P/H/T
+# components into the S/M/L set makes the ship designer display and filter
+# the entire family using the wrong slot badges.
+
+component_set = {
+	key = "EW_FIRE_X"
+	icon = "GFX_ew_fire_x"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_FIRE_G"
+	icon = "GFX_ew_fire_g"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_FIRE_P"
+	icon = "GFX_ew_fire_p"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_FIRE_H"
+	icon = "GFX_ew_fire_h"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_FIRE_T"
+	icon = "GFX_ew_fire_t"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_ICE_X"
+	icon = "GFX_ew_ice_x"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_ICE_G"
+	icon = "GFX_ew_ice_g"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_ICE_P"
+	icon = "GFX_ew_ice_p"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_ICE_H"
+	icon = "GFX_ew_ice_h"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_ICE_T"
+	icon = "GFX_ew_ice_t"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_LIGHTNING_X"
+	icon = "GFX_ew_lightning_x"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_LIGHTNING_G"
+	icon = "GFX_ew_lightning_g"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_LIGHTNING_P"
+	icon = "GFX_ew_lightning_p"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_LIGHTNING_H"
+	icon = "GFX_ew_lightning_h"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_LIGHTNING_T"
+	icon = "GFX_ew_lightning_t"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_ACID_X"
+	icon = "GFX_ew_acid_x"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_ACID_G"
+	icon = "GFX_ew_acid_g"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_ACID_P"
+	icon = "GFX_ew_acid_p"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_ACID_H"
+	icon = "GFX_ew_acid_h"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_ACID_T"
+	icon = "GFX_ew_acid_t"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_CHAOS_X"
+	icon = "GFX_ew_chaos_x"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_CHAOS_G"
+	icon = "GFX_ew_chaos_g"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_CHAOS_P"
+	icon = "GFX_ew_chaos_p"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_CHAOS_H"
+	icon = "GFX_ew_chaos_h"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EW_CHAOS_T"
+	icon = "GFX_ew_chaos_t"
+	icon_frame = 1
+}

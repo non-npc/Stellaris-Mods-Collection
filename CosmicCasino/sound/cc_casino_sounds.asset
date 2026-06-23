@@ -1,0 +1,53 @@
+category = {
+	name = "Effects"
+	soundeffects = {
+		cc_casino_enter
+		cc_casino_win
+		cc_casino_loss
+	}
+}
+
+sound = {
+	name = "cc_casino_enter"
+	file = "event/cc_casino_enter.wav"
+	volume = 0.8
+}
+
+sound = {
+	name = "cc_casino_win"
+	file = "event/cc_casino_win.wav"
+	volume = 0.9
+}
+
+sound = {
+	name = "cc_casino_loss"
+	file = "event/cc_casino_loss.wav"
+	volume = 0.9
+}
+
+soundeffect = {
+	name = cc_casino_enter
+	sounds = {
+		sound = cc_casino_enter
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = cc_casino_win
+	sounds = {
+		sound = cc_casino_win
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = cc_casino_loss
+	sounds = {
+		sound = cc_casino_loss
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}

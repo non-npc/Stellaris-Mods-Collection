@@ -1,0 +1,163 @@
+decision_pq_adventure_quests = {
+    owned_planets_only = yes
+    sound = event_cityscape
+    icon = decision_expel_population
+
+    resources = {
+        category = decisions
+        cost = {
+            influence = 50
+        }
+    }
+
+    prerequisites = {
+        tech_pq_population_quests
+    }
+
+    potential = {
+        exists = owner
+        owner = { is_ai = no }
+        NOT = { has_modifier = pq_modifier_adventure_guild }
+    }
+
+    allow = {
+        exists = owner
+        owner = { is_ai = no }
+        NOT = { has_modifier = pq_modifier_adventure_guild }
+    }
+
+    effect = {
+        custom_tooltip = decision_pq_adventure_quests_effect
+        add_modifier = { modifier = "pq_modifier_adventure_guild" days = -1 }
+
+        hidden_effect = {
+            remove_modifier = pq_modifier_virtual_forces
+            remove_modifier = pq_modifier_free_thinkers
+        }
+    }
+
+    ai_weight = {
+        weight = 0
+    }
+}
+
+decision_pq_virtual_strike = {
+    owned_planets_only = yes
+    sound = event_cityscape
+    icon = decision_martial_law
+
+    resources = {
+        category = decisions
+        cost = {
+            influence = 50
+        }
+    }
+
+    prerequisites = {
+        tech_pq_population_quests
+    }
+
+    potential = {
+        exists = owner
+        owner = { is_ai = no }
+        NOT = { has_modifier = pq_modifier_virtual_forces }
+    }
+
+    allow = {
+        exists = owner
+        owner = { is_ai = no }
+        NOT = { has_modifier = pq_modifier_virtual_forces }
+    }
+
+    effect = {
+        custom_tooltip = decision_pq_virtual_strike_effect
+        add_modifier = { modifier = "pq_modifier_virtual_forces" days = -1 }
+
+        hidden_effect = {
+            remove_modifier = pq_modifier_adventure_guild
+            remove_modifier = pq_modifier_free_thinkers
+        }
+    }
+
+    ai_weight = {
+        weight = 0
+    }
+}
+
+decision_pq_dreams_of_tomorrow = {
+    owned_planets_only = yes
+    sound = event_cityscape
+    icon = decision_surreal_visions
+
+    resources = {
+        category = decisions
+        cost = {
+            influence = 50
+        }
+    }
+
+    prerequisites = {
+        tech_pq_population_quests
+    }
+
+    potential = {
+        exists = owner
+        owner = { is_ai = no }
+        NOT = { has_modifier = pq_modifier_free_thinkers }
+    }
+
+    allow = {
+        exists = owner
+        owner = { is_ai = no }
+        NOT = { has_modifier = pq_modifier_free_thinkers }
+    }
+
+    effect = {
+        custom_tooltip = decision_pq_dreams_of_tomorrow_effect
+        add_modifier = { modifier = "pq_modifier_free_thinkers" days = -1 }
+
+        hidden_effect = {
+            remove_modifier = pq_modifier_adventure_guild
+            remove_modifier = pq_modifier_virtual_forces
+        }
+    }
+
+    ai_weight = {
+        weight = 0
+    }
+}
+decision_pq_disable_civilian_employment = {
+    owned_planets_only = yes
+    sound = event_cityscape
+    icon = decision_end_planetary_ascension
+
+    potential = {
+        exists = owner
+        owner = { is_ai = no }
+        OR = {
+            has_modifier = pq_modifier_adventure_guild
+            has_modifier = pq_modifier_virtual_forces
+            has_modifier = pq_modifier_free_thinkers
+        }
+    }
+
+    allow = {
+        OR = {
+            has_modifier = pq_modifier_adventure_guild
+            has_modifier = pq_modifier_virtual_forces
+            has_modifier = pq_modifier_free_thinkers
+        }
+    }
+
+    effect = {
+        custom_tooltip = decision_pq_disable_civilian_employment_effect
+        remove_modifier = pq_modifier_adventure_guild
+        remove_modifier = pq_modifier_virtual_forces
+        remove_modifier = pq_modifier_free_thinkers
+    }
+
+    ai_weight = {
+        weight = 0
+    }
+}
+

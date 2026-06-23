@@ -1,0 +1,21 @@
+category = {
+    name = "Effects"
+    soundeffects = {
+        grlp_popup
+    }
+}
+
+sound = {
+    name = "grlp_popup"
+    file = "event/popup_grlp.wav"
+    volume = 0.70
+}
+
+soundeffect = {
+    name = grlp_popup
+    sounds = {
+        sound = grlp_popup
+    }
+    max_audible = 1
+    max_audible_behaviour = fail
+}

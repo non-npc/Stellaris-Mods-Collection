@@ -1,0 +1,204 @@
+@tier1cost = 2500
+@tier2cost = 5000
+@tier3cost = 9000
+
+tech_elemental_theory = {
+	area = physics
+	category = { field_manipulation }
+	tier = 2
+	cost = @tier2cost
+	weight = @tier2weight1
+	icon = tech_elemental_theory
+	prerequisites = { "tech_plasma_1" }
+	potential = { is_ai = no }
+	ai_weight = { factor = 0 }
+	weight_modifier = {
+		modifier = { factor = 0 is_ai = yes }
+		modifier = { factor = 1.5 has_ethic = ethic_militarist }
+	}
+	prereqfor_desc = {
+		custom = {
+			title = "tech_elemental_theory_effect"
+		}
+	}
+}
+
+tech_ew_fire_1 = {
+	area = physics
+	category = { particles }
+	tier = 1
+	cost = @tier1cost
+	weight = @tier1weight1
+	icon = tech_ew_fire_1
+	potential = { is_ai = no }
+	ai_weight = { factor = 0 }
+	prerequisites = { "tech_elemental_theory" }
+}
+
+tech_ew_fire_2 = {
+	area = engineering
+	category = { materials }
+	tier = 2
+	cost = @tier2cost
+	weight = @tier2weight1
+	icon = tech_ew_fire_2
+	potential = { is_ai = no }
+	ai_weight = { factor = 0 }
+	prerequisites = { "tech_ew_fire_1" }
+}
+
+tech_ew_fire_3 = {
+	area = physics
+	category = { particles }
+	tier = 3
+	cost = @tier3cost
+	weight = @tier3weight1
+	icon = tech_ew_fire_3
+	potential = { is_ai = no }
+	ai_weight = { factor = 0 }
+	prerequisites = { "tech_ew_fire_2" }
+}
+
+tech_ew_ice_1 = {
+	area = physics
+	category = { particles }
+	tier = 1
+	cost = @tier1cost
+	weight = @tier1weight1
+	icon = tech_ew_ice_1
+	potential = { is_ai = no }
+	ai_weight = { factor = 0 }
+	prerequisites = { "tech_elemental_theory" }
+}
+
+tech_ew_ice_2 = {
+	area = engineering
+	category = { materials }
+	tier = 2
+	cost = @tier2cost
+	weight = @tier2weight1
+	icon = tech_ew_ice_2
+	potential = { is_ai = no }
+	ai_weight = { factor = 0 }
+	prerequisites = { "tech_ew_ice_1" }
+}
+
+tech_ew_ice_3 = {
+	area = physics
+	category = { particles }
+	tier = 3
+	cost = @tier3cost
+	weight = @tier3weight1
+	icon = tech_ew_ice_3
+	potential = { is_ai = no }
+	ai_weight = { factor = 0 }
+	prerequisites = { "tech_ew_ice_2" }
+}
+
+tech_ew_lightning_1 = {
+	area = physics
+	category = { particles }
+	tier = 1
+	cost = @tier1cost
+	weight = @tier1weight1
+	icon = tech_ew_lightning_1
+	potential = { is_ai = no }
+	ai_weight = { factor = 0 }
+	prerequisites = { "tech_elemental_theory" }
+}
+
+tech_ew_lightning_2 = {
+	area = engineering
+	category = { materials }
+	tier = 2
+	cost = @tier2cost
+	weight = @tier2weight1
+	icon = tech_ew_lightning_2
+	potential = { is_ai = no }
+	ai_weight = { factor = 0 }
+	prerequisites = { "tech_ew_lightning_1" }
+}
+
+tech_ew_lightning_3 = {
+	area = physics
+	category = { particles }
+	tier = 3
+	cost = @tier3cost
+	weight = @tier3weight1
+	icon = tech_ew_lightning_3
+	potential = { is_ai = no }
+	ai_weight = { factor = 0 }
+	prerequisites = { "tech_ew_lightning_2" }
+}
+
+tech_ew_acid_1 = {
+	area = physics
+	category = { particles }
+	tier = 1
+	cost = @tier1cost
+	weight = @tier1weight1
+	icon = tech_ew_acid_1
+	potential = { is_ai = no }
+	ai_weight = { factor = 0 }
+	prerequisites = { "tech_elemental_theory" }
+}
+
+tech_ew_acid_2 = {
+	area = engineering
+	category = { materials }
+	tier = 2
+	cost = @tier2cost
+	weight = @tier2weight1
+	icon = tech_ew_acid_2
+	potential = { is_ai = no }
+	ai_weight = { factor = 0 }
+	prerequisites = { "tech_ew_acid_1" }
+}
+
+tech_ew_acid_3 = {
+	area = physics
+	category = { particles }
+	tier = 3
+	cost = @tier3cost
+	weight = @tier3weight1
+	icon = tech_ew_acid_3
+	potential = { is_ai = no }
+	ai_weight = { factor = 0 }
+	prerequisites = { "tech_ew_acid_2" }
+}
+
+tech_ew_chaos_1 = {
+	area = physics
+	category = { particles }
+	tier = 1
+	cost = @tier1cost
+	weight = @tier1weight1
+	icon = tech_ew_chaos_1
+	potential = { is_ai = no }
+	ai_weight = { factor = 0 }
+	prerequisites = { "tech_elemental_theory" }
+}
+
+tech_ew_chaos_2 = {
+	area = engineering
+	category = { materials }
+	tier = 2
+	cost = @tier2cost
+	weight = @tier2weight1
+	icon = tech_ew_chaos_2
+	potential = { is_ai = no }
+	ai_weight = { factor = 0 }
+	prerequisites = { "tech_ew_chaos_1" }
+}
+
+tech_ew_chaos_3 = {
+	area = physics
+	category = { particles }
+	tier = 3
+	cost = @tier3cost
+	weight = @tier3weight1
+	icon = tech_ew_chaos_3
+	potential = { is_ai = no }
+	ai_weight = { factor = 0 }
+	prerequisites = { "tech_ew_chaos_2" }
+}

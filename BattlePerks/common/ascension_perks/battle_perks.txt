@@ -1,0 +1,258 @@
+# Battle Perks - Ascension Perks
+# Version 1.1
+# NOTE:
+# Icons are registered in interface/battle_perks_icons.gfx as GFX_<perk_key>.
+# Requirements intentionally use common/stable vanilla tech keys where possible.
+# If a required tech key is invalid in your build, the perk remains visible but locked less often.
+
+ap_bp_fortress_doctrine = {
+    possible = {
+        custom_tooltip = {
+            fail_text = bp_requires_non_nomadic_empire
+            is_nomadic = no
+        }
+        has_technology = tech_starbase_3
+    }
+
+    modifier = {
+        country_starbase_capacity_add = 2
+        starbase_upgrade_speed_mult = 0.25
+        ship_home_territory_fire_rate_mult = 0.10
+        army_defense_health_mult = 0.20
+    }
+
+    ai_weight = {
+        factor = 10
+        modifier = {
+            factor = 2
+            OR = {
+                has_ethic = ethic_militarist
+                has_ethic = ethic_fanatic_militarist
+            }
+        }
+    }
+}
+
+ap_bp_total_war_economy = {
+    possible = {
+        has_technology = tech_galactic_administration
+    }
+
+    modifier = {
+        country_alloys_produces_mult = 0.10
+        starbase_shipyard_build_speed_mult = 0.15
+        ships_upkeep_mult = -0.05
+        planet_pops_consumer_goods_upkeep_mult = 0.05
+    }
+
+    ai_weight = {
+        factor = 10
+        modifier = {
+            factor = 2
+            OR = {
+                has_ethic = ethic_militarist
+                has_ethic = ethic_fanatic_militarist
+            }
+        }
+    }
+}
+
+ap_bp_fleet_supremacy_protocols = {
+    possible = {
+        has_technology = tech_battleships
+    }
+
+    modifier = {
+        country_naval_cap_mult = 0.15
+        command_limit_add = 20
+        ship_fire_rate_mult = 0.05
+        ship_disengage_chance_mult = 0.10
+    }
+
+    ai_weight = {
+        factor = 10
+        modifier = {
+            factor = 2
+            OR = {
+                has_ethic = ethic_militarist
+                has_ethic = ethic_fanatic_militarist
+            }
+        }
+    }
+}
+
+ap_bp_planetary_shield_mandate = {
+    possible = {
+        custom_tooltip = {
+            fail_text = bp_requires_non_nomadic_empire
+            is_nomadic = no
+        }
+        has_technology = tech_planetary_shield_generator
+    }
+
+    modifier = {
+        army_defense_health_mult = 0.25
+        planet_building_build_speed_mult = 0.10
+        planet_stability_add = 3
+    }
+
+    on_enabled = {
+        custom_tooltip = ap_bp_planetary_shield_mandate_unlock
+    }
+
+    ai_weight = {
+        factor = 8
+    }
+}
+
+ap_bp_siege_masters = {
+    possible = {
+        OR = {
+            has_technology = tech_gene_seed_purification
+            has_technology = tech_ground_defense_planning
+            has_technology = tech_battleships
+        }
+    }
+
+    modifier = {
+        army_attack_damage_mult = 0.20
+        army_morale_damage_mult = 0.20
+        ship_weapon_damage = 0.05
+    }
+
+    on_enabled = {
+        custom_tooltip = ap_bp_siege_masters_unlock
+    }
+
+    ai_weight = {
+        factor = 10
+        modifier = {
+            factor = 2
+            OR = {
+                has_ethic = ethic_militarist
+                has_ethic = ethic_fanatic_militarist
+            }
+        }
+    }
+}
+
+ap_bp_adaptive_battle_networks = {
+    possible = {
+        custom_tooltip = {
+            fail_text = bp_requires_non_nomadic_empire
+            is_nomadic = no
+        }
+        OR = {
+            has_technology = tech_combat_computers_2
+            has_technology = tech_combat_computers_3
+        }
+    }
+
+    modifier = {
+        ship_accuracy_mult = 0.05
+        ship_tracking_mult = 0.05
+        ship_disengage_chance_mult = 0.05
+    }
+
+    on_enabled = {
+        custom_tooltip = ap_bp_adaptive_battle_networks_unlock
+    }
+
+    ai_weight = {
+        factor = 9
+    }
+}
+
+ap_bp_eternal_watch = {
+    possible = {
+        OR = {
+            has_technology = tech_sensors_3
+            has_technology = tech_sensors_4
+        }
+    }
+
+    modifier = {
+        ship_sensor_range_add = 1
+        ship_tracking_mult = 0.05
+        country_starbase_capacity_add = 1
+    }
+
+    ai_weight = {
+        factor = 8
+    }
+}
+
+ap_bp_warborn_society = {
+    possible = {
+        has_technology = tech_centralized_command
+    }
+
+    modifier = {
+        army_attack_damage_mult = 0.15
+        army_defense_damage_mult = 0.15
+        country_naval_cap_mult = 0.10
+        pop_ethic_militarist_attraction_mult = 0.25
+    }
+
+    ai_weight = {
+        factor = 10
+        modifier = {
+            factor = 2
+            OR = {
+                has_ethic = ethic_militarist
+                has_ethic = ethic_fanatic_militarist
+            }
+        }
+    }
+}
+
+ap_bp_crisis_response_mandate = {
+    possible = {
+        OR = {
+            has_technology = tech_starbase_5
+            has_technology = tech_battleships
+        }
+    }
+
+    modifier = {
+        ship_fire_rate_mult = 0.05
+        ship_weapon_damage = 0.05
+        country_naval_cap_mult = 0.10
+    }
+
+    on_enabled = {
+        custom_tooltip = ap_bp_crisis_response_mandate_unlock
+    }
+
+    ai_weight = {
+        factor = 8
+    }
+}
+
+ap_bp_bastion_worlds = {
+    possible = {
+        custom_tooltip = {
+            fail_text = bp_requires_non_nomadic_empire
+            is_nomadic = no
+        }
+        OR = {
+            has_technology = tech_planetary_shield_generator
+            has_technology = tech_ground_defense_planning
+            has_technology = tech_starbase_3
+        }
+    }
+
+    modifier = {
+        army_defense_health_mult = 0.25
+        planet_building_stronghold_build_speed_mult = 0.25
+        country_starbase_capacity_add = 1
+    }
+
+    on_enabled = {
+        custom_tooltip = ap_bp_bastion_worlds_unlock
+    }
+
+    ai_weight = {
+        factor = 8
+    }
+}

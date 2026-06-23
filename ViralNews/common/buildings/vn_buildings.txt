@@ -1,0 +1,56 @@
+building_vn_hypernet_media_nexus = {
+	base_buildtime = 720
+	category = manufacturing
+	building_sets = { industrial factory foundry }
+	prerequisites = { "tech_viral_news_network" }
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_viral_news_network
+			is_ai = no
+		}
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+		owner = {
+			custom_tooltip = {
+				fail_text = vn_requires_no_existing_hypernet_media_nexus
+				NOR = {
+					any_owned_planet = {
+						has_building = building_vn_hypernet_media_nexus
+					}
+					any_owned_starbase = {
+						has_starbase_building = vn_arkship_hypernet_media_nexus
+					}
+					any_owned_fleet = {
+						starbase? = {
+							has_starbase_building = vn_arkship_hypernet_media_nexus
+						}
+					}
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = { minerals = 800 consumer_goods = 200 }
+		upkeep = { energy = 5 consumer_goods = 2 }
+		produces = { unity = 8 }
+	}
+
+	planet_modifier = {
+		planet_amenities_add = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = { always = yes }
+		modifier = { }
+	}
+
+	ai_weight = { weight = 0 }
+
+	icon = building_vn_hypernet_media_nexus
+}

@@ -1,0 +1,103 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_lucky_evt_01"
+        texturefile = "gfx/event_pictures/lucky_evt_05.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lucky_evt_02"
+        texturefile = "gfx/event_pictures/lucky_evt_11.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lucky_evt_03"
+        texturefile = "gfx/event_pictures/lucky_evt_17.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lucky_evt_04"
+        texturefile = "gfx/event_pictures/lucky_evt_17.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lucky_evt_05"
+        texturefile = "gfx/event_pictures/lucky_evt_08.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lucky_evt_06"
+        texturefile = "gfx/event_pictures/lucky_evt_09.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lucky_evt_07"
+        texturefile = "gfx/event_pictures/lucky_evt_11.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lucky_evt_08"
+        texturefile = "gfx/event_pictures/lucky_evt_08.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lucky_evt_09"
+        texturefile = "gfx/event_pictures/lucky_evt_02.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lucky_evt_10"
+        texturefile = "gfx/event_pictures/lucky_evt_02.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lucky_evt_11"
+        texturefile = "gfx/event_pictures/lucky_evt_02.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lucky_evt_12"
+        texturefile = "gfx/event_pictures/lucky_evt_07.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lucky_evt_13"
+        texturefile = "gfx/event_pictures/lucky_evt_16.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lucky_evt_14"
+        texturefile = "gfx/event_pictures/lucky_evt_20.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lucky_evt_15"
+        texturefile = "gfx/event_pictures/lucky_evt_10.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lucky_evt_16"
+        texturefile = "gfx/event_pictures/lucky_evt_10.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lucky_evt_17"
+        texturefile = "gfx/event_pictures/lucky_evt_02.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lucky_evt_18"
+        texturefile = "gfx/event_pictures/lucky_evt_11.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lucky_evt_19"
+        texturefile = "gfx/event_pictures/lucky_evt_15.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lucky_evt_20"
+        texturefile = "gfx/event_pictures/lucky_evt_07.dds"
+    }
+
+}

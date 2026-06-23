@@ -1,0 +1,152 @@
+cc_clear_wager_flags = {
+	remove_country_flag = cc_wager_energy
+	remove_country_flag = cc_wager_minerals
+	remove_country_flag = cc_wager_alloys
+	remove_country_flag = cc_wager_unity
+	remove_country_flag = cc_wager_consumer_goods
+	remove_country_flag = cc_wager_food
+	remove_country_flag = cc_casino_bonus_payout
+}
+
+cc_place_wager = {
+	set_variable = { which = cc_wager_id value = $WAGER_ID$ }
+	set_variable = { which = cc_casino_standard_bet value = $STANDARD_BET$ }
+	set_variable = { which = cc_casino_payout value = 0 }
+	set_variable = { which = cc_casino_net value = 0 }
+	set_variable = { which = cc_casino_bonus_alloys value = 0 }
+	set_variable = { which = cc_casino_bonus_unity value = 0 }
+	cc_clear_wager_flags = yes
+	export_resource_stockpile_to_variable = {
+		resource = $RESOURCE$
+		variable = cc_casino_bet
+	}
+	if = {
+		limit = { check_variable = { which = cc_casino_bet value > $STANDARD_BET$ } }
+		set_variable = { which = cc_casino_bet value = $STANDARD_BET$ }
+	}
+	round_variable = cc_casino_bet
+	add_resource = {
+		$RESOURCE$ = -1
+		mult = cc_casino_bet
+	}
+}
+
+cc_scale_payout = {
+	set_variable = { which = cc_casino_payout value = $BASE$ }
+	multiply_variable = { which = cc_casino_payout value = cc_casino_bet }
+	divide_variable = { which = cc_casino_payout value = cc_casino_standard_bet }
+	round_variable = cc_casino_payout
+}
+
+cc_scale_bonus_unity = {
+	set_variable = { which = cc_casino_bonus_unity value = $BASE$ }
+	multiply_variable = { which = cc_casino_bonus_unity value = cc_casino_bet }
+	divide_variable = { which = cc_casino_bonus_unity value = cc_casino_standard_bet }
+	round_variable = cc_casino_bonus_unity
+}
+
+cc_scale_bonus_alloys = {
+	set_variable = { which = cc_casino_bonus_alloys value = $BASE$ }
+	multiply_variable = { which = cc_casino_bonus_alloys value = cc_casino_bet }
+	divide_variable = { which = cc_casino_bonus_alloys value = cc_casino_standard_bet }
+	round_variable = cc_casino_bonus_alloys
+}
+
+cc_set_net_gain = {
+	set_variable = { which = cc_casino_net value = cc_casino_payout }
+	subtract_variable = { which = cc_casino_net value = cc_casino_bet }
+}
+
+cc_record_loss = {
+	set_variable = { which = cc_casino_payout value = 0 }
+	set_variable = { which = cc_casino_net value = 0 }
+}
+
+cc_award_energy_win = {
+	cc_scale_payout = { BASE = $BASE$ }
+	cc_set_net_gain = yes
+	add_resource = {
+		energy = 1
+		mult = cc_casino_payout
+	}
+}
+
+cc_award_minerals_win = {
+	cc_scale_payout = { BASE = $BASE$ }
+	cc_set_net_gain = yes
+	add_resource = {
+		minerals = 1
+		mult = cc_casino_payout
+	}
+}
+
+cc_award_alloys_win = {
+	cc_scale_payout = { BASE = $BASE$ }
+	cc_set_net_gain = yes
+	add_resource = {
+		alloys = 1
+		mult = cc_casino_payout
+	}
+}
+
+cc_award_unity_win = {
+	cc_scale_payout = { BASE = $BASE$ }
+	cc_set_net_gain = yes
+	add_resource = {
+		unity = 1
+		mult = cc_casino_payout
+	}
+}
+
+cc_award_consumer_goods_win = {
+	cc_scale_payout = { BASE = $BASE$ }
+	cc_set_net_gain = yes
+	add_resource = {
+		consumer_goods = 1
+		mult = cc_casino_payout
+	}
+}
+
+cc_award_food_win = {
+	cc_scale_payout = { BASE = $BASE$ }
+	cc_set_net_gain = yes
+	add_resource = {
+		food = 1
+		mult = cc_casino_payout
+	}
+}
+
+cc_award_energy_unity_bonus = {
+	cc_scale_payout = { BASE = $ENERGY$ }
+	cc_scale_bonus_unity = { BASE = $UNITY$ }
+	cc_set_net_gain = yes
+	set_country_flag = cc_casino_bonus_payout
+	add_resource = {
+		energy = 1
+		mult = cc_casino_payout
+	}
+	add_resource = {
+		unity = 1
+		mult = cc_casino_bonus_unity
+	}
+}
+
+cc_award_cosmic_jackpot = {
+	cc_scale_payout = { BASE = $ENERGY$ }
+	cc_scale_bonus_alloys = { BASE = $ALLOYS$ }
+	cc_scale_bonus_unity = { BASE = $UNITY$ }
+	cc_set_net_gain = yes
+	set_country_flag = cc_casino_bonus_payout
+	add_resource = {
+		energy = 1
+		mult = cc_casino_payout
+	}
+	add_resource = {
+		alloys = 1
+		mult = cc_casino_bonus_alloys
+	}
+	add_resource = {
+		unity = 1
+		mult = cc_casino_bonus_unity
+	}
+}

@@ -1,0 +1,28 @@
+pq_arkship_civilian_employment_button_effect = {
+	potential = {
+		OR = {
+			is_scope_type = planet
+			is_scope_type = ship
+		}
+		from = {
+			is_ai = no
+			has_technology = tech_pq_population_quests
+		}
+		colony = {
+			is_colony = yes
+		}
+	}
+
+	allow = {
+		custom_tooltip = {
+			success_text = pq_arkship_civilian_employment_button_tooltip
+			always = yes
+		}
+	}
+
+	effect = {
+		colony = {
+			planet_event = { id = pq_civilian_employment.1 }
+		}
+	}
+}

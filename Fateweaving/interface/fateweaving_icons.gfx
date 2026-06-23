@@ -1,0 +1,85 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_tech_fateweaving"
+		texturefile = "gfx/interface/icons/technologies/tech_fateweaving.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fw_evt_marked"
+		texturefile = "gfx/event_pictures/fw_evt_marked.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_fw_evt_blessing"
+		texturefile = "gfx/event_pictures/fw_evt_blessing.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_fw_evt_catastrophe"
+		texturefile = "gfx/event_pictures/fw_evt_catastrophe.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_fw_fate_pending_status"
+		texturefile = "gfx/interface/icons/planet_modifiers/pm_fw_fate_pending_status.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fw_fate_bountiful_harvest"
+		texturefile = "gfx/interface/icons/planet_modifiers/pm_fw_fate_bountiful_harvest.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fw_fate_golden_alignment"
+		texturefile = "gfx/interface/icons/planet_modifiers/pm_fw_fate_golden_alignment.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fw_fate_growth_surge"
+		texturefile = "gfx/interface/icons/planet_modifiers/pm_fw_fate_growth_surge.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fw_fate_serene_destiny"
+		texturefile = "gfx/interface/icons/planet_modifiers/pm_fw_fate_serene_destiny.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fw_fate_scholars_dream"
+		texturefile = "gfx/interface/icons/planet_modifiers/pm_fw_fate_scholars_dream.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fw_fate_shattered_luck"
+		texturefile = "gfx/interface/icons/planet_modifiers/pm_fw_fate_shattered_luck.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fw_fate_ruined_machines"
+		texturefile = "gfx/interface/icons/planet_modifiers/pm_fw_fate_ruined_machines.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fw_fate_hunger_shadow"
+		texturefile = "gfx/interface/icons/planet_modifiers/pm_fw_fate_hunger_shadow.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fw_fate_madness_weather"
+		texturefile = "gfx/interface/icons/planet_modifiers/pm_fw_fate_madness_weather.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fw_fate_cursed_silence"
+		texturefile = "gfx/interface/icons/planet_modifiers/pm_fw_fate_cursed_silence.dds"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_fw_fate_status_purple_border"
+		textureFile = "gfx/interface/fateweaving/fw_fate_status_purple_border.dds"
+		borderSize = { x = 12 y = 12 }
+	}
+}

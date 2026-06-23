@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+
+# Archives
+*.zip
+*.7z
+*.rar
+
+# Generated images
+*_preview.png
+*_thumbnail_preview.png
+
+# GIMP / Paint.NET backups
+*.xcf~
+*.pdn~
+
+# DDS conversion temp files
+*_temp.dds
+*_working.dds
+
+# Build output
+build/
+dist/
+release/
+
+# Workshop upload packages
+workshop_upload/
+steam_upload/
+
+# Stellaris user files
+error.log
+game.log
+system.log
+
+# Steam Workshop metadata
+*.acf
+
+# Local testing
+test/
+sandbox/
+
+# OS files
+.DS_Store
+
+# JetBrains
+.idea/
+
+# Visual Studio
+.vs/
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Large source assets
+source_assets/
+raw_renders/
+concept_art/
+
+# Generated sprite sheets
+generated/

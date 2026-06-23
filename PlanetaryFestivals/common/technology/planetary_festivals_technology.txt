@@ -1,0 +1,17 @@
+tech_pf_cultural_festival_coordination = {
+    cost = @tier1cost2
+    area = society
+    tier = 1
+    category = { statecraft }
+    prerequisites = { "tech_planetary_unification" }
+    weight = @tier1weight2
+
+    prereqfor_desc = {
+        custom = {
+            title = "TECH_UNLOCK_PF_FESTIVAL_DECISIONS_TITLE"
+            desc = "TECH_UNLOCK_PF_FESTIVAL_DECISIONS_DESC"
+        }
+    }
+
+    ai_weight = { weight = 1 }
+}

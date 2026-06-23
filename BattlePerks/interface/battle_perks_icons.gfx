@@ -1,0 +1,81 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_ap_bp_fortress_doctrine"
+        texturefile = "gfx/interface/icons/ascension_perks/ap_bp_fortress_doctrine.dds"
+    }
+    spriteType = {
+        name = "GFX_ap_bp_total_war_economy"
+        texturefile = "gfx/interface/icons/ascension_perks/ap_bp_total_war_economy.dds"
+    }
+    spriteType = {
+        name = "GFX_ap_bp_fleet_supremacy_protocols"
+        texturefile = "gfx/interface/icons/ascension_perks/ap_bp_fleet_supremacy_protocols.dds"
+    }
+    spriteType = {
+        name = "GFX_ap_bp_planetary_shield_mandate"
+        texturefile = "gfx/interface/icons/ascension_perks/ap_bp_planetary_shield_mandate.dds"
+    }
+    spriteType = {
+        name = "GFX_ap_bp_siege_masters"
+        texturefile = "gfx/interface/icons/ascension_perks/ap_bp_siege_masters.dds"
+    }
+    spriteType = {
+        name = "GFX_ap_bp_adaptive_battle_networks"
+        texturefile = "gfx/interface/icons/ascension_perks/ap_bp_adaptive_battle_networks.dds"
+    }
+    spriteType = {
+        name = "GFX_ap_bp_eternal_watch"
+        texturefile = "gfx/interface/icons/ascension_perks/ap_bp_eternal_watch.dds"
+    }
+    spriteType = {
+        name = "GFX_ap_bp_warborn_society"
+        texturefile = "gfx/interface/icons/ascension_perks/ap_bp_warborn_society.dds"
+    }
+    spriteType = {
+        name = "GFX_ap_bp_crisis_response_mandate"
+        texturefile = "gfx/interface/icons/ascension_perks/ap_bp_crisis_response_mandate.dds"
+    }
+    spriteType = {
+        name = "GFX_ap_bp_bastion_worlds"
+        texturefile = "gfx/interface/icons/ascension_perks/ap_bp_bastion_worlds.dds"
+    }
+
+    spriteType = {
+        name = "GFX_decision_bp_activate_shield_mandate"
+        texturefile = "gfx/interface/icons/decisions/decision_bp_activate_shield_mandate.dds"
+    }
+    spriteType = {
+        name = "GFX_decision_bp_designate_bastion_world"
+        texturefile = "gfx/interface/icons/decisions/decision_bp_designate_bastion_world.dds"
+    }
+    spriteType = {
+        name = "GFX_bp_shield_mandate_active"
+        texturefile = "gfx/interface/icons/modifiers/bp_shield_mandate_active.dds"
+    }
+    spriteType = {
+        name = "GFX_bp_bastion_world"
+        texturefile = "gfx/interface/icons/modifiers/bp_bastion_world.dds"
+    }
+
+    spriteType = {
+        name = "GFX_bp_siege_breaker_army"
+        texturefile = "gfx/interface/icons/armies/bp_siege_breaker_army.dds"
+    }
+    spriteType = {
+        name = "GFX_bp_adaptive_combat_computer_line"
+        texturefile = "gfx/interface/icons/ship_parts/bp_adaptive_combat_computer_line.dds"
+    }
+    spriteType = {
+        name = "GFX_bp_adaptive_combat_computer_artillery"
+        texturefile = "gfx/interface/icons/ship_parts/bp_adaptive_combat_computer_artillery.dds"
+    }
+    spriteType = {
+        name = "GFX_bp_adaptive_combat_computer_picket"
+        texturefile = "gfx/interface/icons/ship_parts/bp_adaptive_combat_computer_picket.dds"
+    }
+    spriteType = {
+        name = "GFX_building_bp_fortress_command_nexus"
+        texturefile = "gfx/interface/icons/buildings/building_bp_fortress_command_nexus.dds"
+    }
+
+}

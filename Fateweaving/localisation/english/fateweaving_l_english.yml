@@ -1,0 +1,94 @@
+﻿l_english:
+
+ tech_fateweaving:0 "Fateweaving"
+ tech_fateweaving_desc:0 "By studying the architecture of probability itself, our civilization may learn to mark worlds for impossible outcomes. Fate will not be controlled, but it can be invited."
+ tech_fateweaving_effect:0 "§HUnlocks Feature:§! Invoke Fate on any colony. Marked worlds receive a random blessing or catastrophe within 30 to 90 days."
+
+ fw_invoke_fate_button:0 "Invoke Fate"
+ fw_deciding_fate_button:0 "Deciding Fate..."
+ fw_fate_decided_button:0 "Fate Decided"
+
+ fw_invoke_fate_button_tooltip:0 "Invoke Fate on this world and let destiny choose a blessing or a curse."
+ fw_fate_decided_button_tooltip:0 "Fate has already been decided for this world. The outcome remains in effect until it expires."
+
+ fw.10.name:0 "Fateweaving"
+ fw.10.desc:0 "§Y[event_target:fw_target_colony.GetName]§! has been selected for Fateweaving. Shall we draw its destiny into motion?"
+ fw.10.a:0 "Invoke Fate"
+ fw.10.b:0 "Cancel"
+
+ fw.101.name:0 "$fw_fate_bountiful_harvest$"
+ fw.101.desc:0 "Fate has blessed §Y[event_target:fw_target_colony.GetName]§! with abundance and renewed civic confidence."
+
+ fw.102.name:0 "$fw_fate_golden_alignment$"
+ fw.102.desc:0 "Fate has aligned §Y[event_target:fw_target_colony.GetName]§! toward harmony, order, and exceptional stability."
+
+ fw.103.name:0 "$fw_fate_growth_surge$"
+ fw.103.desc:0 "Fate has chosen renewal, migration, optimism, and demographic momentum for §Y[event_target:fw_target_colony.GetName]§!."
+
+ fw.104.name:0 "$fw_fate_serene_destiny$"
+ fw.104.desc:0 "Fate has softened hardship on §Y[event_target:fw_target_colony.GetName]§! and brought a season of calm prosperity."
+
+ fw.105.name:0 "$fw_fate_scholars_dream$"
+ fw.105.desc:0 "Fate has awakened curiosity and scholarly momentum across §Y[event_target:fw_target_colony.GetName]§!."
+
+ fw.201.name:0 "$fw_fate_shattered_luck$"
+ fw.201.desc:0 "Fate has turned against §Y[event_target:fw_target_colony.GetName]§!, scattering fortune and confidence."
+
+ fw.202.name:0 "$fw_fate_ruined_machines$"
+ fw.202.desc:0 "Fate has sabotaged industry and engineering insight on §Y[event_target:fw_target_colony.GetName]§!."
+
+ fw.203.name:0 "$fw_fate_hunger_shadow$"
+ fw.203.desc:0 "Fate has cast a pall of scarcity and failing harvests over §Y[event_target:fw_target_colony.GetName]§!."
+
+ fw.204.name:0 "$fw_fate_madness_weather$"
+ fw.204.desc:0 "Fate has unsettled daily life on §Y[event_target:fw_target_colony.GetName]§! with erratic conditions and fraying morale."
+
+ fw.205.name:0 "$fw_fate_cursed_silence$"
+ fw.205.desc:0 "Fate has muted unity and collective purpose on §Y[event_target:fw_target_colony.GetName]§!."
+
+ fw_fate_pending_tooltip:0 "Fate is being decided...\n\nThis world's future is being drawn through unseen threads. The final outcome has not yet manifested."
+
+ fw_fate_bountiful_harvest_tooltip:0 "§H$fw_fate_bountiful_harvest$§!\n\nFate has blessed this world with abundance and renewed civic confidence.\n\nDuration: 5 Years\nEffects: +10% Food from Jobs, +5 Stability"
+ fw_fate_golden_alignment_tooltip:0 "§H$fw_fate_golden_alignment$§!\n\nFate has aligned this world toward harmony and exceptional stability.\n\nDuration: 5 Years\nEffects: +10 Stability"
+ fw_fate_growth_surge_tooltip:0 "§H$fw_fate_growth_surge$§!\n\nFate has chosen renewal, migration, optimism, and demographic momentum.\n\nDuration: 5 Years\nEffects: +5 Stability"
+ fw_fate_serene_destiny_tooltip:0 "§H$fw_fate_serene_destiny$§!\n\nFate has softened hardship and brought a season of calm prosperity.\n\nDuration: 5 Years\nEffects: +10% Amenities, +5 Stability"
+ fw_fate_scholars_dream_tooltip:0 "§H$fw_fate_scholars_dream$§!\n\nFate has awakened curiosity and scholarly momentum.\n\nDuration: 5 Years\nEffects: +10% Researcher Output, +5 Stability"
+
+ fw_fate_shattered_luck_tooltip:0 "§H$fw_fate_shattered_luck$§!\n\nFate has turned against this world, scattering fortune and confidence.\n\nDuration: 5 Years\nEffects: -5 Stability"
+ fw_fate_ruined_machines_tooltip:0 "§H$fw_fate_ruined_machines$§!\n\nFate has sabotaged industry and engineering insight.\n\nDuration: 5 Years\nEffects: -10% Engineering Research from Jobs, -5 Stability"
+ fw_fate_hunger_shadow_tooltip:0 "§H$fw_fate_hunger_shadow$§!\n\nFate has cast a pall of scarcity and failing harvests.\n\nDuration: 5 Years\nEffects: -10% Food from Jobs, -5 Stability"
+ fw_fate_madness_weather_tooltip:0 "§H$fw_fate_madness_weather$§!\n\nFate has unsettled daily life with erratic conditions and fraying morale.\n\nDuration: 5 Years\nEffects: -10% Amenities, -5 Stability"
+ fw_fate_cursed_silence_tooltip:0 "§H$fw_fate_cursed_silence$§!\n\nFate has muted unity and collective purpose.\n\nDuration: 5 Years\nEffects: -10% Unity, -5 Stability"
+
+ fw_fate_pending_status_text:0 "§HFate Being Decided§!\nOutcome manifests in 30-90 days."
+ fw_fate_bountiful_harvest_status_text:0 "§H$fw_fate_bountiful_harvest$§!\n+10% Food, +5 Stability\n§Y[This.fw_fate_days_remaining] days left§!"
+ fw_fate_golden_alignment_status_text:0 "§H$fw_fate_golden_alignment$§!\n+10 Stability\n§Y[This.fw_fate_days_remaining] days left§!"
+ fw_fate_growth_surge_status_text:0 "§H$fw_fate_growth_surge$§!\n+5 Stability\n§Y[This.fw_fate_days_remaining] days left§!"
+ fw_fate_serene_destiny_status_text:0 "§H$fw_fate_serene_destiny$§!\n+10% Amenities, +5 Stability\n§Y[This.fw_fate_days_remaining] days left§!"
+ fw_fate_scholars_dream_status_text:0 "§H$fw_fate_scholars_dream$§!\n+10% Researcher Output, +5 Stability\n§Y[This.fw_fate_days_remaining] days left§!"
+ fw_fate_shattered_luck_status_text:0 "§H$fw_fate_shattered_luck$§!\n-5 Stability\n§Y[This.fw_fate_days_remaining] days left§!"
+ fw_fate_ruined_machines_status_text:0 "§H$fw_fate_ruined_machines$§!\n-10% Engineering Research, -5 Stability\n§Y[This.fw_fate_days_remaining] days left§!"
+ fw_fate_hunger_shadow_status_text:0 "§H$fw_fate_hunger_shadow$§!\n-10% Food, -5 Stability\n§Y[This.fw_fate_days_remaining] days left§!"
+ fw_fate_madness_weather_status_text:0 "§H$fw_fate_madness_weather$§!\n-10% Amenities, -5 Stability\n§Y[This.fw_fate_days_remaining] days left§!"
+ fw_fate_cursed_silence_status_text:0 "§H$fw_fate_cursed_silence$§!\n-10% Unity, -5 Stability\n§Y[This.fw_fate_days_remaining] days left§!"
+
+ fw_fate_growth_surge:0 "Growth Surge"
+ fw_fate_growth_surge_desc:0 "Fate has chosen renewal, migration, optimism, and demographic momentum."
+ fw_fate_bountiful_harvest:0 "Bountiful Harvest"
+ fw_fate_bountiful_harvest_desc:0 "Fate has blessed this world with abundance and renewed civic confidence."
+ fw_fate_golden_alignment:0 "Golden Alignment"
+ fw_fate_golden_alignment_desc:0 "Fate has aligned this world toward harmony and exceptional stability."
+ fw_fate_serene_destiny:0 "Serene Destiny"
+ fw_fate_serene_destiny_desc:0 "Fate has softened hardship and brought a season of calm prosperity."
+ fw_fate_scholars_dream:0 "Scholar's Dream"
+ fw_fate_scholars_dream_desc:0 "Fate has awakened curiosity and scholarly momentum."
+ fw_fate_shattered_luck:0 "Shattered Luck"
+ fw_fate_shattered_luck_desc:0 "Fate has turned against this world, scattering fortune and confidence."
+ fw_fate_ruined_machines:0 "Ruined Machines"
+ fw_fate_ruined_machines_desc:0 "Fate has sabotaged industry and engineering insight."
+ fw_fate_hunger_shadow:0 "Hunger Shadow"
+ fw_fate_hunger_shadow_desc:0 "Fate has cast a pall of scarcity and failing harvests."
+ fw_fate_madness_weather:0 "Madness Weather"
+ fw_fate_madness_weather_desc:0 "Fate has unsettled daily life with erratic conditions and fraying morale."
+ fw_fate_cursed_silence:0 "Cursed Silence"
+ fw_fate_cursed_silence_desc:0 "Fate has muted unity and collective purpose."

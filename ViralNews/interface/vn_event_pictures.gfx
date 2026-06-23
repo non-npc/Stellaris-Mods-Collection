@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = { name = "GFX_evt_vn_newsroom" texturefile = "gfx/event_pictures/vn_evt_newsroom.dds" }
+	spriteType = { name = "GFX_evt_vn_mystery" texturefile = "gfx/event_pictures/vn_evt_mystery.dds" }
+	spriteType = { name = "GFX_evt_vn_celebrity" texturefile = "gfx/event_pictures/vn_evt_celebrity.dds" }
+	spriteType = { name = "GFX_evt_vn_social" texturefile = "gfx/event_pictures/vn_evt_social.dds" }
+}

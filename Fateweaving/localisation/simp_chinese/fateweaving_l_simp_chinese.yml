@@ -1,0 +1,94 @@
+l_simp_chinese:
+
+ tech_fateweaving:0 "命运编织"
+ tech_fateweaving_desc:0 "通过研究概率本身的架构，我们的文明或许能学会标记世界，以迎接不可能的结局。命运无法被掌控，但可以受到邀请。"
+ tech_fateweaving_effect:0 "§H解锁功能：§!对任意殖民地施展命运。被标记的世界将在30至90天内随机获得祝福或灾祸。"
+
+ fw_invoke_fate_button:0 "施展命运"
+ fw_deciding_fate_button:0 "命运抉择中……"
+ fw_fate_decided_button:0 "命运已定"
+
+ fw_invoke_fate_button_tooltip:0 "对此世界施展命运，让天命选择祝福或诅咒。"
+ fw_fate_decided_button_tooltip:0 "此世界的命运已经注定。结果将持续生效，直至到期。"
+
+ fw.10.name:0 "命运编织"
+ fw.10.desc:0 "§Y[event_target:fw_target_colony.GetName]§!已被选为命运编织的目标。是否将其命运牵引至运动之中？"
+ fw.10.a:0 "施展命运"
+ fw.10.b:0 "取消"
+
+ fw.101.name:0 "$fw_fate_bountiful_harvest$"
+ fw.101.desc:0 "命运赐予了§Y[event_target:fw_target_colony.GetName]§!丰饶与焕新的公民信心。"
+
+ fw.102.name:0 "$fw_fate_golden_alignment$"
+ fw.102.desc:0 "命运将§Y[event_target:fw_target_colony.GetName]§!引向和谐、秩序与非凡的稳定。"
+
+ fw.103.name:0 "$fw_fate_growth_surge$"
+ fw.103.desc:0 "命运为§Y[event_target:fw_target_colony.GetName]§!选择了复兴、移民、乐观与人口动能。"
+
+ fw.104.name:0 "$fw_fate_serene_destiny$"
+ fw.104.desc:0 "命运缓和了§Y[event_target:fw_target_colony.GetName]§!的苦难，带来一季安宁的繁荣。"
+
+ fw.105.name:0 "$fw_fate_scholars_dream$"
+ fw.105.desc:0 "命运在§Y[event_target:fw_target_colony.GetName]§!唤醒了好奇心与学术动能。"
+
+ fw.201.name:0 "$fw_fate_shattered_luck$"
+ fw.201.desc:0 "命运转而与§Y[event_target:fw_target_colony.GetName]§!为敌，散尽了财富与信心。"
+
+ fw.202.name:0 "$fw_fate_ruined_machines$"
+ fw.202.desc:0 "命运破坏了§Y[event_target:fw_target_colony.GetName]§!的工业与工程洞见。"
+
+ fw.203.name:0 "$fw_fate_hunger_shadow$"
+ fw.203.desc:0 "命运在§Y[event_target:fw_target_colony.GetName]§!投下匮乏与歉收的阴影。"
+
+ fw.204.name:0 "$fw_fate_madness_weather$"
+ fw.204.desc:0 "命运以反常的环境与日渐瓦解的士气，扰乱了§Y[event_target:fw_target_colony.GetName]§!的日常生活。"
+
+ fw.205.name:0 "$fw_fate_cursed_silence$"
+ fw.205.desc:0 "命运压制了§Y[event_target:fw_target_colony.GetName]§!的团结与集体意志。"
+
+ fw_fate_pending_tooltip:0 "命运抉择中……\n\n此世界的未来正被无形的丝线牵引。最终结果尚未显现。"
+
+ fw_fate_bountiful_harvest_tooltip:0 "§H$fw_fate_bountiful_harvest$§!\n\n命运赐予此世界丰饶与焕新的公民信心。\n\n持续：5年\n效果：岗位食物产出+10%，稳定度+5"
+ fw_fate_golden_alignment_tooltip:0 "§H$fw_fate_golden_alignment$§!\n\n命运将此世界引向和谐与非凡的稳定。\n\n持续：5年\n效果：稳定度+10"
+ fw_fate_growth_surge_tooltip:0 "§H$fw_fate_growth_surge$§!\n\n命运选择了复兴、移民、乐观与人口动能。\n\n持续：5年\n效果：稳定度+5"
+ fw_fate_serene_destiny_tooltip:0 "§H$fw_fate_serene_destiny$§!\n\n命运缓和了苦难，带来一季安宁的繁荣。\n\n持续：5年\n效果：舒适度+10%，稳定度+5"
+ fw_fate_scholars_dream_tooltip:0 "§H$fw_fate_scholars_dream$§!\n\n命运唤醒了好奇心与学术动能。\n\n持续：5年\n效果：研究员产出+10%，稳定度+5"
+
+ fw_fate_shattered_luck_tooltip:0 "§H$fw_fate_shattered_luck$§!\n\n命运转而与此世界为敌，散尽了财富与信心。\n\n持续：5年\n效果：稳定度-5"
+ fw_fate_ruined_machines_tooltip:0 "§H$fw_fate_ruined_machines$§!\n\n命运破坏了工业与工程洞见。\n\n持续：5年\n效果：岗位工程学研究-10%，稳定度-5"
+ fw_fate_hunger_shadow_tooltip:0 "§H$fw_fate_hunger_shadow$§!\n\n命运投下匮乏与歉收的阴影。\n\n持续：5年\n效果：岗位食物产出-10%，稳定度-5"
+ fw_fate_madness_weather_tooltip:0 "§H$fw_fate_madness_weather$§!\n\n命运以反常的环境与日渐瓦解的士气扰乱了日常生活。\n\n持续：5年\n效果：舒适度-10%，稳定度-5"
+ fw_fate_cursed_silence_tooltip:0 "§H$fw_fate_cursed_silence$§!\n\n命运压制了团结与集体意志。\n\n持续：5年\n效果：凝合力-10%，稳定度-5"
+
+ fw_fate_pending_status_text:0 "§H命运抉择中§!\n结果将在30-90天内显现。"
+ fw_fate_bountiful_harvest_status_text:0 "§H$fw_fate_bountiful_harvest$§!\n食物+10%，稳定度+5\n§Y剩余[This.fw_fate_days_remaining]天§!"
+ fw_fate_golden_alignment_status_text:0 "§H$fw_fate_golden_alignment$§!\n稳定度+10\n§Y剩余[This.fw_fate_days_remaining]天§!"
+ fw_fate_growth_surge_status_text:0 "§H$fw_fate_growth_surge$§!\n稳定度+5\n§Y剩余[This.fw_fate_days_remaining]天§!"
+ fw_fate_serene_destiny_status_text:0 "§H$fw_fate_serene_destiny$§!\n舒适度+10%，稳定度+5\n§Y剩余[This.fw_fate_days_remaining]天§!"
+ fw_fate_scholars_dream_status_text:0 "§H$fw_fate_scholars_dream$§!\n研究员产出+10%，稳定度+5\n§Y剩余[This.fw_fate_days_remaining]天§!"
+ fw_fate_shattered_luck_status_text:0 "§H$fw_fate_shattered_luck$§!\n稳定度-5\n§Y剩余[This.fw_fate_days_remaining]天§!"
+ fw_fate_ruined_machines_status_text:0 "§H$fw_fate_ruined_machines$§!\n工程学研究-10%，稳定度-5\n§Y剩余[This.fw_fate_days_remaining]天§!"
+ fw_fate_hunger_shadow_status_text:0 "§H$fw_fate_hunger_shadow$§!\n食物-10%，稳定度-5\n§Y剩余[This.fw_fate_days_remaining]天§!"
+ fw_fate_madness_weather_status_text:0 "§H$fw_fate_madness_weather$§!\n舒适度-10%，稳定度-5\n§Y剩余[This.fw_fate_days_remaining]天§!"
+ fw_fate_cursed_silence_status_text:0 "§H$fw_fate_cursed_silence$§!\n凝合力-10%，稳定度-5\n§Y剩余[This.fw_fate_days_remaining]天§!"
+
+ fw_fate_growth_surge:0 "增长浪潮"
+ fw_fate_growth_surge_desc:0 "命运选择了复兴、移民、乐观与人口动能。"
+ fw_fate_bountiful_harvest:0 "丰饶收获"
+ fw_fate_bountiful_harvest_desc:0 "命运赐予此世界丰饶与焕新的公民信心。"
+ fw_fate_golden_alignment:0 "黄金契合"
+ fw_fate_golden_alignment_desc:0 "命运将此世界引向和谐与非凡的稳定。"
+ fw_fate_serene_destiny:0 "宁静天命"
+ fw_fate_serene_destiny_desc:0 "命运缓和了苦难，带来一季安宁的繁荣。"
+ fw_fate_scholars_dream:0 "学者之梦"
+ fw_fate_scholars_dream_desc:0 "命运唤醒了好奇心与学术动能。"
+ fw_fate_shattered_luck:0 "破碎鸿运"
+ fw_fate_shattered_luck_desc:0 "命运转而与此世界为敌，散尽了财富与信心。"
+ fw_fate_ruined_machines:0 "机器崩坏"
+ fw_fate_ruined_machines_desc:0 "命运破坏了工业与工程洞见。"
+ fw_fate_hunger_shadow:0 "饥馑阴影"
+ fw_fate_hunger_shadow_desc:0 "命运投下匮乏与歉收的阴影。"
+ fw_fate_madness_weather:0 "狂乱天候"
+ fw_fate_madness_weather_desc:0 "命运以反常的环境与日渐瓦解的士气扰乱了日常生活。"
+ fw_fate_cursed_silence:0 "诅咒沉寂"
+ fw_fate_cursed_silence_desc:0 "命运压制了团结与集体意志。"

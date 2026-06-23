@@ -1,0 +1,623 @@
+# Elemental Warfare custom weapon VFX. Full restart required after gfx changes.
+# reload projectiles only reloads this file — not particles or entities.
+# color = { Red Green Blue Intensity } tints the beam; muzzle/hit use vanilla entities per element.
+
+# ####################
+# FIRE
+# ####################
+
+projectile_gfx_beam = {
+	name = "ew_fire_laser_s"
+	color = { 1.0 0.45 0.1 1.5 }
+	hit_entity = "infrared_laser_small_hit_entity"
+	shield_hit_entity = "infrared_laser_small_shield_hit_entity"
+	muzzle_flash_entity = "infrared_laser_small_muzzle_entity"
+	width = 1.0
+	texture_scroll_speed = 2.5
+	texture_tiling = 20.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 1.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 25.0 0.8 1.0 1.0 0.0 } duration = 0.25 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	shield_impact = { size = small loop_duration = 0.5 delay = 0.1 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_fire_laser_m"
+	color = { 1.0 0.45 0.1 2.0 }
+	hit_entity = "infrared_laser_medium_hit_entity"
+	shield_hit_entity = "infrared_laser_medium_shield_hit_entity"
+	muzzle_flash_entity = "infrared_laser_medium_muzzle_entity"
+	width = 1.0
+	texture_scroll_speed = 2.5
+	texture_tiling = 80.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 2.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 0.75 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	shield_impact = { size = medium loop_duration = 1.5 delay = 0.1 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_fire_laser_l"
+	color = { 1.0 0.4 0.05 2.0 }
+	hit_entity = "infrared_laser_large_hit_entity"
+	shield_hit_entity = "infrared_laser_large_shield_hit_entity"
+	muzzle_flash_entity = "infrared_laser_large_muzzle_entity"
+	width = 2.0
+	texture_scroll_speed = 5.5
+	texture_tiling = 40.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 3.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.65 5.0 1.0 0.0 } duration = 0.75 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	shield_impact = { size = large loop_duration = 2.5 delay = 0.1 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_fire_lance"
+	color = { 1.0 0.35 0.05 1.5 }
+	hit_entity = "infrared_laser_large_hit_entity"
+	shield_hit_entity = "particle_lance_shield_hit_entity"
+	muzzle_flash_entity = "infrared_laser_large_muzzle_entity"
+	windup_entity = {
+		invisible_extra_large_fixed = "particle_lance_windup_entity"
+		extra_large_turret = "particle_lance_turret_windup_entity"
+	}
+	width = 2.0
+	texture_scroll_speed = 2.5
+	texture_tiling = 5.5
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.1 100.0 0.4 5.0 0.6 0.0 1.0 0.0 } duration = 2.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.1 100.0 0.4 5.0 0.6 0.0 1.0 0.0 } duration = 1.5 }
+	texture = "gfx/models/combat_items/energy_lance_diffuse.dds"
+	shield_impact = { size = large loop_duration = 0.5 delay = 0.1 }
+}
+
+projectile_gfx_ballistic = {
+	name = "ew_fire_torpedo"
+	color = { 1.0 0.5 0.1 1.5 }
+	hit_entity = "proton_torpedoes_hit_entity"
+	shield_hit_entity = "proton_torpedoes_shield_hit_entity"
+	muzzle_flash_entity = "proton_torpedoes_muzzle_entity"
+	entity = "proton_torpedoes_entity"
+	speed = 90.0
+	max_duration = 3.0
+	shield_impact = { size = large delay = 0.0 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_fire_pd"
+	color = { 1.0 0.45 0.1 1.5 }
+	hit_entity = "infrared_laser_small_hit_entity"
+	muzzle_flash_entity = "infrared_laser_small_muzzle_entity"
+	width = 0.05
+	texture_scroll_speed = 5.5
+	texture_tiling = 10.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 0.2 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 0.2 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+}
+
+projectile_gfx_beam = {
+	name = "ew_fire_strike_craft"
+	color = { 1.0 0.45 0.1 2.0 }
+	hit_entity = "infrared_laser_small_hit_entity"
+	shield_hit_entity = "infrared_laser_small_shield_hit_entity"
+	muzzle_flash_entity = "infrared_laser_small_muzzle_entity"
+	width = 0.3
+	texture_scroll_speed = 5.5
+	texture_tiling = 10.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 1.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 0.75 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	shield_impact = { size = small loop_duration = 0.8 delay = 0.1 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_fire_titan"
+	color = { 1.0 0.35 0.05 1.5 }
+	hit_entity = "infrared_laser_large_hit_entity"
+	shield_hit_entity = "titan_laser_shield_hit_entity"
+	muzzle_flash_entity = "infrared_laser_large_muzzle_entity"
+	windup_entity = "titan_laser_windup_entity"
+	width = 10.0
+	texture_scroll_speed = 1.0
+	texture_tiling = 5.5
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.1 40.0 0.7 5.0 0.9 0.0 1.0 0.0 } duration = 3.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.1 40.0 0.4 5.0 0.6 0.0 1.0 0.0 } duration = 1.5 }
+	texture = "gfx/models/combat_items/titan_laser_diffuse.dds"
+	shield_impact = { size = large loop_duration = 0.5 delay = 0.2 }
+}
+
+# ####################
+# ICE
+# ####################
+
+projectile_gfx_beam = {
+	name = "ew_ice_laser_s"
+	color = { 0.5 0.85 1.0 1.5 }
+	hit_entity = "blue_laser_small_hit_entity"
+	shield_hit_entity = "blue_laser_small_shield_hit_entity"
+	muzzle_flash_entity = "blue_laser_small_muzzle_entity"
+	width = 1.0
+	texture_scroll_speed = 2.5
+	texture_tiling = 20.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 1.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 25.0 0.8 1.0 1.0 0.0 } duration = 0.25 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	shield_impact = { size = small loop_duration = 0.5 delay = 0.1 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_ice_laser_m"
+	color = { 0.5 0.85 1.0 2.0 }
+	hit_entity = "blue_laser_medium_hit_entity"
+	shield_hit_entity = "blue_laser_medium_shield_hit_entity"
+	muzzle_flash_entity = "blue_laser_medium_muzzle_entity"
+	width = 1.0
+	texture_scroll_speed = 2.5
+	texture_tiling = 80.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 2.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 0.75 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	shield_impact = { size = medium loop_duration = 1.5 delay = 0.1 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_ice_laser_l"
+	color = { 0.45 0.9 1.0 2.0 }
+	hit_entity = "blue_laser_large_hit_entity"
+	shield_hit_entity = "blue_laser_large_shield_hit_entity"
+	muzzle_flash_entity = "blue_laser_large_muzzle_entity"
+	width = 2.0
+	texture_scroll_speed = 5.5
+	texture_tiling = 40.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 3.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.65 5.0 1.0 0.0 } duration = 0.75 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	shield_impact = { size = large loop_duration = 2.5 delay = 0.1 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_ice_lance"
+	color = { 0.4 0.8 1.0 1.5 }
+	hit_entity = "blue_laser_large_hit_entity"
+	shield_hit_entity = "particle_lance_shield_hit_entity"
+	muzzle_flash_entity = "blue_laser_large_muzzle_entity"
+	windup_entity = {
+		invisible_extra_large_fixed = "particle_lance_windup_entity"
+		extra_large_turret = "particle_lance_turret_windup_entity"
+	}
+	width = 2.0
+	texture_scroll_speed = 2.5
+	texture_tiling = 5.5
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.1 100.0 0.4 5.0 0.6 0.0 1.0 0.0 } duration = 2.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.1 100.0 0.4 5.0 0.6 0.0 1.0 0.0 } duration = 1.5 }
+	texture = "gfx/models/combat_items/energy_lance_diffuse.dds"
+	shield_impact = { size = large loop_duration = 0.5 delay = 0.1 }
+}
+
+projectile_gfx_ballistic = {
+	name = "ew_ice_torpedo"
+	color = { 0.5 0.85 1.0 1.5 }
+	hit_entity = "proton_torpedoes_hit_entity"
+	shield_hit_entity = "proton_torpedoes_shield_hit_entity"
+	muzzle_flash_entity = "proton_torpedoes_muzzle_entity"
+	entity = "proton_torpedoes_entity"
+	speed = 90.0
+	max_duration = 3.0
+	shield_impact = { size = large delay = 0.0 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_ice_pd"
+	color = { 0.5 0.85 1.0 1.5 }
+	hit_entity = "blue_laser_small_hit_entity"
+	muzzle_flash_entity = "blue_laser_small_muzzle_entity"
+	width = 0.05
+	texture_scroll_speed = 5.5
+	texture_tiling = 10.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 0.2 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 0.2 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+}
+
+projectile_gfx_beam = {
+	name = "ew_ice_strike_craft"
+	color = { 0.5 0.85 1.0 2.0 }
+	hit_entity = "blue_laser_small_hit_entity"
+	shield_hit_entity = "blue_laser_small_shield_hit_entity"
+	muzzle_flash_entity = "blue_laser_small_muzzle_entity"
+	width = 0.3
+	texture_scroll_speed = 5.5
+	texture_tiling = 10.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 1.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 0.75 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	shield_impact = { size = small loop_duration = 0.8 delay = 0.1 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_ice_titan"
+	color = { 0.2 0.74 1.0 1.5 }
+	hit_entity = "blue_laser_large_hit_entity"
+	shield_hit_entity = "titan_laser_shield_hit_entity"
+	muzzle_flash_entity = "blue_laser_large_muzzle_entity"
+	windup_entity = "titan_laser_windup_entity"
+	width = 10.0
+	texture_scroll_speed = 1.0
+	texture_tiling = 5.5
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.1 40.0 0.7 5.0 0.9 0.0 1.0 0.0 } duration = 3.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.1 40.0 0.4 5.0 0.6 0.0 1.0 0.0 } duration = 1.5 }
+	texture = "gfx/models/combat_items/titan_laser_diffuse.dds"
+	shield_impact = { size = large loop_duration = 0.5 delay = 0.2 }
+}
+
+# ####################
+# LIGHTNING
+# ####################
+
+projectile_gfx_beam = {
+	name = "ew_lightning_laser_s"
+	color = { 1.0 0.95 0.4 1.5 }
+	hit_entity = "gamma_laser_small_hit_entity"
+	shield_hit_entity = "gamma_laser_small_shield_hit_entity"
+	muzzle_flash_entity = "gamma_laser_small_muzzle_entity"
+	width = 1.0
+	texture_scroll_speed = 2.5
+	texture_tiling = 20.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 1.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 25.0 0.8 1.0 1.0 0.0 } duration = 0.25 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	shield_impact = { size = small loop_duration = 0.5 delay = 0.1 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_lightning_laser_m"
+	color = { 1.0 0.95 0.4 2.0 }
+	hit_entity = "gamma_laser_medium_hit_entity"
+	shield_hit_entity = "gamma_laser_medium_shield_hit_entity"
+	muzzle_flash_entity = "gamma_laser_medium_muzzle_entity"
+	width = 1.0
+	texture_scroll_speed = 2.5
+	texture_tiling = 80.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 2.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 0.75 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	shield_impact = { size = medium loop_duration = 1.5 delay = 0.1 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_lightning_laser_l"
+	color = { 1.0 0.9 0.3 2.0 }
+	hit_entity = "gamma_laser_large_hit_entity"
+	shield_hit_entity = "gamma_laser_large_shield_hit_entity"
+	muzzle_flash_entity = "gamma_laser_large_muzzle_entity"
+	width = 2.0
+	texture_scroll_speed = 5.5
+	texture_tiling = 40.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 3.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.65 5.0 1.0 0.0 } duration = 0.75 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	shield_impact = { size = large loop_duration = 2.5 delay = 0.1 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_lightning_lance"
+	color = { 1.0 0.9 0.3 1.5 }
+	hit_entity = "gamma_laser_large_hit_entity"
+	shield_hit_entity = "particle_lance_shield_hit_entity"
+	muzzle_flash_entity = "gamma_laser_large_muzzle_entity"
+	windup_entity = {
+		invisible_extra_large_fixed = "particle_lance_windup_entity"
+		extra_large_turret = "particle_lance_turret_windup_entity"
+	}
+	width = 2.0
+	texture_scroll_speed = 2.5
+	texture_tiling = 5.5
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.1 100.0 0.4 5.0 0.6 0.0 1.0 0.0 } duration = 2.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.1 100.0 0.4 5.0 0.6 0.0 1.0 0.0 } duration = 1.5 }
+	texture = "gfx/models/combat_items/energy_lance_diffuse.dds"
+	shield_impact = { size = large loop_duration = 0.5 delay = 0.1 }
+}
+
+projectile_gfx_ballistic = {
+	name = "ew_lightning_torpedo"
+	color = { 1.0 0.95 0.4 1.5 }
+	hit_entity = "proton_torpedoes_hit_entity"
+	shield_hit_entity = "proton_torpedoes_shield_hit_entity"
+	muzzle_flash_entity = "proton_torpedoes_muzzle_entity"
+	entity = "proton_torpedoes_entity"
+	speed = 90.0
+	max_duration = 3.0
+	shield_impact = { size = large delay = 0.0 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_lightning_pd"
+	color = { 1.0 0.95 0.4 1.5 }
+	hit_entity = "gamma_laser_small_hit_entity"
+	muzzle_flash_entity = "gamma_laser_small_muzzle_entity"
+	width = 0.05
+	texture_scroll_speed = 5.5
+	texture_tiling = 10.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 0.2 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 0.2 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+}
+
+projectile_gfx_beam = {
+	name = "ew_lightning_strike_craft"
+	color = { 1.0 0.95 0.4 2.0 }
+	hit_entity = "gamma_laser_small_hit_entity"
+	shield_hit_entity = "gamma_laser_small_shield_hit_entity"
+	muzzle_flash_entity = "gamma_laser_small_muzzle_entity"
+	width = 0.3
+	texture_scroll_speed = 5.5
+	texture_tiling = 10.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 1.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 0.75 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	shield_impact = { size = small loop_duration = 0.8 delay = 0.1 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_lightning_titan"
+	color = { 1.0 0.85 0.2 1.5 }
+	hit_entity = "gamma_laser_large_hit_entity"
+	shield_hit_entity = "titan_laser_shield_hit_entity"
+	muzzle_flash_entity = "gamma_laser_large_muzzle_entity"
+	windup_entity = "titan_laser_windup_entity"
+	width = 10.0
+	texture_scroll_speed = 1.0
+	texture_tiling = 5.5
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.1 40.0 0.7 5.0 0.9 0.0 1.0 0.0 } duration = 3.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.1 40.0 0.4 5.0 0.6 0.0 1.0 0.0 } duration = 1.5 }
+	texture = "gfx/models/combat_items/titan_laser_diffuse.dds"
+	shield_impact = { size = large loop_duration = 0.5 delay = 0.2 }
+}
+
+# ####################
+# ACID
+# ####################
+
+projectile_gfx_beam = {
+	name = "ew_acid_laser_s"
+	color = { 0.4 1.0 0.3 1.5 }
+	hit_entity = "disruptor_1_small_hit_entity"
+	shield_hit_entity = "disruptor_1_small_shield_hit_entity"
+	muzzle_flash_entity = "disruptor_1_small_muzzle_entity"
+	width = 1.0
+	texture_scroll_speed = 2.5
+	texture_tiling = 20.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 1.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 25.0 0.8 1.0 1.0 0.0 } duration = 0.25 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	shield_impact = { size = small loop_duration = 0.5 delay = 0.1 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_acid_laser_m"
+	color = { 0.4 1.0 0.3 2.0 }
+	hit_entity = "disruptor_1_medium_hit_entity"
+	shield_hit_entity = "disruptor_1_medium_shield_hit_entity"
+	muzzle_flash_entity = "disruptor_1_medium_muzzle_entity"
+	width = 1.0
+	texture_scroll_speed = 2.5
+	texture_tiling = 80.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 2.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 0.75 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	shield_impact = { size = medium loop_duration = 1.5 delay = 0.1 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_acid_laser_l"
+	color = { 0.35 1.0 0.25 2.0 }
+	hit_entity = "disruptor_1_large_hit_entity"
+	shield_hit_entity = "disruptor_1_large_shield_hit_entity"
+	muzzle_flash_entity = "disruptor_1_large_muzzle_entity"
+	width = 2.0
+	texture_scroll_speed = 5.5
+	texture_tiling = 40.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 3.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.65 5.0 1.0 0.0 } duration = 0.75 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	shield_impact = { size = large loop_duration = 2.5 delay = 0.1 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_acid_lance"
+	color = { 0.3 1.0 0.2 1.5 }
+	hit_entity = "disruptor_1_large_hit_entity"
+	shield_hit_entity = "particle_lance_shield_hit_entity"
+	muzzle_flash_entity = "disruptor_1_large_muzzle_entity"
+	windup_entity = {
+		invisible_extra_large_fixed = "particle_lance_windup_entity"
+		extra_large_turret = "particle_lance_turret_windup_entity"
+	}
+	width = 2.0
+	texture_scroll_speed = 2.5
+	texture_tiling = 5.5
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.1 100.0 0.4 5.0 0.6 0.0 1.0 0.0 } duration = 2.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.1 100.0 0.4 5.0 0.6 0.0 1.0 0.0 } duration = 1.5 }
+	texture = "gfx/models/combat_items/energy_lance_diffuse.dds"
+	shield_impact = { size = large loop_duration = 0.5 delay = 0.1 }
+}
+
+projectile_gfx_ballistic = {
+	name = "ew_acid_torpedo"
+	color = { 0.4 1.0 0.3 1.5 }
+	hit_entity = "proton_torpedoes_hit_entity"
+	shield_hit_entity = "proton_torpedoes_shield_hit_entity"
+	muzzle_flash_entity = "proton_torpedoes_muzzle_entity"
+	entity = "proton_torpedoes_entity"
+	speed = 90.0
+	max_duration = 3.0
+	shield_impact = { size = large delay = 0.0 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_acid_pd"
+	color = { 0.4 1.0 0.3 1.5 }
+	hit_entity = "disruptor_1_small_hit_entity"
+	muzzle_flash_entity = "disruptor_1_small_muzzle_entity"
+	width = 0.05
+	texture_scroll_speed = 5.5
+	texture_tiling = 10.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 0.2 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 0.2 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+}
+
+projectile_gfx_beam = {
+	name = "ew_acid_strike_craft"
+	color = { 0.4 1.0 0.3 2.0 }
+	hit_entity = "disruptor_1_small_hit_entity"
+	shield_hit_entity = "disruptor_1_small_shield_hit_entity"
+	muzzle_flash_entity = "disruptor_1_small_muzzle_entity"
+	width = 0.3
+	texture_scroll_speed = 5.5
+	texture_tiling = 10.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 1.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 0.75 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	shield_impact = { size = small loop_duration = 0.8 delay = 0.1 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_acid_titan"
+	color = { 0.3 0.9 0.2 1.5 }
+	hit_entity = "disruptor_1_large_hit_entity"
+	shield_hit_entity = "titan_laser_shield_hit_entity"
+	muzzle_flash_entity = "disruptor_1_large_muzzle_entity"
+	windup_entity = "titan_laser_windup_entity"
+	width = 10.0
+	texture_scroll_speed = 1.0
+	texture_tiling = 5.5
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.1 40.0 0.7 5.0 0.9 0.0 1.0 0.0 } duration = 3.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.1 40.0 0.4 5.0 0.6 0.0 1.0 0.0 } duration = 1.5 }
+	texture = "gfx/models/combat_items/titan_laser_diffuse.dds"
+	shield_impact = { size = large loop_duration = 0.5 delay = 0.2 }
+}
+
+# ####################
+# CHAOS
+# ####################
+
+projectile_gfx_beam = {
+	name = "ew_chaos_laser_s"
+	color = { 0.8 0.2 1.0 1.5 }
+	hit_entity = "uv_laser_small_hit_entity"
+	shield_hit_entity = "uv_laser_small_shield_hit_entity"
+	muzzle_flash_entity = "uv_laser_small_muzzle_entity"
+	width = 1.0
+	texture_scroll_speed = 2.5
+	texture_tiling = 20.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 1.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 25.0 0.8 1.0 1.0 0.0 } duration = 0.25 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	shield_impact = { size = small loop_duration = 0.5 delay = 0.1 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_chaos_laser_m"
+	color = { 0.8 0.2 1.0 2.0 }
+	hit_entity = "uv_laser_medium_hit_entity"
+	shield_hit_entity = "uv_laser_medium_shield_hit_entity"
+	muzzle_flash_entity = "uv_laser_medium_muzzle_entity"
+	width = 1.0
+	texture_scroll_speed = 2.5
+	texture_tiling = 80.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 2.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 0.75 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	shield_impact = { size = medium loop_duration = 1.5 delay = 0.1 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_chaos_laser_l"
+	color = { 0.75 0.15 1.0 2.0 }
+	hit_entity = "uv_laser_large_hit_entity"
+	shield_hit_entity = "uv_laser_large_shield_hit_entity"
+	muzzle_flash_entity = "uv_laser_large_muzzle_entity"
+	width = 2.0
+	texture_scroll_speed = 5.5
+	texture_tiling = 40.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 3.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.65 5.0 1.0 0.0 } duration = 0.75 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	shield_impact = { size = large loop_duration = 2.5 delay = 0.1 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_chaos_lance"
+	color = { 0.7 0.1 1.0 1.5 }
+	hit_entity = "uv_laser_large_hit_entity"
+	shield_hit_entity = "particle_lance_shield_hit_entity"
+	muzzle_flash_entity = "uv_laser_large_muzzle_entity"
+	windup_entity = {
+		invisible_extra_large_fixed = "particle_lance_windup_entity"
+		extra_large_turret = "particle_lance_turret_windup_entity"
+	}
+	width = 2.0
+	texture_scroll_speed = 2.5
+	texture_tiling = 5.5
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.1 100.0 0.4 5.0 0.6 0.0 1.0 0.0 } duration = 2.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.1 100.0 0.4 5.0 0.6 0.0 1.0 0.0 } duration = 1.5 }
+	texture = "gfx/models/combat_items/energy_lance_diffuse.dds"
+	shield_impact = { size = large loop_duration = 0.5 delay = 0.1 }
+}
+
+projectile_gfx_ballistic = {
+	name = "ew_chaos_torpedo"
+	color = { 0.8 0.2 1.0 1.5 }
+	hit_entity = "proton_torpedoes_hit_entity"
+	shield_hit_entity = "proton_torpedoes_shield_hit_entity"
+	muzzle_flash_entity = "proton_torpedoes_muzzle_entity"
+	entity = "proton_torpedoes_entity"
+	speed = 90.0
+	max_duration = 3.0
+	shield_impact = { size = large delay = 0.0 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_chaos_pd"
+	color = { 0.8 0.2 1.0 1.5 }
+	hit_entity = "uv_laser_small_hit_entity"
+	muzzle_flash_entity = "uv_laser_small_muzzle_entity"
+	width = 0.05
+	texture_scroll_speed = 5.5
+	texture_tiling = 10.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 0.2 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 0.2 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+}
+
+projectile_gfx_beam = {
+	name = "ew_chaos_strike_craft"
+	color = { 0.8 0.2 1.0 2.0 }
+	hit_entity = "uv_laser_small_hit_entity"
+	shield_hit_entity = "uv_laser_small_shield_hit_entity"
+	muzzle_flash_entity = "uv_laser_small_muzzle_entity"
+	width = 0.3
+	texture_scroll_speed = 5.5
+	texture_tiling = 10.0
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 1.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.2 50.0 0.8 5.0 1.0 0.0 } duration = 0.75 }
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	shield_impact = { size = small loop_duration = 0.8 delay = 0.1 }
+}
+
+projectile_gfx_beam = {
+	name = "ew_chaos_titan"
+	color = { 0.65 0.1 1.0 1.5 }
+	hit_entity = "uv_laser_large_hit_entity"
+	shield_hit_entity = "titan_laser_shield_hit_entity"
+	muzzle_flash_entity = "uv_laser_large_muzzle_entity"
+	windup_entity = "titan_laser_windup_entity"
+	width = 10.0
+	texture_scroll_speed = 1.0
+	texture_tiling = 5.5
+	hit = { alpha_curve = { 0.0 0.0 0.05 0.0 0.1 40.0 0.7 5.0 0.9 0.0 1.0 0.0 } duration = 3.0 }
+	miss = { alpha_curve = { 0.0 0.0 0.05 0.0 0.1 40.0 0.4 5.0 0.6 0.0 1.0 0.0 } duration = 1.5 }
+	texture = "gfx/models/combat_items/titan_laser_diffuse.dds"
+	shield_impact = { size = large loop_duration = 0.5 delay = 0.2 }
+}

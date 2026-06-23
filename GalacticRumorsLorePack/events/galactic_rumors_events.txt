@@ -1,0 +1,2344 @@
+namespace = grlp
+
+country_event = {
+    id = grlp.0
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_startup_delay_initialized }
+    }
+
+    immediate = {
+        set_country_flag = grlp_startup_delay_initialized
+
+        random_list = {
+            1 = { set_timed_country_flag = { flag = grlp_startup_block days = 733 } }
+            1 = { set_timed_country_flag = { flag = grlp_startup_block days = 813 } }
+        }
+    }
+}
+
+country_event = {
+    id = grlp.1
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_startup_block }
+        NOT = { has_country_flag = grlp_recent_rumor }
+    }
+
+    immediate = {
+        random_list = {
+            1 = { set_timed_country_flag = { flag = grlp_recent_rumor days = 1476 } }
+            1 = { set_timed_country_flag = { flag = grlp_recent_rumor days = 1698 } }
+            1 = { set_timed_country_flag = { flag = grlp_recent_rumor days = 1987 } }
+        }
+
+        random_list = {
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2000 } } country_event = { id = grlp.2000 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2001 } } country_event = { id = grlp.2001 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2002 } } country_event = { id = grlp.2002 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2003 } } country_event = { id = grlp.2003 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2004 } } country_event = { id = grlp.2004 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2005 } } country_event = { id = grlp.2005 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2006 } } country_event = { id = grlp.2006 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2007 } } country_event = { id = grlp.2007 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2008 } } country_event = { id = grlp.2008 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2009 } } country_event = { id = grlp.2009 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2010 } } country_event = { id = grlp.2010 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2011 } } country_event = { id = grlp.2011 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2012 } } country_event = { id = grlp.2012 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2013 } } country_event = { id = grlp.2013 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2014 } } country_event = { id = grlp.2014 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2015 } } country_event = { id = grlp.2015 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2016 } } country_event = { id = grlp.2016 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2017 } } country_event = { id = grlp.2017 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2018 } } country_event = { id = grlp.2018 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2019 } } country_event = { id = grlp.2019 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2020 } } country_event = { id = grlp.2020 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2021 } } country_event = { id = grlp.2021 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2022 } } country_event = { id = grlp.2022 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2023 } } country_event = { id = grlp.2023 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2024 } } country_event = { id = grlp.2024 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2025 } } country_event = { id = grlp.2025 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2026 } } country_event = { id = grlp.2026 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2027 } } country_event = { id = grlp.2027 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2028 } } country_event = { id = grlp.2028 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2029 } } country_event = { id = grlp.2029 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2030 } } country_event = { id = grlp.2030 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2031 } } country_event = { id = grlp.2031 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2032 } } country_event = { id = grlp.2032 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2033 } } country_event = { id = grlp.2033 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2034 } } country_event = { id = grlp.2034 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2035 } } country_event = { id = grlp.2035 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2036 } } country_event = { id = grlp.2036 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2037 } } country_event = { id = grlp.2037 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2038 } } country_event = { id = grlp.2038 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2039 } } country_event = { id = grlp.2039 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2040 } } country_event = { id = grlp.2040 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2041 } } country_event = { id = grlp.2041 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2042 } } country_event = { id = grlp.2042 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2043 } } country_event = { id = grlp.2043 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2044 } } country_event = { id = grlp.2044 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2045 } } country_event = { id = grlp.2045 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2046 } } country_event = { id = grlp.2046 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2047 } } country_event = { id = grlp.2047 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2048 } } country_event = { id = grlp.2048 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2049 } } country_event = { id = grlp.2049 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2050 } } country_event = { id = grlp.2050 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2051 } } country_event = { id = grlp.2051 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2052 } } country_event = { id = grlp.2052 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2053 } } country_event = { id = grlp.2053 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2054 } } country_event = { id = grlp.2054 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2055 } } country_event = { id = grlp.2055 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2056 } } country_event = { id = grlp.2056 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2057 } } country_event = { id = grlp.2057 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2058 } } country_event = { id = grlp.2058 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2059 } } country_event = { id = grlp.2059 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2060 } } country_event = { id = grlp.2060 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2061 } } country_event = { id = grlp.2061 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2062 } } country_event = { id = grlp.2062 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2063 } } country_event = { id = grlp.2063 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2064 } } country_event = { id = grlp.2064 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2065 } } country_event = { id = grlp.2065 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2066 } } country_event = { id = grlp.2066 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2067 } } country_event = { id = grlp.2067 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2068 } } country_event = { id = grlp.2068 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2069 } } country_event = { id = grlp.2069 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2070 } } country_event = { id = grlp.2070 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2071 } } country_event = { id = grlp.2071 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2072 } } country_event = { id = grlp.2072 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2073 } } country_event = { id = grlp.2073 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2074 } } country_event = { id = grlp.2074 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2075 } } country_event = { id = grlp.2075 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2076 } } country_event = { id = grlp.2076 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2077 } } country_event = { id = grlp.2077 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2078 } } country_event = { id = grlp.2078 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2079 } } country_event = { id = grlp.2079 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2080 } } country_event = { id = grlp.2080 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2081 } } country_event = { id = grlp.2081 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2082 } } country_event = { id = grlp.2082 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2083 } } country_event = { id = grlp.2083 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2084 } } country_event = { id = grlp.2084 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2085 } } country_event = { id = grlp.2085 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2086 } } country_event = { id = grlp.2086 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2087 } } country_event = { id = grlp.2087 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2088 } } country_event = { id = grlp.2088 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2089 } } country_event = { id = grlp.2089 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2090 } } country_event = { id = grlp.2090 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2091 } } country_event = { id = grlp.2091 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2092 } } country_event = { id = grlp.2092 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2093 } } country_event = { id = grlp.2093 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2094 } } country_event = { id = grlp.2094 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2095 } } country_event = { id = grlp.2095 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2096 } } country_event = { id = grlp.2096 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2097 } } country_event = { id = grlp.2097 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2098 } } country_event = { id = grlp.2098 } } }
+            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2099 } } country_event = { id = grlp.2099 } } }
+        }
+    }
+}
+
+country_event = {
+    id = grlp.2000
+    title = grlp.2000.title
+    desc = grlp.2000.desc
+    picture = GFX_grlp_evt_01
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2000 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2000
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2001
+    title = grlp.2001.title
+    desc = grlp.2001.desc
+    picture = GFX_grlp_evt_02
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2001 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2001
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2002
+    title = grlp.2002.title
+    desc = grlp.2002.desc
+    picture = GFX_grlp_evt_03
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2002 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2002
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2003
+    title = grlp.2003.title
+    desc = grlp.2003.desc
+    picture = GFX_grlp_evt_04
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2003 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2003
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2004
+    title = grlp.2004.title
+    desc = grlp.2004.desc
+    picture = GFX_grlp_evt_05
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2004 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2004
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2005
+    title = grlp.2005.title
+    desc = grlp.2005.desc
+    picture = GFX_grlp_evt_06
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2005 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2005
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2006
+    title = grlp.2006.title
+    desc = grlp.2006.desc
+    picture = GFX_grlp_evt_07
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2006 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2006
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2007
+    title = grlp.2007.title
+    desc = grlp.2007.desc
+    picture = GFX_grlp_evt_08
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2007 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2007
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2008
+    title = grlp.2008.title
+    desc = grlp.2008.desc
+    picture = GFX_grlp_evt_09
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2008 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2008
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2009
+    title = grlp.2009.title
+    desc = grlp.2009.desc
+    picture = GFX_grlp_evt_10
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2009 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2009
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2010
+    title = grlp.2010.title
+    desc = grlp.2010.desc
+    picture = GFX_grlp_evt_11
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2010 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2010
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2011
+    title = grlp.2011.title
+    desc = grlp.2011.desc
+    picture = GFX_grlp_evt_12
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2011 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2011
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2012
+    title = grlp.2012.title
+    desc = grlp.2012.desc
+    picture = GFX_grlp_evt_13
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2012 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2012
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2013
+    title = grlp.2013.title
+    desc = grlp.2013.desc
+    picture = GFX_grlp_evt_14
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2013 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2013
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2014
+    title = grlp.2014.title
+    desc = grlp.2014.desc
+    picture = GFX_grlp_evt_15
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2014 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2014
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2015
+    title = grlp.2015.title
+    desc = grlp.2015.desc
+    picture = GFX_grlp_evt_16
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2015 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2015
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2016
+    title = grlp.2016.title
+    desc = grlp.2016.desc
+    picture = GFX_grlp_evt_17
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2016 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2016
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2017
+    title = grlp.2017.title
+    desc = grlp.2017.desc
+    picture = GFX_grlp_evt_18
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2017 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2017
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2018
+    title = grlp.2018.title
+    desc = grlp.2018.desc
+    picture = GFX_grlp_evt_19
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2018 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2018
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2019
+    title = grlp.2019.title
+    desc = grlp.2019.desc
+    picture = GFX_grlp_evt_20
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2019 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2019
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2020
+    title = grlp.2020.title
+    desc = grlp.2020.desc
+    picture = GFX_grlp_evt_01
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2020 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2020
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2021
+    title = grlp.2021.title
+    desc = grlp.2021.desc
+    picture = GFX_grlp_evt_02
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2021 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2021
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2022
+    title = grlp.2022.title
+    desc = grlp.2022.desc
+    picture = GFX_grlp_evt_03
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2022 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2022
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2023
+    title = grlp.2023.title
+    desc = grlp.2023.desc
+    picture = GFX_grlp_evt_04
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2023 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2023
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2024
+    title = grlp.2024.title
+    desc = grlp.2024.desc
+    picture = GFX_grlp_evt_05
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2024 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2024
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2025
+    title = grlp.2025.title
+    desc = grlp.2025.desc
+    picture = GFX_grlp_evt_06
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2025 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2025
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2026
+    title = grlp.2026.title
+    desc = grlp.2026.desc
+    picture = GFX_grlp_evt_07
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2026 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2026
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2027
+    title = grlp.2027.title
+    desc = grlp.2027.desc
+    picture = GFX_grlp_evt_08
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2027 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2027
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2028
+    title = grlp.2028.title
+    desc = grlp.2028.desc
+    picture = GFX_grlp_evt_09
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2028 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2028
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2029
+    title = grlp.2029.title
+    desc = grlp.2029.desc
+    picture = GFX_grlp_evt_10
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2029 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2029
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2030
+    title = grlp.2030.title
+    desc = grlp.2030.desc
+    picture = GFX_grlp_evt_11
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2030 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2030
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2031
+    title = grlp.2031.title
+    desc = grlp.2031.desc
+    picture = GFX_grlp_evt_12
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2031 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2031
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2032
+    title = grlp.2032.title
+    desc = grlp.2032.desc
+    picture = GFX_grlp_evt_13
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2032 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2032
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2033
+    title = grlp.2033.title
+    desc = grlp.2033.desc
+    picture = GFX_grlp_evt_14
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2033 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2033
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2034
+    title = grlp.2034.title
+    desc = grlp.2034.desc
+    picture = GFX_grlp_evt_15
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2034 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2034
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2035
+    title = grlp.2035.title
+    desc = grlp.2035.desc
+    picture = GFX_grlp_evt_16
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2035 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2035
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2036
+    title = grlp.2036.title
+    desc = grlp.2036.desc
+    picture = GFX_grlp_evt_17
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2036 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2036
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2037
+    title = grlp.2037.title
+    desc = grlp.2037.desc
+    picture = GFX_grlp_evt_18
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2037 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2037
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2038
+    title = grlp.2038.title
+    desc = grlp.2038.desc
+    picture = GFX_grlp_evt_19
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2038 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2038
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2039
+    title = grlp.2039.title
+    desc = grlp.2039.desc
+    picture = GFX_grlp_evt_20
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2039 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2039
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2040
+    title = grlp.2040.title
+    desc = grlp.2040.desc
+    picture = GFX_grlp_evt_01
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2040 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2040
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2041
+    title = grlp.2041.title
+    desc = grlp.2041.desc
+    picture = GFX_grlp_evt_02
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2041 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2041
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2042
+    title = grlp.2042.title
+    desc = grlp.2042.desc
+    picture = GFX_grlp_evt_03
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2042 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2042
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2043
+    title = grlp.2043.title
+    desc = grlp.2043.desc
+    picture = GFX_grlp_evt_04
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2043 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2043
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2044
+    title = grlp.2044.title
+    desc = grlp.2044.desc
+    picture = GFX_grlp_evt_05
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2044 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2044
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2045
+    title = grlp.2045.title
+    desc = grlp.2045.desc
+    picture = GFX_grlp_evt_06
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2045 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2045
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2046
+    title = grlp.2046.title
+    desc = grlp.2046.desc
+    picture = GFX_grlp_evt_07
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2046 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2046
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2047
+    title = grlp.2047.title
+    desc = grlp.2047.desc
+    picture = GFX_grlp_evt_08
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2047 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2047
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2048
+    title = grlp.2048.title
+    desc = grlp.2048.desc
+    picture = GFX_grlp_evt_09
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2048 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2048
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2049
+    title = grlp.2049.title
+    desc = grlp.2049.desc
+    picture = GFX_grlp_evt_10
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2049 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2049
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2050
+    title = grlp.2050.title
+    desc = grlp.2050.desc
+    picture = GFX_grlp_evt_11
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2050 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2050
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2051
+    title = grlp.2051.title
+    desc = grlp.2051.desc
+    picture = GFX_grlp_evt_12
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2051 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2051
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2052
+    title = grlp.2052.title
+    desc = grlp.2052.desc
+    picture = GFX_grlp_evt_13
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2052 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2052
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2053
+    title = grlp.2053.title
+    desc = grlp.2053.desc
+    picture = GFX_grlp_evt_14
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2053 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2053
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2054
+    title = grlp.2054.title
+    desc = grlp.2054.desc
+    picture = GFX_grlp_evt_15
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2054 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2054
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2055
+    title = grlp.2055.title
+    desc = grlp.2055.desc
+    picture = GFX_grlp_evt_16
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2055 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2055
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2056
+    title = grlp.2056.title
+    desc = grlp.2056.desc
+    picture = GFX_grlp_evt_17
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2056 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2056
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2057
+    title = grlp.2057.title
+    desc = grlp.2057.desc
+    picture = GFX_grlp_evt_18
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2057 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2057
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2058
+    title = grlp.2058.title
+    desc = grlp.2058.desc
+    picture = GFX_grlp_evt_19
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2058 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2058
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2059
+    title = grlp.2059.title
+    desc = grlp.2059.desc
+    picture = GFX_grlp_evt_20
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2059 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2059
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2060
+    title = grlp.2060.title
+    desc = grlp.2060.desc
+    picture = GFX_grlp_evt_01
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2060 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2060
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2061
+    title = grlp.2061.title
+    desc = grlp.2061.desc
+    picture = GFX_grlp_evt_02
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2061 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2061
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2062
+    title = grlp.2062.title
+    desc = grlp.2062.desc
+    picture = GFX_grlp_evt_03
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2062 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2062
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2063
+    title = grlp.2063.title
+    desc = grlp.2063.desc
+    picture = GFX_grlp_evt_04
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2063 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2063
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2064
+    title = grlp.2064.title
+    desc = grlp.2064.desc
+    picture = GFX_grlp_evt_05
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2064 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2064
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2065
+    title = grlp.2065.title
+    desc = grlp.2065.desc
+    picture = GFX_grlp_evt_06
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2065 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2065
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2066
+    title = grlp.2066.title
+    desc = grlp.2066.desc
+    picture = GFX_grlp_evt_07
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2066 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2066
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2067
+    title = grlp.2067.title
+    desc = grlp.2067.desc
+    picture = GFX_grlp_evt_08
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2067 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2067
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2068
+    title = grlp.2068.title
+    desc = grlp.2068.desc
+    picture = GFX_grlp_evt_09
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2068 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2068
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2069
+    title = grlp.2069.title
+    desc = grlp.2069.desc
+    picture = GFX_grlp_evt_10
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2069 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2069
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2070
+    title = grlp.2070.title
+    desc = grlp.2070.desc
+    picture = GFX_grlp_evt_11
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2070 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2070
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2071
+    title = grlp.2071.title
+    desc = grlp.2071.desc
+    picture = GFX_grlp_evt_12
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2071 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2071
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2072
+    title = grlp.2072.title
+    desc = grlp.2072.desc
+    picture = GFX_grlp_evt_13
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2072 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2072
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2073
+    title = grlp.2073.title
+    desc = grlp.2073.desc
+    picture = GFX_grlp_evt_14
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2073 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2073
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2074
+    title = grlp.2074.title
+    desc = grlp.2074.desc
+    picture = GFX_grlp_evt_15
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2074 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2074
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2075
+    title = grlp.2075.title
+    desc = grlp.2075.desc
+    picture = GFX_grlp_evt_16
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2075 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2075
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2076
+    title = grlp.2076.title
+    desc = grlp.2076.desc
+    picture = GFX_grlp_evt_17
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2076 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2076
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2077
+    title = grlp.2077.title
+    desc = grlp.2077.desc
+    picture = GFX_grlp_evt_18
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2077 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2077
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2078
+    title = grlp.2078.title
+    desc = grlp.2078.desc
+    picture = GFX_grlp_evt_19
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2078 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2078
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2079
+    title = grlp.2079.title
+    desc = grlp.2079.desc
+    picture = GFX_grlp_evt_20
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2079 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2079
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2080
+    title = grlp.2080.title
+    desc = grlp.2080.desc
+    picture = GFX_grlp_evt_01
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2080 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2080
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2081
+    title = grlp.2081.title
+    desc = grlp.2081.desc
+    picture = GFX_grlp_evt_02
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2081 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2081
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2082
+    title = grlp.2082.title
+    desc = grlp.2082.desc
+    picture = GFX_grlp_evt_03
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2082 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2082
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2083
+    title = grlp.2083.title
+    desc = grlp.2083.desc
+    picture = GFX_grlp_evt_04
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2083 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2083
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2084
+    title = grlp.2084.title
+    desc = grlp.2084.desc
+    picture = GFX_grlp_evt_05
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2084 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2084
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2085
+    title = grlp.2085.title
+    desc = grlp.2085.desc
+    picture = GFX_grlp_evt_06
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2085 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2085
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2086
+    title = grlp.2086.title
+    desc = grlp.2086.desc
+    picture = GFX_grlp_evt_07
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2086 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2086
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2087
+    title = grlp.2087.title
+    desc = grlp.2087.desc
+    picture = GFX_grlp_evt_08
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2087 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2087
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2088
+    title = grlp.2088.title
+    desc = grlp.2088.desc
+    picture = GFX_grlp_evt_09
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2088 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2088
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2089
+    title = grlp.2089.title
+    desc = grlp.2089.desc
+    picture = GFX_grlp_evt_10
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2089 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2089
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2090
+    title = grlp.2090.title
+    desc = grlp.2090.desc
+    picture = GFX_grlp_evt_11
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2090 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2090
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2091
+    title = grlp.2091.title
+    desc = grlp.2091.desc
+    picture = GFX_grlp_evt_12
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2091 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2091
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2092
+    title = grlp.2092.title
+    desc = grlp.2092.desc
+    picture = GFX_grlp_evt_13
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2092 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2092
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2093
+    title = grlp.2093.title
+    desc = grlp.2093.desc
+    picture = GFX_grlp_evt_14
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2093 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2093
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2094
+    title = grlp.2094.title
+    desc = grlp.2094.desc
+    picture = GFX_grlp_evt_15
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2094 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2094
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2095
+    title = grlp.2095.title
+    desc = grlp.2095.desc
+    picture = GFX_grlp_evt_16
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2095 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2095
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2096
+    title = grlp.2096.title
+    desc = grlp.2096.desc
+    picture = GFX_grlp_evt_17
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2096 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2096
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2097
+    title = grlp.2097.title
+    desc = grlp.2097.desc
+    picture = GFX_grlp_evt_18
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2097 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2097
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2098
+    title = grlp.2098.title
+    desc = grlp.2098.desc
+    picture = GFX_grlp_evt_19
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2098 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2098
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}
+
+country_event = {
+    id = grlp.2099
+    title = grlp.2099.title
+    desc = grlp.2099.desc
+    picture = GFX_grlp_evt_20
+    show_sound = grlp_popup
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = grlp_seen_2099 }
+    }
+
+    immediate = {
+        set_country_flag = grlp_seen_2099
+    }
+
+    option = {
+        name = grlp.option.ignore
+    }
+}

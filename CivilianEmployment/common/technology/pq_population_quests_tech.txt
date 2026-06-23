@@ -1,0 +1,24 @@
+tech_pq_population_quests = {
+    icon = "tech_go_find_work"
+    cost = 8000
+    area = society
+    tier = 3
+    category = { new_worlds }
+    prerequisites = { "tech_frontier_health" }
+    weight = @tier3weight2
+
+    weight_modifier = {
+        modifier = {
+            factor = 0
+            is_ai = yes
+        }
+        modifier = {
+            factor = 1.25
+            has_tradition = tr_harmony_adopt
+        }
+    }
+
+    ai_weight = {
+        weight = 0
+    }
+}

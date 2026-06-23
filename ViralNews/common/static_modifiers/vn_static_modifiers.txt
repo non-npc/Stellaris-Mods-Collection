@@ -1,0 +1,23 @@
+vn_viral_buzz = {
+	icon = "gfx/interface/icons/planet_modifiers/vn_viral_news_modifier.dds"
+	planet_amenities_mult = 0.05
+	planet_jobs_unity_produces_mult = 0.05
+}
+
+vn_public_panic = {
+	icon = "gfx/interface/icons/planet_modifiers/vn_viral_news_modifier.dds"
+	planet_stability_add = -3
+	planet_crime_add = 5
+}
+
+vn_tourism_spike = {
+	icon = "gfx/interface/icons/planet_modifiers/vn_viral_news_modifier.dds"
+	planet_jobs_unity_produces_mult = 0.03
+	planet_amenities_mult = 0.05
+}
+
+vn_human_interest = {
+	icon = "gfx/interface/icons/planet_modifiers/vn_viral_news_modifier.dds"
+	planet_stability_add = 3
+	planet_jobs_unity_produces_mult = 0.03
+}

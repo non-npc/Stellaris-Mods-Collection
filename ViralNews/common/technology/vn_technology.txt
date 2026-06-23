@@ -1,0 +1,20 @@
+tech_viral_news_network = {
+	area = society
+	category = { statecraft }
+	tier = 2
+	cost = @tier2cost1
+	prerequisites = { "tech_holo_entertainment" }
+	weight = @tier2weight1
+	prereqfor_desc = {
+		custom = {
+			title = "tech_viral_news_network_effect"
+		}
+	}
+
+
+	weight_modifier = {
+		factor = 1.25
+		modifier = { factor = 1.5 has_ethic = ethic_egalitarian }
+		modifier = { factor = 1.5 has_ethic = ethic_xenophile }
+	}
+}

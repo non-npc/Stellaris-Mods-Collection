@@ -1,0 +1,168 @@
+objectTypes = {
+
+	# fire muzzle flashes
+	pdxparticle = {
+		name = "ew_fire_small_muzzle_particle"
+		type = "ew_fire_muzzle_file"
+		scale = 1
+	}
+	pdxparticle = {
+		name = "ew_fire_medium_muzzle_particle"
+		type = "ew_fire_muzzle_file"
+		scale = 1.5
+	}
+	pdxparticle = {
+		name = "ew_fire_large_muzzle_particle"
+		type = "ew_fire_muzzle_file"
+		scale = 2.5
+	}
+	# fire hit effects
+	pdxparticle = {
+		name = "ew_fire_small_hit_effect"
+		type = "ew_fire_hit_effect"
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "ew_fire_medium_hit_effect"
+		type = "ew_fire_hit_effect"
+		scale = 0.75
+	}
+	pdxparticle = {
+		name = "ew_fire_large_hit_effect"
+		type = "ew_fire_hit_effect"
+		scale = 2.5
+	}
+
+	# ice muzzle flashes
+	pdxparticle = {
+		name = "ew_ice_small_muzzle_particle"
+		type = "ew_ice_muzzle_file"
+		scale = 1
+	}
+	pdxparticle = {
+		name = "ew_ice_medium_muzzle_particle"
+		type = "ew_ice_muzzle_file"
+		scale = 1.5
+	}
+	pdxparticle = {
+		name = "ew_ice_large_muzzle_particle"
+		type = "ew_ice_muzzle_file"
+		scale = 2.5
+	}
+	# ice hit effects
+	pdxparticle = {
+		name = "ew_ice_small_hit_effect"
+		type = "ew_ice_hit_effect"
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "ew_ice_medium_hit_effect"
+		type = "ew_ice_hit_effect"
+		scale = 0.75
+	}
+	pdxparticle = {
+		name = "ew_ice_large_hit_effect"
+		type = "ew_ice_hit_effect"
+		scale = 2.5
+	}
+
+	# lightning muzzle flashes
+	pdxparticle = {
+		name = "ew_lightning_small_muzzle_particle"
+		type = "ew_lightning_muzzle_file"
+		scale = 1
+	}
+	pdxparticle = {
+		name = "ew_lightning_medium_muzzle_particle"
+		type = "ew_lightning_muzzle_file"
+		scale = 1.5
+	}
+	pdxparticle = {
+		name = "ew_lightning_large_muzzle_particle"
+		type = "ew_lightning_muzzle_file"
+		scale = 2.5
+	}
+	# lightning hit effects
+	pdxparticle = {
+		name = "ew_lightning_small_hit_effect"
+		type = "ew_lightning_hit_effect"
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "ew_lightning_medium_hit_effect"
+		type = "ew_lightning_hit_effect"
+		scale = 0.75
+	}
+	pdxparticle = {
+		name = "ew_lightning_large_hit_effect"
+		type = "ew_lightning_hit_effect"
+		scale = 2.5
+	}
+
+	# acid muzzle flashes
+	pdxparticle = {
+		name = "ew_acid_small_muzzle_particle"
+		type = "ew_acid_muzzle_file"
+		scale = 1
+	}
+	pdxparticle = {
+		name = "ew_acid_medium_muzzle_particle"
+		type = "ew_acid_muzzle_file"
+		scale = 1.5
+	}
+	pdxparticle = {
+		name = "ew_acid_large_muzzle_particle"
+		type = "ew_acid_muzzle_file"
+		scale = 2.5
+	}
+	# acid hit effects
+	pdxparticle = {
+		name = "ew_acid_small_hit_effect"
+		type = "ew_acid_hit_effect"
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "ew_acid_medium_hit_effect"
+		type = "ew_acid_hit_effect"
+		scale = 0.75
+	}
+	pdxparticle = {
+		name = "ew_acid_large_hit_effect"
+		type = "ew_acid_hit_effect"
+		scale = 2.5
+	}
+
+	# chaos muzzle flashes
+	pdxparticle = {
+		name = "ew_chaos_small_muzzle_particle"
+		type = "ew_chaos_muzzle_file"
+		scale = 1
+	}
+	pdxparticle = {
+		name = "ew_chaos_medium_muzzle_particle"
+		type = "ew_chaos_muzzle_file"
+		scale = 1.5
+	}
+	pdxparticle = {
+		name = "ew_chaos_large_muzzle_particle"
+		type = "ew_chaos_muzzle_file"
+		scale = 2.5
+	}
+	# chaos hit effects
+	pdxparticle = {
+		name = "ew_chaos_small_hit_effect"
+		type = "ew_chaos_hit_effect"
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "ew_chaos_medium_hit_effect"
+		type = "ew_chaos_hit_effect"
+		scale = 0.75
+	}
+	pdxparticle = {
+		name = "ew_chaos_large_hit_effect"
+		type = "ew_chaos_hit_effect"
+		scale = 2.5
+	}
+
+}

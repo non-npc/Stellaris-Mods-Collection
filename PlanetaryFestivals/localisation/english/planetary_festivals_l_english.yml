@@ -1,0 +1,28 @@
+﻿l_english:
+ tech_pf_cultural_festival_coordination:0 "Cultural Festival Coordination"
+ tech_pf_cultural_festival_coordination_desc:0 "Standardized festival planning offices, orbital safety protocols, and inter-district cultural grants allow our planets to host large public celebrations without disrupting essential services."
+
+ TECH_UNLOCK_PF_FESTIVAL_DECISIONS_TITLE:0 "Unlocks planetary festival decisions on planets and colonies."
+ TECH_UNLOCK_PF_FESTIVAL_DECISIONS_DESC:0 "Allows planets and colonies to launch Unity, Prosperity, Remembrance, or Science festivals through planetary decisions."
+
+ decision_pf_unity_festival:0 "Launch Unity Festival"
+ decision_pf_unity_festival_desc:0 "Sponsor a coordinated planetary celebration focused on public service, civic identity, and shared imperial purpose."
+ decision_pf_prosperity_festival:0 "Launch Prosperity Festival"
+ decision_pf_prosperity_festival_desc:0 "Open planetary markets, sponsor public amusements, and encourage commercial districts to turn celebration into opportunity."
+ decision_pf_remembrance_festival:0 "Launch Remembrance Festival"
+ decision_pf_remembrance_festival_desc:0 "Hold ceremonies honoring the planet's founders, workers, soldiers, and long memory of sacrifice."
+ decision_pf_science_festival:0 "Launch Science Festival"
+ decision_pf_science_festival_desc:0 "Transform laboratories, schools, museums, and orbital campuses into a planet-wide celebration of discovery."
+ decision_pf_cancel_festival:0 "Cancel Planetary Festival"
+ decision_pf_cancel_festival_desc:0 "End the current planetary festival program on this planet and return local administration to normal operations."
+
+ pf_unity_festival_modifier:0 "Unity Festival"
+ pf_unity_festival_modifier_desc:0 "This planet is hosting a civic festival celebrating cooperation, service, and shared identity."
+ pf_prosperity_festival_modifier:0 "Prosperity Festival"
+ pf_prosperity_festival_modifier_desc:0 "This planet is hosting a festival of markets, entertainment, and profitable public spectacle."
+ pf_remembrance_festival_modifier:0 "Remembrance Festival"
+ pf_remembrance_festival_modifier_desc:0 "This planet is holding solemn public ceremonies that strengthen continuity, legitimacy, and social cohesion."
+ pf_science_festival_modifier:0 "Science Festival"
+ pf_science_festival_modifier_desc:0 "This planet is celebrating research, experimentation, and the strange joy of making expensive equipment glow in public."
+
+ pf_requires_no_active_festival:0 "$TRIGGER_FAIL$This planet already has an active planetary festival. Cancel the current festival first."

@@ -1,0 +1,54 @@
+# Battle Perks - Edicts
+# Kept conservative to avoid invalid modifier spam.
+
+bp_emergency_mobilization = {
+    length = 3600
+    resources = {
+        category = edicts
+        cost = {
+            unity = 500
+        }
+        upkeep = {
+            unity = 2
+        }
+    }
+
+    potential = {
+        has_ascension_perk = ap_bp_crisis_response_mandate
+    }
+
+    modifier = {
+        country_naval_cap_mult = 0.10
+        ship_weapon_damage = 0.05
+    }
+
+    ai_weight = {
+        weight = 1
+    }
+}
+
+bp_battle_network_sync = {
+    length = 3600
+    resources = {
+        category = edicts
+        cost = {
+            unity = 500
+        }
+        upkeep = {
+            unity = 2
+        }
+    }
+
+    potential = {
+        has_ascension_perk = ap_bp_adaptive_battle_networks
+    }
+
+    modifier = {
+        ship_accuracy_mult = 0.05
+        ship_tracking_mult = 0.05
+    }
+
+    ai_weight = {
+        weight = 1
+    }
+}

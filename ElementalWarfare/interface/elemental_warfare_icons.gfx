@@ -1,0 +1,98 @@
+spriteTypes = {
+	spriteType = { name = "GFX_tech_elemental_theory" texturefile = "gfx/interface/icons/technologies/tech_elemental_theory.dds" }
+	spriteType = { name = "GFX_tech_ew_fire_1" texturefile = "gfx/interface/icons/technologies/tech_ew_fire_1.dds" }
+	spriteType = { name = "GFX_tech_ew_fire_2" texturefile = "gfx/interface/icons/technologies/tech_ew_fire_2.dds" }
+	spriteType = { name = "GFX_tech_ew_fire_3" texturefile = "gfx/interface/icons/technologies/tech_ew_fire_3.dds" }
+	spriteType = { name = "GFX_tech_ew_ice_1" texturefile = "gfx/interface/icons/technologies/tech_ew_ice_1.dds" }
+	spriteType = { name = "GFX_tech_ew_ice_2" texturefile = "gfx/interface/icons/technologies/tech_ew_ice_2.dds" }
+	spriteType = { name = "GFX_tech_ew_ice_3" texturefile = "gfx/interface/icons/technologies/tech_ew_ice_3.dds" }
+	spriteType = { name = "GFX_tech_ew_lightning_1" texturefile = "gfx/interface/icons/technologies/tech_ew_lightning_1.dds" }
+	spriteType = { name = "GFX_tech_ew_lightning_2" texturefile = "gfx/interface/icons/technologies/tech_ew_lightning_2.dds" }
+	spriteType = { name = "GFX_tech_ew_lightning_3" texturefile = "gfx/interface/icons/technologies/tech_ew_lightning_3.dds" }
+	spriteType = { name = "GFX_tech_ew_acid_1" texturefile = "gfx/interface/icons/technologies/tech_ew_acid_1.dds" }
+	spriteType = { name = "GFX_tech_ew_acid_2" texturefile = "gfx/interface/icons/technologies/tech_ew_acid_2.dds" }
+	spriteType = { name = "GFX_tech_ew_acid_3" texturefile = "gfx/interface/icons/technologies/tech_ew_acid_3.dds" }
+	spriteType = { name = "GFX_tech_ew_chaos_1" texturefile = "gfx/interface/icons/technologies/tech_ew_chaos_1.dds" }
+	spriteType = { name = "GFX_tech_ew_chaos_2" texturefile = "gfx/interface/icons/technologies/tech_ew_chaos_2.dds" }
+	spriteType = { name = "GFX_tech_ew_chaos_3" texturefile = "gfx/interface/icons/technologies/tech_ew_chaos_3.dds" }
+	spriteType = { name = "GFX_building_ew_fire_sanctum" texturefile = "gfx/interface/icons/buildings/building_ew_fire_sanctum.dds" }
+	spriteType = { name = "GFX_building_ew_ice_sanctum" texturefile = "gfx/interface/icons/buildings/building_ew_ice_sanctum.dds" }
+	spriteType = { name = "GFX_building_ew_lightning_sanctum" texturefile = "gfx/interface/icons/buildings/building_ew_lightning_sanctum.dds" }
+	spriteType = { name = "GFX_building_ew_acid_sanctum" texturefile = "gfx/interface/icons/buildings/building_ew_acid_sanctum.dds" }
+	spriteType = { name = "GFX_building_ew_chaos_sanctum" texturefile = "gfx/interface/icons/buildings/building_ew_chaos_sanctum.dds" }
+	spriteType = { name = "GFX_decision_ew_fire_protocol" texturefile = "gfx/interface/icons/decisions/decision_ew_fire_protocol.dds" }
+	spriteType = { name = "GFX_decision_ew_ice_protocol" texturefile = "gfx/interface/icons/decisions/decision_ew_ice_protocol.dds" }
+	spriteType = { name = "GFX_decision_ew_lightning_protocol" texturefile = "gfx/interface/icons/decisions/decision_ew_lightning_protocol.dds" }
+	spriteType = { name = "GFX_decision_ew_acid_protocol" texturefile = "gfx/interface/icons/decisions/decision_ew_acid_protocol.dds" }
+	spriteType = { name = "GFX_decision_ew_chaos_protocol" texturefile = "gfx/interface/icons/decisions/decision_ew_chaos_protocol.dds" }
+	spriteType = {
+		name = "GFX_ew_fire_protocol_modifier"
+		texturefile = "gfx/interface/icons/planet_modifiers/pm_ew_fire_protocol.dds"
+	}
+	spriteType = {
+		name = "GFX_ew_ice_protocol_modifier"
+		texturefile = "gfx/interface/icons/planet_modifiers/pm_ew_ice_protocol.dds"
+	}
+	spriteType = {
+		name = "GFX_ew_lightning_protocol_modifier"
+		texturefile = "gfx/interface/icons/planet_modifiers/pm_ew_lightning_protocol.dds"
+	}
+	spriteType = {
+		name = "GFX_ew_acid_protocol_modifier"
+		texturefile = "gfx/interface/icons/planet_modifiers/pm_ew_acid_protocol.dds"
+	}
+	spriteType = {
+		name = "GFX_ew_chaos_protocol_modifier"
+		texturefile = "gfx/interface/icons/planet_modifiers/pm_ew_chaos_protocol.dds"
+	}
+	spriteType = { name = "GFX_ew_fire_army" texturefile = "gfx/interface/icons/armies/ew_fire_army.dds" }
+	spriteType = { name = "GFX_ew_ice_army" texturefile = "gfx/interface/icons/armies/ew_ice_army.dds" }
+	spriteType = { name = "GFX_ew_lightning_army" texturefile = "gfx/interface/icons/armies/ew_lightning_army.dds" }
+	spriteType = { name = "GFX_ew_acid_army" texturefile = "gfx/interface/icons/armies/ew_acid_army.dds" }
+	spriteType = { name = "GFX_ew_chaos_army" texturefile = "gfx/interface/icons/armies/ew_chaos_army.dds" }
+	spriteType = { name = "GFX_ew_fire_s" texturefile = "gfx/interface/icons/components/ew_fire_s.dds" }
+	spriteType = { name = "GFX_ew_fire_m" texturefile = "gfx/interface/icons/components/ew_fire_m.dds" }
+	spriteType = { name = "GFX_ew_fire_l" texturefile = "gfx/interface/icons/components/ew_fire_l.dds" }
+	spriteType = { name = "GFX_ew_fire_x" texturefile = "gfx/interface/icons/components/ew_fire_x.dds" }
+	spriteType = { name = "GFX_ew_fire_g" texturefile = "gfx/interface/icons/components/ew_fire_g.dds" }
+	spriteType = { name = "GFX_ew_fire_p" texturefile = "gfx/interface/icons/components/ew_fire_p.dds" }
+	spriteType = { name = "GFX_ew_fire_h" texturefile = "gfx/interface/icons/components/ew_fire_h.dds" }
+	spriteType = { name = "GFX_ew_fire_t" texturefile = "gfx/interface/icons/components/ew_fire_t.dds" }
+	spriteType = { name = "GFX_ew_fire_defense" texturefile = "gfx/interface/icons/components/ew_fire_defense.dds" }
+	spriteType = { name = "GFX_ew_ice_s" texturefile = "gfx/interface/icons/components/ew_ice_s.dds" }
+	spriteType = { name = "GFX_ew_ice_m" texturefile = "gfx/interface/icons/components/ew_ice_m.dds" }
+	spriteType = { name = "GFX_ew_ice_l" texturefile = "gfx/interface/icons/components/ew_ice_l.dds" }
+	spriteType = { name = "GFX_ew_ice_x" texturefile = "gfx/interface/icons/components/ew_ice_x.dds" }
+	spriteType = { name = "GFX_ew_ice_g" texturefile = "gfx/interface/icons/components/ew_ice_g.dds" }
+	spriteType = { name = "GFX_ew_ice_p" texturefile = "gfx/interface/icons/components/ew_ice_p.dds" }
+	spriteType = { name = "GFX_ew_ice_h" texturefile = "gfx/interface/icons/components/ew_ice_h.dds" }
+	spriteType = { name = "GFX_ew_ice_t" texturefile = "gfx/interface/icons/components/ew_ice_t.dds" }
+	spriteType = { name = "GFX_ew_ice_defense" texturefile = "gfx/interface/icons/components/ew_ice_defense.dds" }
+	spriteType = { name = "GFX_ew_lightning_s" texturefile = "gfx/interface/icons/components/ew_lightning_s.dds" }
+	spriteType = { name = "GFX_ew_lightning_m" texturefile = "gfx/interface/icons/components/ew_lightning_m.dds" }
+	spriteType = { name = "GFX_ew_lightning_l" texturefile = "gfx/interface/icons/components/ew_lightning_l.dds" }
+	spriteType = { name = "GFX_ew_lightning_x" texturefile = "gfx/interface/icons/components/ew_lightning_x.dds" }
+	spriteType = { name = "GFX_ew_lightning_g" texturefile = "gfx/interface/icons/components/ew_lightning_g.dds" }
+	spriteType = { name = "GFX_ew_lightning_p" texturefile = "gfx/interface/icons/components/ew_lightning_p.dds" }
+	spriteType = { name = "GFX_ew_lightning_h" texturefile = "gfx/interface/icons/components/ew_lightning_h.dds" }
+	spriteType = { name = "GFX_ew_lightning_t" texturefile = "gfx/interface/icons/components/ew_lightning_t.dds" }
+	spriteType = { name = "GFX_ew_lightning_defense" texturefile = "gfx/interface/icons/components/ew_lightning_defense.dds" }
+	spriteType = { name = "GFX_ew_acid_s" texturefile = "gfx/interface/icons/components/ew_acid_s.dds" }
+	spriteType = { name = "GFX_ew_acid_m" texturefile = "gfx/interface/icons/components/ew_acid_m.dds" }
+	spriteType = { name = "GFX_ew_acid_l" texturefile = "gfx/interface/icons/components/ew_acid_l.dds" }
+	spriteType = { name = "GFX_ew_acid_x" texturefile = "gfx/interface/icons/components/ew_acid_x.dds" }
+	spriteType = { name = "GFX_ew_acid_g" texturefile = "gfx/interface/icons/components/ew_acid_g.dds" }
+	spriteType = { name = "GFX_ew_acid_p" texturefile = "gfx/interface/icons/components/ew_acid_p.dds" }
+	spriteType = { name = "GFX_ew_acid_h" texturefile = "gfx/interface/icons/components/ew_acid_h.dds" }
+	spriteType = { name = "GFX_ew_acid_t" texturefile = "gfx/interface/icons/components/ew_acid_t.dds" }
+	spriteType = { name = "GFX_ew_acid_defense" texturefile = "gfx/interface/icons/components/ew_acid_defense.dds" }
+	spriteType = { name = "GFX_ew_chaos_s" texturefile = "gfx/interface/icons/components/ew_chaos_s.dds" }
+	spriteType = { name = "GFX_ew_chaos_m" texturefile = "gfx/interface/icons/components/ew_chaos_m.dds" }
+	spriteType = { name = "GFX_ew_chaos_l" texturefile = "gfx/interface/icons/components/ew_chaos_l.dds" }
+	spriteType = { name = "GFX_ew_chaos_x" texturefile = "gfx/interface/icons/components/ew_chaos_x.dds" }
+	spriteType = { name = "GFX_ew_chaos_g" texturefile = "gfx/interface/icons/components/ew_chaos_g.dds" }
+	spriteType = { name = "GFX_ew_chaos_p" texturefile = "gfx/interface/icons/components/ew_chaos_p.dds" }
+	spriteType = { name = "GFX_ew_chaos_h" texturefile = "gfx/interface/icons/components/ew_chaos_h.dds" }
+	spriteType = { name = "GFX_ew_chaos_t" texturefile = "gfx/interface/icons/components/ew_chaos_t.dds" }
+	spriteType = { name = "GFX_ew_chaos_defense" texturefile = "gfx/interface/icons/components/ew_chaos_defense.dds" }
+}

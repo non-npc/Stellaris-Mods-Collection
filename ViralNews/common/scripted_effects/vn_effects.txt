@@ -1,0 +1,14 @@
+vn_start_news_cooldown = {
+	random_list = {
+		20 = { set_timed_country_flag = { flag = vn_news_cooldown days = 1080 } }
+		20 = { set_timed_country_flag = { flag = vn_news_cooldown days = 1260 } }
+		20 = { set_timed_country_flag = { flag = vn_news_cooldown days = 1440 } }
+		20 = { set_timed_country_flag = { flag = vn_news_cooldown days = 1800 } }
+		20 = { set_timed_country_flag = { flag = vn_news_cooldown days = 2520 } }
+	}
+}
+
+vn_begin_network_launch = {
+	set_country_flag = vn_network_activation_pending
+	country_event = { id = vnlaunch.1 }
+}

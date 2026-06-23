@@ -1,0 +1,709 @@
+namespace = cc
+
+# Fired when the Cosmic Casino finishes construction.
+colony_event = {
+	id = cc.1
+	title = cc.1.name
+	desc = cc.1.desc
+	picture = GFX_evt_cc_casino_floor
+	show_sound = cc_casino_win
+	is_triggered_only = yes
+
+	option = {
+		name = cc.1.a
+	}
+}
+
+colony_event = {
+	id = cc.10
+	title = cc.10.name
+	desc = cc.10.desc
+	picture = GFX_evt_cc_casino_floor
+	show_sound = cc_casino_enter
+	is_triggered_only = yes
+
+	option = {
+		name = cc.play_low_slots
+		colony_event = { id = cc.20 }
+	}
+	option = {
+		name = cc.play_roulette
+		colony_event = { id = cc.21 }
+	}
+	option = {
+		name = cc.play_mineral_dice
+		colony_event = { id = cc.22 }
+	}
+	option = { name = cc.leave }
+}
+
+colony_event = {
+	id = cc.11
+	title = cc.11.name
+	desc = cc.11.desc
+	picture = GFX_evt_cc_high_rollers
+	show_sound = cc_casino_enter
+	is_triggered_only = yes
+
+	option = {
+		name = cc.play_alloy_wager
+		colony_event = { id = cc.23 }
+	}
+	option = {
+		name = cc.play_unity_table
+		colony_event = { id = cc.24 }
+	}
+	option = {
+		name = cc.play_consumer_luxury
+		colony_event = { id = cc.25 }
+	}
+	option = { name = cc.leave }
+}
+
+colony_event = {
+	id = cc.12
+	title = cc.12.name
+	desc = cc.12.desc
+	picture = GFX_evt_cc_lottery
+	show_sound = cc_casino_enter
+	is_triggered_only = yes
+
+	option = {
+		name = cc.play_lottery
+		colony_event = { id = cc.26 }
+	}
+	option = {
+		name = cc.play_food_futures
+		colony_event = { id = cc.27 }
+	}
+	option = {
+		name = cc.play_cosmic_jackpot
+		colony_event = { id = cc.28 }
+	}
+	option = { name = cc.leave }
+}
+
+# Game detail and wager confirmation windows.
+colony_event = {
+	id = cc.20
+	title = cc.wager_name_low_slots
+	desc = cc.confirm_low_slots.desc
+	picture = GFX_evt_cc_slots
+	is_triggered_only = yes
+
+	option = {
+		name = cc.place_wager
+		custom_tooltip = cc.wager_uses_available
+		trigger = { owner = { has_resource = { type = energy amount > 0 } } }
+		hidden_effect = {
+			owner = {
+				cc_place_wager = { RESOURCE = energy STANDARD_BET = 500 WAGER_ID = 1 }
+				set_country_flag = cc_wager_energy
+			}
+		}
+		add_modifier = { modifier = cc_casino_transaction_pending days = 30 }
+		colony_event = { id = cc.101 days = 30 }
+	}
+	option = { name = cc.back_to_floor colony_event = { id = cc.10 } }
+}
+
+colony_event = {
+	id = cc.21
+	title = cc.wager_name_roulette
+	desc = cc.confirm_roulette.desc
+	picture = GFX_evt_cc_roulette
+	is_triggered_only = yes
+
+	option = {
+		name = cc.place_wager
+		custom_tooltip = cc.wager_uses_available
+		trigger = { owner = { has_resource = { type = energy amount > 0 } } }
+		hidden_effect = {
+			owner = {
+				cc_place_wager = { RESOURCE = energy STANDARD_BET = 1000 WAGER_ID = 2 }
+				set_country_flag = cc_wager_energy
+			}
+		}
+		add_modifier = { modifier = cc_casino_transaction_pending days = 30 }
+		colony_event = { id = cc.102 days = 30 }
+	}
+	option = { name = cc.back_to_floor colony_event = { id = cc.10 } }
+}
+
+colony_event = {
+	id = cc.22
+	title = cc.wager_name_mineral_dice
+	desc = cc.confirm_mineral_dice.desc
+	picture = GFX_evt_cc_dice
+	is_triggered_only = yes
+
+	option = {
+		name = cc.place_wager
+		custom_tooltip = cc.wager_uses_available
+		trigger = { owner = { has_resource = { type = minerals amount > 0 } } }
+		hidden_effect = {
+			owner = {
+				cc_place_wager = { RESOURCE = minerals STANDARD_BET = 750 WAGER_ID = 3 }
+				set_country_flag = cc_wager_minerals
+			}
+		}
+		add_modifier = { modifier = cc_casino_transaction_pending days = 30 }
+		colony_event = { id = cc.103 days = 30 }
+	}
+	option = { name = cc.back_to_floor colony_event = { id = cc.10 } }
+}
+
+colony_event = {
+	id = cc.23
+	title = cc.wager_name_alloy_wager
+	desc = cc.confirm_alloy_wager.desc
+	picture = GFX_evt_cc_alloys
+	is_triggered_only = yes
+
+	option = {
+		name = cc.place_wager
+		custom_tooltip = cc.wager_uses_available
+		trigger = { owner = { has_resource = { type = alloys amount > 0 } } }
+		hidden_effect = {
+			owner = {
+				cc_place_wager = { RESOURCE = alloys STANDARD_BET = 250 WAGER_ID = 4 }
+				set_country_flag = cc_wager_alloys
+			}
+		}
+		add_modifier = { modifier = cc_casino_transaction_pending days = 30 }
+		colony_event = { id = cc.104 days = 30 }
+	}
+	option = { name = cc.back_to_floor colony_event = { id = cc.11 } }
+}
+
+colony_event = {
+	id = cc.24
+	title = cc.wager_name_unity_table
+	desc = cc.confirm_unity_table.desc
+	picture = GFX_evt_cc_unity
+	is_triggered_only = yes
+
+	option = {
+		name = cc.place_wager
+		custom_tooltip = cc.wager_uses_available
+		trigger = { owner = { has_resource = { type = unity amount > 0 } } }
+		hidden_effect = {
+			owner = {
+				cc_place_wager = { RESOURCE = unity STANDARD_BET = 1000 WAGER_ID = 5 }
+				set_country_flag = cc_wager_unity
+			}
+		}
+		add_modifier = { modifier = cc_casino_transaction_pending days = 30 }
+		colony_event = { id = cc.105 days = 30 }
+	}
+	option = { name = cc.back_to_floor colony_event = { id = cc.11 } }
+}
+
+colony_event = {
+	id = cc.25
+	title = cc.wager_name_consumer_luxury
+	desc = cc.confirm_consumer_luxury.desc
+	picture = GFX_evt_cc_luxury
+	is_triggered_only = yes
+
+	option = {
+		name = cc.place_wager
+		custom_tooltip = cc.wager_uses_available
+		trigger = { owner = { has_resource = { type = consumer_goods amount > 0 } } }
+		hidden_effect = {
+			owner = {
+				cc_place_wager = { RESOURCE = consumer_goods STANDARD_BET = 500 WAGER_ID = 6 }
+				set_country_flag = cc_wager_consumer_goods
+			}
+		}
+		add_modifier = { modifier = cc_casino_transaction_pending days = 30 }
+		colony_event = { id = cc.106 days = 30 }
+	}
+	option = { name = cc.back_to_floor colony_event = { id = cc.11 } }
+}
+
+colony_event = {
+	id = cc.26
+	title = cc.wager_name_lottery
+	desc = cc.confirm_lottery.desc
+	picture = GFX_evt_cc_lottery
+	is_triggered_only = yes
+
+	option = {
+		name = cc.place_wager
+		custom_tooltip = cc.wager_uses_available
+		trigger = { owner = { has_resource = { type = energy amount > 0 } } }
+		hidden_effect = {
+			owner = {
+				cc_place_wager = { RESOURCE = energy STANDARD_BET = 2000 WAGER_ID = 7 }
+				set_country_flag = cc_wager_energy
+			}
+		}
+		add_modifier = { modifier = cc_casino_transaction_pending days = 30 }
+		colony_event = { id = cc.107 days = 30 }
+	}
+	option = { name = cc.back_to_floor colony_event = { id = cc.12 } }
+}
+
+colony_event = {
+	id = cc.27
+	title = cc.wager_name_food_futures
+	desc = cc.confirm_food_futures.desc
+	picture = GFX_evt_cc_food
+	is_triggered_only = yes
+
+	option = {
+		name = cc.place_wager
+		custom_tooltip = cc.wager_uses_available
+		trigger = { owner = { has_resource = { type = food amount > 0 } } }
+		hidden_effect = {
+			owner = {
+				cc_place_wager = { RESOURCE = food STANDARD_BET = 1000 WAGER_ID = 8 }
+				set_country_flag = cc_wager_food
+			}
+		}
+		add_modifier = { modifier = cc_casino_transaction_pending days = 30 }
+		colony_event = { id = cc.108 days = 30 }
+	}
+	option = { name = cc.back_to_floor colony_event = { id = cc.12 } }
+}
+
+colony_event = {
+	id = cc.28
+	title = cc.wager_name_cosmic_jackpot
+	desc = cc.confirm_cosmic_jackpot.desc
+	picture = GFX_evt_cc_jackpot
+	is_triggered_only = yes
+
+	option = {
+		name = cc.place_wager
+		custom_tooltip = cc.wager_uses_available
+		trigger = { owner = { has_resource = { type = energy amount > 0 } } }
+		hidden_effect = {
+			owner = {
+				cc_place_wager = { RESOURCE = energy STANDARD_BET = 10000 WAGER_ID = 9 }
+				set_country_flag = cc_wager_energy
+			}
+		}
+		add_modifier = { modifier = cc_casino_transaction_pending days = 30 }
+		colony_event = { id = cc.109 days = 30 }
+	}
+	option = { name = cc.back_to_floor colony_event = { id = cc.12 } }
+}
+
+# Hidden wager resolvers. These perform the payout/loss after 30 days, then open the visible result event with the correct sound.
+colony_event = {
+	id = cc.101
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		remove_modifier = cc_casino_transaction_pending
+		owner = {
+			remove_country_flag = cc_casino_bonus_payout
+			set_variable = { which = cc_casino_bonus_alloys value = 0 }
+			set_variable = { which = cc_casino_bonus_unity value = 0 }
+		}
+		random_list = {
+			45 = {
+				owner = { cc_record_loss = yes }
+				colony_event = { id = cc.201 }
+			}
+			35 = {
+				owner = { cc_award_energy_win = { BASE = 750 } }
+				colony_event = { id = cc.203 }
+			}
+			15 = {
+				owner = { cc_award_energy_win = { BASE = 1500 } }
+				colony_event = { id = cc.204 }
+			}
+			4 = {
+				owner = {
+					cc_award_energy_win = { BASE = 3000 }
+					add_modifier = { modifier = cc_lucky_streak days = 1800 }
+				}
+				colony_event = { id = cc.204 }
+			}
+			1 = {
+				owner = {
+					cc_award_energy_win = { BASE = 10000 }
+					add_modifier = { modifier = cc_lucky_streak days = 3600 }
+				}
+				colony_event = { id = cc.205 }
+			}
+		}
+	}
+}
+
+colony_event = {
+	id = cc.102
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		remove_modifier = cc_casino_transaction_pending
+		owner = {
+			remove_country_flag = cc_casino_bonus_payout
+			set_variable = { which = cc_casino_bonus_alloys value = 0 }
+			set_variable = { which = cc_casino_bonus_unity value = 0 }
+		}
+		random_list = {
+			50 = {
+				owner = { cc_record_loss = yes }
+				colony_event = { id = cc.201 }
+			}
+			30 = {
+				owner = { cc_award_energy_win = { BASE = 1500 } }
+				colony_event = { id = cc.203 }
+			}
+			15 = {
+				owner = { cc_award_energy_win = { BASE = 3000 } }
+				colony_event = { id = cc.204 }
+			}
+			5 = {
+				owner = {
+					cc_award_energy_win = { BASE = 7500 }
+					add_modifier = { modifier = cc_house_favorite days = 1800 }
+				}
+				colony_event = { id = cc.205 }
+			}
+		}
+	}
+}
+
+colony_event = {
+	id = cc.103
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		remove_modifier = cc_casino_transaction_pending
+		owner = {
+			remove_country_flag = cc_casino_bonus_payout
+			set_variable = { which = cc_casino_bonus_alloys value = 0 }
+			set_variable = { which = cc_casino_bonus_unity value = 0 }
+		}
+		random_list = {
+			45 = {
+				owner = { cc_record_loss = yes }
+				colony_event = { id = cc.201 }
+			}
+			35 = {
+				owner = { cc_award_minerals_win = { BASE = 1000 } }
+				colony_event = { id = cc.203 }
+			}
+			15 = {
+				owner = { cc_award_minerals_win = { BASE = 2000 } }
+				colony_event = { id = cc.204 }
+			}
+			5 = {
+				owner = { cc_award_minerals_win = { BASE = 5000 } }
+				colony_event = { id = cc.205 }
+			}
+		}
+	}
+}
+
+colony_event = {
+	id = cc.104
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		remove_modifier = cc_casino_transaction_pending
+		owner = {
+			remove_country_flag = cc_casino_bonus_payout
+			set_variable = { which = cc_casino_bonus_alloys value = 0 }
+			set_variable = { which = cc_casino_bonus_unity value = 0 }
+		}
+		random_list = {
+			50 = {
+				owner = { cc_record_loss = yes }
+				colony_event = { id = cc.201 }
+			}
+			30 = {
+				owner = { cc_award_alloys_win = { BASE = 400 } }
+				colony_event = { id = cc.203 }
+			}
+			15 = {
+				owner = { cc_award_alloys_win = { BASE = 750 } }
+				colony_event = { id = cc.204 }
+			}
+			5 = {
+				owner = {
+					cc_award_alloys_win = { BASE = 1500 }
+					add_modifier = { modifier = cc_lucky_streak days = 1800 }
+				}
+				colony_event = { id = cc.205 }
+			}
+		}
+	}
+}
+
+colony_event = {
+	id = cc.105
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		remove_modifier = cc_casino_transaction_pending
+		owner = {
+			remove_country_flag = cc_casino_bonus_payout
+			set_variable = { which = cc_casino_bonus_alloys value = 0 }
+			set_variable = { which = cc_casino_bonus_unity value = 0 }
+		}
+		random_list = {
+			45 = {
+				owner = { cc_record_loss = yes }
+				colony_event = { id = cc.201 }
+			}
+			35 = {
+				owner = { cc_award_unity_win = { BASE = 1500 } }
+				colony_event = { id = cc.203 }
+			}
+			15 = {
+				owner = { cc_award_unity_win = { BASE = 3500 } }
+				colony_event = { id = cc.204 }
+			}
+			5 = {
+				owner = {
+					cc_award_unity_win = { BASE = 8000 }
+					add_modifier = { modifier = cc_house_favorite days = 1800 }
+				}
+				colony_event = { id = cc.205 }
+			}
+		}
+	}
+}
+
+colony_event = {
+	id = cc.106
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		remove_modifier = cc_casino_transaction_pending
+		owner = {
+			remove_country_flag = cc_casino_bonus_payout
+			set_variable = { which = cc_casino_bonus_alloys value = 0 }
+			set_variable = { which = cc_casino_bonus_unity value = 0 }
+		}
+		random_list = {
+			45 = {
+				owner = { cc_record_loss = yes }
+				colony_event = { id = cc.201 }
+			}
+			35 = {
+				owner = { cc_award_consumer_goods_win = { BASE = 750 } }
+				colony_event = { id = cc.203 }
+			}
+			15 = {
+				owner = { cc_award_consumer_goods_win = { BASE = 1500 } }
+				colony_event = { id = cc.204 }
+			}
+			5 = {
+				owner = { cc_award_consumer_goods_win = { BASE = 3500 } }
+				colony_event = { id = cc.205 }
+			}
+		}
+	}
+}
+
+colony_event = {
+	id = cc.107
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		remove_modifier = cc_casino_transaction_pending
+		owner = {
+			remove_country_flag = cc_casino_bonus_payout
+			set_variable = { which = cc_casino_bonus_alloys value = 0 }
+			set_variable = { which = cc_casino_bonus_unity value = 0 }
+		}
+		random_list = {
+			60 = {
+				owner = { cc_record_loss = yes }
+				colony_event = { id = cc.201 }
+			}
+			25 = {
+				owner = { cc_award_energy_win = { BASE = 3000 } }
+				colony_event = { id = cc.203 }
+			}
+			10 = {
+				owner = { cc_award_energy_win = { BASE = 7500 } }
+				colony_event = { id = cc.204 }
+			}
+			5 = {
+				owner = {
+					cc_award_energy_unity_bonus = {
+						ENERGY = 20000
+						UNITY = 2500
+					}
+					add_modifier = { modifier = cc_lucky_streak days = 3600 }
+				}
+				colony_event = { id = cc.205 }
+			}
+		}
+	}
+}
+
+colony_event = {
+	id = cc.108
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		remove_modifier = cc_casino_transaction_pending
+		owner = {
+			remove_country_flag = cc_casino_bonus_payout
+			set_variable = { which = cc_casino_bonus_alloys value = 0 }
+			set_variable = { which = cc_casino_bonus_unity value = 0 }
+		}
+		random_list = {
+			45 = {
+				owner = { cc_record_loss = yes }
+				colony_event = { id = cc.201 }
+			}
+			35 = {
+				owner = { cc_award_food_win = { BASE = 1500 } }
+				colony_event = { id = cc.203 }
+			}
+			15 = {
+				owner = { cc_award_food_win = { BASE = 3000 } }
+				colony_event = { id = cc.204 }
+			}
+			5 = {
+				owner = { cc_award_food_win = { BASE = 7500 } }
+				colony_event = { id = cc.205 }
+			}
+		}
+	}
+}
+
+colony_event = {
+	id = cc.109
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		remove_modifier = cc_casino_transaction_pending
+		owner = {
+			remove_country_flag = cc_casino_bonus_payout
+			set_variable = { which = cc_casino_bonus_alloys value = 0 }
+			set_variable = { which = cc_casino_bonus_unity value = 0 }
+		}
+		random_list = {
+			70 = {
+				owner = {
+					cc_record_loss = yes
+					add_modifier = { modifier = cc_bad_luck days = 1800 }
+				}
+				colony_event = { id = cc.202 }
+			}
+			20 = {
+				owner = {
+					cc_award_cosmic_jackpot = {
+						ENERGY = 15000
+						ALLOYS = 1000
+						UNITY = 3000
+					}
+				}
+				colony_event = { id = cc.204 }
+			}
+			9 = {
+				owner = {
+					cc_award_cosmic_jackpot = {
+						ENERGY = 30000
+						ALLOYS = 2500
+						UNITY = 8000
+					}
+					add_modifier = { modifier = cc_lucky_streak days = 3600 }
+				}
+				colony_event = { id = cc.205 }
+			}
+			1 = {
+				owner = {
+					cc_award_cosmic_jackpot = {
+						ENERGY = 100000
+						ALLOYS = 10000
+						UNITY = 25000
+					}
+					add_modifier = { modifier = cc_lucky_streak days = 7200 }
+				}
+				colony_event = { id = cc.205 }
+			}
+		}
+	}
+}
+
+# Visible outcome events
+colony_event = {
+	id = cc.201
+	title = cc.outcome_loss_small.name
+	desc = cc.outcome_loss_small.desc
+	picture = GFX_evt_cc_small_loss
+	show_sound = cc_casino_loss
+	is_triggered_only = yes
+	option = { name = cc.ok }
+}
+
+colony_event = {
+	id = cc.202
+	title = cc.outcome_loss_big.name
+	desc = cc.outcome_loss_big.desc
+	picture = GFX_evt_cc_big_loss
+	show_sound = cc_casino_loss
+	is_triggered_only = yes
+	option = { name = cc.ok }
+}
+
+colony_event = {
+	id = cc.203
+	title = cc.outcome_win_small.name
+	desc = cc.outcome_win_small.desc
+	picture = GFX_evt_cc_small_win
+	show_sound = cc_casino_win
+	is_triggered_only = yes
+	option = { name = cc.ok }
+}
+
+colony_event = {
+	id = cc.204
+	title = cc.outcome_win_big.name
+	desc = {
+		trigger = { owner = { NOT = { has_country_flag = cc_casino_bonus_payout } } }
+		text = cc.outcome_win_big.desc
+	}
+	desc = {
+		trigger = { owner = { has_country_flag = cc_casino_bonus_payout } }
+		text = cc.outcome_win_big_bonus.desc
+	}
+	picture = GFX_evt_cc_big_win
+	show_sound = cc_casino_win
+	is_triggered_only = yes
+	option = { name = cc.ok }
+}
+
+colony_event = {
+	id = cc.205
+	title = cc.outcome_jackpot.name
+	desc = {
+		trigger = { owner = { NOT = { has_country_flag = cc_casino_bonus_payout } } }
+		text = cc.outcome_jackpot.desc
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = cc_casino_bonus_payout
+				check_variable = { which = cc_casino_bonus_alloys value > 0 }
+			}
+		}
+		text = cc.outcome_jackpot_multi.desc
+	}
+	desc = {
+		trigger = {
+			owner = {
+				has_country_flag = cc_casino_bonus_payout
+				check_variable = { which = cc_casino_bonus_alloys value = 0 }
+				check_variable = { which = cc_casino_bonus_unity value > 0 }
+			}
+		}
+		text = cc.outcome_jackpot_unity_bonus.desc
+	}
+	picture = GFX_evt_cc_jackpot
+	show_sound = cc_casino_win
+	is_triggered_only = yes
+	option = { name = cc.ok }
+}

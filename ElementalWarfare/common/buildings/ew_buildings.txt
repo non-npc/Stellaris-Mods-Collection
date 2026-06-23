@@ -1,0 +1,121 @@
+# Elemental economic buildings.
+
+building_ew_fire_sanctum = {
+	base_buildtime = 480
+	category = manufacturing
+	building_sets = { industrial factory foundry }
+	prerequisites = { "tech_ew_fire_1" }
+	potential = { exists = owner owner = { has_technology = tech_ew_fire_1 is_ai = no } }
+	allow = { has_upgraded_capital = yes }
+	resources = {
+		category = planet_buildings
+		inline_script = {
+			script = buildings/nomadic_cost_switcher
+			REGULAR_RESOURCE = minerals
+			NOMADIC_RESOURCE = alloys
+			COST = 500
+			NOMADIC_COST_MULT = 0.5
+		}
+		upkeep = { energy = 2 }
+		produces = { alloys = 8 }
+	}
+	planet_modifier = { planet_defense_armies_add = 1 }
+	triggered_planet_modifier = { potential = { always = yes } modifier = { } }
+	ai_weight = { weight = 0 }
+}
+
+building_ew_ice_sanctum = {
+	base_buildtime = 480
+	category = manufacturing
+	building_sets = { industrial factory foundry }
+	prerequisites = { "tech_ew_ice_1" }
+	potential = { exists = owner owner = { has_technology = tech_ew_ice_1 is_ai = no } }
+	allow = { has_upgraded_capital = yes }
+	resources = {
+		category = planet_buildings
+		inline_script = {
+			script = buildings/nomadic_cost_switcher
+			REGULAR_RESOURCE = minerals
+			NOMADIC_RESOURCE = alloys
+			COST = 500
+			NOMADIC_COST_MULT = 0.5
+		}
+		upkeep = { energy = 2 }
+		produces = { physics_research = 8 }
+	}
+	planet_modifier = { planet_defense_armies_add = 1 }
+	triggered_planet_modifier = { potential = { always = yes } modifier = { } }
+	ai_weight = { weight = 0 }
+}
+
+building_ew_lightning_sanctum = {
+	base_buildtime = 480
+	category = manufacturing
+	building_sets = { industrial factory foundry }
+	prerequisites = { "tech_ew_lightning_1" }
+	potential = { exists = owner owner = { has_technology = tech_ew_lightning_1 is_ai = no } }
+	allow = { has_upgraded_capital = yes }
+	resources = {
+		category = planet_buildings
+		inline_script = {
+			script = buildings/nomadic_cost_switcher
+			REGULAR_RESOURCE = minerals
+			NOMADIC_RESOURCE = alloys
+			COST = 500
+			NOMADIC_COST_MULT = 0.5
+		}
+		upkeep = { energy = 2 }
+		produces = { energy = 10 }
+	}
+	planet_modifier = { planet_defense_armies_add = 1 }
+	triggered_planet_modifier = { potential = { always = yes } modifier = { } }
+	ai_weight = { weight = 0 }
+}
+
+building_ew_acid_sanctum = {
+	base_buildtime = 480
+	category = manufacturing
+	building_sets = { industrial factory foundry }
+	prerequisites = { "tech_ew_acid_1" }
+	potential = { exists = owner owner = { has_technology = tech_ew_acid_1 is_ai = no } }
+	allow = { has_upgraded_capital = yes }
+	resources = {
+		category = planet_buildings
+		inline_script = {
+			script = buildings/nomadic_cost_switcher
+			REGULAR_RESOURCE = minerals
+			NOMADIC_RESOURCE = alloys
+			COST = 500
+			NOMADIC_COST_MULT = 0.5
+		}
+		upkeep = { energy = 2 }
+		produces = { engineering_research = 8 }
+	}
+	planet_modifier = { planet_defense_armies_add = 1 }
+	triggered_planet_modifier = { potential = { always = yes } modifier = { } }
+	ai_weight = { weight = 0 }
+}
+
+building_ew_chaos_sanctum = {
+	base_buildtime = 480
+	category = manufacturing
+	building_sets = { industrial factory foundry }
+	prerequisites = { "tech_ew_chaos_1" }
+	potential = { exists = owner owner = { has_technology = tech_ew_chaos_1 is_ai = no } }
+	allow = { has_upgraded_capital = yes }
+	resources = {
+		category = planet_buildings
+		inline_script = {
+			script = buildings/nomadic_cost_switcher
+			REGULAR_RESOURCE = minerals
+			NOMADIC_RESOURCE = alloys
+			COST = 500
+			NOMADIC_COST_MULT = 0.5
+		}
+		upkeep = { energy = 2 }
+		produces = { unity = 8 }
+	}
+	planet_modifier = { planet_defense_armies_add = 1 }
+	triggered_planet_modifier = { potential = { always = yes } modifier = { } }
+	ai_weight = { weight = 0 }
+}

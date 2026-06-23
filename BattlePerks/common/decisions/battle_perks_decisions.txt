@@ -1,0 +1,49 @@
+# Battle Perks - Planetary Decisions
+
+decision_bp_activate_shield_mandate = {
+    owned_planets_only = yes
+    icon = decision_bp_activate_shield_mandate
+
+    potential = {
+        owner = { has_ascension_perk = ap_bp_planetary_shield_mandate }
+    }
+
+    allow = {
+        NOT = { has_modifier = bp_shield_mandate_active }
+    }
+
+    effect = {
+        add_modifier = {
+            modifier = bp_shield_mandate_active
+            days = 3600
+        }
+    }
+
+    ai_weight = {
+        weight = 1
+    }
+}
+
+decision_bp_designate_bastion_world = {
+    owned_planets_only = yes
+    icon = decision_bp_designate_bastion_world
+
+    potential = {
+        owner = { has_ascension_perk = ap_bp_bastion_worlds }
+    }
+
+    allow = {
+        NOT = { has_modifier = bp_bastion_world }
+    }
+
+    effect = {
+        add_modifier = {
+            modifier = bp_bastion_world
+            days = -1
+        }
+    }
+
+    ai_weight = {
+        weight = 1
+    }
+}

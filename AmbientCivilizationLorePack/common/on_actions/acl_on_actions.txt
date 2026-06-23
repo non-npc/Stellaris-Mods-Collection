@@ -1,0 +1,18 @@
+on_game_start_country = {
+    events = {
+        acl.0
+    }
+}
+
+on_single_player_save_game_load = {
+    events = {
+        acl.0
+    }
+}
+
+on_monthly_pulse_country = {
+    events = {
+        acl.0
+        acl.1
+    }
+}

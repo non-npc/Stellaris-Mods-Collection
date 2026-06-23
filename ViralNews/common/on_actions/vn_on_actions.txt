@@ -1,0 +1,6 @@
+on_monthly_pulse_country = {
+	events = {
+		vn.2
+		vn.5000
+	}
+}

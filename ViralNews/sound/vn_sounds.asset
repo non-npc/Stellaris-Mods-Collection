@@ -1,0 +1,21 @@
+category = {
+    name = "Effects"
+    soundeffects = {
+        vn_event
+    }
+}
+
+sound = {
+    name = "vn_event"
+    file = "event/vn_event.wav"
+    volume = 0.75
+}
+
+soundeffect = {
+    name = vn_event
+    sounds = {
+        sound = vn_event
+    }
+    max_audible = 1
+    max_audible_behaviour = fail
+}

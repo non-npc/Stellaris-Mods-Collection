@@ -1,0 +1,83 @@
+l_spanish:
+ mod_battle_perks:0 "Ventajas de combate"
+
+ ap_bp_fortress_doctrine:0 "Doctrina de la fortaleza"
+ ap_bp_fortress_doctrine_desc:0 "Nuestras fronteras se convertirán en muros de acero, nuestras estaciones en bastiones y nuestras colonias en reductos fortificados contra el enemigo."
+
+ ap_bp_total_war_economy:0 "Economía de guerra total"
+ ap_bp_total_war_economy_desc:0 "La economía civil se reorganiza en torno a la preparación militar permanente, acelerando la producción de naves y la salida de aleaciones a un coste social."
+
+ ap_bp_fleet_supremacy_protocols:0 "Protocolos de supremacía de flota"
+ ap_bp_fleet_supremacy_protocols_desc:0 "El mando naval centralizado permite que nuestras flotas operen a una escala y precisión que las potencias menores no pueden igualar."
+
+ ap_bp_planetary_shield_mandate:0 "Mandato de escudos planetarios"
+ ap_bp_planetary_shield_mandate_desc:0 "Toda colonia está obligada a mantener sistemas de escudo de emergencia, guarniciones reforzadas e infraestructura de defensa planetaria."
+ ap_bp_planetary_shield_mandate_unlock:0 "Desbloquea la decisión planetaria §YActivar mandato de escudos§!."
+
+ ap_bp_siege_masters:0 "Maestros del asedio"
+ ap_bp_siege_masters_desc:0 "Nuestros ejércitos y flotas están entrenados para romper sistemas fortificados, destrozar la moral y acabar con la resistencia planetaria con una eficiencia implacable.\n\n§EDesbloquea ejército:§! §YEjército Rompeasientos§!"
+ ap_bp_siege_masters_unlock:0 "Desbloquea el reclutamiento de §YEjércitos Rompeasientos§! en colonias propias."
+
+ ap_bp_adaptive_battle_networks:0 "Redes de combate adaptativas"
+ ap_bp_adaptive_battle_networks_desc:0 "Los datos de combate se sincronizan en toda la flota, permitiendo que los sistemas de puntería y los ordenadores tácticos se adapten en tiempo real.\n\n§EDesbloquea:§! §YOrdenadores de combate adaptativos§!\n§EDesbloquea edicto:§! §YSincronización de red de combate§!"
+
+
+ ap_bp_adaptive_battle_networks_unlock:0 "Desbloquea los §YOrdenadores de combate adaptativos§! para diseños de naves y el edicto §YSincronización de red de combate§!."
+ ap_bp_crisis_response_mandate_unlock:0 "Desbloquea el edicto §YMovilización de emergencia§!."
+
+ ap_bp_eternal_watch:0 "Vigilia eterna"
+ ap_bp_eternal_watch_desc:0 "Nuestro imperio mantiene matrices de vigilancia militar permanentes, sensores fronterizos y sistemas de rastreo para exponer las amenazas antes de que ataquen."
+
+ ap_bp_warborn_society:0 "Sociedad nacida de la guerra"
+ ap_bp_warborn_society_desc:0 "El servicio militar define la vida cívica. Todo ciudadano comprende que la supervivencia se asegura mediante la disciplina, el sacrificio y la fuerza."
+
+ ap_bp_crisis_response_mandate:0 "Mandato de respuesta a crisis"
+ ap_bp_crisis_response_mandate_desc:0 "Nuestras flotas están preparadas para amenazas existenciales, movilizándose rápidamente contra facciones de crisis, merodeadores, invasores y depredadores galácticos.\n\n§EDesbloquea edicto:§! §YMovilización de emergencia§!"
+
+ ap_bp_bastion_worlds:0 "Mundos bastión"
+ ap_bp_bastion_worlds_desc:0 "Las colonias clave pueden transformarse en mundos fortaleza capaces de anclar sectores enteros contra la invasión.\n\n§EDesbloquea edificio:§! §YNexo de mando fortaleza§!\n§EDesbloquea decisión:§! §YDesignar mundo bastión§!"
+ ap_bp_bastion_worlds_unlock:0 "Desbloquea el edificio §YNexo de mando fortaleza§! y la decisión planetaria §YDesignar mundo bastión§!."
+
+ bp_siege_breaker_army:0 "Ejército Rompeasientos"
+ bp_siege_breaker_army_desc:0 "Formaciones de asalto planetario de élite entrenadas para romper mundos fortificados, aplastar defensores atrincherados y acabar con la resistencia mediante asedio abrumador."
+
+ COMBAT_COMPUTER_BP_ADAPTIVE_LINE:0 "Ordenador de combate adaptativo (Línea)"
+ COMBAT_COMPUTER_BP_ADAPTIVE_LINE_DESC:0 "Analítica de batalla sincronizada que optimiza formaciones de línea con mayor precisión, rastreo y lógica de desenganche."
+
+ COMBAT_COMPUTER_BP_ADAPTIVE_ARTILLERY:0 "Ordenador de combate adaptativo (Artillería)"
+ COMBAT_COMPUTER_BP_ADAPTIVE_ARTILLERY_DESC:0 "Datos tácticos en tiempo real mejoran el apuntado a larga distancia, la coordinación de flota y los protocolos de retirada de emergencia."
+
+ COMBAT_COMPUTER_BP_ADAPTIVE_PICKET:0 "Ordenador de combate adaptativo (Piquete)"
+ COMBAT_COMPUTER_BP_ADAPTIVE_PICKET_DESC:0 "Redes adaptativas de rastreo mejoran las operaciones de piquete con mayor precisión, persecución y desenganche táctico."
+
+ building_bp_fortress_command_nexus:0 "Nexo de mando fortaleza"
+ building_bp_fortress_command_nexus_desc:0 "Complejo de mando militar planetario que coordina defensas, respuesta de emergencia, integración orbital y logística sectorial."
+
+ decision_bp_activate_shield_mandate:0 "Activar mandato de escudos"
+ decision_bp_activate_shield_mandate_desc:0 "Desplegar escudos planetarios de emergencia, reforzar las redes defensivas y fortificar esta colonia contra la invasión."
+
+ decision_bp_designate_bastion_world:0 "Designar mundo bastión"
+ decision_bp_designate_bastion_world_desc:0 "Transformar esta colonia en un mundo bastión permanente centrado en la defensa del sector y la preparación militar."
+
+ bp_emergency_mobilization:0 "Movilización de emergencia"
+ bp_emergency_mobilization_desc:0 "Expandir temporalmente la movilización naval y la preparación de armas en respuesta a amenazas mayores."
+
+ bp_battle_network_sync:0 "Sincronización de red de combate"
+ bp_battle_network_sync_desc:0 "Sincronizar los sistemas tácticos de la flota para mejorar la precisión de puntería y el rastreo."
+
+ bp_shield_mandate_active:0 "Mandato de escudos activo"
+ bp_shield_mandate_active_desc:0 "Esta colonia está protegida por sistemas de escudo de emergencia e infraestructura defensiva reforzada."
+
+ bp_bastion_world:0 "Mundo bastión"
+ bp_bastion_world_desc:0 "Esta colonia ha sido designada como un bastión militar fortificado."
+
+
+ edict_bp_emergency_mobilization:0 "Movilización de emergencia"
+ edict_bp_emergency_mobilization_desc:0 "Expandir temporalmente la movilización naval y la preparación de armas en respuesta a amenazas mayores."
+ edict_bp_battle_network_sync:0 "Sincronización de red de combate"
+ edict_bp_battle_network_sync_desc:0 "Sincronizar los sistemas tácticos de la flota para mejorar la precisión de puntería y el rastreo."
+ edict_edict_bp_emergency_mobilization:0 "Movilización de emergencia"
+ edict_edict_bp_emergency_mobilization_desc:0 "Expandir temporalmente la movilización naval y la preparación de armas en respuesta a amenazas mayores."
+ edict_edict_bp_battle_network_sync:0 "Sincronización de red de combate"
+ edict_edict_bp_battle_network_sync_desc:0 "Sincronizar los sistemas tácticos de la flota para mejorar la precisión de puntería y el rastreo."
+ bp_requires_non_nomadic_empire:0 "No disponible para imperios nómadas."

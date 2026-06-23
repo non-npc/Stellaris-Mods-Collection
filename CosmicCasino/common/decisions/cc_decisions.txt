@@ -1,0 +1,22 @@
+decision_cc_enter_casino = {
+	owned_planets_only = yes
+	icon = decision_cc_enter_casino
+	enactment_time = 0
+	potential = {
+		exists = owner
+		has_building = building_cc_cosmic_casino
+	}
+	allow = {
+		NOT = { has_modifier = cc_casino_transaction_pending }
+	}
+	effect = {
+		colony = {
+			random_list = {
+				34 = { colony_event = { id = cc.10 } }
+				33 = { colony_event = { id = cc.11 } }
+				33 = { colony_event = { id = cc.12 } }
+			}
+		}
+	}
+	ai_weight = { weight = 0 }
+}

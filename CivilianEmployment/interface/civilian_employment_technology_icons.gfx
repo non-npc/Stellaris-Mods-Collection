@@ -1,0 +1,8 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_tech_go_find_work"
+        texturefile = "gfx/interface/icons/technologies/tech_go_find_work.dds"
+    }
+
+}

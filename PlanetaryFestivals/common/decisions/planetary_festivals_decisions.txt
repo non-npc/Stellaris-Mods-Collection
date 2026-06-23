@@ -1,0 +1,148 @@
+decision_pf_unity_festival = {
+    owned_planets_only = yes
+    icon = decision_pf_unity_festival
+
+    resources = {
+        category = decisions
+        cost = {
+            unity = 300
+            energy = 200
+        }
+    }
+
+    potential = {
+        owner = { has_technology = tech_pf_cultural_festival_coordination }
+    }
+
+    allow = {
+        custom_tooltip = {
+            fail_text = pf_requires_no_active_festival
+            NOT = { pf_has_active_planetary_festival = yes }
+        }
+    }
+
+    effect = {
+        add_modifier = {
+            modifier = pf_unity_festival_modifier
+            days = 1800
+        }
+    }
+
+    ai_weight = { weight = 5 }
+}
+
+decision_pf_prosperity_festival = {
+    owned_planets_only = yes
+    icon = decision_pf_prosperity_festival
+
+    resources = {
+        category = decisions
+        cost = {
+            unity = 200
+            energy = 300
+        }
+    }
+
+    potential = {
+        owner = { has_technology = tech_pf_cultural_festival_coordination }
+    }
+
+    allow = {
+        custom_tooltip = {
+            fail_text = pf_requires_no_active_festival
+            NOT = { pf_has_active_planetary_festival = yes }
+        }
+    }
+
+    effect = {
+        add_modifier = {
+            modifier = pf_prosperity_festival_modifier
+            days = 1800
+        }
+    }
+
+    ai_weight = { weight = 5 }
+}
+
+decision_pf_remembrance_festival = {
+    owned_planets_only = yes
+    icon = decision_pf_remembrance_festival
+
+    resources = {
+        category = decisions
+        cost = {
+            unity = 350
+            energy = 150
+        }
+    }
+
+    potential = {
+        owner = { has_technology = tech_pf_cultural_festival_coordination }
+    }
+
+    allow = {
+        custom_tooltip = {
+            fail_text = pf_requires_no_active_festival
+            NOT = { pf_has_active_planetary_festival = yes }
+        }
+    }
+
+    effect = {
+        add_modifier = {
+            modifier = pf_remembrance_festival_modifier
+            days = 1800
+        }
+    }
+
+    ai_weight = { weight = 5 }
+}
+
+decision_pf_science_festival = {
+    owned_planets_only = yes
+    icon = decision_pf_science_festival
+
+    resources = {
+        category = decisions
+        cost = {
+            unity = 250
+            energy = 250
+        }
+    }
+
+    potential = {
+        owner = { has_technology = tech_pf_cultural_festival_coordination }
+    }
+
+    allow = {
+        custom_tooltip = {
+            fail_text = pf_requires_no_active_festival
+            NOT = { pf_has_active_planetary_festival = yes }
+        }
+    }
+
+    effect = {
+        add_modifier = {
+            modifier = pf_science_festival_modifier
+            days = 1800
+        }
+    }
+
+    ai_weight = { weight = 5 }
+}
+
+decision_pf_cancel_festival = {
+    owned_planets_only = yes
+    icon = decision_pf_cancel_festival
+
+    potential = {
+        pf_has_active_planetary_festival = yes
+    }
+
+    allow = { always = yes }
+
+    effect = {
+        pf_clear_active_planetary_festivals = yes
+    }
+
+    ai_weight = { weight = 0 }
+}

@@ -1,0 +1,335 @@
+#######
+# EW FIRE LASER ENTITIES
+#######
+
+entity = {
+	name = "ew_fire_laser_small_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	default_state = "idle"
+	state = { name = "idle" state_time = 1 looping = no
+		event = { time = 0 particle = "ew_fire_small_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "ew_fire_laser_small_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = ew_fire_small_hit_effect sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "ew_fire_laser_medium_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "ew_fire_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "ew_fire_laser_medium_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = ew_fire_medium_hit_effect sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "ew_fire_laser_large_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "ew_fire_large_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "ew_fire_laser_large_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = ew_fire_large_hit_effect sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+#######
+# EW ICE LASER ENTITIES
+#######
+
+entity = {
+	name = "ew_ice_laser_small_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	default_state = "idle"
+	state = { name = "idle" state_time = 1 looping = no
+		event = { time = 0 particle = "ew_ice_small_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "ew_ice_laser_small_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = ew_ice_small_hit_effect sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "ew_ice_laser_medium_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "ew_ice_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "ew_ice_laser_medium_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = ew_ice_medium_hit_effect sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "ew_ice_laser_large_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "ew_ice_large_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "ew_ice_laser_large_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = ew_ice_large_hit_effect sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+#######
+# EW LIGHTNING LASER ENTITIES
+#######
+
+entity = {
+	name = "ew_lightning_laser_small_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	default_state = "idle"
+	state = { name = "idle" state_time = 1 looping = no
+		event = { time = 0 particle = "ew_lightning_small_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "ew_lightning_laser_small_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = ew_lightning_small_hit_effect sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "ew_lightning_laser_medium_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "ew_lightning_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "ew_lightning_laser_medium_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = ew_lightning_medium_hit_effect sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "ew_lightning_laser_large_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "ew_lightning_large_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "ew_lightning_laser_large_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = ew_lightning_large_hit_effect sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+#######
+# EW ACID LASER ENTITIES
+#######
+
+entity = {
+	name = "ew_acid_laser_small_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	default_state = "idle"
+	state = { name = "idle" state_time = 1 looping = no
+		event = { time = 0 particle = "ew_acid_small_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "ew_acid_laser_small_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = ew_acid_small_hit_effect sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "ew_acid_laser_medium_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "ew_acid_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "ew_acid_laser_medium_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = ew_acid_medium_hit_effect sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "ew_acid_laser_large_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "ew_acid_large_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "ew_acid_laser_large_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = ew_acid_large_hit_effect sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+#######
+# EW CHAOS LASER ENTITIES
+#######
+
+entity = {
+	name = "ew_chaos_laser_small_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	default_state = "idle"
+	state = { name = "idle" state_time = 1 looping = no
+		event = { time = 0 particle = "ew_chaos_small_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "ew_chaos_laser_small_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = ew_chaos_small_hit_effect sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "ew_chaos_laser_medium_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "ew_chaos_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "ew_chaos_laser_medium_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = ew_chaos_medium_hit_effect sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "ew_chaos_laser_large_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "ew_chaos_large_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "ew_chaos_laser_large_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = ew_chaos_large_hit_effect sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+

@@ -1,0 +1,5 @@
+spriteTypes = {
+	spriteType = { name = "GFX_building_vn_hypernet_media_nexus" texturefile = "gfx/interface/icons/buildings/building_holo_theatres.dds" }
+	spriteType = { name = "GFX_tech_viral_news_network" texturefile = "gfx/interface/icons/technologies/tech_holo_entertainment.dds" }
+	spriteType = { name = "GFX_modifier_vn_viral_news" texturefile = "gfx/interface/icons/planet_modifiers/vn_viral_news_modifier.dds" }
+}

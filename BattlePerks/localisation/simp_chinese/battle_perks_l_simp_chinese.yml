@@ -1,0 +1,83 @@
+l_simp_chinese:
+ mod_battle_perks:0 "战斗天赋"
+
+ ap_bp_fortress_doctrine:0 "要塞学说"
+ ap_bp_fortress_doctrine_desc:0 "我们的边境将化为钢铁长城，我们的空间站将成为堡垒，我们的殖民地将成为抵御敌人的坚固据点。"
+
+ ap_bp_total_war_economy:0 "总体战经济"
+ ap_bp_total_war_economy_desc:0 "民用经济围绕永久军事战备重组，以社会代价加速舰船生产和合金产出。"
+
+ ap_bp_fleet_supremacy_protocols:0 "舰队霸权协议"
+ ap_bp_fleet_supremacy_protocols_desc:0 "集中化的海军指挥使我们的舰队能够以较弱势力无法匹及的规模与精度作战。"
+
+ ap_bp_planetary_shield_mandate:0 "行星护盾法令"
+ ap_bp_planetary_shield_mandate_desc:0 "每个殖民地都必须维持应急护盾系统、加固驻军和行星防御基础设施。"
+ ap_bp_planetary_shield_mandate_unlock:0 "解锁§Y激活护盾法令§!行星决策。"
+
+ ap_bp_siege_masters:0 "围城大师"
+ ap_bp_siege_masters_desc:0 "我们的陆军和舰队训练有素，能够攻破防御体系、击溃士气，并以无情效率终结行星抵抗。\n\n§E解锁陆军：§!§Y破城军团§!"
+ ap_bp_siege_masters_unlock:0 "解锁在自有殖民地招募§Y破城军团§!。"
+
+ ap_bp_adaptive_battle_networks:0 "自适应战斗网络"
+ ap_bp_adaptive_battle_networks_desc:0 "战斗数据在舰队间同步，使瞄准系统和战术计算机能够实时适应。\n\n§E解锁：§!§Y自适应战斗计算机§!\n§E解锁法令：§!§Y战斗网络同步§!"
+
+
+ ap_bp_adaptive_battle_networks_unlock:0 "解锁舰船设计中的§Y自适应战斗计算机§!以及§Y战斗网络同步§!法令。"
+ ap_bp_crisis_response_mandate_unlock:0 "解锁§Y紧急动员§!法令。"
+
+ ap_bp_eternal_watch:0 "永恒守望"
+ ap_bp_eternal_watch_desc:0 "我们的帝国维持永久性军事监视阵列、边境传感器和追踪系统，在威胁发动攻击前将其暴露。"
+
+ ap_bp_warborn_society:0 "战生社会"
+ ap_bp_warborn_society_desc:0 "兵役定义了公民生活。每位公民都明白，生存唯有通过纪律、牺牲与武力来保障。"
+
+ ap_bp_crisis_response_mandate:0 "危机应对法令"
+ ap_bp_crisis_response_mandate_desc:0 "我们的舰队为应对存亡威胁做好准备，能够迅速动员对抗危机派系、掠夺者、入侵者和银河掠食者。\n\n§E解锁法令：§!§Y紧急动员§!"
+
+ ap_bp_bastion_worlds:0 "堡垒世界"
+ ap_bp_bastion_worlds_desc:0 "关键殖民地可转变为堡垒世界，足以锚定整个星区以抵御入侵。\n\n§E解锁建筑：§!§Y要塞指挥中枢§!\n§E解锁决策：§!§Y指定堡垒世界§!"
+ ap_bp_bastion_worlds_unlock:0 "解锁§Y要塞指挥中枢§!建筑与§Y指定堡垒世界§!行星决策。"
+
+ bp_siege_breaker_army:0 "破城军团"
+ bp_siege_breaker_army_desc:0 "精锐行星突击部队，专精于攻破要塞世界、清剿固守守军，并以压倒性武力终结抵抗。"
+
+ COMBAT_COMPUTER_BP_ADAPTIVE_LINE:0 "自适应战斗计算机（战线）"
+ COMBAT_COMPUTER_BP_ADAPTIVE_LINE_DESC:0 "同步战场分析系统优化战线编队，提升精度、追踪与脱离逻辑。"
+
+ COMBAT_COMPUTER_BP_ADAPTIVE_ARTILLERY:0 "自适应战斗计算机（炮击）"
+ COMBAT_COMPUTER_BP_ADAPTIVE_ARTILLERY_DESC:0 "实时战术数据改善远程瞄准、舰队协同与紧急撤离协议。"
+
+ COMBAT_COMPUTER_BP_ADAPTIVE_PICKET:0 "自适应战斗计算机（哨戒）"
+ COMBAT_COMPUTER_BP_ADAPTIVE_PICKET_DESC:0 "自适应追踪网络强化哨戒掩护，提高精度、追击与战术脱离能力。"
+
+ building_bp_fortress_command_nexus:0 "要塞指挥中枢"
+ building_bp_fortress_command_nexus_desc:0 "行星军事指挥综合体，统筹防御、应急响应、轨道整合与星区后勤，将殖民地打造成真正的堡垒世界。"
+
+ decision_bp_activate_shield_mandate:0 "激活护盾法令"
+ decision_bp_activate_shield_mandate_desc:0 "部署应急行星护盾，强化防御网络，加固此殖民地以抵御入侵。"
+
+ decision_bp_designate_bastion_world:0 "指定堡垒世界"
+ decision_bp_designate_bastion_world_desc:0 "将此殖民地转变为永久性堡垒世界，专注于星区防御与军事战备。"
+
+ bp_emergency_mobilization:0 "紧急动员"
+ bp_emergency_mobilization_desc:0 "为应对重大威胁，暂时扩大海军动员与武器战备。"
+
+ bp_battle_network_sync:0 "战斗网络同步"
+ bp_battle_network_sync_desc:0 "同步舰队战术系统，提高瞄准精度与追踪能力。"
+
+ bp_shield_mandate_active:0 "护盾法令生效"
+ bp_shield_mandate_active_desc:0 "此殖民地受到应急护盾系统与强化防御基础设施的保护。"
+
+ bp_bastion_world:0 "堡垒世界"
+ bp_bastion_world_desc:0 "此殖民地已被指定为加固的军事堡垒。"
+
+
+ edict_bp_emergency_mobilization:0 "紧急动员"
+ edict_bp_emergency_mobilization_desc:0 "为应对重大威胁，暂时扩大海军动员与武器战备。"
+ edict_bp_battle_network_sync:0 "战斗网络同步"
+ edict_bp_battle_network_sync_desc:0 "同步舰队战术系统，提高瞄准精度与追踪能力。"
+ edict_edict_bp_emergency_mobilization:0 "紧急动员"
+ edict_edict_bp_emergency_mobilization_desc:0 "为应对重大威胁，暂时扩大海军动员与武器战备。"
+ edict_edict_bp_battle_network_sync:0 "战斗网络同步"
+ edict_edict_bp_battle_network_sync_desc:0 "同步舰队战术系统，提高瞄准精度与追踪能力。"
+ bp_requires_non_nomadic_empire:0 "游牧帝国无法使用。"

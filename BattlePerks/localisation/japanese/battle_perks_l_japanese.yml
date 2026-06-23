@@ -1,0 +1,83 @@
+l_japanese:
+ mod_battle_perks:0 "戦闘パーク"
+
+ ap_bp_fortress_doctrine:0 "要塞教義"
+ ap_bp_fortress_doctrine_desc:0 "国境は鋼の壁となり、ステーションは砦となり、植民地は敵に対する堅固な拠点となる。"
+
+ ap_bp_total_war_economy:0 "総力戦経済"
+ ap_bp_total_war_economy_desc:0 "民間経済は恒久的な軍事体制のもとに再編され、社会的代償を伴いながら艦船生産と合金産出を加速する。"
+
+ ap_bp_fleet_supremacy_protocols:0 "艦隊覇権プロトコル"
+ ap_bp_fleet_supremacy_protocols_desc:0 "集中化された海軍指揮により、我が艦隊は弱小勢力には及ばない規模と精度で運用できる。"
+
+ ap_bp_planetary_shield_mandate:0 "惑星シールド指令"
+ ap_bp_planetary_shield_mandate_desc:0 "すべての植民地は、緊急シールドシステム、強化された守備隊、惑星防衛インフラを維持することが義務付けられる。"
+ ap_bp_planetary_shield_mandate_unlock:0 "惑星決定§Yシールド指令の発動§!を解放する。"
+
+ ap_bp_siege_masters:0 "包囲の達人"
+ ap_bp_siege_masters_desc:0 "我が陸軍と艦隊は、要塞化された星系を突破し、士気を打ち砕き、惑星の抵抗を容赦なく効率的に終わらせるよう訓練されている。\n\n§E解放される陸軍：§!§Y攻城突破軍§!"
+ ap_bp_siege_masters_unlock:0 "所有植民地での§Y攻城突破軍§!募集を解放する。"
+
+ ap_bp_adaptive_battle_networks:0 "適応型戦闘ネットワーク"
+ ap_bp_adaptive_battle_networks_desc:0 "戦闘データは艦隊全体で同期され、照準システムと戦術コンピュータがリアルタイムで適応できる。\n\n§E解放：§!§Y適応型戦闘コンピュータ§!\n§E解放される布告：§!§Y戦闘ネットワーク同期§!"
+
+
+ ap_bp_adaptive_battle_networks_unlock:0 "艦船設計用§Y適応型戦闘コンピュータ§!と布告§Y戦闘ネットワーク同期§!を解放する。"
+ ap_bp_crisis_response_mandate_unlock:0 "布告§Y緊急動員§!を解放する。"
+
+ ap_bp_eternal_watch:0 "永遠の監視"
+ ap_bp_eternal_watch_desc:0 "帝国は恒久的な軍事監視網、国境センサー、追跡システムを維持し、脅威が攻撃を仕掛ける前にそれを暴く。"
+
+ ap_bp_warborn_society:0 "戦生の社会"
+ ap_bp_warborn_society_desc:0 "兵役が市民生活を定義する。すべての市民は、生存は規律、犠牲、武力によって守られることを理解している。"
+
+ ap_bp_crisis_response_mandate:0 "危機対応指令"
+ ap_bp_crisis_response_mandate_desc:0 "我が艦隊は存亡の脅威に備え、危機派閥、略奪者、侵略者、銀河の捕食者に対して迅速に動員できる。\n\n§E解放される布告：§!§Y緊急動員§!"
+
+ ap_bp_bastion_worlds:0 "砦の世界"
+ ap_bp_bastion_worlds_desc:0 "主要な植民地は、侵攻に対してセクター全体を支える砦の世界へと変貌できる。\n\n§E解放される建造物：§!§Y要塞司令部ネクサス§!\n§E解放される決定：§!§Y砦の世界の指定§!"
+ ap_bp_bastion_worlds_unlock:0 "§Y要塞司令部ネクサス§!建造物と惑星決定§Y砦の世界の指定§!を解放する。"
+
+ bp_siege_breaker_army:0 "攻城突破軍"
+ bp_siege_breaker_army_desc:0 "要塞惑星の突破、塹壕守軍の殲滅、圧倒的武力による抵抗終結に特化した精鋭惑星攻撃部隊。"
+
+ COMBAT_COMPUTER_BP_ADAPTIVE_LINE:0 "適応型戦闘コンピュータ（ライン）"
+ COMBAT_COMPUTER_BP_ADAPTIVE_LINE_DESC:0 "同期された戦場分析がライン戦闘編隊を最適化し、精度、追跡、離脱判断を向上させる。"
+
+ COMBAT_COMPUTER_BP_ADAPTIVE_ARTILLERY:0 "適応型戦闘コンピュータ（砲撃）"
+ COMBAT_COMPUTER_BP_ADAPTIVE_ARTILLERY_DESC:0 "リアルタイム戦術データが長距離照準、艦隊連携、緊急離脱プロトコルを改善する。"
+
+ COMBAT_COMPUTER_BP_ADAPTIVE_PICKET:0 "適応型戦闘コンピュータ（ピケット）"
+ COMBAT_COMPUTER_BP_ADAPTIVE_PICKET_DESC:0 "適応型追跡ネットワークがピケット警戒を強化し、精度、追撃、戦術離脱を向上させる。"
+
+ building_bp_fortress_command_nexus:0 "要塞司令部ネクサス"
+ building_bp_fortress_command_nexus_desc:0 "惑星防衛、緊急対応、軌道統合、星区兵站を統括する大規模軍事司令部。"
+
+ decision_bp_activate_shield_mandate:0 "シールド指令の発動"
+ decision_bp_activate_shield_mandate_desc:0 "緊急惑星シールドを展開し、防衛ネットワークを強化し、この植民地を侵攻に対して堅固にする。"
+
+ decision_bp_designate_bastion_world:0 "砦の世界の指定"
+ decision_bp_designate_bastion_world_desc:0 "この植民地を、セクター防衛と軍事体制に特化した恒久的な砦の世界へと変える。"
+
+ bp_emergency_mobilization:0 "緊急動員"
+ bp_emergency_mobilization_desc:0 "重大な脅威に応じて、一時的に海軍動員と兵器の戦闘準備を拡大する。"
+
+ bp_battle_network_sync:0 "戦闘ネットワーク同期"
+ bp_battle_network_sync_desc:0 "艦隊の戦術システムを同期し、照準精度と追跡能力を向上させる。"
+
+ bp_shield_mandate_active:0 "シールド指令発動中"
+ bp_shield_mandate_active_desc:0 "この植民地は緊急シールドシステムと強化された防衛インフラによって保護されている。"
+
+ bp_bastion_world:0 "砦の世界"
+ bp_bastion_world_desc:0 "この植民地は堅固な軍事砦として指定されている。"
+
+
+ edict_bp_emergency_mobilization:0 "緊急動員"
+ edict_bp_emergency_mobilization_desc:0 "重大な脅威に応じて、一時的に海軍動員と兵器の戦闘準備を拡大する。"
+ edict_bp_battle_network_sync:0 "戦闘ネットワーク同期"
+ edict_bp_battle_network_sync_desc:0 "艦隊の戦術システムを同期し、照準精度と追跡能力を向上させる。"
+ edict_edict_bp_emergency_mobilization:0 "緊急動員"
+ edict_edict_bp_emergency_mobilization_desc:0 "重大な脅威に応じて、一時的に海軍動員と兵器の戦闘準備を拡大する。"
+ edict_edict_bp_battle_network_sync:0 "戦闘ネットワーク同期"
+ edict_edict_bp_battle_network_sync_desc:0 "艦隊の戦術システムを同期し、照準精度と追跡能力を向上させる。"
+ bp_requires_non_nomadic_empire:0 "遊牧帝国では利用できません。"

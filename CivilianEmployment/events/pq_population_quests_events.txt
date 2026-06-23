@@ -1,0 +1,94 @@
+namespace = pq_civilian_employment
+
+planet_event = {
+	id = pq_civilian_employment.1
+	title = pq_civilian_employment.1.name
+	desc = pq_civilian_employment.1.desc
+	picture = GFX_evt_space_station
+	show_sound = event_cityscape
+	is_triggered_only = yes
+
+	option = {
+		name = pq_civilian_employment.1.adventure
+		trigger = {
+			NOT = { has_modifier = pq_modifier_adventure_guild }
+		}
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 50
+				}
+			}
+		}
+		owner = { add_resource = { influence = -50 } }
+		add_modifier = {
+			modifier = pq_modifier_adventure_guild
+			days = -1
+		}
+		remove_modifier = pq_modifier_virtual_forces
+		remove_modifier = pq_modifier_free_thinkers
+	}
+
+	option = {
+		name = pq_civilian_employment.1.virtual
+		trigger = {
+			NOT = { has_modifier = pq_modifier_virtual_forces }
+		}
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 50
+				}
+			}
+		}
+		owner = { add_resource = { influence = -50 } }
+		add_modifier = {
+			modifier = pq_modifier_virtual_forces
+			days = -1
+		}
+		remove_modifier = pq_modifier_adventure_guild
+		remove_modifier = pq_modifier_free_thinkers
+	}
+
+	option = {
+		name = pq_civilian_employment.1.thinkers
+		trigger = {
+			NOT = { has_modifier = pq_modifier_free_thinkers }
+		}
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 50
+				}
+			}
+		}
+		owner = { add_resource = { influence = -50 } }
+		add_modifier = {
+			modifier = pq_modifier_free_thinkers
+			days = -1
+		}
+		remove_modifier = pq_modifier_adventure_guild
+		remove_modifier = pq_modifier_virtual_forces
+	}
+
+	option = {
+		name = pq_civilian_employment.1.disable
+		trigger = {
+			OR = {
+				has_modifier = pq_modifier_adventure_guild
+				has_modifier = pq_modifier_virtual_forces
+				has_modifier = pq_modifier_free_thinkers
+			}
+		}
+		remove_modifier = pq_modifier_adventure_guild
+		remove_modifier = pq_modifier_virtual_forces
+		remove_modifier = pq_modifier_free_thinkers
+	}
+
+	option = {
+		name = pq_civilian_employment.1.close
+	}
+}
