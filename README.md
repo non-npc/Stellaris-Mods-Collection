@@ -1,6 +1,6 @@
 # Stellaris Mods Collection
 
-A collection of Stellaris mods I developed and maintain.
+A collection of Stellaris mods I develop and maintain.
 
 Mods are kept up to date with the current game version.
 
