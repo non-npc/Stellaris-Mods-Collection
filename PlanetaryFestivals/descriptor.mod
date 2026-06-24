@@ -6,5 +6,5 @@ tags={
 	"Technologies"
 }
 name="Planetary Festivals"
-supported_version="v4.4.3"
+supported_version="v4.4.4"
 remote_file_id="3737189710"

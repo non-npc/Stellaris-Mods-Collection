@@ -6,5 +6,5 @@ tags={
 	"Technologies"
 }
 name="Battle Perks"
-supported_version="v4.4.3"
+supported_version="v4.4.4"
 remote_file_id="3743323168"
