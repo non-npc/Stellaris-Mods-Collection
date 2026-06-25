@@ -14,9 +14,9 @@ country_event = {
         set_country_flag = acl_startup_delay_initialized
 
         random_list = {
-            1 = { set_timed_country_flag = { flag = acl_startup_block days = 466 } }
-            1 = { set_timed_country_flag = { flag = acl_startup_block days = 546 } }
-            1 = { set_timed_country_flag = { flag = acl_startup_block days = 726 } }
+            1 = { set_timed_country_flag = { flag = acl_startup_block days = 119 } }
+            1 = { set_timed_country_flag = { flag = acl_startup_block days = 199 } }
+            1 = { set_timed_country_flag = { flag = acl_startup_block days = 379 } }
         }
     }
 }
@@ -30,6 +30,26 @@ country_event = {
         is_ai = no
         NOT = { has_country_flag = acl_startup_block }
         NOT = { has_country_flag = acl_recent_lore_event }
+        acl_has_unseen_lore = yes
+    }
+
+    immediate = {
+        random_list = {
+            1 = { set_timed_country_flag = { flag = acl_recent_lore_event days = 1087 } }
+            1 = { set_timed_country_flag = { flag = acl_recent_lore_event days = 1575 } }
+            1 = { set_timed_country_flag = { flag = acl_recent_lore_event days = 1775 } }
+        }
+        country_event = { id = acl.10 days = 1 random = 364 }
+    }
+}
+
+country_event = {
+    id = acl.10
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
         acl_has_unseen_lore = yes
     }
 
@@ -436,13 +456,9 @@ country_event = {
                 country_event = { id = acl.1099 }
             }
         }
-        random_list = {
-            1 = { set_timed_country_flag = { flag = acl_recent_lore_event days = 1252 } }
-            1 = { set_timed_country_flag = { flag = acl_recent_lore_event days = 1740 } }
-            1 = { set_timed_country_flag = { flag = acl_recent_lore_event days = 1940 } }
-        }
     }
 }
+
 
 country_event = {
     id = acl.1000

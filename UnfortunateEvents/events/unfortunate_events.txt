@@ -14,9 +14,9 @@ country_event = {
         set_country_flag = ue_startup_delay_initialized
 
         random_list = {
-            1 = { set_timed_country_flag = { flag = ue_startup_block days = 627 } }
-            1 = { set_timed_country_flag = { flag = ue_startup_block days = 767 } }
-            1 = { set_timed_country_flag = { flag = ue_startup_block days = 907 } }
+            1 = { set_timed_country_flag = { flag = ue_startup_block days = 280 } }
+            1 = { set_timed_country_flag = { flag = ue_startup_block days = 420 } }
+            1 = { set_timed_country_flag = { flag = ue_startup_block days = 560 } }
         }
     }
 }
@@ -34,10 +34,24 @@ country_event = {
 
     immediate = {
         random_list = {
-            1 = { set_timed_country_flag = { flag = ue_recent_event_cooldown days = 1277 } }
-            1 = { set_timed_country_flag = { flag = ue_recent_event_cooldown days = 2777 } }
+            1 = { set_timed_country_flag = { flag = ue_recent_event_cooldown days = 1112 } }
+            1 = { set_timed_country_flag = { flag = ue_recent_event_cooldown days = 2612 } }
         }
 
+        country_event = { id = ue.10 days = 1 random = 364 }
+    }
+}
+
+country_event = {
+    id = ue.10
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+    }
+
+    immediate = {
         random_list = {
             1 = { country_event = { id = ue.100 } }
             1 = { country_event = { id = ue.101 } }
@@ -142,6 +156,7 @@ country_event = {
         }
     }
 }
+
 
 country_event = {
     id = ue.100

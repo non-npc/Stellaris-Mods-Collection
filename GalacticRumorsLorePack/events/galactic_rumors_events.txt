@@ -14,8 +14,8 @@ country_event = {
         set_country_flag = grlp_startup_delay_initialized
 
         random_list = {
-            1 = { set_timed_country_flag = { flag = grlp_startup_block days = 733 } }
-            1 = { set_timed_country_flag = { flag = grlp_startup_block days = 813 } }
+            1 = { set_timed_country_flag = { flag = grlp_startup_block days = 568 } }
+            1 = { set_timed_country_flag = { flag = grlp_startup_block days = 648 } }
         }
     }
 }
@@ -33,112 +33,112 @@ country_event = {
 
     immediate = {
         random_list = {
-            1 = { set_timed_country_flag = { flag = grlp_recent_rumor days = 1476 } }
-            1 = { set_timed_country_flag = { flag = grlp_recent_rumor days = 1698 } }
-            1 = { set_timed_country_flag = { flag = grlp_recent_rumor days = 1987 } }
+            1 = { set_timed_country_flag = { flag = grlp_recent_rumor days = 1311 } }
+            1 = { set_timed_country_flag = { flag = grlp_recent_rumor days = 1533 } }
+            1 = { set_timed_country_flag = { flag = grlp_recent_rumor days = 1822 } }
         }
 
         random_list = {
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2000 } } country_event = { id = grlp.2000 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2001 } } country_event = { id = grlp.2001 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2002 } } country_event = { id = grlp.2002 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2003 } } country_event = { id = grlp.2003 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2004 } } country_event = { id = grlp.2004 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2005 } } country_event = { id = grlp.2005 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2006 } } country_event = { id = grlp.2006 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2007 } } country_event = { id = grlp.2007 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2008 } } country_event = { id = grlp.2008 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2009 } } country_event = { id = grlp.2009 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2010 } } country_event = { id = grlp.2010 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2011 } } country_event = { id = grlp.2011 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2012 } } country_event = { id = grlp.2012 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2013 } } country_event = { id = grlp.2013 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2014 } } country_event = { id = grlp.2014 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2015 } } country_event = { id = grlp.2015 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2016 } } country_event = { id = grlp.2016 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2017 } } country_event = { id = grlp.2017 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2018 } } country_event = { id = grlp.2018 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2019 } } country_event = { id = grlp.2019 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2020 } } country_event = { id = grlp.2020 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2021 } } country_event = { id = grlp.2021 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2022 } } country_event = { id = grlp.2022 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2023 } } country_event = { id = grlp.2023 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2024 } } country_event = { id = grlp.2024 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2025 } } country_event = { id = grlp.2025 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2026 } } country_event = { id = grlp.2026 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2027 } } country_event = { id = grlp.2027 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2028 } } country_event = { id = grlp.2028 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2029 } } country_event = { id = grlp.2029 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2030 } } country_event = { id = grlp.2030 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2031 } } country_event = { id = grlp.2031 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2032 } } country_event = { id = grlp.2032 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2033 } } country_event = { id = grlp.2033 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2034 } } country_event = { id = grlp.2034 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2035 } } country_event = { id = grlp.2035 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2036 } } country_event = { id = grlp.2036 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2037 } } country_event = { id = grlp.2037 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2038 } } country_event = { id = grlp.2038 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2039 } } country_event = { id = grlp.2039 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2040 } } country_event = { id = grlp.2040 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2041 } } country_event = { id = grlp.2041 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2042 } } country_event = { id = grlp.2042 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2043 } } country_event = { id = grlp.2043 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2044 } } country_event = { id = grlp.2044 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2045 } } country_event = { id = grlp.2045 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2046 } } country_event = { id = grlp.2046 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2047 } } country_event = { id = grlp.2047 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2048 } } country_event = { id = grlp.2048 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2049 } } country_event = { id = grlp.2049 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2050 } } country_event = { id = grlp.2050 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2051 } } country_event = { id = grlp.2051 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2052 } } country_event = { id = grlp.2052 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2053 } } country_event = { id = grlp.2053 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2054 } } country_event = { id = grlp.2054 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2055 } } country_event = { id = grlp.2055 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2056 } } country_event = { id = grlp.2056 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2057 } } country_event = { id = grlp.2057 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2058 } } country_event = { id = grlp.2058 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2059 } } country_event = { id = grlp.2059 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2060 } } country_event = { id = grlp.2060 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2061 } } country_event = { id = grlp.2061 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2062 } } country_event = { id = grlp.2062 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2063 } } country_event = { id = grlp.2063 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2064 } } country_event = { id = grlp.2064 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2065 } } country_event = { id = grlp.2065 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2066 } } country_event = { id = grlp.2066 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2067 } } country_event = { id = grlp.2067 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2068 } } country_event = { id = grlp.2068 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2069 } } country_event = { id = grlp.2069 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2070 } } country_event = { id = grlp.2070 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2071 } } country_event = { id = grlp.2071 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2072 } } country_event = { id = grlp.2072 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2073 } } country_event = { id = grlp.2073 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2074 } } country_event = { id = grlp.2074 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2075 } } country_event = { id = grlp.2075 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2076 } } country_event = { id = grlp.2076 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2077 } } country_event = { id = grlp.2077 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2078 } } country_event = { id = grlp.2078 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2079 } } country_event = { id = grlp.2079 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2080 } } country_event = { id = grlp.2080 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2081 } } country_event = { id = grlp.2081 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2082 } } country_event = { id = grlp.2082 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2083 } } country_event = { id = grlp.2083 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2084 } } country_event = { id = grlp.2084 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2085 } } country_event = { id = grlp.2085 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2086 } } country_event = { id = grlp.2086 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2087 } } country_event = { id = grlp.2087 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2088 } } country_event = { id = grlp.2088 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2089 } } country_event = { id = grlp.2089 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2090 } } country_event = { id = grlp.2090 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2091 } } country_event = { id = grlp.2091 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2092 } } country_event = { id = grlp.2092 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2093 } } country_event = { id = grlp.2093 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2094 } } country_event = { id = grlp.2094 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2095 } } country_event = { id = grlp.2095 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2096 } } country_event = { id = grlp.2096 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2097 } } country_event = { id = grlp.2097 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2098 } } country_event = { id = grlp.2098 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = grlp_seen_2099 } } country_event = { id = grlp.2099 } } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2000 } country_event = { id = grlp.2000 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2001 } country_event = { id = grlp.2001 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2002 } country_event = { id = grlp.2002 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2003 } country_event = { id = grlp.2003 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2004 } country_event = { id = grlp.2004 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2005 } country_event = { id = grlp.2005 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2006 } country_event = { id = grlp.2006 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2007 } country_event = { id = grlp.2007 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2008 } country_event = { id = grlp.2008 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2009 } country_event = { id = grlp.2009 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2010 } country_event = { id = grlp.2010 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2011 } country_event = { id = grlp.2011 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2012 } country_event = { id = grlp.2012 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2013 } country_event = { id = grlp.2013 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2014 } country_event = { id = grlp.2014 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2015 } country_event = { id = grlp.2015 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2016 } country_event = { id = grlp.2016 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2017 } country_event = { id = grlp.2017 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2018 } country_event = { id = grlp.2018 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2019 } country_event = { id = grlp.2019 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2020 } country_event = { id = grlp.2020 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2021 } country_event = { id = grlp.2021 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2022 } country_event = { id = grlp.2022 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2023 } country_event = { id = grlp.2023 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2024 } country_event = { id = grlp.2024 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2025 } country_event = { id = grlp.2025 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2026 } country_event = { id = grlp.2026 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2027 } country_event = { id = grlp.2027 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2028 } country_event = { id = grlp.2028 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2029 } country_event = { id = grlp.2029 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2030 } country_event = { id = grlp.2030 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2031 } country_event = { id = grlp.2031 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2032 } country_event = { id = grlp.2032 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2033 } country_event = { id = grlp.2033 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2034 } country_event = { id = grlp.2034 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2035 } country_event = { id = grlp.2035 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2036 } country_event = { id = grlp.2036 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2037 } country_event = { id = grlp.2037 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2038 } country_event = { id = grlp.2038 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2039 } country_event = { id = grlp.2039 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2040 } country_event = { id = grlp.2040 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2041 } country_event = { id = grlp.2041 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2042 } country_event = { id = grlp.2042 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2043 } country_event = { id = grlp.2043 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2044 } country_event = { id = grlp.2044 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2045 } country_event = { id = grlp.2045 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2046 } country_event = { id = grlp.2046 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2047 } country_event = { id = grlp.2047 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2048 } country_event = { id = grlp.2048 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2049 } country_event = { id = grlp.2049 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2050 } country_event = { id = grlp.2050 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2051 } country_event = { id = grlp.2051 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2052 } country_event = { id = grlp.2052 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2053 } country_event = { id = grlp.2053 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2054 } country_event = { id = grlp.2054 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2055 } country_event = { id = grlp.2055 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2056 } country_event = { id = grlp.2056 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2057 } country_event = { id = grlp.2057 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2058 } country_event = { id = grlp.2058 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2059 } country_event = { id = grlp.2059 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2060 } country_event = { id = grlp.2060 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2061 } country_event = { id = grlp.2061 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2062 } country_event = { id = grlp.2062 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2063 } country_event = { id = grlp.2063 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2064 } country_event = { id = grlp.2064 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2065 } country_event = { id = grlp.2065 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2066 } country_event = { id = grlp.2066 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2067 } country_event = { id = grlp.2067 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2068 } country_event = { id = grlp.2068 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2069 } country_event = { id = grlp.2069 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2070 } country_event = { id = grlp.2070 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2071 } country_event = { id = grlp.2071 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2072 } country_event = { id = grlp.2072 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2073 } country_event = { id = grlp.2073 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2074 } country_event = { id = grlp.2074 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2075 } country_event = { id = grlp.2075 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2076 } country_event = { id = grlp.2076 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2077 } country_event = { id = grlp.2077 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2078 } country_event = { id = grlp.2078 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2079 } country_event = { id = grlp.2079 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2080 } country_event = { id = grlp.2080 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2081 } country_event = { id = grlp.2081 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2082 } country_event = { id = grlp.2082 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2083 } country_event = { id = grlp.2083 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2084 } country_event = { id = grlp.2084 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2085 } country_event = { id = grlp.2085 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2086 } country_event = { id = grlp.2086 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2087 } country_event = { id = grlp.2087 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2088 } country_event = { id = grlp.2088 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2089 } country_event = { id = grlp.2089 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2090 } country_event = { id = grlp.2090 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2091 } country_event = { id = grlp.2091 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2092 } country_event = { id = grlp.2092 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2093 } country_event = { id = grlp.2093 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2094 } country_event = { id = grlp.2094 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2095 } country_event = { id = grlp.2095 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2096 } country_event = { id = grlp.2096 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2097 } country_event = { id = grlp.2097 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2098 } country_event = { id = grlp.2098 } }
+            1 = { modifier = { factor = 0 has_country_flag = grlp_seen_2099 } country_event = { id = grlp.2099 } }
         }
     }
 }

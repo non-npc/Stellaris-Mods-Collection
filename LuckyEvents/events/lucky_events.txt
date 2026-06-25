@@ -14,8 +14,8 @@ country_event = {
         set_country_flag = lucky_events_startup_delay_initialized
 
         random_list = {
-            1 = { set_timed_country_flag = { flag = lucky_events_startup_block days = 635 } }
-            1 = { set_timed_country_flag = { flag = lucky_events_startup_block days = 815 } }
+            1 = { set_timed_country_flag = { flag = lucky_events_startup_block days = 288 } }
+            1 = { set_timed_country_flag = { flag = lucky_events_startup_block days = 468 } }
         }
     }
 }
@@ -33,114 +33,129 @@ country_event = {
 
     immediate = {
         random_list = {
-            1 = { set_timed_country_flag = { flag = lucky_events_recent_lucky_event days = 1288 } }
-            1 = { set_timed_country_flag = { flag = lucky_events_recent_lucky_event days = 2588 } }
+            1 = { set_timed_country_flag = { flag = lucky_events_recent_lucky_event days = 1123 } }
+            1 = { set_timed_country_flag = { flag = lucky_events_recent_lucky_event days = 2423 } }
         }
 
+        country_event = { id = lucky_events.1000 days = 1 random = 364 }
+    }
+}
+
+country_event = {
+    id = lucky_events.1000
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+    }
+
+    immediate = {
         random_list = {
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_2 } } country_event = { id = lucky_events.2 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_3 } } country_event = { id = lucky_events.3 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_4 } } country_event = { id = lucky_events.4 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_5 } } country_event = { id = lucky_events.5 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_6 } } country_event = { id = lucky_events.6 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_7 } } country_event = { id = lucky_events.7 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_8 } } country_event = { id = lucky_events.8 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_9 } } country_event = { id = lucky_events.9 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_10 } } country_event = { id = lucky_events.10 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_11 } } country_event = { id = lucky_events.11 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_12 } } country_event = { id = lucky_events.12 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_13 } } country_event = { id = lucky_events.13 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_14 } } country_event = { id = lucky_events.14 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_15 } } country_event = { id = lucky_events.15 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_16 } } country_event = { id = lucky_events.16 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_17 } } country_event = { id = lucky_events.17 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_18 } } country_event = { id = lucky_events.18 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_19 } } country_event = { id = lucky_events.19 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_20 } } country_event = { id = lucky_events.20 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_21 } } country_event = { id = lucky_events.21 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_22 } } country_event = { id = lucky_events.22 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_23 } } country_event = { id = lucky_events.23 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_24 } } country_event = { id = lucky_events.24 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_25 } } country_event = { id = lucky_events.25 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_26 } } country_event = { id = lucky_events.26 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_27 } } country_event = { id = lucky_events.27 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_28 } } country_event = { id = lucky_events.28 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_29 } } country_event = { id = lucky_events.29 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_30 } } country_event = { id = lucky_events.30 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_31 } } country_event = { id = lucky_events.31 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_32 } } country_event = { id = lucky_events.32 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_33 } } country_event = { id = lucky_events.33 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_34 } } country_event = { id = lucky_events.34 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_35 } } country_event = { id = lucky_events.35 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_36 } } country_event = { id = lucky_events.36 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_37 } } country_event = { id = lucky_events.37 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_38 } } country_event = { id = lucky_events.38 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_39 } } country_event = { id = lucky_events.39 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_40 } } country_event = { id = lucky_events.40 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_41 } } country_event = { id = lucky_events.41 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_42 } } country_event = { id = lucky_events.42 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_43 } } country_event = { id = lucky_events.43 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_44 } } country_event = { id = lucky_events.44 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_45 } } country_event = { id = lucky_events.45 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_46 } } country_event = { id = lucky_events.46 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_47 } } country_event = { id = lucky_events.47 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_48 } } country_event = { id = lucky_events.48 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_49 } } country_event = { id = lucky_events.49 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_50 } } country_event = { id = lucky_events.50 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_51 } } country_event = { id = lucky_events.51 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_52 } } country_event = { id = lucky_events.52 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_53 } } country_event = { id = lucky_events.53 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_54 } } country_event = { id = lucky_events.54 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_55 } } country_event = { id = lucky_events.55 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_56 } } country_event = { id = lucky_events.56 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_57 } } country_event = { id = lucky_events.57 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_58 } } country_event = { id = lucky_events.58 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_59 } } country_event = { id = lucky_events.59 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_60 } } country_event = { id = lucky_events.60 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_61 } } country_event = { id = lucky_events.61 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_62 } } country_event = { id = lucky_events.62 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_63 } } country_event = { id = lucky_events.63 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_64 } } country_event = { id = lucky_events.64 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_65 } } country_event = { id = lucky_events.65 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_66 } } country_event = { id = lucky_events.66 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_67 } } country_event = { id = lucky_events.67 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_68 } } country_event = { id = lucky_events.68 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_69 } } country_event = { id = lucky_events.69 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_70 } } country_event = { id = lucky_events.70 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_71 } } country_event = { id = lucky_events.71 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_72 } } country_event = { id = lucky_events.72 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_73 } } country_event = { id = lucky_events.73 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_74 } } country_event = { id = lucky_events.74 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_75 } } country_event = { id = lucky_events.75 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_76 } } country_event = { id = lucky_events.76 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_77 } } country_event = { id = lucky_events.77 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_78 } } country_event = { id = lucky_events.78 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_79 } } country_event = { id = lucky_events.79 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_80 } } country_event = { id = lucky_events.80 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_81 } } country_event = { id = lucky_events.81 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_82 } } country_event = { id = lucky_events.82 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_83 } } country_event = { id = lucky_events.83 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_84 } } country_event = { id = lucky_events.84 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_85 } } country_event = { id = lucky_events.85 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_86 } } country_event = { id = lucky_events.86 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_87 } } country_event = { id = lucky_events.87 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_88 } } country_event = { id = lucky_events.88 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_89 } } country_event = { id = lucky_events.89 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_90 } } country_event = { id = lucky_events.90 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_91 } } country_event = { id = lucky_events.91 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_92 } } country_event = { id = lucky_events.92 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_93 } } country_event = { id = lucky_events.93 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_94 } } country_event = { id = lucky_events.94 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_95 } } country_event = { id = lucky_events.95 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_96 } } country_event = { id = lucky_events.96 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_97 } } country_event = { id = lucky_events.97 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_98 } } country_event = { id = lucky_events.98 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_99 } } country_event = { id = lucky_events.99 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_100 } } country_event = { id = lucky_events.100 } } }
-            1 = { if = { limit = { NOT = { has_country_flag = lucky_events_seen_101 } } country_event = { id = lucky_events.101 } } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_2 } country_event = { id = lucky_events.2 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_3 } country_event = { id = lucky_events.3 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_4 } country_event = { id = lucky_events.4 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_5 } country_event = { id = lucky_events.5 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_6 } country_event = { id = lucky_events.6 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_7 } country_event = { id = lucky_events.7 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_8 } country_event = { id = lucky_events.8 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_9 } country_event = { id = lucky_events.9 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_10 } country_event = { id = lucky_events.10 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_11 } country_event = { id = lucky_events.11 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_12 } country_event = { id = lucky_events.12 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_13 } country_event = { id = lucky_events.13 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_14 } country_event = { id = lucky_events.14 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_15 } country_event = { id = lucky_events.15 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_16 } country_event = { id = lucky_events.16 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_17 } country_event = { id = lucky_events.17 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_18 } country_event = { id = lucky_events.18 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_19 } country_event = { id = lucky_events.19 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_20 } country_event = { id = lucky_events.20 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_21 } country_event = { id = lucky_events.21 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_22 } country_event = { id = lucky_events.22 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_23 } country_event = { id = lucky_events.23 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_24 } country_event = { id = lucky_events.24 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_25 } country_event = { id = lucky_events.25 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_26 } country_event = { id = lucky_events.26 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_27 } country_event = { id = lucky_events.27 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_28 } country_event = { id = lucky_events.28 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_29 } country_event = { id = lucky_events.29 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_30 } country_event = { id = lucky_events.30 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_31 } country_event = { id = lucky_events.31 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_32 } country_event = { id = lucky_events.32 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_33 } country_event = { id = lucky_events.33 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_34 } country_event = { id = lucky_events.34 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_35 } country_event = { id = lucky_events.35 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_36 } country_event = { id = lucky_events.36 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_37 } country_event = { id = lucky_events.37 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_38 } country_event = { id = lucky_events.38 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_39 } country_event = { id = lucky_events.39 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_40 } country_event = { id = lucky_events.40 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_41 } country_event = { id = lucky_events.41 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_42 } country_event = { id = lucky_events.42 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_43 } country_event = { id = lucky_events.43 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_44 } country_event = { id = lucky_events.44 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_45 } country_event = { id = lucky_events.45 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_46 } country_event = { id = lucky_events.46 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_47 } country_event = { id = lucky_events.47 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_48 } country_event = { id = lucky_events.48 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_49 } country_event = { id = lucky_events.49 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_50 } country_event = { id = lucky_events.50 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_51 } country_event = { id = lucky_events.51 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_52 } country_event = { id = lucky_events.52 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_53 } country_event = { id = lucky_events.53 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_54 } country_event = { id = lucky_events.54 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_55 } country_event = { id = lucky_events.55 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_56 } country_event = { id = lucky_events.56 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_57 } country_event = { id = lucky_events.57 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_58 } country_event = { id = lucky_events.58 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_59 } country_event = { id = lucky_events.59 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_60 } country_event = { id = lucky_events.60 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_61 } country_event = { id = lucky_events.61 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_62 } country_event = { id = lucky_events.62 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_63 } country_event = { id = lucky_events.63 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_64 } country_event = { id = lucky_events.64 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_65 } country_event = { id = lucky_events.65 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_66 } country_event = { id = lucky_events.66 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_67 } country_event = { id = lucky_events.67 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_68 } country_event = { id = lucky_events.68 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_69 } country_event = { id = lucky_events.69 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_70 } country_event = { id = lucky_events.70 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_71 } country_event = { id = lucky_events.71 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_72 } country_event = { id = lucky_events.72 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_73 } country_event = { id = lucky_events.73 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_74 } country_event = { id = lucky_events.74 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_75 } country_event = { id = lucky_events.75 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_76 } country_event = { id = lucky_events.76 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_77 } country_event = { id = lucky_events.77 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_78 } country_event = { id = lucky_events.78 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_79 } country_event = { id = lucky_events.79 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_80 } country_event = { id = lucky_events.80 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_81 } country_event = { id = lucky_events.81 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_82 } country_event = { id = lucky_events.82 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_83 } country_event = { id = lucky_events.83 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_84 } country_event = { id = lucky_events.84 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_85 } country_event = { id = lucky_events.85 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_86 } country_event = { id = lucky_events.86 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_87 } country_event = { id = lucky_events.87 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_88 } country_event = { id = lucky_events.88 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_89 } country_event = { id = lucky_events.89 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_90 } country_event = { id = lucky_events.90 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_91 } country_event = { id = lucky_events.91 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_92 } country_event = { id = lucky_events.92 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_93 } country_event = { id = lucky_events.93 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_94 } country_event = { id = lucky_events.94 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_95 } country_event = { id = lucky_events.95 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_96 } country_event = { id = lucky_events.96 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_97 } country_event = { id = lucky_events.97 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_98 } country_event = { id = lucky_events.98 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_99 } country_event = { id = lucky_events.99 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_100 } country_event = { id = lucky_events.100 } }
+            1 = { modifier = { factor = 0 has_country_flag = lucky_events_seen_101 } country_event = { id = lucky_events.101 } }
         }
     }
 }
+
 
 
 

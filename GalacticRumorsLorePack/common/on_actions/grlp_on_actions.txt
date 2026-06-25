@@ -1,4 +1,4 @@
-on_monthly_pulse_country = {
+on_yearly_pulse_country = {
     events = {
         grlp.0
         grlp.1

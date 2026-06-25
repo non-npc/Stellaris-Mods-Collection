@@ -10,7 +10,7 @@ on_single_player_save_game_load = {
     }
 }
 
-on_monthly_pulse_country = {
+on_yearly_pulse_country = {
     events = {
         acl.0
         acl.1
