@@ -1,0 +1,4865 @@
+namespace = dsi
+
+country_event = {
+    id = dsi.1
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = dsi_incident_scheduled }
+        NOT = { has_country_flag = dsi_recent_incident }
+    }
+
+    immediate = {
+        if = {
+            limit = { NOT = { has_country_flag = dsi_department_active } }
+            set_timed_country_flag = { flag = dsi_incident_scheduled days = 365 }
+            country_event = { id = dsi.100 days = 1 random = 364 }
+        }
+        else = {
+            set_timed_country_flag = { flag = dsi_incident_scheduled days = 365 }
+            country_event = { id = dsi.101 days = 1 random = 364 }
+        }
+    }
+}
+
+country_event = {
+    id = dsi.100
+    title = dsi.100.name
+    desc = dsi.100.desc
+    picture = GFX_dsi_evt_01
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        NOT = { has_country_flag = dsi_department_active }
+    }
+
+    immediate = {
+        set_country_flag = dsi_department_active
+    }
+
+    option = {
+        name = dsi.100.a
+    }
+}
+
+country_event = {
+    id = dsi.101
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_recent_incident }
+    }
+
+    immediate = {
+        set_timed_country_flag = { flag = dsi_recent_incident days = 730 }
+        random_list = {
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_102 } country_event = { id = dsi.102 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_103 } country_event = { id = dsi.103 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_104 } country_event = { id = dsi.104 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_105 } country_event = { id = dsi.105 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_106 } country_event = { id = dsi.106 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_107 } country_event = { id = dsi.107 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_108 } country_event = { id = dsi.108 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_109 } country_event = { id = dsi.109 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_110 } country_event = { id = dsi.110 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_111 } country_event = { id = dsi.111 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_112 } country_event = { id = dsi.112 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_113 } country_event = { id = dsi.113 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_114 } country_event = { id = dsi.114 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_115 } country_event = { id = dsi.115 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_116 } country_event = { id = dsi.116 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_117 } country_event = { id = dsi.117 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_118 } country_event = { id = dsi.118 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_119 } country_event = { id = dsi.119 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_120 } country_event = { id = dsi.120 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_121 } country_event = { id = dsi.121 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_122 } country_event = { id = dsi.122 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_123 } country_event = { id = dsi.123 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_124 } country_event = { id = dsi.124 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_125 } country_event = { id = dsi.125 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_126 } country_event = { id = dsi.126 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_127 } country_event = { id = dsi.127 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_128 } country_event = { id = dsi.128 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_129 } country_event = { id = dsi.129 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_130 } country_event = { id = dsi.130 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_131 } country_event = { id = dsi.131 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_132 } country_event = { id = dsi.132 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_133 } country_event = { id = dsi.133 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_134 } country_event = { id = dsi.134 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_135 } country_event = { id = dsi.135 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_136 } country_event = { id = dsi.136 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_137 } country_event = { id = dsi.137 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_138 } country_event = { id = dsi.138 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_139 } country_event = { id = dsi.139 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_140 } country_event = { id = dsi.140 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_141 } country_event = { id = dsi.141 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_142 } country_event = { id = dsi.142 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_143 } country_event = { id = dsi.143 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_144 } country_event = { id = dsi.144 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_145 } country_event = { id = dsi.145 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_146 } country_event = { id = dsi.146 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_147 } country_event = { id = dsi.147 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_148 } country_event = { id = dsi.148 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_149 } country_event = { id = dsi.149 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_150 } country_event = { id = dsi.150 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_151 } country_event = { id = dsi.151 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_152 } country_event = { id = dsi.152 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_153 } country_event = { id = dsi.153 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_154 } country_event = { id = dsi.154 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_155 } country_event = { id = dsi.155 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_156 } country_event = { id = dsi.156 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_157 } country_event = { id = dsi.157 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_158 } country_event = { id = dsi.158 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_159 } country_event = { id = dsi.159 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_160 } country_event = { id = dsi.160 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_161 } country_event = { id = dsi.161 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_162 } country_event = { id = dsi.162 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_163 } country_event = { id = dsi.163 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_164 } country_event = { id = dsi.164 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_165 } country_event = { id = dsi.165 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_166 } country_event = { id = dsi.166 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_167 } country_event = { id = dsi.167 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_168 } country_event = { id = dsi.168 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_169 } country_event = { id = dsi.169 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_170 } country_event = { id = dsi.170 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_171 } country_event = { id = dsi.171 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_172 } country_event = { id = dsi.172 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_173 } country_event = { id = dsi.173 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_174 } country_event = { id = dsi.174 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_175 } country_event = { id = dsi.175 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_176 } country_event = { id = dsi.176 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_177 } country_event = { id = dsi.177 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_178 } country_event = { id = dsi.178 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_179 } country_event = { id = dsi.179 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_180 } country_event = { id = dsi.180 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_181 } country_event = { id = dsi.181 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_182 } country_event = { id = dsi.182 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_183 } country_event = { id = dsi.183 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_184 } country_event = { id = dsi.184 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_185 } country_event = { id = dsi.185 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_186 } country_event = { id = dsi.186 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_187 } country_event = { id = dsi.187 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_188 } country_event = { id = dsi.188 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_189 } country_event = { id = dsi.189 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_190 } country_event = { id = dsi.190 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_191 } country_event = { id = dsi.191 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_192 } country_event = { id = dsi.192 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_193 } country_event = { id = dsi.193 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_194 } country_event = { id = dsi.194 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_195 } country_event = { id = dsi.195 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_196 } country_event = { id = dsi.196 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_197 } country_event = { id = dsi.197 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_198 } country_event = { id = dsi.198 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_199 } country_event = { id = dsi.199 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_200 } country_event = { id = dsi.200 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_201 } country_event = { id = dsi.201 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_202 } country_event = { id = dsi.202 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_203 } country_event = { id = dsi.203 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_204 } country_event = { id = dsi.204 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_205 } country_event = { id = dsi.205 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_206 } country_event = { id = dsi.206 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_207 } country_event = { id = dsi.207 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_208 } country_event = { id = dsi.208 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_209 } country_event = { id = dsi.209 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_210 } country_event = { id = dsi.210 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_211 } country_event = { id = dsi.211 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_212 } country_event = { id = dsi.212 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_213 } country_event = { id = dsi.213 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_214 } country_event = { id = dsi.214 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_215 } country_event = { id = dsi.215 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_216 } country_event = { id = dsi.216 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_217 } country_event = { id = dsi.217 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_218 } country_event = { id = dsi.218 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_219 } country_event = { id = dsi.219 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_220 } country_event = { id = dsi.220 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_221 } country_event = { id = dsi.221 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_222 } country_event = { id = dsi.222 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_223 } country_event = { id = dsi.223 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_224 } country_event = { id = dsi.224 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_225 } country_event = { id = dsi.225 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_226 } country_event = { id = dsi.226 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_227 } country_event = { id = dsi.227 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_228 } country_event = { id = dsi.228 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_229 } country_event = { id = dsi.229 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_230 } country_event = { id = dsi.230 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_231 } country_event = { id = dsi.231 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_232 } country_event = { id = dsi.232 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_233 } country_event = { id = dsi.233 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_234 } country_event = { id = dsi.234 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_235 } country_event = { id = dsi.235 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_236 } country_event = { id = dsi.236 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_237 } country_event = { id = dsi.237 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_238 } country_event = { id = dsi.238 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_239 } country_event = { id = dsi.239 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_240 } country_event = { id = dsi.240 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_241 } country_event = { id = dsi.241 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_242 } country_event = { id = dsi.242 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_243 } country_event = { id = dsi.243 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_244 } country_event = { id = dsi.244 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_245 } country_event = { id = dsi.245 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_246 } country_event = { id = dsi.246 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_247 } country_event = { id = dsi.247 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_248 } country_event = { id = dsi.248 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_249 } country_event = { id = dsi.249 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_250 } country_event = { id = dsi.250 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_251 } country_event = { id = dsi.251 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_252 } country_event = { id = dsi.252 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_253 } country_event = { id = dsi.253 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_254 } country_event = { id = dsi.254 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_255 } country_event = { id = dsi.255 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_256 } country_event = { id = dsi.256 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_257 } country_event = { id = dsi.257 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_258 } country_event = { id = dsi.258 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_259 } country_event = { id = dsi.259 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_260 } country_event = { id = dsi.260 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_261 } country_event = { id = dsi.261 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_262 } country_event = { id = dsi.262 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_263 } country_event = { id = dsi.263 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_264 } country_event = { id = dsi.264 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_265 } country_event = { id = dsi.265 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_266 } country_event = { id = dsi.266 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_267 } country_event = { id = dsi.267 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_268 } country_event = { id = dsi.268 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_269 } country_event = { id = dsi.269 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_270 } country_event = { id = dsi.270 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_271 } country_event = { id = dsi.271 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_272 } country_event = { id = dsi.272 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_273 } country_event = { id = dsi.273 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_274 } country_event = { id = dsi.274 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_275 } country_event = { id = dsi.275 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_276 } country_event = { id = dsi.276 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_277 } country_event = { id = dsi.277 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_278 } country_event = { id = dsi.278 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_279 } country_event = { id = dsi.279 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_280 } country_event = { id = dsi.280 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_281 } country_event = { id = dsi.281 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_282 } country_event = { id = dsi.282 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_283 } country_event = { id = dsi.283 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_284 } country_event = { id = dsi.284 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_285 } country_event = { id = dsi.285 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_286 } country_event = { id = dsi.286 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_287 } country_event = { id = dsi.287 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_288 } country_event = { id = dsi.288 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_289 } country_event = { id = dsi.289 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_290 } country_event = { id = dsi.290 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_291 } country_event = { id = dsi.291 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_292 } country_event = { id = dsi.292 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_293 } country_event = { id = dsi.293 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_294 } country_event = { id = dsi.294 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_295 } country_event = { id = dsi.295 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_296 } country_event = { id = dsi.296 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_297 } country_event = { id = dsi.297 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_298 } country_event = { id = dsi.298 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_299 } country_event = { id = dsi.299 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_300 } country_event = { id = dsi.300 } }
+            1 = { modifier = { factor = 0 has_country_flag = dsi_seen_301 } country_event = { id = dsi.301 } }
+        }
+    }
+}
+
+country_event = {
+    id = dsi.102
+    title = dsi.102.name
+    desc = dsi.102.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_102 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_102
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.103
+    title = dsi.103.name
+    desc = dsi.103.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_103 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_103
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.104
+    title = dsi.104.name
+    desc = dsi.104.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_104 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_104
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.105
+    title = dsi.105.name
+    desc = dsi.105.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_105 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_105
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.106
+    title = dsi.106.name
+    desc = dsi.106.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_106 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_106
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.107
+    title = dsi.107.name
+    desc = dsi.107.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_107 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_107
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.108
+    title = dsi.108.name
+    desc = dsi.108.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_108 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_108
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.109
+    title = dsi.109.name
+    desc = dsi.109.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_109 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_109
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.110
+    title = dsi.110.name
+    desc = dsi.110.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_110 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_110
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.111
+    title = dsi.111.name
+    desc = dsi.111.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_111 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_111
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.112
+    title = dsi.112.name
+    desc = dsi.112.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_112 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_112
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.113
+    title = dsi.113.name
+    desc = dsi.113.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_113 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_113
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.114
+    title = dsi.114.name
+    desc = dsi.114.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_114 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_114
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.115
+    title = dsi.115.name
+    desc = dsi.115.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_115 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_115
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.116
+    title = dsi.116.name
+    desc = dsi.116.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_116 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_116
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.117
+    title = dsi.117.name
+    desc = dsi.117.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_117 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_117
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.118
+    title = dsi.118.name
+    desc = dsi.118.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_118 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_118
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.119
+    title = dsi.119.name
+    desc = dsi.119.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_119 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_119
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.120
+    title = dsi.120.name
+    desc = dsi.120.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_120 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_120
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.121
+    title = dsi.121.name
+    desc = dsi.121.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_121 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_121
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.122
+    title = dsi.122.name
+    desc = dsi.122.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_122 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_122
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.123
+    title = dsi.123.name
+    desc = dsi.123.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_123 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_123
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.124
+    title = dsi.124.name
+    desc = dsi.124.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_124 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_124
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.125
+    title = dsi.125.name
+    desc = dsi.125.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_125 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_125
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.126
+    title = dsi.126.name
+    desc = dsi.126.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_126 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_126
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.127
+    title = dsi.127.name
+    desc = dsi.127.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_127 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_127
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.128
+    title = dsi.128.name
+    desc = dsi.128.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_128 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_128
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.129
+    title = dsi.129.name
+    desc = dsi.129.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_129 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_129
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.130
+    title = dsi.130.name
+    desc = dsi.130.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_130 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_130
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.131
+    title = dsi.131.name
+    desc = dsi.131.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_131 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_131
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.132
+    title = dsi.132.name
+    desc = dsi.132.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_132 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_132
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.133
+    title = dsi.133.name
+    desc = dsi.133.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_133 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_133
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.134
+    title = dsi.134.name
+    desc = dsi.134.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_134 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_134
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.135
+    title = dsi.135.name
+    desc = dsi.135.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_135 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_135
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.136
+    title = dsi.136.name
+    desc = dsi.136.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_136 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_136
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.137
+    title = dsi.137.name
+    desc = dsi.137.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_137 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_137
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.138
+    title = dsi.138.name
+    desc = dsi.138.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_138 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_138
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.139
+    title = dsi.139.name
+    desc = dsi.139.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_139 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_139
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.140
+    title = dsi.140.name
+    desc = dsi.140.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_140 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_140
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.141
+    title = dsi.141.name
+    desc = dsi.141.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_141 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_141
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.142
+    title = dsi.142.name
+    desc = dsi.142.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_142 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_142
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.143
+    title = dsi.143.name
+    desc = dsi.143.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_143 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_143
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.144
+    title = dsi.144.name
+    desc = dsi.144.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_144 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_144
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.145
+    title = dsi.145.name
+    desc = dsi.145.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_145 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_145
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.146
+    title = dsi.146.name
+    desc = dsi.146.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_146 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_146
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.147
+    title = dsi.147.name
+    desc = dsi.147.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_147 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_147
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.148
+    title = dsi.148.name
+    desc = dsi.148.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_148 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_148
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.149
+    title = dsi.149.name
+    desc = dsi.149.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_149 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_149
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.150
+    title = dsi.150.name
+    desc = dsi.150.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_150 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_150
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.151
+    title = dsi.151.name
+    desc = dsi.151.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_151 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_151
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.152
+    title = dsi.152.name
+    desc = dsi.152.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_152 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_152
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.153
+    title = dsi.153.name
+    desc = dsi.153.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_153 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_153
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.154
+    title = dsi.154.name
+    desc = dsi.154.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_154 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_154
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.155
+    title = dsi.155.name
+    desc = dsi.155.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_155 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_155
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.156
+    title = dsi.156.name
+    desc = dsi.156.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_156 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_156
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.157
+    title = dsi.157.name
+    desc = dsi.157.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_157 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_157
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.158
+    title = dsi.158.name
+    desc = dsi.158.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_158 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_158
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.159
+    title = dsi.159.name
+    desc = dsi.159.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_159 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_159
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.160
+    title = dsi.160.name
+    desc = dsi.160.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_160 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_160
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.161
+    title = dsi.161.name
+    desc = dsi.161.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_161 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_161
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.162
+    title = dsi.162.name
+    desc = dsi.162.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_162 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_162
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.163
+    title = dsi.163.name
+    desc = dsi.163.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_163 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_163
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.164
+    title = dsi.164.name
+    desc = dsi.164.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_164 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_164
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.165
+    title = dsi.165.name
+    desc = dsi.165.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_165 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_165
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.166
+    title = dsi.166.name
+    desc = dsi.166.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_166 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_166
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.167
+    title = dsi.167.name
+    desc = dsi.167.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_167 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_167
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.168
+    title = dsi.168.name
+    desc = dsi.168.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_168 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_168
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.169
+    title = dsi.169.name
+    desc = dsi.169.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_169 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_169
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.170
+    title = dsi.170.name
+    desc = dsi.170.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_170 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_170
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.171
+    title = dsi.171.name
+    desc = dsi.171.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_171 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_171
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.172
+    title = dsi.172.name
+    desc = dsi.172.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_172 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_172
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.173
+    title = dsi.173.name
+    desc = dsi.173.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_173 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_173
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.174
+    title = dsi.174.name
+    desc = dsi.174.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_174 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_174
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.175
+    title = dsi.175.name
+    desc = dsi.175.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_175 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_175
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.176
+    title = dsi.176.name
+    desc = dsi.176.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_176 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_176
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.177
+    title = dsi.177.name
+    desc = dsi.177.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_177 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_177
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.178
+    title = dsi.178.name
+    desc = dsi.178.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_178 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_178
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.179
+    title = dsi.179.name
+    desc = dsi.179.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_179 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_179
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.180
+    title = dsi.180.name
+    desc = dsi.180.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_180 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_180
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.181
+    title = dsi.181.name
+    desc = dsi.181.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_181 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_181
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.182
+    title = dsi.182.name
+    desc = dsi.182.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_182 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_182
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.183
+    title = dsi.183.name
+    desc = dsi.183.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_183 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_183
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.184
+    title = dsi.184.name
+    desc = dsi.184.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_184 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_184
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.185
+    title = dsi.185.name
+    desc = dsi.185.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_185 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_185
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.186
+    title = dsi.186.name
+    desc = dsi.186.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_186 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_186
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.187
+    title = dsi.187.name
+    desc = dsi.187.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_187 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_187
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.188
+    title = dsi.188.name
+    desc = dsi.188.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_188 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_188
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.189
+    title = dsi.189.name
+    desc = dsi.189.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_189 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_189
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.190
+    title = dsi.190.name
+    desc = dsi.190.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_190 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_190
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.191
+    title = dsi.191.name
+    desc = dsi.191.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_191 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_191
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.192
+    title = dsi.192.name
+    desc = dsi.192.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_192 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_192
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.193
+    title = dsi.193.name
+    desc = dsi.193.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_193 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_193
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.194
+    title = dsi.194.name
+    desc = dsi.194.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_194 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_194
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.195
+    title = dsi.195.name
+    desc = dsi.195.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_195 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_195
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.196
+    title = dsi.196.name
+    desc = dsi.196.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_196 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_196
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.197
+    title = dsi.197.name
+    desc = dsi.197.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_197 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_197
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.198
+    title = dsi.198.name
+    desc = dsi.198.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_198 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_198
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.199
+    title = dsi.199.name
+    desc = dsi.199.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_199 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_199
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.200
+    title = dsi.200.name
+    desc = dsi.200.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_200 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_200
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.201
+    title = dsi.201.name
+    desc = dsi.201.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_201 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_201
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.202
+    title = dsi.202.name
+    desc = dsi.202.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_202 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_202
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.203
+    title = dsi.203.name
+    desc = dsi.203.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_203 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_203
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.204
+    title = dsi.204.name
+    desc = dsi.204.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_204 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_204
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.205
+    title = dsi.205.name
+    desc = dsi.205.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_205 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_205
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.206
+    title = dsi.206.name
+    desc = dsi.206.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_206 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_206
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.207
+    title = dsi.207.name
+    desc = dsi.207.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_207 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_207
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.208
+    title = dsi.208.name
+    desc = dsi.208.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_208 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_208
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.209
+    title = dsi.209.name
+    desc = dsi.209.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_209 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_209
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.210
+    title = dsi.210.name
+    desc = dsi.210.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_210 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_210
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.211
+    title = dsi.211.name
+    desc = dsi.211.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_211 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_211
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.212
+    title = dsi.212.name
+    desc = dsi.212.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_212 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_212
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.213
+    title = dsi.213.name
+    desc = dsi.213.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_213 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_213
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.214
+    title = dsi.214.name
+    desc = dsi.214.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_214 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_214
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.215
+    title = dsi.215.name
+    desc = dsi.215.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_215 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_215
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.216
+    title = dsi.216.name
+    desc = dsi.216.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_216 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_216
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.217
+    title = dsi.217.name
+    desc = dsi.217.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_217 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_217
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.218
+    title = dsi.218.name
+    desc = dsi.218.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_218 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_218
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.219
+    title = dsi.219.name
+    desc = dsi.219.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_219 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_219
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.220
+    title = dsi.220.name
+    desc = dsi.220.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_220 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_220
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.221
+    title = dsi.221.name
+    desc = dsi.221.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_221 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_221
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.222
+    title = dsi.222.name
+    desc = dsi.222.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_222 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_222
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.223
+    title = dsi.223.name
+    desc = dsi.223.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_223 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_223
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.224
+    title = dsi.224.name
+    desc = dsi.224.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_224 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_224
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.225
+    title = dsi.225.name
+    desc = dsi.225.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_225 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_225
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.226
+    title = dsi.226.name
+    desc = dsi.226.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_226 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_226
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.227
+    title = dsi.227.name
+    desc = dsi.227.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_227 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_227
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.228
+    title = dsi.228.name
+    desc = dsi.228.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_228 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_228
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.229
+    title = dsi.229.name
+    desc = dsi.229.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_229 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_229
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.230
+    title = dsi.230.name
+    desc = dsi.230.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_230 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_230
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.231
+    title = dsi.231.name
+    desc = dsi.231.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_231 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_231
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.232
+    title = dsi.232.name
+    desc = dsi.232.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_232 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_232
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.233
+    title = dsi.233.name
+    desc = dsi.233.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_233 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_233
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.234
+    title = dsi.234.name
+    desc = dsi.234.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_234 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_234
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.235
+    title = dsi.235.name
+    desc = dsi.235.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_235 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_235
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.236
+    title = dsi.236.name
+    desc = dsi.236.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_236 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_236
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.237
+    title = dsi.237.name
+    desc = dsi.237.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_237 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_237
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.238
+    title = dsi.238.name
+    desc = dsi.238.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_238 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_238
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.239
+    title = dsi.239.name
+    desc = dsi.239.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_239 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_239
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.240
+    title = dsi.240.name
+    desc = dsi.240.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_240 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_240
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.241
+    title = dsi.241.name
+    desc = dsi.241.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_241 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_241
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.242
+    title = dsi.242.name
+    desc = dsi.242.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_242 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_242
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.243
+    title = dsi.243.name
+    desc = dsi.243.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_243 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_243
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.244
+    title = dsi.244.name
+    desc = dsi.244.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_244 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_244
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.245
+    title = dsi.245.name
+    desc = dsi.245.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_245 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_245
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.246
+    title = dsi.246.name
+    desc = dsi.246.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_246 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_246
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.247
+    title = dsi.247.name
+    desc = dsi.247.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_247 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_247
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.248
+    title = dsi.248.name
+    desc = dsi.248.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_248 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_248
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.249
+    title = dsi.249.name
+    desc = dsi.249.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_249 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_249
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.250
+    title = dsi.250.name
+    desc = dsi.250.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_250 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_250
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.251
+    title = dsi.251.name
+    desc = dsi.251.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_251 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_251
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.252
+    title = dsi.252.name
+    desc = dsi.252.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_252 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_252
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.253
+    title = dsi.253.name
+    desc = dsi.253.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_253 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_253
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.254
+    title = dsi.254.name
+    desc = dsi.254.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_254 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_254
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.255
+    title = dsi.255.name
+    desc = dsi.255.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_255 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_255
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.256
+    title = dsi.256.name
+    desc = dsi.256.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_256 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_256
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.257
+    title = dsi.257.name
+    desc = dsi.257.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_257 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_257
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.258
+    title = dsi.258.name
+    desc = dsi.258.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_258 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_258
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.259
+    title = dsi.259.name
+    desc = dsi.259.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_259 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_259
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.260
+    title = dsi.260.name
+    desc = dsi.260.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_260 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_260
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.261
+    title = dsi.261.name
+    desc = dsi.261.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_261 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_261
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.262
+    title = dsi.262.name
+    desc = dsi.262.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_262 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_262
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.263
+    title = dsi.263.name
+    desc = dsi.263.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_263 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_263
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.264
+    title = dsi.264.name
+    desc = dsi.264.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_264 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_264
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.265
+    title = dsi.265.name
+    desc = dsi.265.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_265 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_265
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.266
+    title = dsi.266.name
+    desc = dsi.266.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_266 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_266
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.267
+    title = dsi.267.name
+    desc = dsi.267.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_267 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_267
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.268
+    title = dsi.268.name
+    desc = dsi.268.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_268 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_268
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.269
+    title = dsi.269.name
+    desc = dsi.269.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_269 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_269
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.270
+    title = dsi.270.name
+    desc = dsi.270.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_270 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_270
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.271
+    title = dsi.271.name
+    desc = dsi.271.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_271 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_271
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.272
+    title = dsi.272.name
+    desc = dsi.272.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_272 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_272
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.273
+    title = dsi.273.name
+    desc = dsi.273.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_273 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_273
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.274
+    title = dsi.274.name
+    desc = dsi.274.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_274 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_274
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.275
+    title = dsi.275.name
+    desc = dsi.275.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_275 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_275
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.276
+    title = dsi.276.name
+    desc = dsi.276.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_276 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_276
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.277
+    title = dsi.277.name
+    desc = dsi.277.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_277 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_277
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.278
+    title = dsi.278.name
+    desc = dsi.278.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_278 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_278
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.279
+    title = dsi.279.name
+    desc = dsi.279.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_279 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_279
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.280
+    title = dsi.280.name
+    desc = dsi.280.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_280 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_280
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.281
+    title = dsi.281.name
+    desc = dsi.281.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_281 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_281
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.282
+    title = dsi.282.name
+    desc = dsi.282.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_282 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_282
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.283
+    title = dsi.283.name
+    desc = dsi.283.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_283 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_283
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.284
+    title = dsi.284.name
+    desc = dsi.284.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_284 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_284
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.285
+    title = dsi.285.name
+    desc = dsi.285.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_285 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_285
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.286
+    title = dsi.286.name
+    desc = dsi.286.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_286 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_286
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.287
+    title = dsi.287.name
+    desc = dsi.287.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_287 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_287
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.288
+    title = dsi.288.name
+    desc = dsi.288.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_288 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_288
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.289
+    title = dsi.289.name
+    desc = dsi.289.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_289 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_289
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.290
+    title = dsi.290.name
+    desc = dsi.290.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_290 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_290
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.291
+    title = dsi.291.name
+    desc = dsi.291.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_291 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_291
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.292
+    title = dsi.292.name
+    desc = dsi.292.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_292 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_292
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.293
+    title = dsi.293.name
+    desc = dsi.293.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_293 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_293
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.294
+    title = dsi.294.name
+    desc = dsi.294.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_294 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_294
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.295
+    title = dsi.295.name
+    desc = dsi.295.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_295 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_295
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.296
+    title = dsi.296.name
+    desc = dsi.296.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_296 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_296
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.297
+    title = dsi.297.name
+    desc = dsi.297.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_297 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_297
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.298
+    title = dsi.298.name
+    desc = dsi.298.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_298 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_298
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.299
+    title = dsi.299.name
+    desc = dsi.299.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_299 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_299
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.300
+    title = dsi.300.name
+    desc = dsi.300.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_300 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_300
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}
+
+country_event = {
+    id = dsi.301
+    title = dsi.301.name
+    desc = dsi.301.desc
+    picture = GFX_dsi_evt_agents
+    show_sound = dsi_casefile_open
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        has_country_flag = dsi_department_active
+        NOT = { has_country_flag = dsi_seen_301 }
+    }
+
+    immediate = {
+        set_country_flag = dsi_seen_301
+    }
+
+    option = {
+        name = dsi.log_and_file
+    }
+}

@@ -1,0 +1,10 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_dsi_evt_01"
+        texturefile = "gfx/event_pictures/dsi_evt_01.dds"
+    }
+    spriteType = {
+        name = "GFX_dsi_evt_agents"
+        texturefile = "gfx/event_pictures/dsi_evt_agents.dds"
+    }
+}

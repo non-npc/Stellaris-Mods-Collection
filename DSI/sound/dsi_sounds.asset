@@ -1,0 +1,21 @@
+category = {
+    name = "Effects"
+    soundeffects = {
+        dsi_casefile_open
+    }
+}
+
+sound = {
+    name = "dsi_casefile_open"
+    file = "event/dsi_casefile_open.wav"
+    volume = 0.80
+}
+
+soundeffect = {
+    name = dsi_casefile_open
+    sounds = {
+        sound = dsi_casefile_open
+    }
+    max_audible = 1
+    max_audible_behaviour = fail
+}
