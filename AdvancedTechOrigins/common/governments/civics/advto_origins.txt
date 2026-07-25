@@ -1,0 +1,72 @@
+# Advanced Tech Origins
+# Human-only origins. Technology is granted by advto.1 during game setup.
+
+origin_advto_tier_1 = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_default.dds"
+	picture = GFX_origin_advto_tier_1
+	description = "origin_advto_tier_1_effects"
+	flags = { custom_start_screen }
+
+	playable = { always = yes }
+	ai_playable = { always = no }
+	possible = { is_nomadic = no }
+	ai_weight = { weight = 0 }
+	random_weight = { base = 0 }
+}
+
+origin_advto_tier_2 = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_mechanist.dds"
+	picture = GFX_origin_advto_tier_2
+	description = "origin_advto_tier_2_effects"
+	flags = { custom_start_screen }
+
+	playable = { always = yes }
+	ai_playable = { always = no }
+	possible = { is_nomadic = no }
+	ai_weight = { weight = 0 }
+	random_weight = { base = 0 }
+}
+
+origin_advto_tier_3 = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_remnant.dds"
+	picture = GFX_origin_advto_tier_3
+	description = "origin_advto_tier_3_effects"
+	flags = { custom_start_screen }
+
+	playable = { always = yes }
+	ai_playable = { always = no }
+	possible = { is_nomadic = no }
+	ai_weight = { weight = 0 }
+	random_weight = { base = 0 }
+}
+
+origin_advto_tier_4 = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_shattered_ring.dds"
+	picture = GFX_origin_advto_tier_4
+	description = "origin_advto_tier_4_effects"
+	flags = { custom_start_screen }
+
+	playable = { always = yes }
+	ai_playable = { always = no }
+	possible = { is_nomadic = no }
+	ai_weight = { weight = 0 }
+	random_weight = { base = 0 }
+}
+
+origin_advto_tier_5 = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_gateway.dds"
+	picture = GFX_origin_advto_tier_5
+	description = "origin_advto_tier_5_effects"
+	flags = { custom_start_screen }
+
+	playable = { always = yes }
+	ai_playable = { always = no }
+	possible = { is_nomadic = no }
+	ai_weight = { weight = 0 }
+	random_weight = { base = 0 }
+}

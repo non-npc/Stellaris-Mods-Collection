@@ -1,0 +1,6 @@
+# Run after vanilla country setup so all origin-selected player empires exist.
+on_game_start_country = {
+	events = {
+		advto.1
+	}
+}

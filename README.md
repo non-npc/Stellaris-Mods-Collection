@@ -11,6 +11,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=3733815669
 
 ## Mods and Repo Links
 
+- [Advanced Tech Origins](https://github.com/non-npc/Stellaris-Mods-Collection/tree/master/AdvancedTechOrigins)
 - [Ambient Civilization Lore Pack](https://github.com/non-npc/Stellaris-Mods-Collection/tree/master/AmbientCivilizationLorePack)
 - [Bad Diplomacy](https://github.com/non-npc/Stellaris-Mods-Collection/tree/master/BadDiplomacy)
 - [Battle Perks](https://github.com/non-npc/Stellaris-Mods-Collection/tree/master/BattlePerks)

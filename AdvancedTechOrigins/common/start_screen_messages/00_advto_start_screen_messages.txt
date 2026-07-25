@@ -1,0 +1,49 @@
+# Advanced Tech Origins start-screen biographies.
+# This file intentionally sorts before vanilla's 00_start_screen_messages.txt.
+# Start-screen locations keep the first valid part, so our selected origin must
+# claim location 0 before a prescripted UNE, Commonwealth, or other biography.
+
+part = {
+	location = 0
+	localization = "START_SCREEN_ADVTO_TIER_1"
+
+	trigger = {
+		has_origin = origin_advto_tier_1
+	}
+}
+
+part = {
+	location = 0
+	localization = "START_SCREEN_ADVTO_TIER_2"
+
+	trigger = {
+		has_origin = origin_advto_tier_2
+	}
+}
+
+part = {
+	location = 0
+	localization = "START_SCREEN_ADVTO_TIER_3"
+
+	trigger = {
+		has_origin = origin_advto_tier_3
+	}
+}
+
+part = {
+	location = 0
+	localization = "START_SCREEN_ADVTO_TIER_4"
+
+	trigger = {
+		has_origin = origin_advto_tier_4
+	}
+}
+
+part = {
+	location = 0
+	localization = "START_SCREEN_ADVTO_TIER_5"
+
+	trigger = {
+		has_origin = origin_advto_tier_5
+	}
+}

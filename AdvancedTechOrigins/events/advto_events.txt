@@ -1,0 +1,43 @@
+namespace = advto
+
+# Dispatch the selected Advanced Tech Origin to its tiered scripted effect.
+country_event = {
+	id = advto.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+		OR = {
+			has_origin = origin_advto_tier_1
+			has_origin = origin_advto_tier_2
+			has_origin = origin_advto_tier_3
+			has_origin = origin_advto_tier_4
+			has_origin = origin_advto_tier_5
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = { has_origin = origin_advto_tier_1 }
+			advto_grant_tier_1 = yes
+		}
+		else_if = {
+			limit = { has_origin = origin_advto_tier_2 }
+			advto_grant_tier_2 = yes
+		}
+		else_if = {
+			limit = { has_origin = origin_advto_tier_3 }
+			advto_grant_tier_3 = yes
+		}
+		else_if = {
+			limit = { has_origin = origin_advto_tier_4 }
+			advto_grant_tier_4 = yes
+		}
+		else_if = {
+			limit = { has_origin = origin_advto_tier_5 }
+			advto_grant_tier_5 = yes
+		}
+		set_country_flag = advto_technology_granted
+	}
+}

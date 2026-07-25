@@ -1,0 +1,2858 @@
+# Advanced Tech Origins
+# Master technology list built from Stellaris 4.4.6 definitions.
+# Review individual grants when updating for a new Stellaris release.
+# Technology potential blocks are reused as grant-time limits, providing DLC
+# and empire-type awareness without hard-coding DLC ownership in this mod.
+
+advto_grant_tier_1 = {
+	# 114 eligible technology definitions at engine tiers 0-1.
+	# tech_assault_armies (00_eng_tech.txt)
+	give_technology = { tech = tech_assault_armies message = no }
+	# tech_basic_health (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_regular_empire = yes
+            		is_individual_machine = no
+		}
+		give_technology = { tech = tech_basic_health message = no }
+	}
+	# tech_basic_industry (00_eng_tech.txt)
+	give_technology = { tech = tech_basic_industry message = no }
+	# tech_basic_science_lab_1 (00_phys_tech.txt)
+	if = {
+		limit = {
+            is_low_tech_start = no
+		}
+		give_technology = { tech = tech_basic_science_lab_1 message = no }
+	}
+	# tech_colonization_1 (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_colonization_1 message = no }
+	}
+	# tech_corvettes (00_eng_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = no
+		}
+		give_technology = { tech = tech_corvettes message = no }
+	}
+	# tech_critter_feeder (00_plantoids_tech.txt)
+	if = {
+		limit = {
+            has_origin = origin_fruitful
+		}
+		give_technology = { tech = tech_critter_feeder message = no }
+	}
+	# tech_fission_power (00_phys_tech.txt)
+	give_technology = { tech = tech_fission_power message = no }
+	# tech_flak_batteries_1 (00_eng_weapon_tech.txt)
+	give_technology = { tech = tech_flak_batteries_1 message = no }
+	# tech_hive_node (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_hive_empire = yes
+            		is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_hive_node message = no }
+	}
+	# tech_holo_entertainment (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_gestalt = no
+		}
+		give_technology = { tech = tech_holo_entertainment message = no }
+	}
+	# tech_hydroponics (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_hydroponics message = no }
+	}
+	# tech_hyper_drive_1 (00_phys_tech.txt)
+	if = {
+		limit = {
+            is_eager_explorer_empire = no
+		}
+		give_technology = { tech = tech_hyper_drive_1 message = no }
+	}
+	# tech_industrial_farming (00_soc_tech.txt)
+	give_technology = { tech = tech_industrial_farming message = no }
+	# tech_interplanetary_commerce (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_gestalt = no
+		}
+		give_technology = { tech = tech_interplanetary_commerce message = no }
+	}
+	# tech_lasers_1 (00_phys_weapon_tech.txt)
+	give_technology = { tech = tech_lasers_1 message = no }
+	# tech_mass_drivers_1 (00_eng_weapon_tech.txt)
+	give_technology = { tech = tech_mass_drivers_1 message = no }
+	# tech_mechanized_mining (00_eng_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_mechanized_mining message = no }
+	}
+	# tech_missiles_1 (00_eng_weapon_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			country_uses_bio_ships = no
+            
+            			has_tradition = tr_nanotech_4
+            			has_crisis_level = crisis_level_2
+            			has_technology = tech_cosmogenesis_escort
+            		}
+		}
+		give_technology = { tech = tech_missiles_1 message = no }
+	}
+	# tech_nomads_mechanized_mining (00_nomads_dlc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = yes
+		}
+		give_technology = { tech = tech_nomads_mechanized_mining message = no }
+	}
+	# tech_pd_tracking_1 (00_phys_weapon_tech.txt)
+	give_technology = { tech = tech_pd_tracking_1 message = no }
+	# tech_planetary_defenses (00_soc_tech.txt)
+	give_technology = { tech = tech_planetary_defenses message = no }
+	# tech_planetary_government (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_low_tech_start = no
+		}
+		give_technology = { tech = tech_planetary_government message = no }
+	}
+	# tech_power_plant_1 (00_phys_tech.txt)
+	give_technology = { tech = tech_power_plant_1 message = no }
+	# tech_reactor_boosters_1 (00_phys_tech.txt)
+	give_technology = { tech = tech_reactor_boosters_1 message = no }
+	# tech_shields_1 (00_phys_tech.txt)
+	give_technology = { tech = tech_shields_1 message = no }
+	# tech_ship_armor_1 (00_eng_tech.txt)
+	give_technology = { tech = tech_ship_armor_1 message = no }
+	# tech_solar_panel_network (00_eng_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_solar_panel_network message = no }
+	}
+	# tech_space_construction (00_eng_tech.txt)
+	give_technology = { tech = tech_space_construction message = no }
+	# tech_space_defense_station_1 (00_eng_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_space_defense_station_1 message = no }
+	}
+	# tech_space_exploration (00_phys_tech.txt)
+	give_technology = { tech = tech_space_exploration message = no }
+	# tech_starbase_1 (00_eng_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_starbase_1 message = no }
+	}
+	# tech_starbase_2 (00_eng_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_starbase_2 message = no }
+	}
+	# tech_subspace_drive (00_first_contact_tech.txt)
+	if = {
+		limit = {
+            has_first_contact_dlc = yes
+		}
+		give_technology = { tech = tech_subspace_drive message = no }
+	}
+	# tech_thrusters_1 (00_eng_tech.txt)
+	give_technology = { tech = tech_thrusters_1 message = no }
+	# tech_waystation_1 (00_nomads_dlc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = yes
+		}
+		give_technology = { tech = tech_waystation_1 message = no }
+	}
+	# tech_wilderness_node (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = yes
+		}
+		give_technology = { tech = tech_wilderness_node message = no }
+	}
+	# tech_wilderness_terraform (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = yes
+		}
+		give_technology = { tech = tech_wilderness_terraform message = no }
+	}
+	# tech_adaptive_bureaucracy (00_soc_tech.txt)
+	give_technology = { tech = tech_adaptive_bureaucracy message = no }
+	# tech_administrative_ai (00_phys_tech.txt)
+	give_technology = { tech = tech_administrative_ai message = no }
+	# tech_afterburners_1 (00_eng_tech.txt)
+	give_technology = { tech = tech_afterburners_1 message = no }
+	# tech_alien_life_studies (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_regular_empire = yes
+		}
+		give_technology = { tech = tech_alien_life_studies message = no }
+	}
+	# tech_alloys_1 (00_eng_tech.txt)
+	give_technology = { tech = tech_alloys_1 message = no }
+	# tech_automated_exploration (00_phys_tech.txt)
+	give_technology = { tech = tech_automated_exploration message = no }
+	# tech_auxiliary_fire_control (00_phys_tech.txt)
+	give_technology = { tech = tech_auxiliary_fire_control message = no }
+	# tech_basic_science_lab_2 (00_phys_tech.txt)
+	give_technology = { tech = tech_basic_science_lab_2 message = no }
+	# tech_bio_reactor (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_bio_reactor message = no }
+	}
+	# tech_combat_computers_1 (00_phys_tech.txt)
+	give_technology = { tech = tech_combat_computers_1 message = no }
+	# tech_corvette_build_speed (00_eng_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = no
+		}
+		give_technology = { tech = tech_corvette_build_speed message = no }
+	}
+	# tech_corvette_hull_1 (00_eng_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = no
+		}
+		give_technology = { tech = tech_corvette_hull_1 message = no }
+	}
+	# tech_cryostasis_1 (00_phys_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_cryostasis_1 message = no }
+	}
+	# tech_cultural_heritage (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_cultural_heritage message = no }
+	}
+	# tech_decryption_1 (00_phys_tech.txt)
+	give_technology = { tech = tech_decryption_1 message = no }
+	# tech_deep_sinkhole (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_deep_sinkhole message = no }
+	}
+	# tech_dense_jungle (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_dense_jungle message = no }
+	}
+	# tech_doctrine_fleet_size_1 (00_soc_tech.txt)
+	give_technology = { tech = tech_doctrine_fleet_size_1 message = no }
+	# tech_doctrine_navy_size_1 (00_soc_tech.txt)
+	give_technology = { tech = tech_doctrine_navy_size_1 message = no }
+	# tech_eco_simulation (00_soc_tech.txt)
+	give_technology = { tech = tech_eco_simulation message = no }
+	# tech_encryption_1 (00_phys_tech.txt)
+	give_technology = { tech = tech_encryption_1 message = no }
+	# tech_engineering_1 (00_eng_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_engineering_1 message = no }
+	}
+	# tech_federation_code (00_soc_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            
+            			days_passed = 0
+            
+            			any_relation = {
+            				can_form_federation_with_empire = yes
+            			}
+            			has_tradition = tr_diplomacy_adopt
+            		}
+		}
+		give_technology = { tech = tech_federation_code message = no }
+	}
+	# tech_food_processing_1 (00_soc_tech.txt)
+	give_technology = { tech = tech_food_processing_1 message = no }
+	# tech_frontier_health (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_regular_empire = yes
+            		is_individual_machine = no
+		}
+		give_technology = { tech = tech_frontier_health message = no }
+	}
+	# tech_fusion_power (00_phys_tech.txt)
+	give_technology = { tech = tech_fusion_power message = no }
+	# tech_genome_mapping (00_soc_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			is_machine_empire = no
+            			has_civic = civic_machine_assimilator
+            			has_civic = civic_machine_servitor
+            			has_civic = civic_machine_guided_sapience
+            		}
+		}
+		give_technology = { tech = tech_genome_mapping message = no }
+	}
+	# tech_ground_defense_planning (00_soc_tech.txt)
+	give_technology = { tech = tech_ground_defense_planning message = no }
+	# tech_hyper_entertainment_forum (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_gestalt = no
+		}
+		give_technology = { tech = tech_hyper_entertainment_forum message = no }
+	}
+	# tech_industrial_storm_protection (00_cosmic_storm_tech.txt)
+	if = {
+		limit = {
+            has_cosmic_storms_dlc = yes
+		}
+		give_technology = { tech = tech_industrial_storm_protection message = no }
+	}
+	# tech_lasers_2 (00_phys_weapon_tech.txt)
+	give_technology = { tech = tech_lasers_2 message = no }
+	# tech_luxuries_1 (00_eng_tech.txt)
+	if = {
+		limit = {
+            country_uses_consumer_goods = yes
+		}
+		give_technology = { tech = tech_luxuries_1 message = no }
+	}
+	# tech_mass_drivers_2 (00_eng_weapon_tech.txt)
+	give_technology = { tech = tech_mass_drivers_2 message = no }
+	# tech_massive_glacier (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_massive_glacier message = no }
+	}
+	# tech_mauler_build_speed (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_mauler_build_speed message = no }
+	}
+	# tech_mauler_growth_1 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_mauler_growth_1 message = no }
+	}
+	# tech_mauler_growth_2 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_mauler_growth_2 message = no }
+	}
+	# tech_maulers (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_maulers message = no }
+	}
+	# tech_mineral_purification_1 (00_eng_tech.txt)
+	give_technology = { tech = tech_mineral_purification_1 message = no }
+	# tech_mining_1 (00_eng_tech.txt)
+	give_technology = { tech = tech_mining_1 message = no }
+	# tech_missiles_2 (00_eng_weapon_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = no
+		}
+		give_technology = { tech = tech_missiles_2 message = no }
+	}
+	# tech_neural_implants (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_regular_empire = yes
+            		allows_slavery = yes
+		}
+		give_technology = { tech = tech_neural_implants message = no }
+	}
+	# tech_noxious_swamp (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_noxious_swamp message = no }
+	}
+	# tech_physics_1 (00_phys_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_physics_1 message = no }
+	}
+	# tech_planetary_unification (00_soc_tech.txt)
+	give_technology = { tech = tech_planetary_unification message = no }
+	# tech_power_hub_1 (00_phys_tech.txt)
+	give_technology = { tech = tech_power_hub_1 message = no }
+	# tech_power_plant_2 (00_phys_tech.txt)
+	give_technology = { tech = tech_power_plant_2 message = no }
+	# tech_powered_exoskeletons (00_eng_tech.txt)
+	give_technology = { tech = tech_powered_exoskeletons message = no }
+	# tech_quicksand_basin (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_quicksand_basin message = no }
+	}
+	# tech_reactor_boosters_2 (00_phys_tech.txt)
+	give_technology = { tech = tech_reactor_boosters_2 message = no }
+	# tech_reactor_boosters_3 (00_phys_tech.txt)
+	give_technology = { tech = tech_reactor_boosters_3 message = no }
+	# tech_robomodding (00_synthetic_dawn_tech.txt)
+	if = {
+		limit = {
+            NOR = {
+            			has_ethic = "ethic_gestalt_consciousness"
+            			is_individual_machine = yes
+            		}
+		}
+		give_technology = { tech = tech_robomodding message = no }
+	}
+	# tech_robomodding_m (00_synthetic_dawn_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			is_machine_empire = yes
+            			is_individual_machine = yes
+            			is_hive_empire_with_machines = yes
+            		}
+		}
+		give_technology = { tech = tech_robomodding_m message = no }
+	}
+	# tech_robotic_workers (00_eng_tech.txt)
+	if = {
+		limit = {
+            NOR = {
+            			has_ethic = "ethic_gestalt_consciousness"
+            			is_individual_machine = yes
+            		}
+		}
+		give_technology = { tech = tech_robotic_workers message = no }
+	}
+	# tech_shields_2 (00_phys_tech.txt)
+	give_technology = { tech = tech_shields_2 message = no }
+	# tech_ship_armor_2 (00_eng_tech.txt)
+	give_technology = { tech = tech_ship_armor_2 message = no }
+	# tech_ship_hull_storm_breaker_1 (00_cosmic_storm_tech.txt)
+	if = {
+		limit = {
+            has_cosmic_storms_dlc = yes
+		}
+		give_technology = { tech = tech_ship_hull_storm_breaker_1 message = no }
+	}
+	# tech_ship_storm_weapons_1 (00_cosmic_storm_tech.txt)
+	if = {
+		limit = {
+            has_cosmic_storms_dlc = yes
+		}
+		give_technology = { tech = tech_ship_storm_weapons_1 message = no }
+	}
+	# tech_society_1 (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_society_1 message = no }
+	}
+	# tech_space_mining_1 (00_eng_tech.txt)
+	give_technology = { tech = tech_space_mining_1 message = no }
+	# tech_space_mining_2 (00_eng_tech.txt)
+	give_technology = { tech = tech_space_mining_2 message = no }
+	# tech_space_science_1 (00_phys_tech.txt)
+	give_technology = { tech = tech_space_science_1 message = no }
+	# tech_space_science_2 (00_phys_tech.txt)
+	give_technology = { tech = tech_space_science_2 message = no }
+	# tech_space_trading (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_regular_empire = yes
+		}
+		give_technology = { tech = tech_space_trading message = no }
+	}
+	# tech_storm_prediction_1 (00_cosmic_storm_tech.txt)
+	if = {
+		limit = {
+            has_cosmic_storms_dlc = yes
+		}
+		give_technology = { tech = tech_storm_prediction_1 message = no }
+	}
+	# tech_strike_craft_1 (00_eng_tech.txt)
+	give_technology = { tech = tech_strike_craft_1 message = no }
+	# tech_torpedoes_1 (00_eng_weapon_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			country_uses_bio_ships = no
+            
+            			has_tradition = tr_nanotech_4
+            			has_crisis_level = crisis_level_2
+            			has_technology = tech_cosmogenesis_escort
+            		}
+		}
+		give_technology = { tech = tech_torpedoes_1 message = no }
+	}
+	# tech_toxic_kelp (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_toxic_kelp message = no }
+	}
+	# tech_weaver_bio_anti_evasion_1 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_anti_evasion_1 message = no }
+	}
+	# tech_weaver_bio_anti_fire_rate_1 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_anti_fire_rate_1 message = no }
+	}
+	# tech_weaver_bio_confuser_1 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_confuser_1 message = no }
+	}
+	# tech_weaver_bio_evasion_1 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_evasion_1 message = no }
+	}
+	# tech_weaver_bio_fire_rate_1 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_fire_rate_1 message = no }
+	}
+	# tech_weaver_bio_healing_1 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_healing_1 message = no }
+	}
+	# tech_weaver_build_speed (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_build_speed message = no }
+	}
+	# tech_weavers (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weavers message = no }
+	}
+}
+
+advto_grant_tier_2 = {
+	advto_grant_tier_1 = yes
+	# 130 eligible technology definitions at engine tier 2.
+	# tech_adaptive_combat_algorithms (00_synthetic_dawn_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			is_machine_empire = yes
+            			is_individual_machine = yes
+            		}
+		}
+		give_technology = { tech = tech_adaptive_combat_algorithms message = no }
+	}
+	# tech_advanced_industrial_storm_protection (00_cosmic_storm_tech.txt)
+	if = {
+		limit = {
+            has_cosmic_storms_dlc = yes
+            		is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_advanced_industrial_storm_protection message = no }
+	}
+	# tech_advanced_metallurgy_1 (00_eng_tech.txt)
+	give_technology = { tech = tech_advanced_metallurgy_1 message = no }
+	# tech_alien_cloning (00_grand_archive_tech.txt)
+	if = {
+		limit = {
+            has_grand_archive_dlc = yes
+            		OR = {
+            			is_beastmasters_empire = yes
+            			can_research_technology = tech_genome_mapping
+            		}
+		}
+		give_technology = { tech = tech_alien_cloning message = no }
+	}
+	# tech_arcane_deciphering (00_ancient_relics_tech.txt)
+	give_technology = { tech = tech_arcane_deciphering message = no }
+	# tech_archaeostudies (00_ancient_relics_tech.txt)
+	if = {
+		limit = {
+            has_ancrel = yes
+		}
+		give_technology = { tech = tech_archaeostudies message = no }
+	}
+	# tech_archeology_lab (00_phys_tech.txt)
+	if = {
+		limit = {
+            has_ancrel = no
+		}
+		give_technology = { tech = tech_archeology_lab message = no }
+	}
+	# tech_archeology_lab_ancrel (00_ancient_relics_tech.txt)
+	if = {
+		limit = {
+            has_ancrel = yes
+		}
+		give_technology = { tech = tech_archeology_lab_ancrel message = no }
+	}
+	# tech_armor_hardeners_1 (00_eng_tech.txt)
+	give_technology = { tech = tech_armor_hardeners_1 message = no }
+	# tech_artificial_moral_codes (00_soc_tech.txt)
+	if = {
+		limit = {
+            NOT = { has_ethic = ethic_gestalt_consciousness }
+		}
+		give_technology = { tech = tech_artificial_moral_codes message = no }
+	}
+	# tech_assembly_pattern (00_eng_tech.txt)
+	give_technology = { tech = tech_assembly_pattern message = no }
+	# tech_assisted_detection (00_first_contact_tech.txt)
+	if = {
+		limit = {
+            has_first_contact_dlc = yes
+		}
+		give_technology = { tech = tech_assisted_detection message = no }
+	}
+	# tech_astral_harvesting (00_astral_planes_tech.txt)
+	if = {
+		limit = {
+            has_astral_planes_dlc = yes
+		}
+		give_technology = { tech = tech_astral_harvesting message = no }
+	}
+	# tech_autocannons_1 (00_eng_weapon_tech.txt)
+	give_technology = { tech = tech_autocannons_1 message = no }
+	# tech_autonomous_agents (00_soc_tech.txt)
+	if = {
+		limit = {
+            has_ethic = ethic_gestalt_consciousness
+		}
+		give_technology = { tech = tech_autonomous_agents message = no }
+	}
+	# tech_bio_reactor_2 (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_bio_reactor_2 message = no }
+	}
+	# tech_capital_productivity_1 (00_soc_tech.txt)
+	give_technology = { tech = tech_capital_productivity_1 message = no }
+	# tech_cloaking_1 (00_first_contact_tech.txt)
+	if = {
+		limit = {
+            has_first_contact_dlc = yes
+		}
+		give_technology = { tech = tech_cloaking_1 message = no }
+	}
+	# tech_cloning (00_soc_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			is_machine_empire = no
+            			has_civic = civic_machine_assimilator
+            		}
+            		is_wilderness_empire = no
+            		is_natural_design_empire = no
+		}
+		give_technology = { tech = tech_cloning message = no }
+	}
+	# tech_cold_fusion_power (00_phys_tech.txt)
+	give_technology = { tech = tech_cold_fusion_power message = no }
+	# tech_colonial_bureaucracy (00_soc_tech.txt)
+	give_technology = { tech = tech_colonial_bureaucracy message = no }
+	# tech_colonial_centralization (00_soc_tech.txt)
+	give_technology = { tech = tech_colonial_centralization message = no }
+	# tech_colonization_2 (00_soc_tech.txt)
+	give_technology = { tech = tech_colonization_2 message = no }
+	# tech_colonization_3 (00_soc_tech.txt)
+	give_technology = { tech = tech_colonization_3 message = no }
+	# tech_consumer_good_refinement_1 (00_phys_tech.txt)
+	if = {
+		limit = {
+            country_uses_consumer_goods = yes
+		}
+		give_technology = { tech = tech_consumer_good_refinement_1 message = no }
+	}
+	# tech_controlled_mutations (00_grand_archive_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			is_beastmasters_empire = yes
+            			has_any_dna = yes
+            		}
+		}
+		give_technology = { tech = tech_controlled_mutations message = no }
+	}
+	# tech_corvette_hull_2 (00_eng_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = no
+		}
+		give_technology = { tech = tech_corvette_hull_2 message = no }
+	}
+	# tech_curator_lab (00_phys_tech.txt)
+	give_technology = { tech = tech_curator_lab message = no }
+	# tech_dangerous_wildlife (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_dangerous_wildlife message = no }
+	}
+	# tech_decryption_2 (00_phys_tech.txt)
+	give_technology = { tech = tech_decryption_2 message = no }
+	# tech_defense_platform_hull_1 (00_eng_tech.txt)
+	give_technology = { tech = tech_defense_platform_hull_1 message = no }
+	# tech_destroyer_build_speed (00_eng_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = no
+		}
+		give_technology = { tech = tech_destroyer_build_speed message = no }
+	}
+	# tech_destroyer_hull_1 (00_eng_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = no
+		}
+		give_technology = { tech = tech_destroyer_hull_1 message = no }
+	}
+	# tech_destroyers (00_eng_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = no
+		}
+		give_technology = { tech = tech_destroyers message = no }
+	}
+	# tech_detection_array (00_first_contact_tech.txt)
+	if = {
+		limit = {
+            has_first_contact_dlc = yes
+		}
+		give_technology = { tech = tech_detection_array message = no }
+	}
+	# tech_disruptors_1 (00_phys_weapon_tech.txt)
+	give_technology = { tech = tech_disruptors_1 message = no }
+	# tech_doctrine_fleet_size_2 (00_soc_tech.txt)
+	give_technology = { tech = tech_doctrine_fleet_size_2 message = no }
+	# tech_doctrine_navy_size_2 (00_soc_tech.txt)
+	give_technology = { tech = tech_doctrine_navy_size_2 message = no }
+	# tech_droid_workers (00_eng_tech.txt)
+	if = {
+		limit = {
+            NOR = {
+            			has_ethic = "ethic_gestalt_consciousness"
+            			is_individual_machine = yes
+            		}
+		}
+		give_technology = { tech = tech_droid_workers message = no }
+	}
+	# tech_effective_bureaucracy (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_gestalt = no
+		}
+		give_technology = { tech = tech_effective_bureaucracy message = no }
+	}
+	# tech_encryption_2 (00_phys_tech.txt)
+	give_technology = { tech = tech_encryption_2 message = no }
+	# tech_engineering_2 (00_eng_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_engineering_2 message = no }
+	}
+	# tech_epigenetic_triggers (00_soc_tech.txt)
+	if = {
+		limit = {
+            NOR = {
+            			has_valid_civic = civic_fanatic_purifiers
+            			is_natural_design_empire = yes
+            			is_wilderness_empire = yes
+            		}
+            		OR = {
+            			is_machine_empire = no
+            			has_civic = civic_machine_assimilator
+            			has_civic = civic_machine_servitor
+            			has_civic = civic_machine_guided_sapience
+            		}
+		}
+		give_technology = { tech = tech_epigenetic_triggers message = no }
+	}
+	# tech_exotic_gases (00_strategic_resources_tech.txt)
+	give_technology = { tech = tech_exotic_gases message = no }
+	# tech_experimental_subspace_navigation (00_distant_stars_tech.txt)
+	give_technology = { tech = tech_experimental_subspace_navigation message = no }
+	# tech_frontier_hospital (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_gestalt = no
+            		is_individual_machine = no
+		}
+		give_technology = { tech = tech_frontier_hospital message = no }
+	}
+	# tech_ftl_inhibitor (00_phys_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_ftl_inhibitor message = no }
+	}
+	# tech_galactic_ambitions (00_soc_tech.txt)
+	give_technology = { tech = tech_galactic_ambitions message = no }
+	# tech_galactic_archivism (00_grand_archive_tech.txt)
+	if = {
+		limit = {
+            has_grand_archive_dlc = yes
+		}
+		give_technology = { tech = tech_galactic_archivism message = no }
+	}
+	# tech_gene_banks (00_soc_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			is_machine_empire = no
+            			is_wilderness_empire = no
+            			has_civic = civic_machine_assimilator
+            		}
+            		is_natural_design_empire = no
+		}
+		give_technology = { tech = tech_gene_banks message = no }
+	}
+	# tech_gene_crops (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_gene_crops message = no }
+	}
+	# tech_global_defense_grid (00_soc_tech.txt)
+	give_technology = { tech = tech_global_defense_grid message = no }
+	# tech_gravity_snare_capacity_1 (00_grand_archive_tech.txt)
+	if = {
+		limit = {
+            has_grand_archive_dlc = yes
+		}
+		give_technology = { tech = tech_gravity_snare_capacity_1 message = no }
+	}
+	# tech_gravity_wells (00_grand_archive_tech.txt)
+	if = {
+		limit = {
+            has_grand_archive_dlc = yes
+            		OR = {
+            			has_encountered_any_fauna = yes
+            			is_beastmasters_empire = yes
+            		}
+		}
+		give_technology = { tech = tech_gravity_wells message = no }
+	}
+	# tech_heritage_site (00_soc_tech.txt)
+	give_technology = { tech = tech_heritage_site message = no }
+	# tech_hive_cluster (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_hive_cluster message = no }
+	}
+	# tech_holographic_rituals (00_soc_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			is_spiritualist = yes
+            			AND = {
+            				is_gestalt = no
+            				has_make_spiritualist_perk = yes
+            			}
+            		}
+		}
+		give_technology = { tech = tech_holographic_rituals message = no }
+	}
+	# tech_housing_1 (00_eng_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_housing_1 message = no }
+	}
+	# tech_hyper_drive_2 (00_phys_tech.txt)
+	give_technology = { tech = tech_hyper_drive_2 message = no }
+	# tech_hyper_relays (00_overlord_tech.txt)
+	if = {
+		limit = {
+            has_overlord_dlc = yes
+		}
+		give_technology = { tech = tech_hyper_relays message = no }
+	}
+	# tech_improved_incubators (00_grand_archive_tech.txt)
+	if = {
+		limit = {
+            has_grand_archive_dlc = yes
+		}
+		give_technology = { tech = tech_improved_incubators message = no }
+	}
+	# tech_integrated_cybernetics (00_eng_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			AND = {
+            				is_machine_empire = no
+            				is_individual_machine = no
+            			}
+            			has_civic = civic_machine_assimilator
+            		}
+		}
+		give_technology = { tech = tech_integrated_cybernetics message = no }
+	}
+	# tech_interstellar_campaigns (00_soc_tech.txt)
+	give_technology = { tech = tech_interstellar_campaigns message = no }
+	# tech_interstellar_fleet_traditions (00_soc_tech.txt)
+	give_technology = { tech = tech_interstellar_fleet_traditions message = no }
+	# tech_lasers_3 (00_phys_weapon_tech.txt)
+	give_technology = { tech = tech_lasers_3 message = no }
+	# tech_living_state (00_soc_tech.txt)
+	if = {
+		limit = {
+            NOT = { has_ethic = ethic_gestalt_consciousness }
+		}
+		give_technology = { tech = tech_living_state message = no }
+	}
+	# tech_mass_drivers_3 (00_eng_weapon_tech.txt)
+	give_technology = { tech = tech_mass_drivers_3 message = no }
+	# tech_micro_replicators (00_synthetic_dawn_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			is_machine_empire = yes
+            			is_individual_machine = yes
+            			is_hive_empire_with_machines = yes
+            		}
+		}
+		give_technology = { tech = tech_micro_replicators message = no }
+	}
+	# tech_mine_betharian (00_strategic_resources_tech.txt)
+	give_technology = { tech = tech_mine_betharian message = no }
+	# tech_mine_exotic_gases (00_strategic_resources_tech.txt)
+	give_technology = { tech = tech_mine_exotic_gases message = no }
+	# tech_mine_rare_crystals (00_strategic_resources_tech.txt)
+	give_technology = { tech = tech_mine_rare_crystals message = no }
+	# tech_mine_volatile_motes (00_strategic_resources_tech.txt)
+	give_technology = { tech = tech_mine_volatile_motes message = no }
+	# tech_mineral_purification_2 (00_eng_tech.txt)
+	give_technology = { tech = tech_mineral_purification_2 message = no }
+	# tech_mining_2 (00_eng_tech.txt)
+	give_technology = { tech = tech_mining_2 message = no }
+	# tech_missiles_3 (00_eng_weapon_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = no
+		}
+		give_technology = { tech = tech_missiles_3 message = no }
+	}
+	# tech_modular_engineering (00_eng_tech.txt)
+	give_technology = { tech = tech_modular_engineering message = no }
+	# tech_mountain_range (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_mountain_range message = no }
+	}
+	# tech_nanite_transmutation (00_strategic_resources_tech.txt)
+	if = {
+		limit = {
+            host_has_dlc = "Distant Stars Story Pack"
+		}
+		give_technology = { tech = tech_nanite_transmutation message = no }
+	}
+	# tech_node_culling_1 (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_hive_empire = yes
+		}
+		give_technology = { tech = tech_node_culling_1 message = no }
+	}
+	# tech_node_reformatting_1 (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_machine_empire = yes
+		}
+		give_technology = { tech = tech_node_reformatting_1 message = no }
+	}
+	# tech_pd_tracking_2 (00_phys_weapon_tech.txt)
+	give_technology = { tech = tech_pd_tracking_2 message = no }
+	# tech_penal_colonies (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_gestalt = no
+            		is_nomadic = no
+		}
+		give_technology = { tech = tech_penal_colonies message = no }
+	}
+	# tech_physics_2 (00_phys_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_physics_2 message = no }
+	}
+	# tech_planetary_engineering (00_nomads_dlc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = yes
+		}
+		give_technology = { tech = tech_planetary_engineering message = no }
+	}
+	# tech_planetary_infrastructure_1 (00_soc_tech.txt)
+	give_technology = { tech = tech_planetary_infrastructure_1 message = no }
+	# tech_plasma_1 (00_phys_weapon_tech.txt)
+	give_technology = { tech = tech_plasma_1 message = no }
+	# tech_power_hub_2 (00_phys_tech.txt)
+	give_technology = { tech = tech_power_hub_2 message = no }
+	# tech_power_plant_3 (00_phys_tech.txt)
+	give_technology = { tech = tech_power_plant_3 message = no }
+	# tech_rare_crystals (00_strategic_resources_tech.txt)
+	give_technology = { tech = tech_rare_crystals message = no }
+	# tech_repeatable_lcluster_clue (00_distant_stars_tech.txt)
+	if = {
+		limit = {
+            has_country_flag = encountered_first_lgate
+            		NOT = { has_country_flag = completed_lcluster_chain }
+            		NOT = { has_global_flag = l_cluster_opened }
+		}
+		give_technology = { tech = tech_repeatable_lcluster_clue message = no }
+	}
+	# tech_resort_colonies (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_gestalt = no
+            		is_nomadic = no
+		}
+		give_technology = { tech = tech_resort_colonies message = no }
+	}
+	# tech_robomodding_points_1 (00_synthetic_dawn_tech.txt)
+	if = {
+		limit = {
+            NOT = {
+            			has_ethic = "ethic_gestalt_consciousness"
+            			is_individual_machine = yes
+            		}
+		}
+		give_technology = { tech = tech_robomodding_points_1 message = no }
+	}
+	# tech_self_aware_logic (00_phys_tech.txt)
+	give_technology = { tech = tech_self_aware_logic message = no }
+	# tech_sensors_2 (00_phys_tech.txt)
+	give_technology = { tech = tech_sensors_2 message = no }
+	# tech_shield_hardeners_1 (00_phys_tech.txt)
+	give_technology = { tech = tech_shield_hardeners_1 message = no }
+	# tech_shield_rechargers_1 (00_phys_tech.txt)
+	give_technology = { tech = tech_shield_rechargers_1 message = no }
+	# tech_shields_3 (00_phys_tech.txt)
+	give_technology = { tech = tech_shields_3 message = no }
+	# tech_ship_armor_3 (00_eng_tech.txt)
+	give_technology = { tech = tech_ship_armor_3 message = no }
+	# tech_ship_hull_storm_breaker_2 (00_cosmic_storm_tech.txt)
+	if = {
+		limit = {
+            has_cosmic_storms_dlc = yes
+		}
+		give_technology = { tech = tech_ship_hull_storm_breaker_2 message = no }
+	}
+	# tech_ship_storm_weapons_2 (00_cosmic_storm_tech.txt)
+	if = {
+		limit = {
+            has_cosmic_storms_dlc = yes
+		}
+		give_technology = { tech = tech_ship_storm_weapons_2 message = no }
+	}
+	# tech_slave_colonies (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_gestalt = no
+            		is_nomadic = no
+		}
+		give_technology = { tech = tech_slave_colonies message = no }
+	}
+	# tech_society_2 (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_society_2 message = no }
+	}
+	# tech_space_mining_3 (00_eng_tech.txt)
+	give_technology = { tech = tech_space_mining_3 message = no }
+	# tech_space_mining_4 (00_eng_tech.txt)
+	give_technology = { tech = tech_space_mining_4 message = no }
+	# tech_space_science_3 (00_phys_tech.txt)
+	give_technology = { tech = tech_space_science_3 message = no }
+	# tech_space_science_4 (00_phys_tech.txt)
+	give_technology = { tech = tech_space_science_4 message = no }
+	# tech_starbase_3 (00_eng_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_starbase_3 message = no }
+	}
+	# tech_storm_manipulation (00_cosmic_storm_tech.txt)
+	if = {
+		limit = {
+            has_cosmic_storms_dlc = yes
+		}
+		give_technology = { tech = tech_storm_manipulation message = no }
+	}
+	# tech_strike_craft_2 (00_eng_tech.txt)
+	give_technology = { tech = tech_strike_craft_2 message = no }
+	# tech_subdermal_stimulation (00_soc_tech.txt)
+	if = {
+		limit = {
+            NOR = {
+            			has_ethic = ethic_gestalt_consciousness
+            			has_civic = civic_dystopian_society
+            			is_individual_machine = yes
+            		}
+		}
+		give_technology = { tech = tech_subdermal_stimulation message = no }
+	}
+	# tech_swarmer_missiles_1 (00_eng_weapon_tech.txt)
+	give_technology = { tech = tech_swarmer_missiles_1 message = no }
+	# tech_terrestrial_sculpting (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_terrestrial_sculpting message = no }
+	}
+	# tech_thrusters_2 (00_eng_tech.txt)
+	give_technology = { tech = tech_thrusters_2 message = no }
+	# tech_unity_of_purpose (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_gestalt = yes
+		}
+		give_technology = { tech = tech_unity_of_purpose message = no }
+	}
+	# tech_vitality_boosters (00_soc_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			is_machine_empire = no
+            			has_civic = civic_machine_assimilator
+            		}
+		}
+		give_technology = { tech = tech_vitality_boosters message = no }
+	}
+	# tech_volatile_motes (00_strategic_resources_tech.txt)
+	give_technology = { tech = tech_volatile_motes message = no }
+	# tech_volcanic_forge (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_world_forger_empire = yes
+		}
+		give_technology = { tech = tech_volcanic_forge message = no }
+	}
+	# tech_volcanic_terraforming (00_soc_tech.txt)
+	if = {
+		limit = {
+            has_infernals = yes
+		}
+		give_technology = { tech = tech_volcanic_terraforming message = no }
+	}
+	# tech_volcano (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_volcano message = no }
+	}
+	# tech_waystation_2 (00_nomads_dlc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = yes
+		}
+		give_technology = { tech = tech_waystation_2 message = no }
+	}
+	# tech_weaver_bio_anti_evasion_2 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_anti_evasion_2 message = no }
+	}
+	# tech_weaver_bio_anti_fire_rate_2 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_anti_fire_rate_2 message = no }
+	}
+	# tech_weaver_bio_confuser_2 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_confuser_2 message = no }
+	}
+	# tech_weaver_bio_evasion_2 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_evasion_2 message = no }
+	}
+	# tech_weaver_bio_fire_rate_2 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_fire_rate_2 message = no }
+	}
+	# tech_weaver_bio_healing_2 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_healing_2 message = no }
+	}
+	# tech_weaver_growth_1 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_growth_1 message = no }
+	}
+	# tech_weaver_growth_2 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_growth_2 message = no }
+	}
+	# tech_wilderness_cluster (00_soc_tech.txt)
+	give_technology = { tech = tech_wilderness_cluster message = no }
+	# tech_xeno_diplomacy (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_regular_empire = yes
+		}
+		give_technology = { tech = tech_xeno_diplomacy message = no }
+	}
+}
+
+advto_grant_tier_3 = {
+	advto_grant_tier_2 = yes
+	# 122 eligible technology definitions at engine tier 3.
+	# tech_advanced_storm_manipulation (00_cosmic_storm_tech.txt)
+	if = {
+		limit = {
+            has_cosmic_storms_dlc = yes
+		}
+		give_technology = { tech = tech_advanced_storm_manipulation message = no }
+	}
+	# tech_afterburners_2 (00_eng_tech.txt)
+	give_technology = { tech = tech_afterburners_2 message = no }
+	# tech_alloys_2 (00_eng_tech.txt)
+	give_technology = { tech = tech_alloys_2 message = no }
+	# tech_antimatter_power (00_phys_tech.txt)
+	give_technology = { tech = tech_antimatter_power message = no }
+	# tech_archaeo_lasers (00_ancient_relics_tech.txt)
+	if = {
+		limit = {
+            has_ancrel = yes
+		}
+		give_technology = { tech = tech_archaeo_lasers message = no }
+	}
+	# tech_archaeo_mass_accelerator (00_ancient_relics_tech.txt)
+	if = {
+		limit = {
+            has_ancrel = yes
+		}
+		give_technology = { tech = tech_archaeo_mass_accelerator message = no }
+	}
+	# tech_archaeo_mass_drivers (00_ancient_relics_tech.txt)
+	if = {
+		limit = {
+            has_ancrel = yes
+		}
+		give_technology = { tech = tech_archaeo_mass_drivers message = no }
+	}
+	# tech_archaeo_missiles (00_ancient_relics_tech.txt)
+	if = {
+		limit = {
+            has_ancrel = yes
+		}
+		give_technology = { tech = tech_archaeo_missiles message = no }
+	}
+	# tech_archaeo_overcharger (00_ancient_relics_tech.txt)
+	if = {
+		limit = {
+            has_ancrel = yes
+		}
+		give_technology = { tech = tech_archaeo_overcharger message = no }
+	}
+	# tech_archaeo_point_defence (00_ancient_relics_tech.txt)
+	if = {
+		limit = {
+            has_ancrel = yes
+		}
+		give_technology = { tech = tech_archaeo_point_defence message = no }
+	}
+	# tech_archaeo_rampart (00_ancient_relics_tech.txt)
+	if = {
+		limit = {
+            has_ancrel = yes
+            		is_nomadic = no
+		}
+		give_technology = { tech = tech_archaeo_rampart message = no }
+	}
+	# tech_archaeo_refinery (00_ancient_relics_tech.txt)
+	if = {
+		limit = {
+            has_ancrel = yes
+            		is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_archaeo_refinery message = no }
+	}
+	# tech_archaeo_strike_crafts (00_ancient_relics_tech.txt)
+	if = {
+		limit = {
+            has_ancrel = yes
+		}
+		give_technology = { tech = tech_archaeo_strike_crafts message = no }
+	}
+	# tech_archaeoarmor (00_ancient_relics_tech.txt)
+	if = {
+		limit = {
+            has_ancrel = yes
+		}
+		give_technology = { tech = tech_archaeoarmor message = no }
+	}
+	# tech_archaeoshield (00_ancient_relics_tech.txt)
+	if = {
+		limit = {
+            has_ancrel = yes
+		}
+		give_technology = { tech = tech_archaeoshield message = no }
+	}
+	# tech_arkship_construction (00_nomads_dlc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = yes
+		}
+		give_technology = { tech = tech_arkship_construction message = no }
+	}
+	# tech_arkship_tier_2 (00_nomads_dlc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = yes
+		}
+		give_technology = { tech = tech_arkship_tier_2 message = no }
+	}
+	# tech_autocannons_2 (00_eng_weapon_tech.txt)
+	give_technology = { tech = tech_autocannons_2 message = no }
+	# tech_autocurating_vault (00_soc_tech.txt)
+	if = {
+		limit = {
+            NOR = {
+            			is_spiritualist = yes
+            			is_wilderness_empire = yes
+            		}
+		}
+		give_technology = { tech = tech_autocurating_vault message = no }
+	}
+	# tech_basic_science_lab_3 (00_phys_tech.txt)
+	give_technology = { tech = tech_basic_science_lab_3 message = no }
+	# tech_binary_motivators (00_synthetic_dawn_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			is_machine_empire = yes
+            			is_individual_machine = yes
+            			is_hive_empire_with_machines = yes
+            		}
+		}
+		give_technology = { tech = tech_binary_motivators message = no }
+	}
+	# tech_capital_productivity_2 (00_soc_tech.txt)
+	give_technology = { tech = tech_capital_productivity_2 message = no }
+	# tech_centralized_command (00_soc_tech.txt)
+	give_technology = { tech = tech_centralized_command message = no }
+	# tech_civilian_arkship (00_nomads_dlc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = yes
+		}
+		give_technology = { tech = tech_civilian_arkship message = no }
+	}
+	# tech_cloaking_2 (00_first_contact_tech.txt)
+	if = {
+		limit = {
+            has_first_contact_dlc = yes
+		}
+		give_technology = { tech = tech_cloaking_2 message = no }
+	}
+	# tech_collective_production_methods (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_hive_empire = yes
+		}
+		give_technology = { tech = tech_collective_production_methods message = no }
+	}
+	# tech_collective_self (00_soc_tech.txt)
+	if = {
+		limit = {
+            NOT = { has_ethic = ethic_gestalt_consciousness }
+		}
+		give_technology = { tech = tech_collective_self message = no }
+	}
+	# tech_colonization_4 (00_soc_tech.txt)
+	give_technology = { tech = tech_colonization_4 message = no }
+	# tech_combat_computers_2 (00_phys_tech.txt)
+	give_technology = { tech = tech_combat_computers_2 message = no }
+	# tech_combat_training (00_soc_tech.txt)
+	give_technology = { tech = tech_combat_training message = no }
+	# tech_command_matrix (00_soc_tech.txt)
+	give_technology = { tech = tech_command_matrix message = no }
+	# tech_consecration_fields (00_soc_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			is_spiritualist = yes
+            			AND = {
+            				is_gestalt = no
+            				has_make_spiritualist_perk = yes
+            			}
+            		}
+		}
+		give_technology = { tech = tech_consecration_fields message = no }
+	}
+	# tech_cruiser_build_speed (00_eng_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = no
+		}
+		give_technology = { tech = tech_cruiser_build_speed message = no }
+	}
+	# tech_cruiser_hull_1 (00_eng_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = no
+		}
+		give_technology = { tech = tech_cruiser_hull_1 message = no }
+	}
+	# tech_cruisers (00_eng_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = no
+		}
+		give_technology = { tech = tech_cruisers message = no }
+	}
+	# tech_cryostasis_2 (00_phys_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_cryostasis_2 message = no }
+	}
+	# tech_deep_space_citadel (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            has_biogenesis_dlc = yes
+            		is_nomadic = no
+		}
+		give_technology = { tech = tech_deep_space_citadel message = no }
+	}
+	# tech_destroyer_hull_2 (00_eng_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = no
+		}
+		give_technology = { tech = tech_destroyer_hull_2 message = no }
+	}
+	# tech_disruptors_2 (00_phys_weapon_tech.txt)
+	give_technology = { tech = tech_disruptors_2 message = no }
+	# tech_doctrine_fleet_size_3 (00_soc_tech.txt)
+	give_technology = { tech = tech_doctrine_fleet_size_3 message = no }
+	# tech_doctrine_navy_size_3 (00_soc_tech.txt)
+	give_technology = { tech = tech_doctrine_navy_size_3 message = no }
+	# tech_ecological_adaptation (00_soc_tech.txt)
+	give_technology = { tech = tech_ecological_adaptation message = no }
+	# tech_embodied_dynamism (00_soc_tech.txt)
+	if = {
+		limit = {
+            has_ethic = ethic_gestalt_consciousness
+		}
+		give_technology = { tech = tech_embodied_dynamism message = no }
+	}
+	# tech_energy_torpedoes_1 (00_phys_weapon_tech.txt)
+	give_technology = { tech = tech_energy_torpedoes_1 message = no }
+	# tech_engineering_3 (00_eng_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_engineering_3 message = no }
+	}
+	# tech_executive_retreat (00_megacorp_tech.txt)
+	if = {
+		limit = {
+            is_megacorp = yes
+		}
+		give_technology = { tech = tech_executive_retreat message = no }
+	}
+	# tech_flak_batteries_2 (00_eng_weapon_tech.txt)
+	give_technology = { tech = tech_flak_batteries_2 message = no }
+	# tech_food_processing_2 (00_soc_tech.txt)
+	give_technology = { tech = tech_food_processing_2 message = no }
+	# tech_galactic_administration (00_soc_tech.txt)
+	give_technology = { tech = tech_galactic_administration message = no }
+	# tech_galactic_bureaucracy (00_soc_tech.txt)
+	give_technology = { tech = tech_galactic_bureaucracy message = no }
+	# tech_gene_expressions (00_soc_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			NOR = {
+            				is_machine_empire = yes
+            				is_individual_machine = yes
+            			}
+            			has_civic = civic_machine_assimilator
+            			has_civic = civic_machine_servitor
+            		}
+            		NOR = {
+            			has_valid_civic = civic_natural_design
+            			has_valid_civic = civic_hive_natural_design
+            		}
+		}
+		give_technology = { tech = tech_gene_expressions message = no }
+	}
+	# tech_gene_tailoring (00_soc_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			is_machine_empire = no
+            			has_civic = civic_machine_assimilator
+            			has_civic = civic_machine_servitor
+            		}
+            		is_natural_design_empire = no
+		}
+		give_technology = { tech = tech_gene_tailoring message = no }
+	}
+	# tech_glandular_acclimation (00_soc_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			is_machine_empire = no
+            			has_civic = civic_machine_assimilator
+            			has_civic = civic_machine_servitor
+            		}
+            		is_natural_design_empire = no
+		}
+		give_technology = { tech = tech_glandular_acclimation message = no }
+	}
+	# tech_global_production_strategy (00_soc_tech.txt)
+	give_technology = { tech = tech_global_production_strategy message = no }
+	# tech_global_research_initiative (00_phys_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_global_research_initiative message = no }
+	}
+	# tech_gravity_snare_capacity_2 (00_grand_archive_tech.txt)
+	if = {
+		limit = {
+            has_grand_archive_dlc = yes
+		}
+		give_technology = { tech = tech_gravity_snare_capacity_2 message = no }
+	}
+	# tech_habitat_1 (00_eng_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+            		is_nomadic = no
+		}
+		give_technology = { tech = tech_habitat_1 message = no }
+	}
+	# tech_harbinger_build_speed (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_harbinger_build_speed message = no }
+	}
+	# tech_harbinger_growth_1 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_harbinger_growth_1 message = no }
+	}
+	# tech_harbinger_growth_2 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_harbinger_growth_2 message = no }
+	}
+	# tech_harbingers (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_harbingers message = no }
+	}
+	# tech_hive_confluence (00_soc_tech.txt)
+	give_technology = { tech = tech_hive_confluence message = no }
+	# tech_housing_2 (00_eng_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_housing_2 message = no }
+	}
+	# tech_housing_agrarian_idyll (00_soc_tech.txt)
+	give_technology = { tech = tech_housing_agrarian_idyll message = no }
+	# tech_hyper_drive_3 (00_phys_tech.txt)
+	give_technology = { tech = tech_hyper_drive_3 message = no }
+	# tech_hypercomms_forum (00_soc_tech.txt)
+	give_technology = { tech = tech_hypercomms_forum message = no }
+	# tech_interstellar_economics (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_gestalt = no
+		}
+		give_technology = { tech = tech_interstellar_economics message = no }
+	}
+	# tech_kinetic_artillery_1 (00_eng_weapon_tech.txt)
+	give_technology = { tech = tech_kinetic_artillery_1 message = no }
+	# tech_lasers_4 (00_phys_weapon_tech.txt)
+	give_technology = { tech = tech_lasers_4 message = no }
+	# tech_luxuries_2 (00_eng_tech.txt)
+	if = {
+		limit = {
+            country_uses_consumer_goods = yes
+		}
+		give_technology = { tech = tech_luxuries_2 message = no }
+	}
+	# tech_mandibles_2 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_mandibles_2 message = no }
+	}
+	# tech_mass_drivers_4 (00_eng_weapon_tech.txt)
+	give_technology = { tech = tech_mass_drivers_4 message = no }
+	# tech_metabolic_gases (00_grand_archive_tech.txt)
+	if = {
+		limit = {
+            has_grand_archive_dlc = yes
+		}
+		give_technology = { tech = tech_metabolic_gases message = no }
+	}
+	# tech_military_arkship (00_nomads_dlc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = yes
+		}
+		give_technology = { tech = tech_military_arkship message = no }
+	}
+	# tech_mine_dark_matter (00_strategic_resources_tech.txt)
+	give_technology = { tech = tech_mine_dark_matter message = no }
+	# tech_mine_zro (00_strategic_resources_tech.txt)
+	give_technology = { tech = tech_mine_zro message = no }
+	# tech_mining_3 (00_eng_tech.txt)
+	give_technology = { tech = tech_mining_3 message = no }
+	# tech_missiles_4 (00_eng_weapon_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = no
+		}
+		give_technology = { tech = tech_missiles_4 message = no }
+	}
+	# tech_nano_vitality_crops (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_nano_vitality_crops message = no }
+	}
+	# tech_neuro_quantum_links (00_phys_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+            		OR = {
+            			is_machine_empire = no
+            			has_civic = civic_machine_assimilator
+            		}
+		}
+		give_technology = { tech = tech_neuro_quantum_links message = no }
+	}
+	# tech_node_culling_2 (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_hive_empire = yes
+		}
+		give_technology = { tech = tech_node_culling_2 message = no }
+	}
+	# tech_node_reformatting_2 (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_machine_empire = yes
+		}
+		give_technology = { tech = tech_node_reformatting_2 message = no }
+	}
+	# tech_orbital_ring_tier_1 (00_overlord_tech.txt)
+	if = {
+		limit = {
+            has_overlord_dlc = yes
+            		is_nomadic = no
+		}
+		give_technology = { tech = tech_orbital_ring_tier_1 message = no }
+	}
+	# tech_paradise_dome (00_soc_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			is_gestalt = no
+            			has_valid_civic = civic_machine_servitor
+            			has_origin = origin_forever_cruise
+            		}
+		}
+		give_technology = { tech = tech_paradise_dome message = no }
+	}
+	# tech_physics_3 (00_phys_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_physics_3 message = no }
+	}
+	# tech_planetary_shield_generator (00_phys_tech.txt)
+	give_technology = { tech = tech_planetary_shield_generator message = no }
+	# tech_plasma_2 (00_phys_weapon_tech.txt)
+	give_technology = { tech = tech_plasma_2 message = no }
+	# tech_power_plant_4 (00_phys_tech.txt)
+	give_technology = { tech = tech_power_plant_4 message = no }
+	# tech_psionic_theory (00_soc_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			has_shroud_dlc = yes
+            			NOT = { has_ethic = ethic_gestalt_consciousness }
+            			is_active_resolution = resolution_galacticstudies_extradimensional_experimentation
+            			has_relic = r_zro_crystal
+            		}
+            		NOT = { has_origin = origin_mindwardens }
+		}
+		give_technology = { tech = tech_psionic_theory message = no }
+	}
+	# tech_quantum_catapult (00_overlord_tech.txt)
+	if = {
+		limit = {
+            has_overlord_dlc = yes
+            		OR = {
+            			has_technology = tech_mega_engineering
+            			has_country_flag = has_quantum_catapult_insight
+            			has_origin = origin_star_slingshot
+            		}
+		}
+		give_technology = { tech = tech_quantum_catapult message = no }
+	}
+	# tech_refit_standards (00_soc_tech.txt)
+	give_technology = { tech = tech_refit_standards message = no }
+	# tech_regenerative_hull_tissue (00_soc_tech.txt)
+	give_technology = { tech = tech_regenerative_hull_tissue message = no }
+	# tech_resource_processing_algorithms (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_machine_empire = yes
+		}
+		give_technology = { tech = tech_resource_processing_algorithms message = no }
+	}
+	# tech_science_arkship (00_nomads_dlc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = yes
+		}
+		give_technology = { tech = tech_science_arkship message = no }
+	}
+	# tech_selected_lineages (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_machine_empire = no
+		}
+		give_technology = { tech = tech_selected_lineages message = no }
+	}
+	# tech_self_assembling_components (00_synthetic_dawn_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			is_machine_empire = yes
+            			is_individual_machine = yes
+            			is_hive_empire_with_machines = yes
+            		}
+		}
+		give_technology = { tech = tech_self_assembling_components message = no }
+	}
+	# tech_sensors_3 (00_phys_tech.txt)
+	give_technology = { tech = tech_sensors_3 message = no }
+	# tech_shields_4 (00_phys_tech.txt)
+	give_technology = { tech = tech_shields_4 message = no }
+	# tech_ship_armor_4 (00_eng_tech.txt)
+	give_technology = { tech = tech_ship_armor_4 message = no }
+	# tech_society_3 (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_society_3 message = no }
+	}
+	# tech_space_defense_station_improvement (00_eng_tech.txt)
+	give_technology = { tech = tech_space_defense_station_improvement message = no }
+	# tech_space_mining_5 (00_eng_tech.txt)
+	give_technology = { tech = tech_space_mining_5 message = no }
+	# tech_space_science_5 (00_phys_tech.txt)
+	give_technology = { tech = tech_space_science_5 message = no }
+	# tech_starbase_4 (00_eng_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_starbase_4 message = no }
+	}
+	# tech_storm_prediction_2 (00_cosmic_storm_tech.txt)
+	if = {
+		limit = {
+            has_cosmic_storms_dlc = yes
+		}
+		give_technology = { tech = tech_storm_prediction_2 message = no }
+	}
+	# tech_strike_craft_3 (00_eng_tech.txt)
+	give_technology = { tech = tech_strike_craft_3 message = no }
+	# tech_synthetic_thought_patterns (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_gestalt = no
+		}
+		give_technology = { tech = tech_synthetic_thought_patterns message = no }
+	}
+	# tech_telepathy (00_soc_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			has_shroud_dlc = yes
+            			NOT = { has_ethic = ethic_gestalt_consciousness }
+            		}
+		}
+		give_technology = { tech = tech_telepathy message = no }
+	}
+	# tech_thrusters_3 (00_eng_tech.txt)
+	give_technology = { tech = tech_thrusters_3 message = no }
+	# tech_tomb_world_adaption (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_tomb_world_adaption message = no }
+	}
+	# tech_torpedoes_2 (00_eng_weapon_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = no
+		}
+		give_technology = { tech = tech_torpedoes_2 message = no }
+	}
+	# tech_waystation_3 (00_nomads_dlc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = yes
+		}
+		give_technology = { tech = tech_waystation_3 message = no }
+	}
+	# tech_weaver_bio_anti_evasion_3 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_anti_evasion_3 message = no }
+	}
+	# tech_weaver_bio_anti_fire_rate_3 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_anti_fire_rate_3 message = no }
+	}
+	# tech_weaver_bio_confuser_3 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_confuser_3 message = no }
+	}
+	# tech_weaver_bio_evasion_3 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_evasion_3 message = no }
+	}
+	# tech_weaver_bio_fire_rate_3 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_fire_rate_3 message = no }
+	}
+	# tech_weaver_bio_healing_3 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_healing_3 message = no }
+	}
+	# tech_wilderness_confluence (00_soc_tech.txt)
+	give_technology = { tech = tech_wilderness_confluence message = no }
+	# tech_wormhole_stabilization (00_phys_tech.txt)
+	give_technology = { tech = tech_wormhole_stabilization message = no }
+	# tech_xeno_relations (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_regular_empire = yes
+		}
+		give_technology = { tech = tech_xeno_relations message = no }
+	}
+	# tech_xeno_tourism_agency (00_megacorp_tech.txt)
+	if = {
+		limit = {
+            is_megacorp = yes
+		}
+		give_technology = { tech = tech_xeno_tourism_agency message = no }
+	}
+}
+
+advto_grant_tier_4 = {
+	advto_grant_tier_3 = yes
+	# 95 eligible technology definitions at engine tier 4.
+	# tech_advanced_metallurgy_2 (00_eng_tech.txt)
+	give_technology = { tech = tech_advanced_metallurgy_2 message = no }
+	# tech_arc_emitter_1 (00_phys_weapon_tech.txt)
+	give_technology = { tech = tech_arc_emitter_1 message = no }
+	# tech_arc_emitter_2 (00_phys_weapon_tech.txt)
+	give_technology = { tech = tech_arc_emitter_2 message = no }
+	# tech_archaeo_detection_scrambler (00_ancient_relics_tech.txt)
+	if = {
+		limit = {
+            has_ancrel = yes
+		}
+		give_technology = { tech = tech_archaeo_detection_scrambler message = no }
+	}
+	# tech_archaeo_titan_beam (00_ancient_relics_tech.txt)
+	if = {
+		limit = {
+            has_ancrel = yes
+		}
+		give_technology = { tech = tech_archaeo_titan_beam message = no }
+	}
+	# tech_arkship_exodus_jump (00_nomads_dlc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = yes
+		}
+		give_technology = { tech = tech_arkship_exodus_jump message = no }
+	}
+	# tech_arkship_planetary_refinery (00_nomads_dlc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = yes
+		}
+		give_technology = { tech = tech_arkship_planetary_refinery message = no }
+	}
+	# tech_arkship_stellar_igniter (00_nomads_dlc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = yes
+		}
+		give_technology = { tech = tech_arkship_stellar_igniter message = no }
+	}
+	# tech_arkship_system_scanner (00_nomads_dlc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = yes
+		}
+		give_technology = { tech = tech_arkship_system_scanner message = no }
+	}
+	# tech_arkship_tier_3 (00_nomads_dlc_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = yes
+		}
+		give_technology = { tech = tech_arkship_tier_3 message = no }
+	}
+	# tech_ascension_theory (00_soc_tech.txt)
+	give_technology = { tech = tech_ascension_theory message = no }
+	# tech_autocannons_3 (00_eng_weapon_tech.txt)
+	give_technology = { tech = tech_autocannons_3 message = no }
+	# tech_battleship_build_speed (00_eng_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = no
+		}
+		give_technology = { tech = tech_battleship_build_speed message = no }
+	}
+	# tech_battleship_hull_1 (00_eng_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = no
+		}
+		give_technology = { tech = tech_battleship_hull_1 message = no }
+	}
+	# tech_battleships (00_eng_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = no
+		}
+		give_technology = { tech = tech_battleships message = no }
+	}
+	# tech_biomechanics (00_synthetic_dawn_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			is_machine_empire = yes
+            			is_individual_machine = yes
+            		}
+		}
+		give_technology = { tech = tech_biomechanics message = no }
+	}
+	# tech_capacity_boosters (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_machine_empire = no
+            		is_natural_design_empire = no
+		}
+		give_technology = { tech = tech_capacity_boosters message = no }
+	}
+	# tech_capital_productivity_3 (00_soc_tech.txt)
+	give_technology = { tech = tech_capital_productivity_3 message = no }
+	# tech_climate_restoration (00_soc_tech.txt)
+	give_technology = { tech = tech_climate_restoration message = no }
+	# tech_cloaking_3 (00_first_contact_tech.txt)
+	if = {
+		limit = {
+            has_first_contact_dlc = yes
+		}
+		give_technology = { tech = tech_cloaking_3 message = no }
+	}
+	# tech_colonization_5 (00_soc_tech.txt)
+	give_technology = { tech = tech_colonization_5 message = no }
+	# tech_combat_computers_3 (00_phys_tech.txt)
+	if = {
+		limit = {
+            NOT = { has_ethic = ethic_gestalt_consciousness }
+		}
+		give_technology = { tech = tech_combat_computers_3 message = no }
+	}
+	# tech_combat_computers_autonomous (00_phys_tech.txt)
+	if = {
+		limit = {
+            has_ethic = ethic_gestalt_consciousness
+		}
+		give_technology = { tech = tech_combat_computers_autonomous message = no }
+	}
+	# tech_construction_templates (00_eng_tech.txt)
+	give_technology = { tech = tech_construction_templates message = no }
+	# tech_consumer_good_refinement_2 (00_phys_tech.txt)
+	if = {
+		limit = {
+            country_uses_consumer_goods = yes
+		}
+		give_technology = { tech = tech_consumer_good_refinement_2 message = no }
+	}
+	# tech_controlled_mutations_2 (00_grand_archive_tech.txt)
+	give_technology = { tech = tech_controlled_mutations_2 message = no }
+	# tech_cosmogenesis_thesis (00_machine_age_tech.txt)
+	if = {
+		limit = {
+            has_machine_age_dlc = yes
+                    has_ascension_perk = ap_cosmogenesis
+                    NOT = { has_country_flag = cosmogenesis_aborted }
+		}
+		give_technology = { tech = tech_cosmogenesis_thesis message = no }
+	}
+	# tech_cruiser_hull_2 (00_eng_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = no
+		}
+		give_technology = { tech = tech_cruiser_hull_2 message = no }
+	}
+	# tech_decryption_3 (00_phys_tech.txt)
+	give_technology = { tech = tech_decryption_3 message = no }
+	# tech_disruptors_3 (00_phys_weapon_tech.txt)
+	give_technology = { tech = tech_disruptors_3 message = no }
+	# tech_doctrine_fleet_size_4 (00_soc_tech.txt)
+	give_technology = { tech = tech_doctrine_fleet_size_4 message = no }
+	# tech_doctrine_navy_size_4 (00_soc_tech.txt)
+	give_technology = { tech = tech_doctrine_navy_size_4 message = no }
+	# tech_encryption_3 (00_phys_tech.txt)
+	give_technology = { tech = tech_encryption_3 message = no }
+	# tech_energy_lance_1 (00_phys_weapon_tech.txt)
+	give_technology = { tech = tech_energy_lance_1 message = no }
+	# tech_energy_lance_2 (00_phys_weapon_tech.txt)
+	give_technology = { tech = tech_energy_lance_2 message = no }
+	# tech_energy_torpedoes_2 (00_phys_weapon_tech.txt)
+	give_technology = { tech = tech_energy_torpedoes_2 message = no }
+	# tech_flak_batteries_3 (00_eng_weapon_tech.txt)
+	give_technology = { tech = tech_flak_batteries_3 message = no }
+	# tech_galactic_campaigns (00_soc_tech.txt)
+	give_technology = { tech = tech_galactic_campaigns message = no }
+	# tech_galactic_markets (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_gestalt = no
+		}
+		give_technology = { tech = tech_galactic_markets message = no }
+	}
+	# tech_gateway_activation (00_megastructures.txt)
+	give_technology = { tech = tech_gateway_activation message = no }
+	# tech_gene_seed_purification (00_soc_tech.txt)
+	if = {
+		limit = {
+            NOR = {
+            			is_machine_empire = yes
+            			is_natural_design_empire = yes
+            			is_individual_machine = yes
+            			is_wilderness_empire = yes
+            		}
+		}
+		give_technology = { tech = tech_gene_seed_purification message = no }
+	}
+	# tech_gravity_snare_capacity_3 (00_grand_archive_tech.txt)
+	if = {
+		limit = {
+            has_grand_archive_dlc = yes
+		}
+		give_technology = { tech = tech_gravity_snare_capacity_3 message = no }
+	}
+	# tech_growth_chamber_1 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_growth_chamber_1 message = no }
+	}
+	# tech_growth_chamber_2 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_growth_chamber_2 message = no }
+	}
+	# tech_habitat_2 (00_eng_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+            		is_nomadic = no
+		}
+		give_technology = { tech = tech_habitat_2 message = no }
+	}
+	# tech_habitat_3 (00_eng_tech.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+            		is_nomadic = no
+		}
+		give_technology = { tech = tech_habitat_3 message = no }
+	}
+	# tech_identity_fusion (00_machine_age_tech.txt)
+	if = {
+		limit = {
+            has_machine_age_dlc = yes
+                    has_country_flag = advanced_identity_creation
+		}
+		give_technology = { tech = tech_identity_fusion message = no }
+	}
+	# tech_identity_initialization (00_machine_age_tech.txt)
+	if = {
+		limit = {
+            has_machine_age_dlc = yes
+                    has_country_flag = advanced_identity_creation
+		}
+		give_technology = { tech = tech_identity_initialization message = no }
+	}
+	# tech_kinetic_artillery_2 (00_eng_weapon_tech.txt)
+	give_technology = { tech = tech_kinetic_artillery_2 message = no }
+	# tech_lasers_5 (00_phys_weapon_tech.txt)
+	give_technology = { tech = tech_lasers_5 message = no }
+	# tech_mandibles_3 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_mandibles_3 message = no }
+	}
+	# tech_manifest_destiny (00_soc_tech.txt)
+	give_technology = { tech = tech_manifest_destiny message = no }
+	# tech_mass_accelerator_1 (00_eng_weapon_tech.txt)
+	give_technology = { tech = tech_mass_accelerator_1 message = no }
+	# tech_mass_accelerator_2 (00_eng_weapon_tech.txt)
+	give_technology = { tech = tech_mass_accelerator_2 message = no }
+	# tech_mass_drivers_5 (00_eng_weapon_tech.txt)
+	give_technology = { tech = tech_mass_drivers_5 message = no }
+	# tech_mega_assembly (00_synthetic_dawn_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			is_machine_empire = yes
+            			is_individual_machine = yes
+            			is_hive_empire_with_machines = yes
+            		}
+		}
+		give_technology = { tech = tech_mega_assembly message = no }
+	}
+	# tech_missiles_5 (00_eng_weapon_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = no
+		}
+		give_technology = { tech = tech_missiles_5 message = no }
+	}
+	# tech_morphogenetic_field_mastery (00_soc_tech.txt)
+	if = {
+		limit = {
+            NOR = {
+            			is_machine_empire = yes
+            			is_natural_design_empire = yes
+            			is_individual_machine = yes
+            			is_wilderness_empire = yes
+            		}
+		}
+		give_technology = { tech = tech_morphogenetic_field_mastery message = no }
+	}
+	# tech_nanite_assemblers (00_synthetic_dawn_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			is_machine_empire = yes
+            			is_individual_machine = yes
+            			is_hive_empire_with_machines = yes
+            		}
+		}
+		give_technology = { tech = tech_nanite_assemblers message = no }
+	}
+	# tech_node_culling_3 (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_hive_empire = yes
+		}
+		give_technology = { tech = tech_node_culling_3 message = no }
+	}
+	# tech_node_reformatting_3 (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_machine_empire = yes
+		}
+		give_technology = { tech = tech_node_reformatting_3 message = no }
+	}
+	# tech_nutrient_replication (00_soc_tech.txt)
+	if = {
+		limit = {
+            is_machine_empire = no
+            		is_wilderness_empire = no
+		}
+		give_technology = { tech = tech_nutrient_replication message = no }
+	}
+	# tech_pd_tracking_3 (00_phys_weapon_tech.txt)
+	give_technology = { tech = tech_pd_tracking_3 message = no }
+	# tech_planetary_infrastructure_2 (00_soc_tech.txt)
+	give_technology = { tech = tech_planetary_infrastructure_2 message = no }
+	# tech_plasma_3 (00_phys_weapon_tech.txt)
+	give_technology = { tech = tech_plasma_3 message = no }
+	# tech_positronic_implants (00_phys_tech.txt)
+	if = {
+		limit = {
+            has_ethic = ethic_gestalt_consciousness
+		}
+		give_technology = { tech = tech_positronic_implants message = no }
+	}
+	# tech_precognition_interface (00_soc_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			has_shroud_dlc = yes
+            			NOT = { has_ethic = ethic_gestalt_consciousness }
+            		}
+		}
+		give_technology = { tech = tech_precognition_interface message = no }
+	}
+	# tech_robomodding_points_2 (00_synthetic_dawn_tech.txt)
+	if = {
+		limit = {
+            NOT = {
+            			has_ethic = "ethic_gestalt_consciousness"
+            			is_individual_machine = yes
+            		}
+		}
+		give_technology = { tech = tech_robomodding_points_2 message = no }
+	}
+	# tech_robot_assembly_complex (00_eng_tech.txt)
+	if = {
+		limit = {
+            NOT = { has_ethic = "ethic_gestalt_consciousness" }
+		}
+		give_technology = { tech = tech_robot_assembly_complex message = no }
+	}
+	# tech_sapient_ai (00_phys_tech.txt)
+	if = {
+		limit = {
+            NOT = { has_ethic = ethic_gestalt_consciousness }
+		}
+		give_technology = { tech = tech_sapient_ai message = no }
+	}
+	# tech_sensors_4 (00_phys_tech.txt)
+	give_technology = { tech = tech_sensors_4 message = no }
+	# tech_shields_5 (00_phys_tech.txt)
+	give_technology = { tech = tech_shields_5 message = no }
+	# tech_ship_armor_5 (00_eng_tech.txt)
+	give_technology = { tech = tech_ship_armor_5 message = no }
+	# tech_starbase_5 (00_eng_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_starbase_5 message = no }
+	}
+	# tech_starfire_cannon (00_phys_weapon_tech.txt)
+	if = {
+		limit = {
+            has_origin = origin_red_giant
+            		has_country_flag = starfire_cannon_unlocked
+		}
+		give_technology = { tech = tech_starfire_cannon message = no }
+	}
+	# tech_stinger_build_speed (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_stinger_build_speed message = no }
+	}
+	# tech_stinger_growth_1 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_stinger_growth_1 message = no }
+	}
+	# tech_stinger_growth_2 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_stinger_growth_2 message = no }
+	}
+	# tech_stingers (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_stingers message = no }
+	}
+	# tech_swarmer_missiles_2 (00_eng_weapon_tech.txt)
+	give_technology = { tech = tech_swarmer_missiles_2 message = no }
+	# tech_synchronized_defences (00_phys_tech.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_synchronized_defences message = no }
+	}
+	# tech_synthetic_leaders (00_eng_tech.txt)
+	if = {
+		limit = {
+            NOR = {
+            			has_ethic = "ethic_gestalt_consciousness"
+            			is_individual_machine = yes
+            		}
+		}
+		give_technology = { tech = tech_synthetic_leaders message = no }
+	}
+	# tech_synthetic_workers (00_eng_tech.txt)
+	if = {
+		limit = {
+            NOR = {
+            			has_ethic = "ethic_gestalt_consciousness"
+            			is_individual_machine = yes
+            		}
+		}
+		give_technology = { tech = tech_synthetic_workers message = no }
+	}
+	# tech_thought_enforcement (00_soc_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			has_shroud_dlc = yes
+            			NOT = { has_ethic = ethic_gestalt_consciousness }
+            		}
+		}
+		give_technology = { tech = tech_thought_enforcement message = no }
+	}
+	# tech_thrusters_4 (00_eng_tech.txt)
+	give_technology = { tech = tech_thrusters_4 message = no }
+	# tech_torpedoes_3 (00_eng_weapon_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = no
+		}
+		give_technology = { tech = tech_torpedoes_3 message = no }
+	}
+	# tech_tracking_implants (00_soc_tech.txt)
+	give_technology = { tech = tech_tracking_implants message = no }
+	# tech_transcendent_faith (00_soc_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			is_spiritualist = yes
+            			AND = {
+            				is_gestalt = no
+            				has_make_spiritualist_perk = yes
+            			}
+            		}
+		}
+		give_technology = { tech = tech_transcendent_faith message = no }
+	}
+	# tech_weaver_bio_anti_evasion_4 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_anti_evasion_4 message = no }
+	}
+	# tech_weaver_bio_anti_fire_rate_4 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_anti_fire_rate_4 message = no }
+	}
+	# tech_weaver_bio_confuser_4 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_confuser_4 message = no }
+	}
+	# tech_weaver_bio_evasion_4 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_evasion_4 message = no }
+	}
+	# tech_weaver_bio_fire_rate_4 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_fire_rate_4 message = no }
+	}
+	# tech_weaver_bio_healing_4 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_healing_4 message = no }
+	}
+	# tech_zero_point_power (00_phys_tech.txt)
+	give_technology = { tech = tech_zero_point_power message = no }
+}
+
+advto_grant_tier_5 = {
+	advto_grant_tier_4 = yes
+	# 50 eligible technology definitions at engine tier 5.
+	# tech_archaeo_pk_devolving_beam (00_ancient_relics_tech.txt)
+	if = {
+		limit = {
+            host_has_dlc = "Apocalypse"
+            		has_ancrel = yes
+		}
+		give_technology = { tech = tech_archaeo_pk_devolving_beam message = no }
+	}
+	# tech_armor_hardeners_2 (00_eng_tech.txt)
+	give_technology = { tech = tech_armor_hardeners_2 message = no }
+	# tech_battleship_hull_2 (00_eng_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = no
+		}
+		give_technology = { tech = tech_battleship_hull_2 message = no }
+	}
+	# tech_btc_1 (00_apocalypse_tech.txt)
+	if = {
+		limit = {
+            has_nemesis = yes
+            		has_ascension_perk = ap_become_the_crisis
+            		has_country_flag = can_build_star_eaters
+		}
+		give_technology = { tech = tech_btc_1 message = no }
+	}
+	# tech_cloaking_psi (00_first_contact_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			has_shroud_dlc = yes
+            			NOT = { has_ethic = ethic_gestalt_consciousness }
+            		}
+            		has_first_contact_dlc = yes
+		}
+		give_technology = { tech = tech_cloaking_psi message = no }
+	}
+	# tech_dark_matter_detection (00_first_contact_tech.txt)
+	if = {
+		limit = {
+            has_first_contact_dlc = yes
+		}
+		give_technology = { tech = tech_dark_matter_detection message = no }
+	}
+	# tech_doctrine_fleet_size_5 (00_soc_tech.txt)
+	give_technology = { tech = tech_doctrine_fleet_size_5 message = no }
+	# tech_dyson_sphere (00_megastructures.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_dyson_sphere message = no }
+	}
+	# tech_existential_campaigns (00_soc_tech.txt)
+	give_technology = { tech = tech_existential_campaigns message = no }
+	# tech_gateway_construction (00_megastructures.txt)
+	give_technology = { tech = tech_gateway_construction message = no }
+	# tech_interstellar_assembly (00_megastructures.txt)
+	if = {
+		limit = {
+            has_megacorp = yes
+            		is_nomadic = no
+		}
+		give_technology = { tech = tech_interstellar_assembly message = no }
+	}
+	# tech_juggernaut (00_eng_tech.txt)
+	if = {
+		limit = {
+            host_has_dlc = "Federations"
+		}
+		give_technology = { tech = tech_juggernaut message = no }
+	}
+	# tech_jump_drive_1 (00_phys_tech.txt)
+	give_technology = { tech = tech_jump_drive_1 message = no }
+	# tech_lathe_cogitator (00_machine_age_tech.txt)
+	if = {
+		limit = {
+            has_machine_age_dlc = yes
+                    has_ascension_perk = ap_cosmogenesis
+                    has_technology = tech_cosmogenesis_world
+		}
+		give_technology = { tech = tech_lathe_cogitator message = no }
+	}
+	# tech_lathe_life_support (00_machine_age_tech.txt)
+	if = {
+		limit = {
+            has_machine_age_dlc = yes
+                    has_ascension_perk = ap_cosmogenesis
+                    has_technology = tech_cosmogenesis_world
+		}
+		give_technology = { tech = tech_lathe_life_support message = no }
+	}
+	# tech_lathe_overclocker (00_machine_age_tech.txt)
+	if = {
+		limit = {
+            has_machine_age_dlc = yes
+                    has_ascension_perk = ap_cosmogenesis
+                    has_technology = tech_cosmogenesis_world
+		}
+		give_technology = { tech = tech_lathe_overclocker message = no }
+	}
+	# tech_lathe_preserver (00_machine_age_tech.txt)
+	if = {
+		limit = {
+            has_machine_age_dlc = yes
+                    has_ascension_perk = ap_cosmogenesis
+                    has_technology = tech_cosmogenesis_world
+		}
+		give_technology = { tech = tech_lathe_preserver message = no }
+	}
+	# tech_lathe_resonator (00_machine_age_tech.txt)
+	if = {
+		limit = {
+            has_machine_age_dlc = yes
+                    has_ascension_perk = ap_cosmogenesis
+                    has_technology = tech_cosmogenesis_world
+		}
+		give_technology = { tech = tech_lathe_resonator message = no }
+	}
+	# tech_lathe_validator (00_machine_age_tech.txt)
+	if = {
+		limit = {
+            has_machine_age_dlc = yes
+                    has_ascension_perk = ap_cosmogenesis
+                    has_technology = tech_cosmogenesis_world
+		}
+		give_technology = { tech = tech_lathe_validator message = no }
+	}
+	# tech_matter_decompressor (00_megastructures.txt)
+	if = {
+		limit = {
+            has_megacorp = yes
+            		is_nomadic = no
+		}
+		give_technology = { tech = tech_matter_decompressor message = no }
+	}
+	# tech_mega_art (00_megastructures.txt)
+	if = {
+		limit = {
+            has_megacorp = yes
+            		is_nomadic = no
+		}
+		give_technology = { tech = tech_mega_art message = no }
+	}
+	# tech_mega_engineering (00_megastructures.txt)
+	give_technology = { tech = tech_mega_engineering message = no }
+	# tech_mega_shipyard (00_megastructures.txt)
+	if = {
+		limit = {
+            has_federations_dlc = yes
+            		is_nomadic = no
+		}
+		give_technology = { tech = tech_mega_shipyard message = no }
+	}
+	# tech_mine_living_metal (00_strategic_resources_tech.txt)
+	give_technology = { tech = tech_mine_living_metal message = no }
+	# tech_pk_cracker (00_apocalypse_tech.txt)
+	if = {
+		limit = {
+            host_has_dlc = "Apocalypse"
+            		has_country_flag = colossus_project
+            		is_pacifist = no
+		}
+		give_technology = { tech = tech_pk_cracker message = no }
+	}
+	# tech_pk_godray (00_apocalypse_tech.txt)
+	if = {
+		limit = {
+            host_has_dlc = "Apocalypse"
+            		has_country_flag = colossus_project
+            		is_spiritualist = yes
+            		has_psionic_ascension = yes
+		}
+		give_technology = { tech = tech_pk_godray message = no }
+	}
+	# tech_pk_nanobots (00_apocalypse_tech.txt)
+	if = {
+		limit = {
+            host_has_dlc = "Apocalypse"
+            		has_country_flag = colossus_project
+            		has_valid_civic = civic_machine_assimilator
+		}
+		give_technology = { tech = tech_pk_nanobots message = no }
+	}
+	# tech_pk_neutron (00_apocalypse_tech.txt)
+	if = {
+		limit = {
+            host_has_dlc = "Apocalypse"
+            		has_country_flag = colossus_project
+            		OR = {
+            			is_spiritualist = no
+            			NOT = { has_psionic_ascension = yes }
+            		}
+            		is_pacifist = no
+		}
+		give_technology = { tech = tech_pk_neutron message = no }
+	}
+	# tech_pk_shielder (00_apocalypse_tech.txt)
+	if = {
+		limit = {
+            host_has_dlc = "Apocalypse"
+            		has_country_flag = colossus_project
+		}
+		give_technology = { tech = tech_pk_shielder message = no }
+	}
+	# tech_pk_smelter (00_apocalypse_tech.txt)
+	if = {
+		limit = {
+            host_has_dlc = "Apocalypse"
+            		has_country_flag = colossus_project
+            		can_get_planet_smelter = yes
+		}
+		give_technology = { tech = tech_pk_smelter message = no }
+	}
+	# tech_psi_jump_drive_1 (00_soc_tech.txt)
+	if = {
+		limit = {
+            OR = {
+            			has_shroud_dlc = yes
+            			NOT = { has_ethic = ethic_gestalt_consciousness }
+            		}
+		}
+		give_technology = { tech = tech_psi_jump_drive_1 message = no }
+	}
+	# tech_ring_world (00_megastructures.txt)
+	if = {
+		limit = {
+            is_wilderness_empire = no
+            		is_nomadic = no
+		}
+		give_technology = { tech = tech_ring_world message = no }
+	}
+	# tech_science_nexus (00_megastructures.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_science_nexus message = no }
+	}
+	# tech_sentry_array (00_megastructures.txt)
+	if = {
+		limit = {
+            is_nomadic = no
+		}
+		give_technology = { tech = tech_sentry_array message = no }
+	}
+	# tech_shield_hardeners_2 (00_phys_tech.txt)
+	give_technology = { tech = tech_shield_hardeners_2 message = no }
+	# tech_strategic_coordination (00_megastructures.txt)
+	if = {
+		limit = {
+            has_megacorp = yes
+            		is_nomadic = no
+		}
+		give_technology = { tech = tech_strategic_coordination message = no }
+	}
+	# tech_synth_queen_knowledge (00_machine_age_tech.txt)
+	if = {
+		limit = {
+            has_machine_age_dlc = yes
+                    has_country_flag = synth_queen_knowledge
+		}
+		give_technology = { tech = tech_synth_queen_knowledge message = no }
+	}
+	# tech_titan_hull_1 (00_eng_tech.txt)
+	give_technology = { tech = tech_titan_hull_1 message = no }
+	# tech_titan_hull_2 (00_eng_tech.txt)
+	give_technology = { tech = tech_titan_hull_2 message = no }
+	# tech_titans (00_eng_tech.txt)
+	if = {
+		limit = {
+            host_has_dlc = "Apocalypse"
+		}
+		give_technology = { tech = tech_titans message = no }
+	}
+	# tech_weaver_bio_anti_evasion_5 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_anti_evasion_5 message = no }
+	}
+	# tech_weaver_bio_anti_fire_rate_5 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_anti_fire_rate_5 message = no }
+	}
+	# tech_weaver_bio_confuser_5 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_confuser_5 message = no }
+	}
+	# tech_weaver_bio_evasion_5 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_evasion_5 message = no }
+	}
+	# tech_weaver_bio_fire_rate_5 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_fire_rate_5 message = no }
+	}
+	# tech_weaver_bio_healing_5 (00_biogenesis_tech.txt)
+	if = {
+		limit = {
+            country_uses_bio_ships = yes
+		}
+		give_technology = { tech = tech_weaver_bio_healing_5 message = no }
+	}
+}
