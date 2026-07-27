@@ -1,8 +1,12 @@
 civspace_privately_founded_colony = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds"
+
 	logistic_growth_mult = 0.05
 	planet_jobs_trade_produces_mult = 0.05
 }
 
 civspace_private_station_host = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_satellite_in_orbit.dds"
+
 	planet_jobs_trade_produces_mult = 0.02
 }
