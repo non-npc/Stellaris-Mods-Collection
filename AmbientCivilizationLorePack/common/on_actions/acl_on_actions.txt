@@ -4,12 +4,6 @@ on_game_start_country = {
     }
 }
 
-on_single_player_save_game_load = {
-    events = {
-        acl.0
-    }
-}
-
 on_yearly_pulse_country = {
     events = {
         acl.0

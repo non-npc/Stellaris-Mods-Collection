@@ -12,6 +12,8 @@ country_event = {
 	}
 
 	immediate = {
+		species = { save_event_target_as = civspace_player_species }
+
 		# Repair games initialized while the preset scripted effects were absent.
 		# A valid traffic mode is always present after any preset or manual setup.
 		if = {
@@ -53,6 +55,10 @@ country_event = {
 		if = {
 			limit = { exists = event_target:civspace_validated_sector }
 			event_target:civspace_validated_sector = {
+				# Keep the leaderless fleet portrait aligned with the player species.
+				change_dominant_species = { species = event_target:civspace_player_species }
+				set_graphical_culture = root
+
 				every_owned_fleet = {
 					limit = {
 						has_fleet_flag = civspace_private_station
@@ -126,12 +132,13 @@ country_event = {
 
 	immediate = {
 		save_event_target_as = civspace_recovery_parent
+		species = { save_event_target_as = civspace_recovery_species }
 		create_country = {
 			name = "civspace_civilian_sector_name"
 			type = civspace_civilian_authority
 			flag = event_target:civspace_recovery_parent
-			species = random
-			name_list = "Human1"
+			species = event_target:civspace_recovery_species
+			name_list = event_target:civspace_recovery_parent
 			ethos = {
 				ethic = ethic_materialist
 				ethic = ethic_pacifist

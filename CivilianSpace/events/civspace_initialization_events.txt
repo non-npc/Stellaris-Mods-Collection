@@ -30,6 +30,7 @@ country_event = {
 
 	immediate = {
 		save_event_target_as = civspace_creation_parent
+		species = { save_event_target_as = civspace_creation_species }
 		set_country_flag = civspace_initialized
 		set_variable = { which = civspace_colony_count value = 0 }
 		set_variable = { which = civspace_station_count value = 0 }
@@ -43,8 +44,8 @@ country_event = {
 				name = "civspace_civilian_sector_name"
 				type = civspace_civilian_authority
 				flag = event_target:civspace_creation_parent
-				species = random
-				name_list = "Human1"
+				species = event_target:civspace_creation_species
+				name_list = event_target:civspace_creation_parent
 				ethos = {
 					ethic = ethic_materialist
 					ethic = ethic_pacifist

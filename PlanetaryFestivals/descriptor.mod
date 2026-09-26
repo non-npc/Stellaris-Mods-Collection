@@ -1,4 +1,4 @@
-version="1.2.1"
+version="1.2.2"
 tags={
 	"Balance"
 	"Gameplay"
@@ -6,5 +6,5 @@ tags={
 	"Technologies"
 }
 name="Planetary Festivals"
-supported_version="v4.4.4"
+supported_version="v4.5.1"
 remote_file_id="3737189710"

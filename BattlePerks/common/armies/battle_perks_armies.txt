@@ -53,7 +53,6 @@ bp_siege_breaker_army = {
 				NOR = {
 					has_trait = trait_mechanical
 					has_trait = trait_machine_unit
-					has_trait = trait_limited_cybernetic
 					is_sapient = no
 				}
 			}

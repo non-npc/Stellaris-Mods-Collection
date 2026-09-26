@@ -1,4 +1,4 @@
-version="1.0.8"
+version="1.0.9"
 tags={
 	"Events"
 	"Gameplay"
@@ -6,5 +6,5 @@ tags={
 	"Buildings"
 }
 name="Viral News"
-supported_version="v4.4.6"
+supported_version="v4.5.1"
 remote_file_id="3746135807"
