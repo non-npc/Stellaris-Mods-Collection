@@ -1,5 +1,5 @@
 ![Immersive Mods](immersivemods.jpg)
-<img src="https://img.shields.io/badge/Stellaris-4.4.*-orange">
+<img src="https://img.shields.io/badge/Stellaris-4.5.1-orange">
 # Immersive Mods for Stellaris
 
 A collection of Stellaris mods I develop and maintain.

@@ -1,4 +1,4 @@
-version="1.4.5"
+version="1.4.6"
 tags={
 	"Gameplay"
 	"Balance"
@@ -6,5 +6,5 @@ tags={
 	"Events"
 }
 name="Fateweaving"
-supported_version="v4.4.4"
+supported_version="v4.5.1"
 remote_file_id="3738216277"
